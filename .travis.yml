@@ -1,0 +1,9 @@
+language: python
+
+python:
+  - '3.7'
+  
+install:
+  - pip3 install "HookTest<2.0.0"
+
+script: travis_wait 60 hooktest ./ --console table --workers 3 --verbose 7 --guidelines 2.tei
