@@ -71,7 +71,7 @@
                               
                               matchPattern="(\w+).(\w+).(\w+)"
                               
-                              replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div1[@n='$1']/tei:div2[@n='$2']/tei:sp[@n='$3'])">
+                              replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@type='act'][@n='$1']/tei:div[@type='scene'][@n='$2']/tei:sp[@n='$3'])">
                               
                               <p>Ce pointeur extrait les niveaux de citation 1, 2 et 3, soit acte, scène et tour de parole.</p>
                               
@@ -83,7 +83,7 @@
                               
                               matchPattern="(\w+).(\w+)"
                               
-                              replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div1[@n='$1']/tei:div2[@n='$2'])">
+                              replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@type='act'][@n='$1']/tei:div[@type='scene'][@n='$2'])">
                               
                               <p>Ce poiteur extrait les niveaux de citation 1 et 2, soit les actes et scènes.</p>
                               
@@ -95,7 +95,7 @@
                               
                               matchPattern="(\w+)"
                               
-                              replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div1[@n='$1'])">
+                              replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@type='act'][@n='$1'])">
                               
                               <p>Ce pointeur extrait le premier niveau de citation du texte, soit les actes.</p>
                               
@@ -188,19 +188,19 @@
                               <cRefPattern 
                                  n="speech"
                                  matchPattern="(\w+).(\w+).(\w+)"
-                                 replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div1[@n='$1']/tei:div2[@n='$2']/tei:sp[@n='$3'])">
+                                 replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@type='act'][@n='$1']/tei:div[@type='scene'][@n='$2']/tei:sp[@n='$3'])">
                                  <p>Ce pointeur extrait les niveaux de citation 1, 2 et 3, soit acte, scène et tour de parole.</p>
                               </cRefPattern>
                               <cRefPattern 
                                  n="scene"
                                  matchPattern="(\w+).(\w+)"
-                                 replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div1[@n='$1']/tei:div2[@n='$2'])">
+                                 replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@type='act'][@n='$1']/tei:div[@type='scene'][@n='$2'])">
                                  <p>Ce poiteur extrait les niveaux de citation 1 et 2, soit les actes et scènes.</p>
                               </cRefPattern>
                               <cRefPattern 
                                  n="act"
                                  matchPattern="(\w+)"
-                                 replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div1[@n='$1'])">
+                                 replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@type='act'][@n='$1'])">
                                  <p>Ce pointeur extrait le premier niveau de citation du texte, soit les actes.</p> 
                               </cRefPattern> 
                            </refsDecl>  
