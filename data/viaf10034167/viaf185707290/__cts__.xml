@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ti:work groupUrn="urn:cts:libOp:viaf10034167"
+    urn="urn:cts:libOp:viaf10034167.viaf185707290" xml:lang="fre"
+    xmlns:ti="http://chs.harvard.edu/xmlns/cts">
+    <ti:title xml:lang="fre">La Rose de Saint-Flour</ti:title>
+    <ti:edition workUrn="urn:cts:libOp:viaf10034167.viaf185707290"
+        urn="urn:cts:libOp:viaf10034167.viaf185707290.TNAH2020-fre1">
+        <ti:label xml:lang="fre">La Rose de Saint Flour, Jacques Offenbach (TNAH2020)</ti:label>
+        <ti:description xml:lang="fre">Balisage sémantique de la Rose de Saint-Flour par la promo TNAH 2020</ti:description>
+    </ti:edition>
+</ti:work>
