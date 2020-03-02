@@ -620,7 +620,7 @@
                   <attList>
                      <attDef ident="role" usage="req" mode="change">
                         <valList mode="add" type="closed">
-                           <valItem ident="songWritter"></valItem>
+                           <valItem ident="songWriter"></valItem>
                            <valItem ident="librettist"></valItem>
                         </valList>
                      </attDef>
