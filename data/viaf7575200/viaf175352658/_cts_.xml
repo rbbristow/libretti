@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<egXML xmlns="http://www.tei-c.org/ns/Examples">
    <ti:work xmlns:ti="http://chs.harvard.edu/xmlns/cts"
       groupUrn="urn:cts:libOp:viaf7575200"
       urn="urn:cts:libOp:viaf7575200.viaf175352658"
@@ -16,4 +15,3 @@
          </ti:description>
       </ti:edition>
    </ti:work>
-</egXML>
