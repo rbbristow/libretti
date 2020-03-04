@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../../../libretti-master/libretti-master/ODD/out/librettiODD.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../../../ODD/out/librettiODD.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Samson et Dalila</title>
-        <author role="songWritter">Camille Saint-Saëns</author>
+        <author role="songWriter">Camille Saint-Saëns</author>
         <author role="librettist">Nom du librettiste</author>
       </titleStmt>
       <publicationStmt>
@@ -48,7 +48,7 @@
 
   <text>
     <body n="urn:cts:libOp:viaf7575200.viaf175352658.TNAH2020-fre1" xml:lang="fre">
-      <!-- Pour le l'identifiant VIAF de l'oeuvre (175352658), choix du livret écrit par Ferdinand Lemaire et non de l'oeuvre. Voir avec les autres pour harmoniser. -->
+      <!-- Pour le l'identifiant VIAF de l'oeuvre (175352658), choix du livret écrit par Ferdinand Lemaire et non de l'oeuvre. -->
       <castList>
         <castItem>DALILA</castItem>
         <castItem>SAMSON</castItem>
