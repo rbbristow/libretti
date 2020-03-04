@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ti:work groupUrn="urn:cts:libOp:viaf12370239"
+    urn="urn:cts:libOp:viaf12370239.viaf54145003740161340822" xml:lang="fre"
+    xmlns:ti="http://chs.harvard.edu/xmlns/cts">
+    <ti:title xml:lang="fre">Si j'étais roi</ti:title>
+    <ti:edition workUrn="urn:cts:libOp:viaf12370239.viaf54145003740161340822"
+        urn="urn:cts:libOp:viaf12370239.viaf54145003740161340822.TNAH2020-fre1">
+        <ti:label xml:lang="fre">Si j'étais roi, Adolphe Adam, Adolphe d'Ennery, Jules-Henri Brésil(TNAH2020)</ti:label>
+        <ti:description xml:lang="fre">Balisage sémantique de Si j'étais roi par la promotion TNAH 2020.</ti:description>
+    </ti:edition>
+</ti:work>
