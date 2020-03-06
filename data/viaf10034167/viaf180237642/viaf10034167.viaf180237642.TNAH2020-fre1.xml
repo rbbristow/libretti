@@ -1,0 +1,1111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../ODD/out/librettiODD.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Le Violoneux</title>
+            <author role="songWritter">Jacques Offenbach</author>
+         </titleStmt>
+         <publicationStmt>
+            <p>Ecole nationale des chartes, projet libretti TNAH, promotion 2019-2020</p>
+         </publicationStmt>
+         <sourceDesc default="false">
+            <p>https://fr.wikisource.org/wiki/Le_Violoneux</p>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <refsDecl n="CTS" default="false">
+            <cRefPattern n="speech" matchPattern="(\w+).(\w+).(\w+)"
+               replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@type='act'][@n='$1']/tei:div[@type='scene'][@n='$2']/tei:sp[@n='$3'])">
+               <p>Ce pointeur extrait les niveaux de citation 1, 2 et 3, soit acte, scène et tour de
+                  parole.</p>
+            </cRefPattern>
+            <cRefPattern n="scene" matchPattern="(\w+).(\w+)"
+               replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@type='act'][@n='$1']/tei:div[@type='scene'][@n='$2'])">
+               <p>Ce poiteur extrait les niveaux de citation 1 et 2, soit les actes et scènes.</p>
+            </cRefPattern>
+            <cRefPattern n="act" matchPattern="(\w+)"
+               replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@type='act'][@n='$1'])">
+               <p>Ce pointeur extrait le premier niveau de citation du texte, soit les actes.</p>
+            </cRefPattern>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text>
+      <front>
+         <set>
+            <p>La scène se passe en Bretagne, de nos jours.</p>
+         </set>
+      </front>
+      <body n="urn:cts:libOp:viaf10034167.viaf180237642.TNAH2020-fre1"
+         xml:lang="fre">
+         <castList>
+            <castItem>Le père Mathieu, violoneux</castItem>
+            <castItem>Pierre, sabotier</castItem>
+            <castItem>Reinette, filleule du père Mathieu</castItem>
+         </castList>
+         <div type="act" n="1">
+            <div type="scene" n="1">
+               <head>Scène I</head>
+               <stage>Une place de village. — À gauche, au premier plan, un banc de gazon.</stage>
+               <sp n="1">
+                  <speaker>PIERRE</speaker>
+                  <stage>, seul.</stage>
+                  <stage>Il entre en marquant le pas. Le n°1, son numéro de conscription, se détache
+                     en relief sur son chapeau.</stage>
+                  <lg>
+                     <head>REFRAIN</head>
+                     <l>Conscrit !… conscrit !</l>
+                     <l>Guignon maudit !</l>
+                     <l>L’sort me poursuit</l>
+                     <l>J’en perds l’esprit</l>
+                     <l>Et l’appétit.</l>
+                     <l>Je suis conscrit.</l>
+                  </lg>
+                  <lg>
+                     <head>COUPLETS</head>
+                     <lg>
+                        <head>COUPLET I</head>
+                        <l>Il m’sembl’déjà que la bataille</l>
+                        <l>Autour d’mes jamb’s a commencé…</l>
+                        <l>Zin, zin, boum, boum !… C’est la mitraille !</l>
+                        <l>Mon doux patron ! me v’là blessé !</l>
+                        <l>Je veux courir, mais j’t’en souhaite,</l>
+                        <l>Je suis moulu,</l>
+                        <l>Je suis rompu,</l>
+                        <l>On m’poursuit à la baïonnette,</l>
+                     </lg>
+                     <lg>
+                        <head>COUPLET II</head>
+                        <l>Sur le rempart, j’fais sentinelle ;</l>
+                        <l>De peur, de froid, je suis transi.</l>
+                        <l>On vient… Qui va là ?… sans chandelle.</l>
+                        <l>Comment savoir si c’est l’enn’mi ?</l>
+                        <l>Je tire en l’air, mais j’t’en souhaite,</l>
+                        <l>Il fait si noir…</l>
+                        <l>Pierre, bonsoir !…</l>
+                        <l>En deux temps mon affaire est faite.</l>
+                     </lg>
+                  </lg>
+                  <stage>(Il jette son chapeau par terre.)</stage>
+               </sp>
+            </div>
+            <div type="scene" n="2">
+               <head>Scène II</head>
+               <stage>REINETTE, PIERRE</stage>
+               <sp n="1">
+                  <speaker>REINETTE</speaker>
+                  <l>Enfin !… j’vous trouve, monsieur Pierre ; v’là deux heures que j’cours après
+                     vous pour vous consoler. Ouf ! </l>
+               </sp>
+               <sp n="2">
+                  <speaker>PIERRE</speaker>
+                  <l>Vous êtes fatiguée ?</l>
+               </sp>
+               <sp n="3">
+                  <speaker>REINETTE</speaker>
+                  <l>Dame ! tout le monde n’a pas l’jarret aussi bien planté que vous.</l>
+               </sp>
+               <sp n="4">
+                  <speaker>PIERRE</speaker>
+                  <l>Voyons voir.</l>
+               </sp>
+               <sp n="5">
+                  <speaker>REINETTE</speaker>
+                  <l>Eh ben !… eh ben !… qu’est c’qui vous prend ?</l>
+                  <stage>(Ramassant son chapeau.)</stage>
+                  <l>T’nez, mauvaise tête.</l>
+               </sp>
+               <sp n="6">
+                  <speaker>PIERRE</speaker>
+                  <l>Merci, mam’zelle Reinette.</l>
+                  <stage>(Lui montrant son numéro.)</stage>
+                  <l>Le v’là, le gredin ! Comm’il se fiche de moi…</l>
+                  <stage>(Le déchirant avec ses dents et le jetant par terre.)</stage>
+                  <l>Tiens, tiens, tiens !</l>
+               </sp>
+               <sp n="7">
+                  <speaker>REINETTE</speaker>
+                  <l>Mais pourquoi vous tourmenter, puisque vot’oncle doit vous acheter un
+                     remplaçant ?</l>
+               </sp>
+               <sp n="8">
+                  <speaker>PIERRE</speaker>
+                  <l>Oui, comptez là-dessus. Je r’viens d’chez lui. Je lui ai dit comm’çà, pour
+                     l’tâter : Mon oncle, j’suis conscrit… et amoureux. L’gouvernement a besoin
+                     d’moi.</l>
+                  <l>Les hommes valent 2,000 fr. à c’t’année, et j’n’ai pas l’premier liard, c’est
+                     l’vrai moment de s’exécuter.</l>
+               </sp>
+               <sp n="9">
+                  <speaker>REINETTE</speaker>
+                  <l>Qu’a-t-il répondu ?</l>
+               </sp>
+               <sp n="10">
+                  <speaker>PIERRE</speaker>
+                  <l>Lui ?… Il m’a flanqué à la porte sans même me proposer de partir à ma place
+                     l’vieux sans cœur.</l>
+               </sp>
+               <sp n="11">
+                  <speaker>REINETTE</speaker>
+                  <l>Eh ben ! faut pas s’désespérer pour ça.</l>
+                  <stage>(Avec intention.)</stage>
+                  <l>Nous sommes un brin cousins, pas vrai, et j’ai une idée.</l>
+                  <stage>(Elle lui essuie le front avec son mouchoir.)</stage>
+               </sp>
+               <sp n="12">
+                  <speaker>PIERRE</speaker>
+                  <l>Voyons voir… Merci, mam’zelle Reinette.</l>
+               </sp>
+               <sp n="13">
+                  <speaker>REINETTE</speaker>
+                  <l>Ce que votre oncle vous refuse, si je le demandais pour vous à mon parrain ?
+                  </l>
+               </sp>
+               <sp n="14">
+                  <speaker>PIERRE</speaker>
+                  <stage>, avec effroi, se levant.</stage>
+                  <l>Au père Mathieu ? Je n’veux point, je n’veux point !…</l>
+               </sp>
+               <sp n="15">
+                  <speaker>REINETTE</speaker>
+                  <l>Tiens ! pourquoi donc ?</l>
+               </sp>
+               <sp n="16">
+                  <speaker>PIERRE</speaker>
+                  <l>Mam’zelle, je n’suis qu’un pauvre sabotier, mais j’aimerais mieux… trépasser
+                     sans confession que d’lui devoir quéqu’chose.</l>
+                  <l>Savez-vous ce que c’est que l’père Mathieu ?</l>
+               </sp>
+               <sp n="17">
+                  <speaker>REINETTE</speaker>
+                  <l>Dame ! l’violoneux du pays.</l>
+               </sp>
+               <sp n="18">
+                  <speaker>PIERRE</speaker>
+                  <l>Lui ! un violoneux !… pour la frime, possible… mais au fond.</l>
+                  <l>Un homme que son père avait des millions, à c’qu’on raconte au pays… et qui
+                     racle le boyau pour vivre, un sournois qui vous a d’gros souliers ferrés et qui
+                     dégoise quasiment mieux que les beaux messieurs de la ville ; t’nez, c’est pas
+                     clair.</l>
+                  <l>J’suis pas plus bête qu’un autre,</l>
+                  <stage>(Mystérieusement, la prenant par la main.)</stage>
+                  <l>M’est avis, mam’zelle,</l>
+                  <stage>(il ne peut pas nous entendre)</stage>
+                  <l> m’est avis, que c’est… un sorcier ! </l>
+               </sp>
+               <sp n="19">
+                  <speaker>REINETTE</speaker>
+                  <stage>, riant.</stage>
+                  <l>Ah ! ah ! ah ! ah ! </l>
+               </sp>
+               <sp n="20">
+                  <speaker>PIERRE</speaker>
+                  <l>Oui… un sorcier ; j’en ai la preuve, moi qui vous parle. Écoutez plutôt.</l>
+                  <stage>(Musique à l’orchestre.)</stage>
+                  <l>C’t’hiver passé, juste le lendemain du jour où qu’un mauvais gars avait
+                     incendié la cabane du violoneux, vous vous rappelez ?…</l>
+               </sp>
+               <sp n="21">
+                  <speaker>REINETTE</speaker>
+                  <l>Oui… oui… </l>
+               </sp>
+               <sp n="22">
+                  <speaker>PIERRE</speaker>
+                  <l>J’traversais la forêt à l’heure de minuit ; j’trottais dru, d’peur des
+                     lutins.</l>
+                  <l>V’là que tout d’un coup j’entends une espèce d’musique, mais si douce, si
+                     douce… que j’m’en pâmais rien que de l’entendre.</l>
+                  <l>J’marche, j’marche toujours dret d’vant moi, comm’si qu’un charme m’poussait…
+                     j’arrive près de l’endroit d’où qu’çà venait… j’écarte les branches sans faire
+                     d’bruit et j’trouve quoi ?… le père Mathieu en train d’chanter sa fameuse
+                     ronde, vous savez bien;</l>
+                  <stage>(Il fredonne quelques mesures de la ronde.)</stage>
+                  <l>puis le v’là qui s’arrête et quicommence à pleurer… à pleurer, mais là pour
+                     tout de bon.</l>
+                  <l>Il tenait son violon de c’te façon dans les deux mains… il le r’gardait avec
+                     ses grands yeux, et il lui causait ni plus ni moins que si c’était un’personne
+                     naturelle.</l>
+                  <l>« Mon père m’a dit comm’ça, qu’il lui disait, de t’briser l’jour où je serais
+                     bien malheureux, et que tu m’donnerais peut être l’bonheur.</l>
+                  <l>J’ai perdu ma pauv’femme, mais j’t’aime tant que je n’t’ai point brisé.</l>
+                  <l>Je n’ai plus un coin pour poser ma tête ; mais, sois tranquille, va, je n’te
+                     briserai point encore aujourd’hui.</l>
+                  <l>J’préfère te serrer tout entier sur mon cœur que de te mutiler pour avoir un
+                     château. »</l>
+                  <l>Enfin, un tas de bêtises.</l>
+                  <l>J’vous demande un peu, mam’zelle, si c’est pas là des imaginations
+                     d’sorcier.</l>
+               </sp>
+               <sp n="23">
+                  <speaker>REINETTE</speaker>
+                  <stage>, un peu rêveuse.</stage>
+                  <l>Mon pauvre parrain ! </l>
+               </sp>
+               <sp n="24">
+                  <speaker>PIERRE</speaker>
+                  <l>Laissez donc. J’sais ben pourquoi il tient tant à son méchant violon d’30 sous,
+                     vu qu’il a dit d’vant moi qu’il ne l’donnerait pas pour un gros sac d’écus.</l>
+                  <l>C’est tout uniment parce qu’il lui sert à jeter des sorts à ceux-là dont la
+                     figure l’chiffonne… à moi tout l’premier, sans aller plus loin.</l>
+                  <l>Aussi n’en v’là un que je ne regrett’rai pas quand je quitterai l’pays.</l>
+               </sp>
+               <sp n="25">
+                  <speaker>REINETTE</speaker>
+                  <l>C’est vrai, vous allez partir… j’l’avais presque oublié, et pourtant il y
+                     aurait peut-être un moyen d’arranger ça… </l>
+               </sp>
+               <sp n="26">
+                  <speaker>PIERRE</speaker>
+                  <l>Vous croyez ?…</l>
+               </sp>
+               <sp n="27">
+                  <speaker>REINETTE</speaker>
+                  <l>Mais il s’peut qu’ça n’vous plaise point.</l>
+               </sp>
+               <sp n="28">
+                  <speaker>PIERRE</speaker>
+                  <l>Dites toujours.</l>
+               </sp>
+               <sp n="29">
+                  <speaker>REINETTE</speaker>
+                  <lg>
+                     <head>DUETTINO</head>
+                     <lg>
+                        <head>I</head>
+                        <l>J’sais bien que c’n’est pas l’usage,</l>
+                        <l>Mais, ma foi, je vous trouve gentil</l>
+                        <l>Et j’vous d’mande en mariage,</l>
+                        <l>Monsieur Pierr’, ça vous va-t-il,</l>
+                        <l>J’vous offre en plac’de richesse,</l>
+                        <l>Un cœur tout neuf, plein d’tendresse.</l>
+                        <l>Allons, mon cousin,</l>
+                        <l>Acceptez ma main,</l>
+                        <l>Répondez, voulez-vous</l>
+                        <l>Être mon époux ?</l>
+                     </lg>
+                     <lg>
+                        <head>II</head>
+                        <l>Vous m’épousez, plus d’milice,</l>
+                        <l>Les autr’s suivront le drapeau,</l>
+                        <l>Adieu le bonnet d’police,</l>
+                        <l>Vous gard’rez vot’beau chapeau…</l>
+                        <l>Nous aurons, j’en suis certaine, D’jolis marmots par douzaine,</l>
+                        <l>Allons, mon cousin, etc.</l>
+                     </lg>
+                  </lg>
+               </sp>
+               <sp n="30">
+                  <speaker>PIERRE</speaker>
+                  <lg>
+                     <l>C’dernier mot d’vot’sentiment</l>
+                     <l>Me rend tout je n’sais comment.</l>
+                  </lg>
+               </sp>
+               <sp n="31">
+                  <speaker>REINETTE</speaker>
+                  <l>Eh bien ?</l>
+               </sp>
+               <sp n="32">
+                  <speaker>PIERRE</speaker>
+                  <lg>
+                     <l>Eh bien !… la chose est faite,</l>
+                     <l>Topez là</l>
+                     <l>Larirette,</l>
+                     <l>Ça me va</l>
+                     <l>Larira !…</l>
+                  </lg>
+               </sp>
+               <sp n="33">
+                  <speaker>ENSEMBLE</speaker>
+                  <lg>
+                     <l>Nous ferons noce complète,</l>
+                     <l>Tout le village en sera</l>
+                     <l>Et pâle, le soir, larirette,</l>
+                     <l>Jusqu’au jour on dansera !</l>
+                     <l>Larira !…</l>
+                  </lg>
+               </sp>
+            </div>
+            <div type="scene" n="3">
+               <head>Scène III</head>
+               <stage>LES MÊMES, LE PÈRE MATHIEU</stage>
+               <stage>(Le duo finit sur un rond. Le père Mathieu avance sa tête au milieu des deux
+                  jeunes gens, au moment où Pierre embrasse Reinette.)</stage>
+               <sp n="1">
+                  <speaker>PIERRE</speaker>
+                  <stage>, poussant un grand cri et s’éloignant.</stage>
+                  <l>Ah !</l>
+               </sp>
+               <sp n="2">
+                  <speaker>REINETTE</speaker>
+                  <l>Père Mathieu ; c’n’est pas gentil d’entrer comm’ça sans frapper.</l>
+               </sp>
+               <sp n="3">
+                  <speaker>LE PÈRE MATHIEU</speaker>
+                  <stage>, souriant.</stage>
+                  <l>On s’en souviendra.</l>
+               </sp>
+               <sp n="4">
+                  <speaker>REINETTE</speaker>
+                  <l>Non, c’est pas gentil.</l>
+               </sp>
+               <sp n="5">
+                  <speaker>MATHIEU</speaker>
+                  <l>Allons, pardonne-moi, mignonne, et viens m’embrasser.</l>
+                  <stage>(Elle lui saute au cou.)</stage>
+                  <l>Là, je n’ai rien vu. Es-tu contente ?</l>
+               </sp>
+               <sp n="6">
+                  <speaker>REINETTE</speaker>
+                  <l>Faut bien.</l>
+               </sp>
+               <sp n="7">
+                  <speaker>MATHIEU</speaker>
+                  <stage>, à Pierre.</stage>
+                  <l>Et toi, grand séducteur, est-ce que tu vas me garder rancune longtemps comme
+                     ça !</l>
+               </sp>
+               <sp n="8">
+                  <speaker>PIERRE</speaker>
+                  <stage>, à part.</stage>
+                  <l>Il voudrait m’embrasser aussi ; qu’il y vienne.</l>
+                  <stage>(Il fait le geste de le mordre.)</stage>
+               </sp>
+               <sp n="9">
+                  <speaker>MATHIEU</speaker>
+                  <l>Voyons, ta main.</l>
+               </sp>
+               <sp n="10">
+                  <speaker>PIERRE</speaker>
+                  <stage>, à part, après avoir longtemps hésité.</stage>
+                  <l>Il a la main moite comme un serpent.</l>
+               </sp>
+               <sp n="11">
+                  <speaker>MATHIEU</speaker>
+                  <l>Comment vont les sabots depuis que je n’ai eu le plaisir de te voir ? </l>
+               </sp>
+               <sp n="12">
+                  <speaker>PIERRE</speaker>
+                  <stage>, cherchant à se dégager.</stage>
+                  <l>Pas mal… comme vous voyez, merci, et vous ?</l>
+                  <stage>(Il se dégage, souffle vivement dans sa main et l’essuie sur sa culotte
+                     comme pour détruire le charme.)</stage>
+               </sp>
+               <sp n="13">
+                  <speaker>MATHIEU</speaker>
+                  <l>Regarde-moi donc en face. On dirait que je te fais peur.</l>
+               </sp>
+               <sp n="14">
+                  <speaker>REINETTE</speaker>
+                  <stage>, vivement.</stage>
+                  <l>Excusez-le, mon parrain, Pierre est un peu timide.</l>
+               </sp>
+               <sp n="15">
+                  <speaker>MATHIEU</speaker>
+                  <l>Je comprends. Rassure-toi, mon garçon. Que diable ! je ne t’adresse pas de
+                     reproches. Il n’est pas défendu d’aimer une jolie fille.</l>
+                  <stage>(Lui tâtant le coude.)</stage>
+                  <l>N’est-ce pas qu’elle est jolie, ma mignonnette ?</l>
+               </sp>
+               <sp n="16">
+                  <speaker>PIERRE</speaker>
+                  <stage>, essuyant son coude.</stage>
+                  <l>Oui, oui, certainement,</l>
+                  <stage>(À part.)</stage>
+                  <l>Est-il laid, c’chrétien-là, est-il laid !</l>
+               </sp>
+               <sp n="17">
+                  <speaker>REINETTE</speaker>
+                  <l>Comm’vous v’là brave dès l’matin, mon parrain !</l>
+               </sp>
+               <sp n="18">
+                  <speaker>MATHIEU</speaker>
+                  <l>Tu sais bien, mignonne, que c’est aujourd’hui qu’on marie la belle demoiselle
+                     du château, — un bon petit ange qui te ressemble — c’est pour lui faire honneur
+                     que j’ai mis tous ces brimborions-là.</l>
+               </sp>
+               <sp n="19">
+                  <speaker>REINETTE</speaker>
+                  <stage>, soupirant.</stage>
+                  <l>Elle est bien heureuse, la d’moiselle du château.</l>
+               </sp>
+               <sp n="20">
+                  <speaker>MATHIEU</speaker>
+                  <l>Sois tranquille, ton tour viendra. N’est-ce pas, maître Pierre ?</l>
+               </sp>
+               <sp n="21">
+                  <speaker>PIERRE</speaker>
+                  <stage>, à part.</stage>
+                  <l>D’quoi qu’y s’mêle, j’vous l’demande ?</l>
+               </sp>
+               <sp n="22">
+                  <speaker>REINETTE</speaker>
+                  <l>C’est pour elle aussi qu’nous avons pris not’beau violon ?</l>
+               </sp>
+               <sp n="23">
+                  <speaker>PIERRE</speaker>
+                  <stage>, à part, frissonnant.</stage>
+                  <l>Son violon !</l>
+               </sp>
+               <sp n="24">
+                  <speaker>MATHIEU</speaker>
+                  <l>Oui, mon beau violon, comme tu l’appelles… mon seul ami dans le monde.</l>
+               </sp>
+               <sp n="25">
+                  <speaker>REINETTE</speaker>
+                  <l>Oh ! mon parrain !</l>
+               </sp>
+               <sp n="26">
+                  <speaker>MATHIEU</speaker>
+                  <l>Après toi, bien entendu.</l>
+               </sp>
+               <sp n="27">
+                  <speaker>REINETTE</speaker>
+                  <l>À la bonne heure.</l>
+                  <stage>(Elle le prend par le bras.)</stage>
+                  <l>Imaginez-vous, mon parrain, qu’on m’a soutenu l’autre jour qu’vous ne
+                     l’donneriez pas pour un gros sac d’écus.</l>
+               </sp>
+               <sp n="28">
+                  <speaker>MATHIEU</speaker>
+                  <stage>, vivement.</stage>
+                  <l>C’est vrai.</l>
+               </sp>
+               <sp n="29">
+                  <speaker>PIERRE</speaker>
+                  <stage>, à part.</stage>
+                  <l>Voyez-vous ça.</l>
+               </sp>
+               <sp n="30">
+                  <speaker>REINETTE</speaker>
+                  <l>Il vaut donc bien cher… bien cher ?</l>
+               </sp>
+               <sp n="31">
+                  <speaker>MATHIEU</speaker>
+                  <l>Pour les autres, non, pour moi… oui.</l>
+               </sp>
+               <sp n="32">
+                  <speaker>PIERRE</speaker>
+                  <stage>, à part.</stage>
+                  <l>Qu’est-ce que je disais ?</l>
+               </sp>
+               <sp n="33">
+                  <speaker>REINETTE</speaker>
+                  <l>C’est drôle tout d’même… Un morceau de bois qu’on aime quasiment autant que sa
+                     filleule.</l>
+               </sp>
+               <sp n="34">
+                  <speaker>MATHIEU</speaker>
+                  <l>Oui… un morceau de bois qui me donne du pain depuis trente ans, et qui vaut à
+                     lui seul tous les bons cœurs du pays !</l>
+                  <l>Tu t’es plus d’une fois endormie en l’écoutant, ma mignonne.</l>
+                  <l>C’est lui qui t’a appris toutes les belles chansons que tu chantes si
+                     gentiment ;</l>
+                  <l> C’est lui qui te fait danser le dimanche, là-bas, sous les grands arbres.</l>
+                  <l>N’ai-je pas raison d’en avoir bien soin ?</l>
+                  <l>Tu ne devines pas pourquoi je suis venu te trouver avec lui de si grand
+                     matin ?</l>
+               </sp>
+               <sp n="35">
+                  <speaker>REINETTE</speaker>
+                  <l>Oh ! que si ! vous allez me chanter vot’jolie ronde que j’aime tant, pas
+                     vrai ?</l>
+                  <stage>MATHIEU, approuve de la tête. </stage>
+               </sp>
+               <sp n="36">
+                  <speaker>REINETTE</speaker>
+                  <stage>, joyeuse.</stage>
+                  <l>Comm’c’est gentil !</l>
+               </sp>
+               <sp n="37">
+                  <speaker>PIERRE</speaker>
+                  <stage>, frissonnant pendant qu’il accorde son violon.</stage>
+                  <stage>(À part.)</stage>
+                  <l>Brrr !</l>
+                  <stage>(Haut.)</stage>
+                  <l>Quelle heure qu’il pourrait bien être, sans vous commander ?</l>
+               </sp>
+               <sp n="38">
+                  <speaker>MATHIEU</speaker>
+                  <l>Est-ce que tu es pressé ?</l>
+               </sp>
+               <sp n="39">
+                  <speaker>PIERRE</speaker>
+                  <l>Non pas… non pas… au contraire.</l>
+               </sp>
+               <sp n="40">
+                  <speaker>MATHIEU</speaker>
+                  <l>Alors, écoute-moi ça, mon garçon.</l>
+               </sp>
+               <sp n="41">
+                  <speaker>PIERRE</speaker>
+                  <stage>, à part.</stage>
+                  <l>J’vas filer… j’vas filer.</l>
+                  <stage>(Au moment où la musique commence, Pierre, qui s’éloignait à pas de loup,
+                     s’arrête comme sous le charme et se rapproche. C’est, en pantomine, la
+                     reproduction de la scène de la forêt.)</stage>
+               </sp>
+               <sp n="42">
+                  <speaker>MATHIEU</speaker>
+                  <lg>
+                     <head>RONDE</head>
+                     <lg>
+                        <l>Le violoneux du village</l>
+                        <l>C’est encor moi, mes enfants,</l>
+                        <l>De vous voir tous au bel âge</l>
+                        <l>Je rajeunis de vingt ans.</l>
+                        <l>Vous êtes toujours ingambes,</l>
+                        <l> Livrez-vous donc au plaisir. </l>
+                     </lg>
+                     <stage>(bis.)</stage>
+                     <lg>
+                        <l>Eh lon lon la, Dieu vous donna des jambes.</l>
+                        <l>Eh lon lon la, c’est pour vous en servir.</l>
+                     </lg>
+                     <lg>
+                        <l>Je vous dirai qu’à votre âge</l>
+                        <l>J’aurai dansé nuit et jour.</l>
+                        <l>J’étais de fer à l’ouvrage,</l>
+                        <l>J’étais de flamme en amour.</l>
+                        <l>Tout alors m’était possible,</l>
+                        <l>Je n’ai plus que le désir.</l>
+                     </lg>
+                     <lg>
+                        <l>Eh lon lon la, l’on a le cœur sensible,</l>
+                        <l>Eh lon lon la, faut savoir s’en servir.</l>
+                     </lg>
+                     <lg>
+                        <l>Un jour, triste souvenance,</l>
+                        <l>L’airain de notre clocher,</l>
+                        <l>Voix suprême de la France !</l>
+                        <l>Nous cria : C’est l’étranger !</l>
+                        <l>Je partis avec l’aurore,</l>
+                        <l>Les violons durent dormir.</l>
+                     </lg>
+                     <stage>(bis.)</stage>
+                     <lg>
+                        <l>Eh lon lon la, l’on a des bras encore,</l>
+                        <l>Eh lon lon la, l’on saurait s’en servir.</l>
+                     </lg>
+                  </lg>
+                  <stage>(À la fin du dernier couplet, Pierre s’en va en courant, comme s’il était
+                     parvenu à rompre le charme.)</stage>
+               </sp>
+            </div>
+            <div type="scene" n="4">
+               <head>Scène IV</head>
+               <stage>LE PÈRE MATHIEU, REINETTE</stage>
+               <sp n="1">
+                  <speaker>MATHIEU</speaker>
+                  <l>Eh bien, es-tu contente de moi, mignonne ?</l>
+               </sp>
+               <sp n="2">
+                  <speaker>REINETTE</speaker>
+                  <stage>, l’embrassant.</stage>
+                  <l>À preuve, voilà deux bons gros baisers pour la peine.</l>
+               </sp>
+               <sp n="3">
+                  <speaker>MATHIEU</speaker>
+                  <stage>, s’asseyant sur le banc.</stage>
+                  <l>Prends garde, ton amoureux va être jaloux</l>
+                  <stage>(Le cherchant des yeux.)</stage>
+                  <l>Tiens, où est-il donc passé ?</l>
+               </sp>
+               <sp n="4">
+                  <speaker>REINETTE</speaker>
+                  <l>Je n’sais pas. Mais l’pauvre garçon n’a guère d’chance. </l>
+               </sp>
+               <sp n="5">
+                  <speaker>MATHIEU</speaker>
+                  <l>Comment guère de chance… un gaillard qui sautait comme un cabri quand je suis
+                     arrivé… à qui tu permets de te faire la cour, et qui mordait après toi comme
+                     après la miche.</l>
+               </sp>
+               <sp n="6">
+                  <speaker>REINETTE</speaker>
+                  <l>Possible ! possible ! mais il va partir à l’armée de la guerre…</l>
+                  <l>L’gouvernement a besoin de lui…</l>
+                  <l>les hommes coûtent deux mille francs cette année, et son oncle, qui devait lui
+                     acheter un remplaçant, l’a mis à la porte.</l>
+               </sp>
+               <sp n="7">
+                  <speaker>MATHIEU</speaker>
+                  <l>Ah ! tu m’en diras tant !…</l>
+               </sp>
+               <sp n="8">
+                  <speaker>REINETTE</speaker>
+                  <l>Alors, moi… je n’y ai pas été par quatre chemins, pour qu’y n’soye plus
+                     conscrit, j’y ai demandé sa main à la bonne franquette.</l>
+               </sp>
+               <sp n="9">
+                  <speaker>MATHIEU</speaker>
+                  <l>Et…</l>
+               </sp>
+               <sp n="10">
+                  <speaker>REINETTE, </speaker>
+                  <l>Et il me l’a accordée.</l>
+               </sp>
+               <sp n="11">
+                  <speaker>MATHIEU</speaker>
+                  <l>Vraiment ; et puis…</l>
+               </sp>
+               <sp n="12">
+                  <speaker>REINETTE</speaker>
+                  <l>Et puis, dame… si ça n’suffit pas, eh ben, j’partirai avec lui.</l>
+               </sp>
+               <sp n="13">
+                  <speaker>MATHIEU</speaker>
+                  <l>Partir, toi !</l>
+               </sp>
+               <sp n="14">
+                  <speaker>REINETTE</speaker>
+                  <l>C’est décidé, je m’frai nommer…</l>
+               </sp>
+               <sp n="15">
+                  <speaker>MATHIEU</speaker>
+                  <l>Général, peut-être ?</l>
+               </sp>
+               <sp n="16">
+                  <speaker>REINETTE</speaker>
+                  <l>Mieux que ça… cantinière.</l>
+               </sp>
+               <sp n="17">
+                  <speaker>MATHIEU</speaker>
+                  <stage>, riant.</stage>
+                  <l>Cantinière ! avec ces petits pieds, avec ces petites menottes… tu perds la
+                     tête, mignonne.</l>
+               </sp>
+               <sp n="18">
+                  <speaker>REINETTE</speaker>
+                  <l>On m’a dit qu’il ne fallait que du cœur pour ça, et comme Pierre n’en a pas à
+                     revendre, j’serai ben forcé d’en avoir pour deux.</l>
+               </sp>
+               <sp n="19">
+                  <speaker>MATHIEU</speaker>
+                  <l>Il ne te manquerait plus que d’apprendre à faire l’exercice.</l>
+               </sp>
+               <sp n="20">
+                  <speaker>REINETTE</speaker>
+                  <l>C’n’est déjà pas si difficile… avec une ou deux leçons de vous, j’en saurais
+                     peut-être bien autant que not’garde champêtre.</l>
+               </sp>
+               <sp n="21">
+                  <speaker>MATHIEU</speaker>
+                  <l>Je serais curieux de voir ça.</l>
+               </sp>
+               <sp n="22">
+                  <speaker>REINETTE</speaker>
+                  <l>Eh ben, vous allez l’voir, et tout de suite encore.</l>
+                  <stage>(Prenant son bâton.)</stage>
+                  <l>T’nez, v’là mon fusil.</l>
+               </sp>
+               <sp n="23">
+                  <speaker>MATHIEU</speaker>
+                  <l>Et moi… qu’est-ce que je ferai pendant ce temps-là ?</l>
+               </sp>
+               <sp n="24">
+                  <speaker>REINETTE</speaker>
+                  <l>Vous jouerez du tambour sur vot’violon.</l>
+               </sp>
+               <sp n="25">
+                  <speaker>MATHIEU</speaker>
+                  <l>Va pour le tambour.</l>
+               </sp>
+               <sp n="26">
+                  <speaker>REINETTE</speaker>
+                  <stage>DUO</stage>
+                  <lg>
+                     <l>Le clairon sonne à la parade.</l>
+                     <l>Vous allez fair’le commandant,</l>
+                     <l>Moi, l’grenadier…</l>
+                  </lg>
+               </sp>
+               <sp n="27">
+                  <speaker>MATHIEU</speaker>
+                  <l>Quel camarade !</l>
+               </sp>
+               <sp n="28">
+                  <speaker>REINETTE</speaker>
+                  <l>Je vais vous suivre en vous r’gardant.</l>
+               </sp>
+               <sp n="29">
+                  <speaker>MATHIEU</speaker>
+                  <l>Comment ! tu veux !</l>
+               </sp>
+               <sp n="30">
+                  <speaker>REINETTE</speaker>
+                  <lg>
+                     <l>Sur vot’démarche</l>
+                     <l>J’emboit’rai pas. C’est pas douteux.</l>
+                  </lg>
+               </sp>
+               <sp n="31">
+                  <speaker>MATHIEU</speaker>
+                  <l>Soit ; garde à vous !…</l>
+               </sp>
+               <sp n="32">
+                  <speaker>REINETTE</speaker>
+                  <lg>
+                     <l>Soit ; garde à vous !…</l>
+                     <l>En avant, marche !</l>
+                  </lg>
+               </sp>
+               <sp n="33">
+                  <speaker>MATHIEU</speaker>
+                  <l>Paix dans les rangs ! En avant marche !</l>
+               </sp>
+               <sp n="34">
+                  <speaker>ENSEMBLE</speaker>
+                  <lg>
+                     <l>Rataplan, plan, plan, plan, plan, plan,</l>
+                     <l>Ah ! comm’c’est plein de charmes.</l>
+                     <l>Viv’le métier des armes !</l>
+                     <l>Ah ! le bel état</l>
+                     <l>Que celui de soldat !</l>
+                  </lg>
+               </sp>
+               <sp n="35">
+                  <speaker>REINETTE</speaker>
+                  <l>Le canon tonne, on fait la guerre,</l>
+                  <l>Vous allez m’voir marcher au feu.</l>
+                  <l>C’est vous l’ennemi !…</l>
+               </sp>
+               <sp n="36">
+                  <speaker>MATHIEU</speaker>
+                  <l>Ça n’me va guère.</l>
+               </sp>
+               <sp n="37">
+                  <speaker>REINETTE</speaker>
+                  <l>Laissez-vous tuer un tout p’tit peu.</l>
+               </sp>
+               <sp n="38">
+                  <speaker>MATHIEU</speaker>
+                  <l>Tu m’pouss’s trop fort…</l>
+               </sp>
+               <sp n="39">
+                  <speaker>REINETTE</speaker>
+                  <l>On bat la charge.</l>
+                  <l>Moi, j’veux gagner la croix d’honneur.</l>
+               </sp>
+               <sp n="40">
+                  <speaker>MATHIEU</speaker>
+                  <l>Mais tu m’fais mal…</l>
+               </sp>
+               <sp n="41">
+                  <speaker>REINETTE</speaker>
+                  <l>Tant pis ! Au large !</l>
+               </sp>
+               <sp n="42">
+                  <speaker>MATHIEU</speaker>
+                  <l>Veux-tu finir. — Voici l’empereur !</l>
+               </sp>
+               <sp n="43">
+                  <speaker>ENSEMBLE</speaker>
+                  <l>Ran plan, plan, plan, etc.</l>
+               </sp>
+               <sp n="44">
+                  <speaker>MATHIEU</speaker>
+                  <l>Maintenant, rendez-moi vos armes, mon joli fantassin, et écoutez-moi.</l>
+               </sp>
+               <sp n="45">
+                  <speaker>REINETTE</speaker>
+                  <stage>, faisant le salut militaire.</stage>
+                  <l>À vos ordres, commandant.</l>
+               </sp>
+               <sp n="46">
+                  <speaker>MATHIEU</speaker>
+                  <stage>, à part.</stage>
+                  <l>Petit démon, va !</l>
+                  <stage>(Haut.)</stage>
+                  <l>Ainsi, tu es décidée à épouser Pierre.</l>
+               </sp>
+               <sp n="47">
+                  <speaker>REINETTE</speaker>
+                  <l>C’est naturel, puisque j’l’aime.</l>
+               </sp>
+               <sp n="48">
+                  <speaker>MATHIEU</speaker>
+                  <l>Et s’il part, tu veux l’suivre ?</l>
+               </sp>
+               <sp n="49">
+                  <speaker>REINETTE, </speaker>
+                  <l>Oh ! ça, je vous l’jure.</l>
+               </sp>
+               <sp n="50">
+                  <speaker>MATHIEU</speaker>
+                  <l>Il s’agit donc, pour que tu ne me quittes pas, de le faire rester au pays ?</l>
+               </sp>
+               <sp n="51">
+                  <speaker>REINETTE</speaker>
+                  <stage>, vivement.</stage>
+                  <l>Vous allez lui prêter les 2, 000 francs ? </l>
+               </sp>
+               <sp n="52">
+                  <speaker>MATHIEU</speaker>
+                  <stage>, haussant les épaules.</stage>
+                  <l>Moi ! mignonne, et comment ?</l>
+               </sp>
+               <sp n="53">
+                  <speaker>REINETTE</speaker>
+                  <l>En vendant vot’violon.</l>
+               </sp>
+               <sp n="54">
+                  <speaker>MATHIEU</speaker>
+                  <stage>, le serrant dans ses bras.</stage>
+                  <l>Jamais !</l>
+               </sp>
+               <sp n="55">
+                  <speaker>REINETTE</speaker>
+                  <l>Je n’vous comprends plus, mon parrain.</l>
+               </sp>
+               <sp n="56">
+                  <speaker>MATHIEU</speaker>
+                  <l>Ceci me regarde.</l>
+                  <stage>(À part.)</stage>
+                  <l>Qui sait !… je réussirai peut-être.</l>
+                  <l>Je ne suis guère le bienvenu au château ; mais un jour de noce, et puis elle
+                     est si bonne, la demoiselle du château.</l>
+                  <stage>(Haut.)</stage>
+                  <l>Attends-moi là, mignonne ; je reviens dans un instant.</l>
+                  <stage>(En courant, son bâton cogne son violon ; il s’arrête tout ému.)</stage>
+               </sp>
+               <sp n="57">
+                  <speaker>REINETTE</speaker>
+                  <stage>, allant à lui.</stage>
+                  <l>Qu’avez-vous, mon parrain ?</l>
+               </sp>
+               <sp n="58">
+                  <speaker>MATHIEU</speaker>
+                  <l>Rien… rien… Dieu merci ! En courant, j’ai cru…</l>
+                  <stage>(Il examine son violon.)</stage>
+               </sp>
+               <sp n="59">
+                  <speaker>REINETTE</speaker>
+                  <l>Et puis… vous auriez dit que c’était ma faute… Laissez-le ici, mon parrain.</l>
+               </sp>
+               <sp n="60">
+                  <speaker>MATHIEU</speaker>
+                  <l>Non.</l>
+               </sp>
+               <sp n="61">
+                  <speaker>REINETTE</speaker>
+                  <stage>, les mains jointes.</stage>
+                  <l>Oh ! je vous en prie… vous reviendrez plus vite.</l>
+               </sp>
+               <sp n="62">
+                  <speaker>MATHIEU</speaker>
+                  <l>Tu le veux… Allons ! tiens, le voilà. Garde-le bien pendant mon absence…</l>
+                  <stage>(Fausse sortie.)</stage>
+                  <l>Tu m’en réponds… songes-y.</l>
+               </sp>
+               <sp n="63">
+                  <speaker>REINETTE</speaker>
+                  <l>Sur ma tête, mon parrain, sur ma tête.</l>
+               </sp>
+               <sp n="64">
+                  <speaker>MATHIEU</speaker>
+                  <l>Foi de père Mathieu, c’est lui qui te feras danser à ta noce.</l>
+               </sp>
+            </div>
+            <div type="scene" n="5">
+               <head>Scène V</head>
+               <sp n="1">
+                  <speaker>REINETTE</speaker>
+                  <stage>, seule, s’adressant au violon.</stage>
+                  <l>Oh ! oui… qu’j’en aurai soin et qu’je l’dorlot’rai et qu’je l’mettrai dans une
+                     belle petite boîte de coton pour qu’il dure cent ans et plus.</l>
+                  <l> Et Pierre aussi t’aimera et t’dorlotera, je te le promets.</l>
+                  <stage>(Elle embrasse le violon à plusieurs reprises.)</stage>
+               </sp>
+            </div>
+            <div type="scene" n="6">
+               <head>Scène VI</head>
+               <stage>REINETTE, PIERRE</stage>
+               <sp n="1">
+                  <speaker>PIERRE</speaker>
+                  <stage>à part.</stage>
+                  <l>Qué qu’je vois !… v’là qu’à c’t’heure</l>
+                  <l>Ell’le caress’! N’vous gênez pas !…</l>
+               </sp>
+               <sp n="2">
+                  <speaker>REINETTE</speaker>
+                  <l>Ah ! de bonheur je crois que j’pleure,</l>
+                  <l>Pierre, au pays tu resteras.</l>
+                  <l>Le père Mathieu…</l>
+               </sp>
+               <sp n="3">
+                  <speaker>PIERRE</speaker>
+                  <stage>, avec effroi.</stage>
+                  <l>… Mam’zell’Reinette !</l>
+               </sp>
+               <sp n="4">
+                  <speaker>REINETTE</speaker>
+                  <stage>, désignant le violon.</stage>
+                  <l>C’est lui qui nous fera danser.</l>
+               </sp>
+               <sp n="5">
+                  <speaker>PIERRE</speaker>
+                  <l>J’lui défends pour commencer.</l>
+               </sp>
+               <sp n="6">
+                  <speaker>REINETTE</speaker>
+                  <l>Je veux l’embrasser.</l>
+               </sp>
+               <sp n="7">
+                  <speaker>PIERRE</speaker>
+                  <l>Lâchez-moi, c’te vilaine bête,</l>
+                  <l>Ou j’fais un coup de ma tête.</l>
+                  <l>Lâchez-moi ça.</l>
+               </sp>
+               <sp n="8">
+                  <speaker>REINETTE</speaker>
+                  <l>C’est c’qu’on verra.</l>
+               </sp>
+               <sp n="9">
+                  <speaker>PIERRE</speaker>
+                  <l>Eh bien !</l>
+                  <l>Tant pis ! j’n’écout’plus rien.</l>
+                  <l>Quand d’dans s’rait l’diable,</l>
+                  <l>J’romprai l’charme.</l>
+               </sp>
+            </div>
+            <div type="scene" n="7">
+               <head>Scène VII</head>
+               <stage>Les Mêmes, le père MATHIEU</stage>
+               <stage>(Il entre au moment où le manche reste dans la main de Pierre.)</stage>
+               <sp n="1">
+                  <speaker>MATHIEU</speaker>
+                  <stage>, le bâton levé.</stage>
+                  <l>Misérable !</l>
+               </sp>
+               <sp n="2">
+                  <speaker>REINETTE</speaker>
+                  <stage>, se jetant au-devant de lui.</stage>
+                  <stage>(Parlé.)</stage>
+                  <l>Mon parrain !</l>
+                  <stage>(Le père Mathieu laisse tomber son bâton.)</stage>
+               </sp>
+               <sp n="3">
+                  <speaker>MATHIEU</speaker>
+                  <lg>
+                     <head>CANTABILE</head>
+                     <stage>, s’adressant à Pierre.</stage>
+                     <lg>
+                        <head>I</head>
+                        <l>Je t’apportais ta délivrance,</l>
+                        <l>Le bonheur ingrat !… et ta main</l>
+                        <l>Vient de briser mon gagne-pain.</l>
+                        <l>Adieu, ma dernière espérance,</l>
+                        <l>Je n’ai plus qu’à mourir de faim.</l>
+                     </lg>
+                     <stage>(Considérant son violon à terre.)</stage>
+                     <lg>
+                        <head>II</head>
+                        <l>C’était mon seul bien sur la terre,</l>
+                        <l>Et le vieillard déshérité,</l>
+                        <l>Fier de sa noble pauvreté,</l>
+                        <l>Par lui rêvait dans sa chaumière</l>
+                        <l>Le bonheur et la liberté !</l>
+                     </lg>
+                  </lg>
+                  <stage>(Il tombe anéanti sur le banc, la tête dans ses mains. Reinette s’empresse
+                     autour de lui.)</stage>
+               </sp>
+               <sp n="4">
+                  <speaker>PIERRE</speaker>
+                  <stage>, à voix basse.</stage>
+                  <l>Pstt ! pstt ! mam’zelle Reinette, regardez, il y a un papier d’dans.</l>
+                  <stage>(Elle s’approche vivement pour le ramasser.)</stage>
+                  <l>N’y touchez point. C’est encore quelque sortilège, ben sûr.</l>
+               </sp>
+               <sp n="5">
+                  <speaker>REINETTE</speaker>
+                  <l>Tais-toi, sans cœur !</l>
+                  <stage>(Elle tire un papier de dedans la hanche. Haut.)</stage>
+                  <l>Mon parrain, voyez donc ce que je viens de trouver dans vot’violon. </l>
+               </sp>
+               <sp n="6">
+                  <speaker>MATHIEU</speaker>
+                  <stage>, levant la tête.</stage>
+                  <l>Hein !</l>
+               </sp>
+               <sp n="7">
+                  <speaker>REINETTE, </speaker>
+                  <l>On dirait d’un’lettre.</l>
+               </sp>
+               <sp n="8">
+                  <speaker>MATHIEU</speaker>
+                  <stage>, saisissant le papier.</stage>
+                  <l>Une lettre ! Qu’ai-je vu ! l’écriture de mon père.</l>
+                  <stage>(Lisant.)</stage>
+                  <l>« Mon fils, j’ai tenu le serment fait à ta mère en ne te révélant pas, moi,
+                     vivant, le nom de ceux qui nous ont dépouillés.</l>
+                  <l>Tu m’as promis à ton tour de briser ton violon le jour où tu seras
+                     malheureux.</l>
+                  <l>Il te fournira les moyens de faire valoir tes droits sur le château de Kerdrel,
+                     ton héritage légitime. »</l>
+               </sp>
+               <sp n="9">
+                  <speaker>REINETTE et PIERRE</speaker>
+                  <stage>, vivement.</stage>
+                  <l>Le château d’not’pays !</l>
+               </sp>
+               <sp n="10">
+                  <speaker>MATHIEU</speaker>
+                  <stage>, à part.</stage>
+                  <l>Justice du ciel !…</l>
+               </sp>
+               <sp n="11">
+                  <speaker>REINETTE</speaker>
+                  <l>Il serait donc à dire, mon parrain, que vous êtes un grand seigneur ?</l>
+               </sp>
+               <sp n="12">
+                  <speaker>MATHIEU</speaker>
+                  <l>Non, mes enfants, non, tout cela n’est qu’un rêve,</l>
+                  <stage>(Tirant un portefeuille de son sein, et le regardant.)</stage>
+                  <l>Grâce à ce portefeuille, le prix de ta liberté, qu’un ange de bonté t’envoie,
+                     Pierre.</l>
+                  <stage>(Il le lui donne.)</stage>
+                  <l>Le château de Kerdrel restera à ceux qui l’habitent.</l>
+               </sp>
+               <sp n="13">
+                  <speaker>REINETTE</speaker>
+                  <l>Et vous, mon parrain ?</l>
+               </sp>
+               <sp n="14">
+                  <speaker>MATHIEU</speaker>
+                  <l>Moi, mes enfants je serai ce que j’ai toujours été… un pauvre violoneux.</l>
+                  <stage>(Il déchire la lettre.)</stage>
+                  <lg>
+                     <head>COUPLET</head>
+                     <l>Tout petit dans ce village,</l>
+                     <l>J’essayai mes premiers pas ;</l>
+                     <l>J’y veux finir mon voyage</l>
+                     <l>Appuyé sur vos deux bras.</l>
+                     <l>Que faut-il à ma vieillesse ?</l>
+                     <l>Du soleil et quelques fleurs…</l>
+                  </lg>
+               </sp>
+               <sp n="15">
+                  <speaker>PIERRE</speaker>
+                  <stage>, à genoux.</stage>
+                  <l>Pardonnez-moi, père Mathieu ; mais je le raccommoderai si bien, si bien, qu’il
+                     n’y paraîtra plus.</l>
+               </sp>
+               <sp n="16">
+                  <speaker>LE PÈRE MATHIEU</speaker>
+                  <stage>, le relevant et les prenant dans ses bras.</stage>
+                  <lg>
+                     <l>Eh ! lou lou la,</l>
+                     <l>Donnons-leur la richesse.</l>
+                     <l>Eh ! lou lou la,</l>
+                     <l>Et gardons les bons cœurs.</l>
+                  </lg>
+               </sp>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>
