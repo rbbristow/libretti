@@ -1,0 +1,821 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../ODD/out/librettiODD.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>LES DEUX AVEUGLES
+                    BOUFFONNERIE MUSICALE</title>
+                <author role="songWriter">Paroles de M. JULES MOINAUX</author>  
+                <author role="songWriter"> MUSIQUE DE M. JACQUES OFFENBACH </author>
+            </titleStmt>
+            <publicationStmt>
+                <p part="N">Ecole nationale des chartes, projet libretti TNAH, promotion 2019-2020</p>
+            </publicationStmt>
+            <sourceDesc default="false">
+                <p part="N"> https://fr.wikisource.org/wiki/Les_Deux_Aveugles_(Offenbach) </p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <refsDecl n="CTS" default="false">
+                <cRefPattern n="speech"
+                    matchPattern="(\w+).(\w+).(\w+)"
+                    replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@type='act'][@n='$1']/tei:div[@type='scene'][@n='$2']/tei:sp[@n='$3'])">
+                    <p part="N">Ce pointeur extrait les niveaux de citation 1, 2 et 3, soit acte, scène et tour de parole.</p>
+                </cRefPattern>
+                <cRefPattern n="scene"
+                    matchPattern="(\w+).(\w+)"
+                    replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@type='act'][@n='$1']/tei:div[@type='scene'][@n='$2'])">
+                    <p part="N">Ce pointeur extrait les niveaux de citation 1 et 2, soit les actes et scènes.</p>
+                </cRefPattern>
+                <cRefPattern n="act"
+                    matchPattern="(\w+)"
+                    replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@type='act'][@n='$1'])">
+                    <p part="N">Ce pointeur extrait le premier niveau de citation du texte, soit les actes.</p>
+                </cRefPattern>
+            </refsDecl>
+        </encodingDesc>
+    </teiHeader>
+    <text>
+        <front>
+            <p>DÉDIÉE A MADAME LA MARQUISE DE LAS MARISMAS
+                REPRÉSENTÉE POUR LA PREMIÈRE FOIS, A PARIS, SUR LE THÉATRE DES BOUFFES-PARISIENS, LE 5 MARS 1855.</p>
+            <set>
+                <p>Un pont. ― Paris au fond.</p>
+            </set>
+        </front>
+       <body  n="urn:cts:libOp:viaf10034167.viaf180640873.TNAH2020-fre1" xml:lang="fre">
+            <castList>
+                <castItem>
+                    PATACHON 
+                    M.Pradeau. 
+                </castItem>
+                <castItem>
+                    GIRAFFIER 
+                    M.Berthelier.
+                </castItem>
+            </castList>
+            <div type="act" n="1">
+                <div type="scene" n="1">
+                    <head>Scène PREMIÈRE</head>
+                    <stage>Au lever du rideau, on entend le vent siffler avec violence. Patachon, portant sur l’estomac une pancarte avec ces mots : AVEUGLE DE NESSANCE, est assis sur un pliant le long du parapet, vers la droite ; il retire de ses lèvres un trombone dont il vient de jouer et le pose à terre. </stage> 
+                    <sp n="1">
+                        <speaker>PATACHON</speaker> 
+                        <stage>; il essaye plusieurs fois d’éternuer et n’en peut venir à bout.</stage>
+                        <p>Ayez pitié d’un pauvre aveugle qui n’y voit pas clair !... Gueux de vent ! j’ai la figure coupée en zigzag. 
+                            <stage>Il tire une fiole de sa poche.</stage> Buvons une petite goutte, ça me réchauffera… 
+                            <stage>Il boit et fait claquer ses lèvres.</stage> Ayez pitié d’un pauvre aveugle ! 
+                            <stage>Il entr’ouvre les yeux et regarde autour de lui.</stage> Pas un chat ! 
+                            <stage>Il ouvre les yeux tout grands.</stage> Je ne m’étonne plus si je n’étrenne pas. <stage>Il se lève.</stage> 
+                            V’là une heure que je m’égosille à chanter pour rien ; personne ne traverse les ponts d’un temps pareil... Ah ! j’aperçois un monsieur bien mis qui se dirige de ce côté. 
+                            <stage>Il retourne s’asseoir, prend son trombone et chante en coupant ses mots à l’hémistiche, mots coupés par une note de trombone aux endroits indiqués à partir du cinquième vers.</stage> 
+                        </p>
+                        <l>Dans sa pau... vre vi’ mâlhûreuse,</l> 
+                        <l> Pour l’aveugle point de bonheur ;</l> 
+                        <l>Toujours sous… les ténèbr’s affreuses,</l> 
+                        <l>Ah ! combien qu’il a de malheur </l>
+                        <l>Que les cha…
+                            <stage>Note de trombone.</stage>
+                            ritables personnes </l>
+                        <l>Jett’nt une au…
+                            <stage>Note de trombone.</stage>
+                            mône au màlhûreux. </l>
+                        <l>L’aveugle à qui qu’on fait l’aumône </l>
+                        <l>N’est point z-un faux nécessiteux, </l>
+                        <l>N’est point z-un faux né…</l>
+                        <stage>Note de trombone.</stage>
+                        <l>Un faux né</l>
+                        <stage>Note de trombone.</stage>
+                        <l>Un faux nécessiteux.</l>
+                        <p>
+                            <stage>Il est censé jouer la ritournelle sur son trombone ; à la fin, il fait des efforts pour tirer des sons de l’instrument, il se cramponne au sol avec ses pieds, s’enfle les joues, etc., etc. ; le trombone se tait ; il le ferme, secoue l’eau par l’embouchure, puis le pose à terre ; alors un trombone de l’orchestre donne la note qu’aurait dû rendre celui de Patachon. 
+                                Tressaillant et regardant l’instrument d’un air ahuri.</stage> Mon trombone qui joue tout seul ! V’là ce que c’est que de souffler dans un instrument, les yeux fermés ; mes notes sortent un quart d’heure après. Ayez pitié d’un pauvre aveugle qui n’y voit pas clair ! 
+                        </p>
+                    </sp>
+                    <sp n="2"> 
+                        <speaker>GIRAFFIER</speaker> 
+                        <stage>en dehors.</stage> 
+                        <p>Ayez pitié d’un pauvre aveugle atteint de cécité et même privé de la lumière ! <stage>Le vent redouble.</stage> 
+                            Scélérat de temps ! <stage>Il entre en scène.</stage>
+                        </p>
+                    </sp>
+                </div>
+                <div type="scene" n="2">
+               <head>Scène II</head>
+               <stage>PATACHON GIRAFFIER</stage> 
+               <sp n="1"> 
+               <speaker>GIRAFFIER</speaker>
+                  <p>
+                  <stage> entrant par la gauche ; il tient un pliant et une mandoline, et porte sur l’estomac une pancarte avec ces mots : AVEUGLE PAR AXIDANS.</stage> Ayez pitié.
+                     <stage>Il éternue.</stage> Allons, bon ! me v’là pin… Ayez… <stage>Nouvel éternument. ― Le vent lui enlève son chapeau, qui passe par-dessus le parapet et disparaît.</stage>
+                  Ah ! bon ! bien ! voilà ma cloche dans l’eau. <stage>Il regarde par-dessus le parapet.</stage> Allons, il va passer sous le bateau des blanchisseuses. <stage>Criant.</stage> 
+                     Hé ! là-bas… mon chapeau… attrapez-le. Ah ! l’imbécile ! il l’a laissé passer. Me v’là sans chapeau. Ça se trouve bien, avec mon rhume de cerveau. <stage>Il essaye d’éternuer.</stage> 
+                     Impossible !… Ayez pitié d’un pauvre aveugle atteint de cécité et même privé de la lumière.<stage>En tâtonnant, il assène un coup de bâton sur le chapeau de Patachon.</stage>
+                  </p>
+               </sp>
+               <sp n="2"> 
+               <speaker>PATACHON</speaker>
+                  <p>Aïe, animal ! <stage>Il lui flanque un coup de bâton dans les jambes. ― Il se lève.</stage> 
+               </p>
+            </sp>
+               <sp n="3"> 
+               <speaker>GIRAFFIER</speaker>
+               <p>
+                  Faites donc attention, imbécile ! 
+               </p>
+            </sp>
+               <sp n="4"> 
+               <speaker>PATACHON</speaker>
+               <p>
+                  Faites attention plutôt, vous ; moi, je suis aveugle. 
+               </p>
+            </sp>
+               <sp n="5"> 
+               <speaker>GIRAFFIER</speaker>
+               <p>
+                  Moi aussi. 
+               </p>
+            </sp>
+               <sp n="6"> 
+               <speaker>PATACHON</speaker>
+               <p> 
+                  <stage>à part.</stage>
+                  Un confrère ! que le diable lui torde le cou ! Hier encore, affligé de deux béquilles et installé sur le pont Saint-Michel, j’avais un concurrent privé d’un bras ; comme il me faisait du tort, je me fais aveugle. Je viens ici, et me voilà encore un concurrent. Que la peste l’étouffe ! 
+               </p>
+            </sp>
+               <sp n="7"> 
+               <speaker>GIRAFFIER</speaker>
+               <p> 
+                  <stage>qui, pendant cet aparté, a placé son pliant.</stage>
+                  Un confrère !… c’est fait pour moi. J’en avais un sur le pont Saint-Michel ; je retire de ma manche mon bras plié en deux, je m’établis aveugle, je viens ici croyant être seul de mon état, et pas du tout, en voilà un autre ! Que le diable le patafiole ! 
+                  <stage>Il s’assied à quelques pas de Patachon.</stage> 
+               </p>
+            </sp>
+               <sp n="8"> 
+               <speaker>PATACHON</speaker>
+               <p> 
+                  <stage>à part.</stage>
+                  Il s’installe à côté de moi ! <stage>Giraffier accorde sa mandoline.</stage> Il joue d’un instrument à cordes… dépêchons-nous de jouer de mon instrument avant. <stage>Il joue du trombone. Giraffier joue de la mandoline ; puis, étouffé sous les sons du trombone, il gratte avec rage.</stage> 
+               </p>
+            </sp>
+            <sp n="9"> 
+               <speaker>GIRAFFIER</speaker>
+               <p>Ah ! c’est comme ça… tu abuses de ton cuivre…. Je vais chanter ma romance de Belisario. <stage>Il chante.</stage> 
+               </p>
+               <l>Justinien, ce monstre odieux, </l>
+               <l>Après m’être couvert de gloire, </l>
+               <l>Il m’a dépouillé de mes yeux ; </l>
+               <l>Plaignez-moi, je n’y peux plus voir. </l>
+               <l>Je demand’ mon pain à présent, </l>
+               <l>N’ayant plus un sou sur la terre ; </l>
+               <l>Jetez une obole en passant </l>
+               <l>Dans le casque de Bélisaire.</l>
+            </sp>
+               <sp n="10"> 
+               <speaker>PATACHON</speaker> 
+               <stage>prend un air satisfait et semble dire qu’il va chanter mieux que cela.</stage>
+               <l>Sur le pré fleuri, venez, fillettes et garçons, </l>
+               <l>Danser, folâtrer au joyeux bruit des violons. </l>
+               <l>Le ciel est d’azur, l’herbette est tendre, l’oiseau chante, </l>
+               <l>Tout en ce moment, charme, séduit, entraîne, enchante. </l>
+               <l>Amusez vous, trémoussez-vous, amusez-vous bien ; </l>
+               <l>Le bonheur ici, joyeux enfants, ne coûte rien.</l>
+            </sp>
+               <stage>ENSEMBLE.</stage>
+            <sp n="11"> 
+               <speaker>GIRAFFIER</speaker>
+               <l>Justinien, ce monstre, etc.</l>
+            </sp>
+            <sp n="12"> 
+               <speaker>PATACHON</speaker>
+               <l>Sur le pré fleuri, etc.</l>
+            </sp>
+               <sp n="13"> 
+               <speaker>GIRAFFIER</speaker>
+               <p>
+                  Ah ! sapristi, mon confrère, vous m’entrez dans les oreilles ; il n’est pas permis de chanter comme ça ; vous criez comme un aveugle. 
+               </p>
+            </sp>
+               <sp n="14"> 
+               <speaker>PATACHON</speaker>
+               <p>
+                  Vous ne vous en privez pas non plus ; je crois que ni vous ni moi ne sommes prix du Conservatoire. 
+               </p>
+            </sp>
+               <sp n="15"> 
+               <speaker>GIRAFFIER</speaker>
+               <p> 
+                  <stage>à part, se levant.</stage>
+                  On le croirait plutôt pris de vin. 
+               </p>
+            </sp>
+               <sp n="16"> 
+               <speaker>PATACHON</speaker>
+               <p> 
+                  <stage>à part.</stage>
+                  J’ai entendu cette voix-là quelque part. 
+               </p>
+            </sp>
+               <sp n="17"> 
+               <speaker>GIRAFFIER</speaker>
+               <p> 
+                  <stage>à part.</stage>
+                  Voilà un organe qui ne m’est pas étranger. <stage>Ils se croisent en tâtonnant avec leur bâton et se trouvent courbés dos à dos.</stage> 
+               </p>
+            </sp>
+               <sp n="18">
+               <speaker>PATACHON</speaker>
+               <p>
+                  Serait-ce une indiscrétion de vous demander comment vous avez eu le malheur de perdre la vue, sans vous commander ? 
+               </p>
+            </sp>
+               <sp n="19"> 
+               <speaker>GIRAFFIER</speaker>
+               <p> continuant.
+                  Pas le moins du monde, mon cher collègue. <stage>A part.</stage> Il faut rendre des comptes à Monsieur ? Attends ! je vas te coller un fagot. 
+               </p>
+            </sp>
+               <sp n="20"> 
+               <speaker>PATACHON</speaker>
+               <p>
+                  Qui ai-je l’honneur d’écouter, d’abord ? Le nom de Monsieur ? 
+               </p>
+            </sp>
+               <sp n="21"> 
+               <speaker>GIRAFFIER</speaker>
+               <p>
+                  Stanislas Giraffier. — Le vôtre ? 
+               </p>
+            </sp>
+               <sp n="22"> 
+               <speaker>PATACHON</speaker>
+               <p>
+                  Giacomo Patachon, pour vous servir, si j’en étais capable, Monsieur. <stage>A part</stage> C’est un Prussien. 
+               </p>
+            </sp>
+               <sp n="23"> 
+               <speaker>GIRAFFIER</speaker>
+               <p>
+                  Vous êtes trop bon. <stage>A part</stage> C’est un Turc. 
+               </p>
+            </sp>
+               <sp n="24"> 
+               <speaker>PATACHON</speaker>
+               <p> 
+                  <stage>à part.</stage>
+                  Ce Monsieur a du monde. 
+               </p>
+            </sp>
+               <sp n="25"> 
+               <speaker>GIRAFFIER</speaker>
+               <p>
+                  Il a du chic ; pour du chic, il en a. 
+               </p>
+            </sp>
+               <sp n="26"> 
+               <speaker>PATACHON</speaker>
+               <p>
+                  Je vous écoute. 
+               </p>
+            </sp>
+               <sp n="27"> 
+               <speaker>GIRAFFIER</speaker>
+               <p> 
+                  <stage>avec volubilité,</stage>
+                  Né de parents auvergnats, mais honnêtes, j’étais dans l’industrie des raccommodages de parapluies, quand, entraîné par mon goût pour la botanique, je fus chargé par une société d’apothicaires d’aller à la Constantinopolitanischertudelsacfaifermaistertchernaïa… 
+               </p>
+            </sp>
+               <sp n="28"> 
+               <speaker>PATACHON</speaker>
+               <p>
+                  Dieu vous bénisse ! 
+               </p>
+            </sp>
+               <sp n="29"> 
+               <speaker>GIRAFFIER</speaker>
+               <p>
+                  Merci… étudier les propriétés du bleu de Prusse et la galvanisation des paratonnerres. Jugez de ma surprise et de ma douleur : la Bérésina était prise. Les crocodiles s’avançaient en silence ; l’ennemi, dans un élan de désespoir et de bravoure digne d’un meilleur sort, enfonce le bataillon carré ; ce fut une affreuse mêlée. Dans l’eau, un mètre par-dessus la tête, pendant près de cinq mois, vainement je suppliai le jeune esclave de m’ouvrir la porte dérobée du jardin, vainement je tentai de le corrompre à force d’or ; mon chien, désolé, se répandait en aboiements plaintifs, la pauvre bête ! Quand je revins à moi, j’avais tout perdu ; les crocodiles avaient dévoré mes parapluies, mon oncle m’avait maudit. Le jeune esclave m’avait donné un tel renfoncement sur mon chapeau, qu’en le retirant je me brisai l’écarquillage du nez communiquant aux fibres de l’œil par la moelle pépinière, et j’étais aveugle, Monsieur ! Oui, Patachon, j’étais aveugle ! 
+               </p>
+            </sp>
+               <sp n="30"> 
+               <speaker>PATACHON</speaker>
+               <p> 
+                  <stage>à part.</stage>
+                  Ah ! tu me fais poser !… Attends, mon bon, attends ! <stage>Haut.</stage> C’est poignant, c’est poignant. <stage>Avec volubilité</stage> 
+                  Et moi, Giraffier, moi qui vous parle, touriste passionné pour les arts de la numismatique, après avoir dévoré cinq cent cinquante mille francs, tout mon patrimoine, pour me procurer un napoléon du règne de Cléopâtre, je m’engageai comme simple soldat dans le 14e plongeurs… à cheval ; accroché par mes éperons à un fil sous-marin, je m’avançai au-devant de la reine avec ce calme que vous me connaissez ; vainement le Vésuve tonnait et envoyait dans les airs des flots de lave brûlante, dévorant les moissons, les bestiaux, les cabanes et les bergers, rien ne pouvait m’intimider ; j’entrai dans le cratère béant, mon pied glissa sur une pelure de pêche, et j’allai passer par une fissure communiquant à la mer Adriatique. <stage>Souriant et plus lentement.</stage> 
+                  Là, le jeune prince m’attendait ; il m’envoie un formidable coup de pied dans l’abdomen ; je me retourne, le coup porte ; les bisques de mon habit étaient déchirées, le coup m’avait ravi la lumière. J’étais aveugle, Giraffier ! <stage>Moment de silence.</stage> Je regardais avec une stupéfaction mêlée d’étonnement ces braves gondoliers norvégiens, à la figure franche et basanée qui me faisaient des signes, ne connaissant pas ma langue. <stage>Avec désespoir.</stage> J’étais aveugle aveugle ! aveugle <stage>A part.</stage> Mon histoire vaut bien la tienne. 
+               </p>
+            </sp>
+               <sp n="31">
+               <speaker>TOUS LES DEUX.</speaker>
+                  <p>Quelqu’un ! <stage>Ils courent s’asseoir. – Un passant traverse le pont.</stage> Ayez pitié d’un pauvre aveugle ! 
+                  </p>
+            </sp>
+               <sp n="32"> 
+               <speaker>GIRAFFIER</speaker>
+               <p>
+                  C’est à vous que je parle, dites donc, l’homme au paletot bleu. <stage>Le passant jette un sou ; les deux aveugles se jettent dessus et se bousculent pour l’avoir.</stage> 
+               </p>
+            </sp>
+               <sp n="33"> 
+               <speaker>PATACHON</speaker>
+               <p> qui a le sou, le regardant et criant.
+                  Dites donc, vous, quand on jette un sou à des malheureux aveugles, on devrait bien jeter un sou qui soit marqué ! 
+               </p>
+            </sp>
+               <sp n="34"> 
+               <speaker>GIRAFFIER</speaker>
+               <p>
+                  C’est bien fait ; ça vous apprendra à abuser de vos muscles brutaux pour m’arracher le pain de la main. <stage>A part.</stage> Si j’avais été le plus fort, je t’aurais flanqué une tripotée. 
+               </p>
+            </sp>
+               <sp n="35"> 
+               <speaker>PATACHON</speaker>
+               <p>
+                  Muscles brutaux !… des insolences ! <stage>Lui serrant la main et à demi-voix .</stage> Monsieur, entre gens distingués on s’arrange autrement. Demain au petit jour, Monsieur… au pistolet… à cent pas… envoyez-moi vos témoins. <stage>A part.</stage> C’est un bon moyen de le faire filer d’ici. 
+               </p>
+            </sp>
+               <sp n="36"> 
+               <speaker>GIRAFFIER</speaker>
+               <p> , <stage>à part.</stage>
+                  Diable ! <stage>Haut</stage> Au canon, si vous voulez, Monsieur. <stage>A part.</stage> Épouvantons-le pour qu’il me cède la place. 
+               </p>
+            </sp>
+               <sp n="37"> 
+               <speaker>PATACHON</speaker>
+               <p> , <stage>à part.</stage>
+                  Sapristi ! il est brave… <stage>Haut.</stage> Soit, Monsieur, à mitraille. 
+               </p>
+            </sp>
+               <sp n="38"> 
+               <speaker>GIRAFFIER</speaker>
+               <p> , <stage>à part.</stage>
+                  Peste ! il est crâne. <stage>Haut.</stage> À boulet rouge. 
+               </p>
+            </sp>
+               <sp n="39"> 
+               <speaker>PATACHON</speaker>
+               <p> , à mi-voix.
+                  Voici ma carte : Champs-Élysées, tronc d’arbre n° 19,999. 
+               </p>
+            </sp>
+               <sp n="40"> 
+               <speaker>GIRAFFIER</speaker>
+               <p> , surpris.
+                  Tronc d’arbre. C’est vous qui avez inventé ce domicile ?… Je trouve l’invention du tronc bonne ; voici la mienne : Rue des Saints-Pères. 
+               </p>
+            </sp>
+               <sp n="41"> 
+               <speaker>PATACHON</speaker>
+               <p>
+                  Des cinq paires… des cinq paires de quoi ?… 
+               </p>
+            </sp>
+               <sp n="42"> 
+               <speaker>GIRAFFIER</speaker>
+               <p>
+                  N° 1… Quelqu’un ! vite mon boléro ! 
+               </p>
+            </sp>
+               <sp n="43"> 
+               <speaker>PATACHON</speaker>
+               <p>
+                  Un passant ! vite ma sérénade ! <stage>Écoutant le prélude de Giraffier.</stage> Comment, vous savez mon boléro ? 
+               </p>
+            </sp>
+               <sp n="44"> 
+               <speaker>GIRAFFIER</speaker>
+               <p>
+                  C’est le mien.</p> 
+               </sp>
+               <sp n="45"> 
+               <speaker>PATACHON</speaker>
+               <p>
+                  Du tout, c’est le mien, je l’ai rapporté de Séville. 
+               </p>
+            </sp>
+               <sp n="46"> 
+               <speaker>GIRAFFIER</speaker>
+               <p>
+                  Lesquelles ? 
+               </p>
+            </sp>
+               <sp n="47"> 
+               <speaker>PATACHON</speaker>
+               <p>
+                  Lesquelles quoi ? 
+               </p>
+            </sp>
+               <sp n="48"> 
+               <speaker>GIRAFFIER</speaker>
+               <p>
+                  Lesquelles villes ? 
+               </p>
+            </sp>
+               <sp n="49"> 
+               <speaker>PATACHON</speaker>
+               <p>
+                  Séville, quoi !… en Turquie. 
+               </p>
+            </sp>
+               <sp n="50">
+               <speaker>GIRAFFIER</speaker> 
+               <stage>Il chante.</stage>
+               <l>La lune brille, </l>
+               <l>La nuit scintille, </l>
+               <l>Viens, ma gentille, </l>
+               <l>Suis ton Pedro, </l>
+               <l>A ta fenêtre </l>
+               <l>Daigne paraître, </l>
+               <l>Brave ton maître, </l>
+               <l>Ton Bartholo. </l>
+               <l>Entends là-bas </l>
+               <l>Les manolas, </l>
+               <l>Les boléras, </l>
+               <l>Les fandangas.</l>
+            </sp>
+            <sp n="51"> 
+               <speaker>PATACHON</speaker>
+               <l>Viens, il fait beau, beau, beau, beau !</l>
+            </sp>
+            <sp n="52"> 
+               <speaker>GIRAFFIER</speaker>
+               <l>Suis ton Pedro, dro, dro, dro.</l>
+            </sp>
+            <sp n="53">
+               <speaker>ENSEMBLE.</speaker>
+               <l>Derin din, derin din, etc.</l>
+            </sp>
+            <sp n="54"> 
+               <speaker>GIRAFFIER</speaker>
+               <l>La lune brille.</l>
+               <stage>DEUXIÈME COUPLET.</stage>
+               <l>Amour extrême, </l>
+               <l>Bonheur suprême, </l>
+               <l>Ton Pedro t’aime : </l>
+               <l>Aime Pedro. </l>
+               <l>Pedro t’appelle, </l>
+               <l>Réponds, ma belle, </l>
+               <l>Mon Isabelle, </l>
+               <l>A ton Pedro. </l>
+               <l>Viens, on dira, </l>
+               <l>Nous voyant là :</l>
+            </sp>
+            <sp n="55"> 
+               <speaker>PATACHON</speaker>
+               <l>Viens, on dira,</l>
+               <l>Nous voyant là :</l>
+            </sp>
+            <sp n="56"> 
+               <speaker>GIRAFFIER</speaker>
+               <l>C’est Isabeau </l>
+               <l>Et son Pedro.</l>
+            </sp>
+            <sp n="57"> 
+               <speaker>PATACHON</speaker>
+               <l> C’est Isabeau, beau, beau, beau.</l>
+            </sp>
+            <sp n="58"> 
+               <speaker>GIRAFFIER</speaker>
+               <l>Et son Pedro, dro, dro, dro.</l>
+            </sp>
+            <sp n="59">
+               <speaker>ENSEMBLE.</speaker>
+               <l>Derin din, derin din, etc.</l>
+            </sp>
+            <sp n="60"> 
+               <speaker>GIRAFFIER</speaker>
+               <l>La lune brille, etc.</l>
+            </sp>
+               <sp n="61"> 
+               <speaker>PATACHON</speaker>
+               <p>
+                  Pas le sou ! nous chantons pour le roi de Prusse. 
+               </p>
+            </sp>
+               <sp n="62"> 
+               <speaker>GIRAFFIER</speaker>
+               <p>
+                  Ça ne sera pas difficile à partager. 
+               </p>
+            </sp>
+               <sp n="63"> 
+               <speaker>PATACHON</speaker>
+               <p>
+                  Pourquoi aussi venez-vous sur ce pont ? 
+               </p>
+            </sp>
+               <sp n="64"> 
+               <speaker>GIRAFFIER</speaker>
+               <p>
+                  Vous y venez bien, vous ! 
+               </p>
+            </sp>
+               <sp n="65"> 
+               <speaker>PATACHON</speaker>
+               <p>
+                  Moi, j’y étais le premier ; vous avez le pont Neuf qui est libre. 
+               </p>
+            </sp>
+               <sp n="66"> 
+               <speaker>GIRAFFIER</speaker>
+               <p>
+                  Le pont Neuf ? il n’y est plus ; je viens de la Vallée. 
+               </p>
+            </sp>
+               <sp n="67"> 
+               <speaker>PATACHON</speaker>
+               <p>
+                  Vous venez de l’avaler ? Quel estomac ! 
+               </p>
+            </sp>
+               <sp n="68"> 
+               <speaker>GIRAFFIER</speaker>
+               <p>
+                  Je viens de la Vallée, le marché du quai des Augustins, et j’ai bien vu qu’il était en démolition. 
+               </p>
+            </sp>
+               <sp n="69"> 
+               <speaker>PATACHON</speaker>
+               <p>
+                  En réparation seulement ; tenez, je vais vous faire une proposition : jouez-vous aux cartes ? 
+               </p>
+            </sp>
+               <sp n="70"> 
+               <speaker>GIRAFFIER</speaker>
+               <p>
+                  Un peu, comme tous les Quinze-Vingts ; mais je préfère le noble jeu de billard. J’y ai perdu toute ma fortune pour avoir oublié de mettre du blanc à ma queue : j’ai fait fausse queue, j’ai manqué mon coup, et j’ai livré la partie à mon adversaire : tout mon avoir y était engagé. 
+               </p>
+            </sp>
+               <sp n="71"> 
+               <speaker>PATACHON</speaker>
+               <p>
+                  Touchez là, mon cher confrère, nous sommes deux victimes du sort : j’ai été ruiné au brelan. Un autre serait mort de douleur ; moi je me livrai à la lecture des philosophes. J’ai trouvé surtout beaucoup de consolations avec Descartes ; mais j’ai complètement renoncé au jeu… Si pourtant une petite partie pouvait vous être agréable. 
+               </p>
+            </sp>
+               <sp n="72"> 
+               <speaker>GIRAFFIER</speaker>
+               <p>
+                  Comment donc, mais avec plaisir ! 
+               </p>
+            </sp>
+               <sp n="73"> 
+               <speaker>PATACHON</speaker>
+               <p>
+                  À quoi jouez-vous ? 
+               </p>
+            </sp>
+               <sp n="74"> 
+               <speaker>GIRAFFIER</speaker>
+               <p>
+                  Eh ! mon Dieu, je joue à tout. 
+               </p>
+            </sp>
+               <sp n="75"> 
+               <speaker>PATACHON</speaker>
+               <p>
+                  Quand il en tourne. Ah ! j’entendais atout… Oui, vous jouez à tous les jeux. Un tout petit bésigue vous serait-il agréable ? 
+               </p>
+            </sp>
+               <sp n="76"> 
+               <speaker>GIRAFFIER</speaker>
+               <p>
+                  Très-agréable. 
+               </p>
+            </sp>
+               <sp n="77"> 
+               <speaker>PATACHON</speaker>
+               <p>
+                  Ou un écarté ? 
+               </p>
+            </sp>
+               <sp n="78"> 
+               <speaker>GIRAFFIER</speaker>
+               <p>
+                  L’écarté me va. Voyons, pendant qu’il ne passe personne. 
+               </p>
+            </sp>
+               <sp n="79"> 
+               <speaker>PATACHON</speaker>
+               <p> tirant un jeu de cartes de sa poche.
+                  À merveille ; allons-y gaiement ! 
+               </p>
+            </sp>
+               <sp n="80"> 
+               <speaker>GIRAFFIER</speaker>
+               <p>
+                  Que jouous-nous ? 
+               </p>
+            </sp>
+               <sp n="81"> 
+               <speaker>PATACHON</speaker>
+               <p>
+                  Écoutez, mon confrère, nous nous faisons du tort mutuellement ; je vous offre de jouer à qui aura la place : le perdant quittera ce pont. 
+               </p>
+            </sp>
+               <sp n="82"> 
+               <speaker>GIRAFFIER</speaker>
+               <p>
+                  J’allais vous le proposer. <stage>A part.</stage> Tu peux compter que tu vas filer, toi. 
+               </p>
+            </sp>
+            <sp n="83"> 
+               <speaker>PATACHON</speaker> 
+               <stage>à part.</stage>
+               <l>Tu peux être certain de décamper</l>
+               <stage>Air de Robert le Diable.</stage>
+               <l>Ô fortune, à ton caprice, etc.</l>
+               <stage>La première syllabe seulement de chaque forte ; le reste mimé. Il vont s’asseoir en face l’un de l’autre et mettent sur leurs genoux leurs pancartes en guise de table. Trémolo à l’orchestre.</stage> 
+               <p>Nous jouons en cinq points. <stage>À part.</stage> Arrangeons les cartes de façon à gagner ; il est aveugle, il n’en verra rien.</p>
+            </sp>
+               <sp n="84"> 
+               <speaker>GIRAFFIER</speaker>
+               <p> à part, regardant du coin de l’œil.
+                  Je ne me trompe pas, il fait le paquet. 
+               </p>
+            </sp>
+               <sp n="85"> 
+               <speaker>PATACHON</speaker>
+               <p>
+                  Coupez, Giraffier. 
+               </p>
+            </sp>
+               <sp n="86"> 
+               <speaker>GIRAFFIER</speaker>
+               <p> coupant.
+                  Voilà, Patachon. 
+               </p>
+            </sp>
+               <sp n="87"> 
+               <speaker>PATACHON</speaker>
+               <p>
+                  Faisons sauter cette petite coupe. <stage>Il fait sauter grossièrement la coupe. – À part.</stage> Un clairvoyant n’y verrait rien. <stage>Tournant.</stage> Le roi ! 
+               </p>
+            </sp>
+               <sp n="88"> 
+               <speaker>GIRAFFIER</speaker>
+               <p>
+                  Très-bien ! <stage>A part</stage> Il vole au jeu. <stage>Jouant</stage> Pique ! 
+               </p>
+            </sp>
+               <sp n="89"> 
+               <speaker>PATACHON</speaker>
+               <p>
+                  Je prends ; atout de la dame, du valet, de l’as et du dix ; j’ai la vole. 
+                  Reprise du motif de Robert.
+               </p>
+            </sp>
+               <sp n="90"> 
+               <speaker>PATACHON</speaker>
+               <p> à part, chantant.
+                  J’ai la vole, la vole, la vole. 
+               </p>
+            </sp>
+               <sp n="91"> 
+               <speaker>GIRAFFIER</speaker>
+               <p> même jeu.
+                  Il me vole, me vole, me vole. 
+               </p>
+            </sp>
+               <sp n="92"> 
+               <speaker>PATACHON</speaker>
+               <p>
+                  Ça me fait trois. 
+               </p>
+            </sp>
+               <sp n="93"> 
+               <speaker>GIRAFFIER</speaker>
+               <p>
+                  Marquez. 
+               </p>
+            </sp>
+               <sp n="94"> 
+               <speaker>PATACHON</speaker>
+               <p>
+                  À vous à donner, cher Giraffier. 
+               </p>
+            </sp>
+               <sp n="95"> 
+               <speaker>GIRAFFIER</speaker>
+               <p>
+                  Je donne, vertueux Patachon. <stage>A part.</stage> Je vais te rendre la pareille. 
+               </p>
+            </sp>
+               <sp n="96"> 
+               <speaker>PATACHON</speaker>
+               <p> 
+                  <stage>à part.</stage>
+                  Que vois-je ? il tripote ! Serait-ce aussi un filou ? 
+               </p>
+            </sp>
+               <sp n="97"> 
+               <speaker>GIRAFFIER</speaker>
+               <p> faisant sauter la coupe très-visiblement. À part.
+                  Ça n’est pas plus difficile que ça. <stage>Il tourne.</stage> Le roi ! 
+               </p>
+            </sp>
+               <sp n="98"> 
+               <speaker>PATACHON</speaker>
+               <p>
+                  Plus de doutes, il est aussi voleur que moi. <stage>Jouant.</stage> Trèfle ! 
+               </p>
+            </sp>
+               <sp n="99"> 
+               <speaker>GIRAFFIER</speaker>
+               <p>
+                  Je prends ; atout de la dame, du valet, de l’as et du dix ; ça me fait quatre. 
+               </p>
+            </sp>
+               <sp n="100"> 
+               <speaker>PATACHON</speaker>
+               <p>
+                  Comment quatre ? Trois ! 
+               </p>
+            </sp>
+               <sp n="101"> 
+               <speaker>GIRAFFIER</speaker>
+               <p>
+                  Quatre ! 
+               </p>
+            </sp>
+               <sp n="102"> 
+               <speaker>PATACHON</speaker>
+               <p> 
+                  <stage>avec colère.</stage>
+                  La vole et le roi, trois ! 
+               </p>
+            </sp>
+               <sp n="103"> 
+               <speaker>GIRAFFIER</speaker>
+               <p>
+                  Le roi, le point et la vole, quatre ! 
+               </p>
+            </sp>
+               <sp n="104"> 
+               <speaker>PATACHON</speaker>
+               <p> 
+                  <stage>se levant avec colère.</stage>
+                  Quatre, filou ! tu crois que je n’ai pas vu ton petit manège ? Tu n’es qu’un malheureux ! un escroc ! 
+               </p>
+            </sp>
+               <sp n="105"> 
+               <speaker>GIRAFFIER</speaker>
+               <p>
+                  Toi-même n’es qu’un grec ; mais je te reconnais ! tu es l’homme aux béquilles du pont Saint-Michel ! 
+               </p>
+            </sp>
+               <sp n="106"> 
+               <speaker>PATACHON</speaker>
+               <p>
+                  Je te reconnais aussi, tu es le manchot du même pont ! 
+               </p>
+            </sp>
+               <sp n="107"> 
+               <speaker>GIRAFFIER</speaker>
+               <p>
+                  Mon rival ! 
+               </p>
+            </sp>
+               <sp n="108"> 
+               <speaker>PATACHON</speaker>
+               <p>
+                  Mon concurrent ! <stage>Tous deux saisissent leurs pliants</stage> 
+               </p>
+            </sp>
+               <sp n="109"> 
+               <speaker>GIRAFFIER</speaker>
+               <p>
+                  Ah ! canaille ! 
+               </p>
+            </sp>
+               <sp n="110"> 
+               <speaker>PATACHON</speaker>
+               <p>
+                  Ah ! malotru ! <stage>Ils s’enfoncent mutuellement leurs pliants sur la tête et se bousculent.</stage> 
+               </p>
+            </sp>
+               <sp n="111"> 
+               <speaker>GIRAFFIER</speaker>
+               <p>
+                  Ah ! faux béquillard ! 
+               </p>
+            </sp>
+               <sp n="112"> 
+               <speaker>PATACHON</speaker>
+               <p>
+                  Tiens, faux Bélisaire ! 
+               </p>
+            </sp>
+               <sp n="113">
+               <speaker>TOUS DEUX.</speaker>
+               <p>Quelqu’un vient ! <stage>Ils se dégagent vivement. Patachon prend par méprise la guitare, Giraffier le trombone, tous deux reprennent à tue-tête leur refrain pendant qu’un passant traverse le pont.</stage>
+               </p>
+               <l>La lune brille,</l> 
+               <l>La nuit scintille, etc.</l>
+            </sp>
+            <stage>FIN</stage>
+            </div>
+            </div>
+      </body>
+   </text>
+</TEI>
