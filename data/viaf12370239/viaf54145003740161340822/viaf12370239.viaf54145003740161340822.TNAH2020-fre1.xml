@@ -69,7 +69,7 @@
                   <stage>entrant.</stage>
                   <l>Zéphoris! Zéphoris! c'est ton ami fidèle,</l>
                   <l>C'est ton Piféar qui t'appelle.</l>
-                  <l>Aux Pêcheurs.</l>
+                  <stage>Aux Pêcheurs.</stage>
                   <l>Ne le voyez-vous pas?</l>
                </sp>
                <sp n="3">
@@ -326,17 +326,17 @@
                   <l>Je dois à la justice,</l>
                   <l>Avant qu'on le punisse,</l>
                   <l>D'écouter ses raisons.</l>
-                  <l>Prenant Zélide à part et tendant la main.</l>
+                  <stage>Prenant Zélide à part et tendant la main.</stage>
                   <l>Voyons donc vos raisons,</l>
                   <l>Nous écoutons.</l>
-                  <l>Zélide donne une autre pièce.</l>
+                  <stage>Zélide donne une autre pièce.</stage>
                   <l>Bon! déjà</l>
                   <l>Je goûte</l>
                   <l>Cette raison-là.</l>
                   <stage>Il tend encore la main, nouvelle pièce d'argent.</stage>
                   <l>J'approuve sans doute</l>
                   <l>Aussi celle-là.</l>
-                  <l>Même jeu de scène et pareille réponse de Zélide.</l>
+                  <stage>Même jeu de scène et pareille réponse de Zélide.</stage>
                   <l>Vos trois raisons, vos trois raisons, mignonne,</l>
                   <l>Sont d'un grand poids.</l>
                   <stage>Il fait sauter l'argent dans sa poche.</stage>
@@ -1079,7 +1079,7 @@
                </sp>
                <sp n="55">
                   <speaker>KADOOR.</speaker>
-                  <l>Eh quoi! ce serait là ... A Piféar. Pêcheur, monte dans ta barque, et de la part du roi, fais aborder ici le canot que tu vois au large.</l>
+                  <l>Eh quoi! ce serait là ... <stage>A Piféar</stage>. Pêcheur, monte dans ta barque, et de la part du roi, fais aborder ici le canot que tu vois au large.</l>
                </sp>
                <sp n="56">
                   <speaker>PIFÉAR.</speaker>
@@ -1200,7 +1200,7 @@
                <sp n="26">
                   <speaker>KADOOR</speaker>
                   <stage>à part.</stage>
-                  <l>A merveille! Haut. Oui, c'est toi, c'est bien toi! et je puis te témoigner toute la reconnaissance de Némea . ... et je puis te dire ce qu'elle attend de ton respect, ce qu'elle espère de ton dévouement.</l>
+                  <l>A merveille! <stage>Haut</stage>. Oui, c'est toi, c'est bien toi! et je puis te témoigner toute la reconnaissance de Némea . ... et je puis te dire ce qu'elle attend de ton respect, ce qu'elle espère de ton dévouement.</l>
                </sp>
                <sp n="27">
                   <speaker>ZÉPHORIS.</speaker>
@@ -1229,7 +1229,8 @@
                </sp>
                <sp n="33">
                   <speaker>ZÉPHORIS</speaker>
-                  <stage>à part. Oh! mon rêve,</stage>
+                  <stage>à part.</stage>
+                  <l>Oh! mon rêve,</l> 
                   <l>mon beau rêve! Tout est fini pour moi.</l>
                </sp>
                <sp n="34">
@@ -1435,7 +1436,7 @@
                <sp n="31">
                   <speaker>LE ROI.</speaker>
                   <l>C'est lui!</l>
-                  <l>Reprise de l'ensemble.</l>
+                  <stage>Reprise de l'ensemble.</stage>
                </sp>
                <sp n="32">
                   <speaker>KADOOR.</speaker>
@@ -1466,7 +1467,7 @@
                <sp n="38">
                   <speaker>NÉMEA.</speaker>
                   <l>Eh bien</l>
-                  <stage>Il ne me répond rien.</stage>
+                  <l>Il ne me répond rien.</l>
                </sp>
                <sp n="39">
                   <speaker>KADOOR.</speaker>
@@ -1715,7 +1716,7 @@
                </sp>
                <sp n="10">
                   <speaker>KADOOR.</speaker>
-                  <l>Écoute: je suis le prince Kadoor, issu du sang royal, et presque roi moi-même. Zéphoris s'incline. Némea est ma fiancée; demain elle sera ma femme.</l>
+                  <l>Écoute: je suis le prince Kadoor, issu du sang royal, et presque roi moi-même. <stage>Zéphoris s'incline.</stage> Némea est ma fiancée; demain elle sera ma femme.</l>
                </sp>
                <sp n="11">
                   <speaker>ZÉPHORIS.</speaker>
@@ -1833,7 +1834,7 @@
                <sp n="6">
                   <speaker>LE ROI.</speaker>
                   <l>C'est un pêcheur sans doute.</l>
-                  <l>Il prend une lanterne des mains d'un esclave et se penche sur Zéphoris.</l>
+                  <stage>Il prend une lanterne des mains d'un esclave et se penche sur Zéphoris.</stage>
                   <l>Je l'avais dit ... c'est un pêcheur qui dort,</l>
                   <l>Insouciant du sort.</l>
                   <l>Mais que vois-je écrit sur le sable?</l>
@@ -2145,9 +2146,9 @@
                   <speaker>ZÉPHORIS.</speaker>
                   <l>On ne peut pas manger et rêver à la fois;</l>
                   <l>Voyons donc si je rêve.</l>
-                  <l>Il prend un fruit et le porte à sa bouche.</l>
+                  <stage>Il prend un fruit et le porte à sa bouche.</stage>
                   <l>Eh! mais ... eh! mais ... je mange.</l>
-                  <l>Après avoir tendu sa coupe à un esclave.</l>
+                  <stage>Après avoir tendu sa coupe à un esclave.</stage>
                   <l>Eh! mais ... eh! mais je bois,</l>
                   <l>Oui, je bois ... et je mange!</l>
                </sp>
@@ -2261,7 +2262,7 @@
                   <l>Viens ça, viens ça, mon pauvre esclave noir;</l>
                   <l>Pour adoucir tes maux que n'ai-je en mon pouvoir</l>
                   <l>Quelques pièces d'argent.</l>
-                  <l>Il porte machinalement la main à sa poche.</l>
+                  <stage>Il porte machinalement la main à sa poche.</stage>
                   <l>Juste ciel! dans ma poche</l>
                   <l>J'entends sonner ...</l>
                   <stage>Il se fouille.</stage>
@@ -2425,10 +2426,11 @@
                </sp>
                <sp n="16">
                   <speaker>ZÉPHORIS.</speaker>
-                  <l>J'y songe. A lui-même. Hier, lorsque pensant à elle, je me suis endormi sur la plage, je demandais au ciel de me faire roi ... le ciel m'aurait- il exaucé ... Puisque je suis auprès d'elle, libre de lui parler, de la voir, de l'entendre, n'est-ce pas un miracle de Brahma? Oh! oui, plus de doute, c'est un miracle. Haut. Je crois à ma royauté!</l>
+                  <l>J'y songe. <stage>A lui-même.</stage> Hier, lorsque pensant à elle, je me suis endormi sur la plage, je demandais au ciel de me faire roi ... le ciel m'aurait- il exaucé ... Puisque je suis auprès d'elle, libre de lui parler, de la voir, de l'entendre, n'est-ce pas un miracle de Brahma? Oh! oui, plus de doute, c'est un miracle. <stage>Haut.</stage> Je crois à ma royauté!</l>
                </sp>
                <sp n="17">
-                  <speaker>LE ROI, riant.</speaker>
+                  <speaker>LE ROI</speaker>
+                  <stage>riant.</stage>
                   <l>Il y croit! ...</l>
                </sp>
                <sp n="18">
@@ -2461,7 +2463,7 @@
                </sp>
                <sp n="25">
                   <speaker>ZÉPHORIS.</speaker>
-                  <l>Je ne le puis ... A part. Roi ou pêcheur, je dois tenir mon serment.</l>
+                  <l>Je ne le puis ... <stage>A part.</stage> Roi ou pêcheur, je dois tenir mon serment.</l>
                </sp>
                <sp n="26">
                   <speaker>NÉMEA.</speaker>
@@ -2540,7 +2542,7 @@
                </sp>
                <sp n="16">
                   <speaker>KADOOR.</speaker>
-                  <l>Moi ... que je ... Mouvement du Roi. Oui ... oui ... Majesté ... A part. Oh! j'empêcherai qu'il ne la revoie ...</l>
+                  <l>Moi ... que je ... <stage>Mouvement du Roi.</stage> Oui ... oui ... Majesté ... <stage>A part.</stage> Oh! j'empêcherai qu'il ne la revoie ...</l>
                </sp>
                <sp n="17">
                   <speaker>LE ROI.</speaker>
@@ -2616,8 +2618,9 @@
                   <l>Le troisième n'en sait pas plus long que le second.</l>
                </sp>
                <sp n="11">
-                  <speaker>LE ROI, riant.</speaker>
-                  <l>Vous entendez ... ministre? A Zéphoris. Cependant, tout le monde chérit le roi?</l>
+                  <speaker>LE ROI</speaker>
+                  <stage>riant.</stage>
+                  <l>Vous entendez ... ministre? <stage>A Zéphoris.</stage> Cependant, tout le monde chérit le roi?</l>
                </sp>
                <sp n="12">
                   <speaker>ZÉPHORIS.</speaker>
@@ -2632,7 +2635,8 @@
                   <l>Eh bien! vous vous trompez.</l>
                </sp>
                <sp n="15">
-                  <speaker>LE ROI, déconcerté.</speaker>
+                  <speaker>LE ROI</speaker>
+                  <stage>déconcerté.</stage>
                   <l>Et qui donc ne l'aimerait pas?</l>
                </sp>
                <sp n="16">
@@ -2716,7 +2720,7 @@
                </sp>
                <sp n="35">
                   <speaker>LE ROI.</speaker>
-                  <l>Qu est-ce done?</l>
+                  <l>Qu est-ce donc?</l>
                </sp>
                <sp n="36">
                   <speaker>ATAR.</speaker>
@@ -2915,7 +2919,7 @@
                <sp n="31">
                   <speaker>ZÉPHORIS</speaker>
                   <stage>vivement.</stage>
-                  <l>C'est dit! Je suis libre alors, à Némea et je puis tout vous dire ...</l>
+                  <l>C'est dit! Je suis libre alors, <stage>à Némea</stage> et je puis tout vous dire ...</l>
                </sp>
                <sp n="32">
                   <speaker>KADOOR.</speaker>
@@ -2959,7 +2963,7 @@
                   <speaker>LE ROI</speaker>
                   <stage>riant.</stage>
                   <l>Faites comme moi, prince ... Obéissez! obéissez.</l>
-                  <stage>Ils sortent Kadoor veut emmener Némea, Zéphoris l'arrête et lui ordonne de partir seul.</stage>
+                  <stage>Ils sortent. Kadoor veut emmener Némea, Zéphoris l'arrête et lui ordonne de partir seul.</stage>
                </sp>
             </div>
             <div type="scene" n="8">
@@ -3109,7 +3113,7 @@
                   <speaker>NÉMEA</speaker>
                   <stage>à elle-même.</stage>
                   <l>Oh! le prince est un imposteur,</l>
-                  <l>Haut.</l>
+                  <stage>Haut.</stage>
                   <l>Et voilà, voilà mon sauveur!</l>
                   <stage>Ensemble.</stage>
                </sp>
@@ -3240,7 +3244,7 @@
                </sp>
                <sp n="15">
                   <speaker>KADOOR.</speaker>
-                  <l>Oui, oui ... le plus heureux des ... A part. Oh! la fureur m'étouffe.</l>
+                  <l>Oui, oui ... le plus heureux des ...<stage> A part.</stage> Oh! la fureur m'étouffe.</l>
                </sp>
                <sp n="16">
                   <speaker>ZÉPHORIS.</speaker>
@@ -3261,7 +3265,7 @@
                <sp n="20">
                   <speaker>ZÉPHORIS</speaker>
                   <stage>brusquement.</stage>
-                  <l>Vous l'entendrez ... A l'esclave. Ah! un dernier ordre.</l>
+                  <l>Vous l'entendrez ... <stage>A l'esclave.</stage> Ah! un dernier ordre.</l>
                   <stage>Il lui parle bas, l'esclave sort.</stage>
                </sp>
                <sp n="21">
@@ -4628,7 +4632,7 @@
                   <l>Pour vous je prîrai Dieu</l>
                   <l>O mon sauveur, adieu!</l>
                   <l>Noble princesse, adieu!</l>
-                  <l>Némea va s'éloigner, elle aperçoit Kadoor au loin. Elle rentre vivement.</l>
+                  <stage>Némea va s'éloigner, elle aperçoit Kadoor au loin. Elle rentre vivement.</stage>
                   <l>O ciel! c'est Kadoor, c'est lui-même,</l>
                   <l>S'il me trouvait ici, chez vous!</l>
                   <l>Il est puissant! il est jaloux!</l>
@@ -4920,7 +4924,8 @@
                </sp>
                <sp n="2">
                   <speaker>NÉMEA.</speaker>
-                  <l>Que Votre Majesté daigne empêcher un crime. ... Le prince ordonne la mort de Zéphoris.</l>
+                  <l>Que Votre Majesté daigne empêcher un crime. ...</l>
+                  <stage> Le prince ordonne la mort de Zéphoris.</stage>
                </sp>
                <sp n="3">
                   <speaker>LE ROI.</speaker>
@@ -4942,7 +4947,7 @@
                <sp n="7">
                   <speaker>KADOOR</speaker>
                   <stage>à part.</stage>
-                  <l>Grand Dieu! Haut. Il a fait cela?</l>
+                  <l>Grand Dieu! <stage>Haut.</stage> Il a fait cela?</l>
                </sp>
                <sp n="8">
                   <speaker>ZÉPHORIS.</speaker>
