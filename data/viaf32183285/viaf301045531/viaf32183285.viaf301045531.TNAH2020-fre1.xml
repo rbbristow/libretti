@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../../../ODD/out/librettiODD.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -10,47 +9,45 @@
          <publicationStmt>
             <p>Ecole nationale des chartes, projet libretti TNAH, promotion 2019-2020</p>
          </publicationStmt>
-         <sourceDesc>
+         <sourceDesc default="false">
             <p>https://fr.wikisource.org/wiki/Faust_(op%C3%A9ra)</p>
          </sourceDesc>
       </fileDesc>
-      <encodingDesc> 
-         <refsDecl n="CTS">
-         <cRefPattern 
-            n="speech"
-            matchPattern="(\w+).(\w+).(\w+)"  
-            replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@type='act'][@n='$1']/tei:div[@type='scene'][@n='$2']/tei:sp[@n='$3'])"> 
-            <p>Ce pointeur extrait les niveaux de citation 1, 2 et 3, soit acte, scène et tour de parole.</p>      
-         </cRefPattern>   
-         <cRefPattern 
-            n="scene"     
-            matchPattern="(\w+).(\w+)"     
-            replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@type='act'][@n='$1']/tei:div[@type='scene'][@n='$2'])">      
-            <p>Ce poiteur extrait les niveaux de citation 1 et 2, soit les actes et scènes.</p>          
-         </cRefPattern>    
-         <cRefPattern         
-            n="act"         
-            matchPattern="(\w+)"    
-            replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@type='act'][@n='$1'])">        
-            <p>Ce pointeur extrait le premier niveau de citation du texte, soit les actes.</p>         
-         </cRefPattern>
-      </refsDecl>
+      <encodingDesc>
+         <refsDecl n="CTS" default="false">
+            <cRefPattern n="speech"
+                         matchPattern="(\w+).(\w+).(\w+)"
+                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@type='act'][@n='$1']/tei:div[@type='scene'][@n='$2']/tei:sp[@n='$3'])">
+               <p>Ce pointeur extrait les niveaux de citation 1, 2 et 3, soit acte, scène et tour de parole.</p>
+            </cRefPattern>
+            <cRefPattern n="scene"
+                         matchPattern="(\w+).(\w+)"
+                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@type='act'][@n='$1']/tei:div[@type='scene'][@n='$2'])">
+               <p>Ce poiteur extrait les niveaux de citation 1 et 2, soit les actes et scènes.</p>
+            </cRefPattern>
+            <cRefPattern n="act"
+                         matchPattern="(\w+)"
+                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@type='act'][@n='$1'])">
+               <p>Ce pointeur extrait le premier niveau de citation du texte, soit les actes.</p>
+            </cRefPattern>
+         </refsDecl>
       </encodingDesc>
    </teiHeader>
    <text>
       <front>
          <p>Opéra en cinq actes</p>
       </front>
-      <body n="urn:cts:libOp:viaf32183285.viaf301045531.TNAH2020-fre1" xml:lang="fre">
+      <body n="urn:cts:libOp:viaf32183285.viaf301045531.TNAH2020-fre1"
+         xml:lang="fre">
          <castList>
-            <castItem>Faust (ténor)</castItem>
-            <castItem>Méphistophélès (basse)</castItem>
-            <castItem>Marguerite (soprano)</castItem>
-            <castItem>Valentin (baryton)</castItem>
-            <castItem>Siébel (soprano, personnage masculin)</castItem>
-            <castItem>Wagner (basse)</castItem>
-            <castItem>Marthe (mezzo-soprano)</castItem>
-            <castItem>Chœur : Étudiants, soldats, bourgeois, sorcières etc.</castItem>
+            <castItem type="role">Faust (ténor)</castItem>
+            <castItem type="role">Méphistophélès (basse)</castItem>
+            <castItem type="role">Marguerite (soprano)</castItem>
+            <castItem type="role">Valentin (baryton)</castItem>
+            <castItem type="role">Siébel (soprano, personnage masculin)</castItem>
+            <castItem type="role">Wagner (basse)</castItem>
+            <castItem type="role">Marthe (mezzo-soprano)</castItem>
+            <castItem type="role">Chœur : Étudiants, soldats, bourgeois, sorcières etc.</castItem>
          </castList>
          <div type="act" n="1">
             <head>PREMIER ACTE</head>
@@ -161,7 +158,7 @@
             </div>
             <div type="scene" n="2">
                <head>Deuxième scène</head>
-               <sp n="7">
+               <sp n="1">
                   <speaker>MÉPHISTOPHÉLÈS</speaker>
                   <stage>
                      <p>apparaissant brusquement</p>
@@ -176,27 +173,27 @@
                   <l>Eh bien, docteur, que me veux-tu ?</l>
                   <l>Voyons, parle ! Te fais-je peur ?</l>
                </sp>
-               <sp n="8">
+               <sp n="2">
                   <speaker>FAUST</speaker>
                   <l>Non.</l>
                </sp>
-               <sp n="9">
+               <sp n="3">
                   <speaker>MÉPHISTOPHÉLÈS</speaker>
                   <l>Doutes-tu de ma puissance ?</l>
                </sp>
-               <sp n="10">
+               <sp n="4">
                   <speaker>FAUST</speaker>
                   <l>Peut-être !</l>
                </sp>
-               <sp n="11">
+               <sp n="5">
                   <speaker>MÉPHISTOPHÉLÈS</speaker>
                   <l>Mets-la donc à l’épreuve !</l>
                </sp>
-               <sp n="12">
+               <sp n="6">
                   <speaker>FAUST</speaker>
                   <l>Va-t’en.</l>
                </sp>
-               <sp n="13">
+               <sp n="7">
                   <speaker>MÉPHISTOPHÉLÈS</speaker>
                   <l>Fi ! c’est là ta reconnaissance !</l>
                   <l>Apprends de moi qu’avec Satan</l>
@@ -205,33 +202,33 @@
                   <l>de l’appeler de si loin</l>
                   <l>pour le mettre ensuite à la porte !</l>
                </sp>
-               <sp n="14">
+               <sp n="8">
                   <speaker>FAUST</speaker>
                   <l>Et que peux-tu pour moi ?</l>
                </sp>
-               <sp n="15">
+               <sp n="9">
                   <speaker>MÉPHISTOPHÉLÈS</speaker>
                   <l>Tout. Mais dis-moi d’abord</l>
                   <l>ce que tu veux. Est-ce de l’or ?</l>
                </sp>
-               <sp n="16">
+               <sp n="10">
                   <speaker>FAUST</speaker>
                   <l>Que ferais-je de la richesse ?</l>
                </sp>
-               <sp n="17">
+               <sp n="11">
                   <speaker>MÉPHISTOPHÉLÈS</speaker>
                   <l>Bon ! je vois où le bât te blesse !</l>
                   <l>Tu veux la gloire ?</l>
                </sp>
-               <sp n="18">
+               <sp n="12">
                   <speaker>FAUST</speaker>
                   <l>Plus encor !</l>
                </sp>
-               <sp n="19">
+               <sp n="13">
                   <speaker>MÉPHISTOPHÉLÈS</speaker>
                   <l>La puissance ?</l>
                </sp>
-               <sp n="20">
+               <sp n="14">
                   <speaker>FAUST</speaker>
                   <l>Non !</l>
                   <l>Je veux un trésor</l>
@@ -250,25 +247,25 @@
                   <l>à moi ton ivresse,</l>
                   <l>à moi tes plaisirs !</l>
                </sp>
-               <sp n="21">
+               <sp n="15">
                   <speaker>MÉPHISTOPHÉLÈS</speaker>
                   <l>Fort bien ! Je puis contenter ton caprice !</l>
                </sp>
-               <sp n="22">
+               <sp n="16">
                   <speaker>FAUST</speaker>
                   <l>Et que te donnerai-je en retour ?</l>
                </sp>
-               <sp n="23">
+               <sp n="17">
                   <speaker>MÉPHISTOPHÉLÈS</speaker>
                   <l>Presque rien :</l>
                   <l>ici, je suis à ton service,</l>
                   <l>mais là-bas tu seras au mien.</l>
                </sp>
-               <sp n="24">
+               <sp n="18">
                   <speaker>FAUST</speaker>
                   <l>Là-bas ?</l>
                </sp>
-               <sp n="25">
+               <sp n="19">
                   <speaker>MÉPHISTOPHÉLÈS</speaker>
                   <stage>
                      <p>lui présentant un parchemin</p>
@@ -281,15 +278,15 @@
                      <p>Il fait un geste. On voit apparaître Marguerite assise devant son rouet filant.</p>
                   </stage>
                </sp>
-               <sp n="26">
+               <sp n="20">
                   <speaker>FAUST</speaker>
                   <l>Ô merveille !</l>
                </sp>
-               <sp n="27">
+               <sp n="21">
                   <speaker>MÉPHISTOPHÉLÈS</speaker>
                   <l>Eh bien ! Que t’en semble ?</l>
                </sp>
-               <sp n="28">
+               <sp n="22">
                   <speaker>FAUST</speaker>
                   <stage>
                      <p>prenant le parchemin</p>
@@ -299,7 +296,7 @@
                      <p>Il signe.</p>
                   </stage>
                </sp>
-               <sp n="29">
+               <sp n="23">
                   <speaker>MÉPHISTOPHÉLÈS</speaker>
                   <l>Allons donc !</l>
                   <stage>
@@ -310,7 +307,7 @@
                   <l>où fume en bouillonnant</l>
                   <l>non plus la mort, non plus le poison, mais la vie !</l>
                </sp>
-               <sp n="30">
+               <sp n="24">
                   <speaker>FAUST</speaker>
                   <stage>
                      <p>prenant la coupe</p>
@@ -320,35 +317,35 @@
                      <p>Il vide la coupe et se trouve métamorphosé en jeune et élégant seigneur. La vision disparaît.</p>
                   </stage>
                </sp>
-               <sp n="31">
+               <sp n="25">
                   <speaker>MÉPHISTOPHÉLÈS</speaker>
                   <l>Viens !</l>
                </sp>
-               <sp n="32">
+               <sp n="26">
                   <speaker>FAUST</speaker>
                   <l>Je la reverrai ?</l>
                </sp>
-               <sp n="33">
+               <sp n="27">
                   <speaker>MÉPHISTOPHÉLÈS</speaker>
                   <l>Sans doute.</l>
                </sp>
-               <sp n="34">
+               <sp n="28">
                   <speaker>FAUST</speaker>
                   <l>Quand ?</l>
                </sp>
-               <sp n="35">
+               <sp n="29">
                   <speaker>MÉPHISTOPHÉLÈS</speaker>
                   <l>Aujourd’hui.</l>
                </sp>
-               <sp n="36">
+               <sp n="30">
                   <speaker>FAUST</speaker>
                   <l>C’est bien !</l>
                </sp>
-               <sp n="37">
+               <sp n="31">
                   <speaker>MÉPHISTOPHÉLÈS</speaker>
                   <l>En route !</l>
                </sp>
-               <sp n="38">
+               <sp n="32">
                   <speaker>FAUST et MÉPHISTOPHÉLÈS</speaker>
                   <l>En route !</l>
                   <l>À moi/toi les plaisirs,</l>
@@ -361,12 +358,12 @@
          </div>
          <div type="act" n="2">
             <head>DEUXIÈME ACTE</head>
-            <div type="scene" n="3">
+            <div type="scene" n="1">
                <head>Première scène</head>
                <stage>
                   <p>&gt;Une foire, à Pâques. Une des portes de la ville. À gauche un cabaret à l’enseigne du dieu Bacchus. Les bourgeois, les étudiants et les soldats s’amusent.</p>
                </stage>
-               <sp n="39">
+               <sp n="1">
                   <speaker>PREMIERS ÉTUDIANTS</speaker>
                   <l>Vin ou bière,</l>
                   <l>bière ou vin,</l>
@@ -377,7 +374,7 @@
                   <l>un ivrogne</l>
                   <l>boit tout !</l>
                </sp>
-               <sp n="40">
+               <sp n="2">
                   <speaker>WAGNER</speaker>
                   <l>Jeune adepte</l>
                   <l>du tonneau,</l>
@@ -388,7 +385,7 @@
                   <l>soient de boire</l>
                   <l>toujours !</l>
                </sp>
-               <sp n="41">
+               <sp n="3">
                   <speaker>PREMIERS ÉTUDIANTS</speaker>
                   <l>Jeune adepte, etc.</l>
                   <stage>
@@ -404,7 +401,7 @@
                   <l>les oblige à se rendre</l>
                   <l>en payant rançon !</l>
                </sp>
-               <sp n="42">
+               <sp n="4">
                   <speaker>BOURGEOIS</speaker>
                   <l>Aux jours de dimanche et de fête,</l>
                   <l>j’aime à parler guerre et combats ;</l>
@@ -415,28 +412,28 @@
                   <l>et je vois passer les bateaux</l>
                   <l>en vidant mon verre !</l>
                </sp>
-               <sp n="43">
+               <sp n="5">
                   <speaker>JEUNES FILLES</speaker>
                   <l>Voyez ces hardis compères,</l>
                   <l>qui viennent là-bas ;</l>
                   <l>ne soyons pas trop sévères,</l>
                   <l>retardons le pas.</l>
                </sp>
-               <sp n="44">
+               <sp n="6">
                   <speaker>SECONDS ÉTUDIANTS</speaker>
                   <l>Voyez ces mines gaillardes</l>
                   <l>et ces airs vainqueurs !</l>
                   <l>Amis, soyons sur nos gardes !</l>
                   <l>Tenons bien nos cœurs !</l>
                </sp>
-               <sp n="45">
+               <sp n="7">
                   <speaker>MATRONES</speaker>
                   <l>Voyez après ces donzelles</l>
                   <l>courir ces messieurs !</l>
                   <l>Nous sommes aussi bien qu’elles,</l>
                   <l>sinon beaucoup mieux !</l>
                </sp>
-               <sp n="46">
+               <sp n="8">
                   <speaker>JEUNES FILLES</speaker>
                   <l>On voudrait plaire,</l>
                   <l>mais c’est en vain.</l>
@@ -450,7 +447,7 @@
                   <l>à vos beaux discours !</l>
                   <l>Un galant m’accepte, etc.</l>
                </sp>
-               <sp n="47">
+               <sp n="9">
                   <speaker>MATRONES</speaker>
                   <l>Vous voulez plaire,</l>
                   <l>on le sait bien.</l>
@@ -463,7 +460,7 @@
                   <l>de telles amours.</l>
                   <l>Il faut être inepte, etc.</l>
                </sp>
-               <sp n="48">
+               <sp n="10">
                   <speaker>BOURGEOIS</speaker>
                   <l>Allons, voisin,</l>
                   <l>vidons un verre de vin.</l>
@@ -472,7 +469,7 @@
                   <l>Toujours, il faut l’en croire.</l>
                   <l>Ma femme grogne, etc.</l>
                </sp>
-               <sp n="49">
+               <sp n="11">
                   <speaker>SECONDS ÉTUDIANTS</speaker>
                   <l>De cette affaire</l>
                   <l>voyons la fin.</l>
@@ -484,7 +481,7 @@
                   <l>dès le premier mot.</l>
                   <l>Gageons qu’on m’accepte, etc.</l>
                </sp>
-               <sp n="50">
+               <sp n="12">
                   <speaker>PREMIERS ÉTUDIANTS</speaker>
                   <l>Vive le vin !</l>
                   <l>Vin ou bière,</l>
@@ -504,7 +501,7 @@
                   <l>soient de boire</l>
                   <l>toujours !</l>
                </sp>
-               <sp n="51">
+               <sp n="13">
                   <speaker>SOLDATS</speaker>
                   <l>Vive la guerre,</l>
                   <l>métier divin !</l>
@@ -523,9 +520,9 @@
                   <l>De ce grand précepte, etc.</l>
                </sp>
             </div>
-            <div type="scene" n="4">
+            <div type="scene" n="2">
                <head>Deuxième scène</head>
-               <sp n="52">
+               <sp n="1">
                   <speaker>VALENTIN</speaker>
                   <stage>
                      <p>paraissant au fond, une petite médaille à la main</p>
@@ -536,46 +533,46 @@
                   <l>pour écarter la mort,</l>
                   <l>reste là sur mon cœur !</l>
                </sp>
-               <sp n="53">
+               <sp n="2">
                   <speaker>WAGNER</speaker>
                   <l>Ah ! voici Valentin qui nous cherche sans doute !</l>
                </sp>
-               <sp n="54">
+               <sp n="3">
                   <speaker>VALENTIN</speaker>
                   <l>Un dernier coup, messieurs, et mettons-nous en route</l>
                </sp>
-               <sp n="55">
+               <sp n="4">
                   <speaker>WAGNER</speaker>
                   <l>Qu’as-tu donc ?</l>
                   <l>Quels regrets attristent nos adieux ?</l>
                </sp>
-               <sp n="56">
+               <sp n="5">
                   <speaker>VALENTIN</speaker>
                   <l>Comme vous, pour longtemps, je vais quitter ces lieux ;</l>
                   <l>j’y laisse Marguerite, et pour veiller sur elle,</l>
                   <l>ma mère n’est plus là !</l>
                </sp>
-               <sp n="57">
+               <sp n="6">
                   <speaker>SIEBEL</speaker>
                   <l>Plus d’un ami fidèle</l>
                   <l>saura te remplacer à ses côtés !</l>
                </sp>
-               <sp n="58">
+               <sp n="7">
                   <speaker>VALENTIN</speaker>
                   <stage>
                      <p>lui serrant la main</p>
                   </stage>
                   <l>Merci !</l>
                </sp>
-               <sp n="59">
+               <sp n="8">
                   <speaker>SIEBEL</speaker>
                   <l>Sur moi tu peux compter !</l>
                </sp>
-               <sp n="60">
+               <sp n="9">
                   <speaker>LES ÉTUDIANTS</speaker>
                   <l>Compte sur nous aussi.</l>
                </sp>
-               <sp n="61">
+               <sp n="10">
                   <speaker>VALENTIN</speaker>
                   <l>Avant de quitter ces lieux,</l>
                   <l>sol natal de mes aïeux,</l>
@@ -595,19 +592,19 @@
                   <l>Ô roi des cieux, daigne exaucer mes vœux,</l>
                   <l>protège Marguerite, ô roi des cieux.</l>
                </sp>
-               <sp n="62">
+               <sp n="11">
                   <speaker>WAGNER</speaker>
                   <l>Allons, amis ! point de vaines alarmes !</l>
                   <l>À ce bon vin ne mêlons pas de larmes !</l>
                   <l>Buvons, trinquons, et qu’un joyeux refrain</l>
                   <l>nous mette en train !</l>
                </sp>
-               <sp n="63">
+               <sp n="12">
                   <speaker>LES ÉTUDIANTS</speaker>
                   <l>Buvons, trinquons, et qu’un joyeux refrain</l>
                   <l>nous mette en train !</l>
                </sp>
-               <sp n="64">
+               <sp n="13">
                   <speaker>WAGNER</speaker>
                   <stage>
                      <p>montant sur un escabeau</p>
@@ -619,34 +616,34 @@
                   <l>un chat...</l>
                </sp>
             </div>
-            <div type="scene" n="5">
+            <div type="scene" n="3">
                <head>Troisième scène</head>
-               <sp n="65">
+               <sp n="1">
                   <speaker>MÉPHISTOPHÉLÈS</speaker>
                   <stage>
                      <p>paraissant tout à coup</p>
                   </stage>
                   <l>Pardon !</l>
                </sp>
-               <sp n="66">
+               <sp n="2">
                   <speaker>WAGNER</speaker>
                   <l>Hein ?</l>
                </sp>
-               <sp n="67">
+               <sp n="3">
                   <speaker>MÉPHISTOPHÉLÈS</speaker>
                   <l>Parmi vous, de grâce,</l>
                   <l>permettez-moi de prendre place !</l>
                   <l>Que votre ami d’abord achève sa chanson !</l>
                   <l>Moi, je vous en promets plusieurs de ma façon !</l>
                </sp>
-               <sp n="68">
+               <sp n="4">
                   <speaker>WAGNER</speaker>
                   <stage>
                      <p>descendant de son escabeau</p>
                   </stage>
                   <l>Une seule suffit, pourvu qu’elle soit bonne !</l>
                </sp>
-               <sp n="69">
+               <sp n="5">
                   <speaker>MÉPHISTOPHÉLÈS</speaker>
                   <l>Je ferai de mon mieux pour n’ennuyer personne.</l>
                   <l>Le veau d’or est toujours debout ;</l>
@@ -660,11 +657,11 @@
                   <l>autour de son piédestal !</l>
                   <l>Et Satan conduit le bal !</l>
                </sp>
-               <sp n="70">
+               <sp n="6">
                   <speaker>TOUS</speaker>
                   <l>Et Satan conduit le bal !</l>
                </sp>
-               <sp n="71">
+               <sp n="7">
                   <speaker>MÉPHISTOPHÉLÈS</speaker>
                   <l>Le veau d’or est vainqueur des dieux ;</l>
                   <l>dans sa gloire</l>
@@ -677,26 +674,26 @@
                   <l>où brille l’ardent métal !</l>
                   <l>Et Satan conduit le bal !</l>
                </sp>
-               <sp n="72">
+               <sp n="8">
                   <speaker>TOUS</speaker>
                   <l>Et Satan conduit le bal !</l>
                   <l>Merci de ta chanson !</l>
                </sp>
-               <sp n="73">
+               <sp n="9">
                   <speaker>VALENTIN</speaker>
                   <stage>
                      <p>à part</p>
                   </stage>
                   <l>Singulier personnage !</l>
                </sp>
-               <sp n="74">
+               <sp n="10">
                   <speaker>WAGNER</speaker>
                   <stage>
                      <p>tendant un verre à Méphistophélès</p>
                   </stage>
                   <l>Nous ferez-vous l’honneur de trinquer avec nous ?</l>
                </sp>
-               <sp n="75">
+               <sp n="11">
                   <speaker>MÉPHISTOPHÉLÈS</speaker>
                   <l>Volontiers !</l>
                   <stage>
@@ -705,11 +702,11 @@
                   <l>Ah ! voici qui m’attriste pour vous !</l>
                   <l>Vous voyez cette ligne ?</l>
                </sp>
-               <sp n="76">
+               <sp n="12">
                   <speaker>WAGNER</speaker>
                   <l>Eh bien ?</l>
                </sp>
-               <sp n="77">
+               <sp n="13">
                   <speaker>MÉPHISTOPHÉLÈS</speaker>
                   <l>Fâcheux présage !</l>
                   <l>Vous vous ferez tuer en montant à l’assaut.</l>
@@ -717,11 +714,11 @@
                      <p>Wagner retire sa main avec humeur.</p>
                   </stage>
                </sp>
-               <sp n="78">
+               <sp n="14">
                   <speaker>SIEBEL</speaker>
                   <l>Vous êtes donc sorcier ?</l>
                </sp>
-               <sp n="79">
+               <sp n="15">
                   <speaker>MÉPHISTOPHÉLÈS</speaker>
                   <stage>
                      <p>lui prenant la main</p>
@@ -732,23 +729,23 @@
                   <l>à ne plus toucher une fleur</l>
                   <l>sans qu’elle se fane !</l>
                </sp>
-               <sp n="80">
+               <sp n="16">
                   <speaker>SIEBEL</speaker>
                   <stage>
                      <p>retirant vivement sa main</p>
                   </stage>
                   <l>Moi !</l>
                </sp>
-               <sp n="81">
+               <sp n="17">
                   <speaker>MÉPHISTOPHÉLÈS</speaker>
                   <l>Plus de bouquets à Marguerite !</l>
                </sp>
-               <sp n="82">
+               <sp n="18">
                   <speaker>VALENTIN</speaker>
                   <l>Ma sœur !</l>
                   <l>Qui vous a dit son nom ?</l>
                </sp>
-               <sp n="83">
+               <sp n="19">
                   <speaker>MÉPHISTOPHÉLÈS</speaker>
                   <l>Prenez garde, mon brave.</l>
                   <l>Vous vous ferez tuer par quelqu’un que je sais !</l>
@@ -773,7 +770,7 @@
                   <l>À la santé que tout à l’heure</l>
                   <l>vous portiez, mes amis, à Marguerite !</l>
                </sp>
-               <sp n="84">
+               <sp n="20">
                   <speaker>VALENTIN</speaker>
                   <stage>
                      <p>lui arrachant le verre des mains</p>
@@ -785,55 +782,55 @@
                      <p>Le vin s’enflamme dans la vasque placée au- dessous du tonneau. Valentin et Wagner tirent leurs épées.</p>
                   </stage>
                </sp>
-               <sp n="85">
+               <sp n="21">
                   <speaker>WAGNER</speaker>
                   <l>Holà !</l>
                </sp>
-               <sp n="86">
+               <sp n="22">
                   <speaker>LES ÉTUDIANTS</speaker>
                   <l>Holà !</l>
                </sp>
-               <sp n="87">
+               <sp n="23">
                   <speaker>MÉPHISTOPHÉLÈS</speaker>
                   <l>Pourquoi trembler, vous qui me menacez ?</l>
                   <stage>
                      <p>Il trace un cercle autour de lui avec son épée. Valentin s’avance pour l’attaquer. Son épée se brise.</p>
                   </stage>
                </sp>
-               <sp n="88">
+               <sp n="24">
                   <speaker>VALENTIN</speaker>
                   <l>Mon fer, ô surprise !</l>
                   <l>dans les airs se brise !</l>
                </sp>
-               <sp n="89">
+               <sp n="25">
                   <speaker>TOUS</speaker>
                   <l>De l’enfer qui vient émousser nos armes,</l>
                   <l>nous ne pouvons pas repousser les charmes !</l>
                </sp>
-               <sp n="90">
+               <sp n="26">
                   <speaker>VALENTIN</speaker>
                   <l>Mais puisque tu brises le fer...</l>
                </sp>
-               <sp n="91">
+               <sp n="27">
                   <speaker>TOUS</speaker>
                   <l>Mais puisque tu brises le fer...</l>
                </sp>
-               <sp n="92">
+               <sp n="28">
                   <speaker>VALENTIN</speaker>
                   <l>Regarde !</l>
                </sp>
-               <sp n="93">
+               <sp n="29">
                   <speaker>TOUS</speaker>
                   <l>Regarde !</l>
                </sp>
-               <sp n="94">
+               <sp n="30">
                   <speaker>VALENTIN</speaker>
                   <stage>
                      <p>prenant son épée par la lame et la présentant sous forme de croix à Méphistophélès</p>
                   </stage>
                   <l>C’est une croix qui de l’enfer nous garde !</l>
                </sp>
-               <sp n="95">
+               <sp n="31">
                   <speaker>TOUS</speaker>
                   <l>C’est une croix qui de l’enfer nous garde !</l>
                   <stage>
@@ -841,9 +838,9 @@
                   </stage>
                </sp>
             </div>
-            <div type="scene" n="6">
+            <div type="scene" n="4">
                <head>Quatrième scène</head>
-               <sp n="96">
+               <sp n="1">
                   <speaker>MÉPHISTOPHÉLÈS</speaker>
                   <stage>
                      <p>remettant son épée au fourreau</p>
@@ -851,38 +848,38 @@
                   <l>Nous nous retrouverons, mes amis !</l>
                   <l>Serviteur !</l>
                </sp>
-               <sp n="97">
+               <sp n="2">
                   <speaker>FAUST</speaker>
                   <stage>
                      <p>entrant</p>
                   </stage>
                   <l>Qu’as-tu donc ?</l>
                </sp>
-               <sp n="98">
+               <sp n="3">
                   <speaker>MÉPHISTOPHÉLÈS</speaker>
                   <l>Rien ! À nous deux, cher docteur !</l>
                   <l>Qu’attendez-vous de moi ?</l>
                   <l>Par où commencerai-je ?</l>
                </sp>
-               <sp n="99">
+               <sp n="4">
                   <speaker>FAUST</speaker>
                   <l>Où se cache la belle enfant</l>
                   <l>que ton art m’a fait voir ?</l>
                   <l>Est-ce un vain sortilège ?</l>
                </sp>
-               <sp n="100">
+               <sp n="5">
                   <speaker>MÉPHISTOPHÉLÈS</speaker>
                   <l>Non pas !</l>
                   <l>Mais contre nous sa vertu la protège ;</l>
                   <l>et le ciel même la défend !</l>
                </sp>
-               <sp n="101">
+               <sp n="6">
                   <speaker>FAUST</speaker>
                   <l>Qu’importe ? Je la veux !</l>
                   <l>Viens ! Conduis-moi vers elle,</l>
                   <l>ou je me sépare de toi !</l>
                </sp>
-               <sp n="102">
+               <sp n="7">
                   <speaker>MÉPHISTOPHÉLÈS</speaker>
                   <l>Il suffit ! je tiens trop à mon nouvel emploi</l>
                   <l>pour vous laisser douter un instant de mon zèle !</l>
@@ -890,12 +887,12 @@
                   <l>la belle et chaste enfant va paraître à vos yeux.</l>
                </sp>
             </div>
-            <div type="scene" n="7">
+            <div type="scene" n="5">
                <head>Cinquième scène</head>
                <stage>
                   <p>Les étudiants et les jeunes filles, bras dessus, bras dessous, envahissent la scène). Ils sont suivis par les bourgeois et précédés par des joueurs de violon.</p>
                </stage>
-               <sp n="103">
+               <sp n="1">
                   <speaker>CHŒUR</speaker>
                   <l>Ainsi que la brise légère</l>
                   <l>soulève en épais tourbillons</l>
@@ -904,7 +901,7 @@
                   <l>Faites retentir la plaine</l>
                   <l>de l’éclat de vos chansons !</l>
                </sp>
-               <sp n="104">
+               <sp n="2">
                   <speaker>MÉPHISTOPHÉLÈS</speaker>
                   <stage>
                      <p>à Faust</p>
@@ -914,68 +911,68 @@
                   <l>aux plus belles d’entre elles</l>
                   <l>offrir ton bras ?</l>
                </sp>
-               <sp n="105">
+               <sp n="3">
                   <speaker>FAUST</speaker>
                   <l>Non ! Fais trêve à ce ton moqueur !</l>
                   <l>Et laisse mon cœur à son rêve !</l>
                </sp>
-               <sp n="106">
+               <sp n="4">
                   <speaker>SIEBEL</speaker>
                   <stage>
                      <p>rentrant en scène</p>
                   </stage>
                   <l>C’est par ici que doit passer Marguerite !</l>
                </sp>
-               <sp n="107">
+               <sp n="5">
                   <speaker>QUELQUES JEUNES FILLES</speaker>
                   <stage>
                      <p>s’approchant de Siebel</p>
                   </stage>
                   <l>Faut-il qu’une fille à danser vous invite ?</l>
                </sp>
-               <sp n="108">
+               <sp n="6">
                   <speaker>SIEBEL</speaker>
                   <l>Non ! non ! je ne veux pas valser !</l>
                </sp>
-               <sp n="109">
+               <sp n="7">
                   <speaker>CHŒUR</speaker>
                   <l>Ainsi que la brise légère, etc.</l>
                   <stage>
                      <p>Marguerite paraît.</p>
                   </stage>
                </sp>
-               <sp n="110">
+               <sp n="8">
                   <speaker>FAUST</speaker>
                   <l>La voici ! C’est elle !</l>
                </sp>
-               <sp n="111">
+               <sp n="9">
                   <speaker>MÉPHISTOPHÉLÈS</speaker>
                   <l>Eh bien, abordez-la !</l>
                </sp>
-               <sp n="112">
+               <sp n="10">
                   <speaker>SIEBEL</speaker>
                   <stage>
                      <p>s’approchant de Marguerite</p>
                   </stage>
                   <l>Marguerite !</l>
                </sp>
-               <sp n="113">
+               <sp n="11">
                   <speaker>MÉPHISTOPHÉLÈS</speaker>
                   <l>Plaît-il !</l>
                </sp>
-               <sp n="114">
+               <sp n="12">
                   <speaker>SIEBEL</speaker>
                   <stage>
                      <p>à part</p>
                   </stage>
                   <l>Maudit homme ! Encore là !</l>
                </sp>
-               <sp n="115">
+               <sp n="13">
                   <speaker>MÉPHISTOPHÉLÈS</speaker>
                   <l>Eh quoi ! mon ami ! vous voilà !</l>
                   <l>Ah, ah, vraiment, mon ami, vous voilà !</l>
                </sp>
-               <sp n="116">
+               <sp n="14">
                   <speaker>FAUST</speaker>
                   <stage>
                      <p>abordant Marguerite</p>
@@ -983,7 +980,7 @@
                   <l>Ne permettrez-vous pas, ma belle demoiselle,</l>
                   <l>qu’on vous offre le bras pour faire le chemin ?</l>
                </sp>
-               <sp n="117">
+               <sp n="15">
                   <speaker>MARGUERITE</speaker>
                   <l>Non, monsieur ! je ne suis demoiselle, ni belle,</l>
                   <l>et je n’ai pas besoin qu’on me donne la main !</l>
@@ -991,7 +988,7 @@
                      <p>Elle passe devant Faust et s’éloigne.</p>
                   </stage>
                </sp>
-               <sp n="118">
+               <sp n="16">
                   <speaker>FAUST</speaker>
                   <stage>
                      <p>la suivant des yeux</p>
@@ -999,22 +996,22 @@
                   <l>Par le ciel ! que de grâce et quelle modestie !</l>
                   <l>Ô belle enfant, je t’aime !</l>
                </sp>
-               <sp n="119">
+               <sp n="17">
                   <speaker>SIEBEL</speaker>
                   <l>Elle est partie !</l>
                </sp>
-               <sp n="120">
+               <sp n="18">
                   <speaker>MÉPHISTOPHÉLÈS</speaker>
                   <stage>
                      <p>à Faust</p>
                   </stage>
                   <l>Eh bien ?</l>
                </sp>
-               <sp n="121">
+               <sp n="19">
                   <speaker>FAUST</speaker>
                   <l>Eh bien ! On me repousse !</l>
                </sp>
-               <sp n="122">
+               <sp n="20">
                   <speaker>MÉPHISTOPHÉLÈS</speaker>
                   <stage>
                      <p>en riant</p>
@@ -1026,16 +1023,16 @@
                      <p>Il s’éloigne avec Faust du même côté que Marguerite.</p>
                   </stage>
                </sp>
-               <sp n="123">
+               <sp n="21">
                   <speaker>QUELQUES JEUNES FILLES</speaker>
                   <l>Qu’est-ce donc ?</l>
                </sp>
-               <sp n="124">
+               <sp n="22">
                   <speaker>D’AUTRES JEUNES FILLES</speaker>
                   <l>Marguerite,</l>
                   <l>qui de ce beau seigneur refuse la conduite !</l>
                </sp>
-               <sp n="125">
+               <sp n="23">
                   <speaker>TOUS</speaker>
                   <l>Valsons encor ! Valsons toujours !</l>
                   <l>Ainsi que la brise légère,</l>
@@ -1058,12 +1055,12 @@
          </div>
          <div type="act" n="3">
             <head>TROISIÈME ACTE</head>
-            <div type="scene" n="8">
+            <div type="scene" n="1">
                <head>Première scène</head>
                <stage>
                   <p>Introduction. Le jardin de Marguerite. Au fond, un mur percé d’une petite porte. À droite un pavillon.</p>
                </stage>
-               <sp n="126">
+               <sp n="1">
                   <speaker>SIEBEL</speaker>
                   <stage>
                      <p>seul</p>
@@ -1116,57 +1113,57 @@
                   </stage>
                </sp>
             </div>
-            <div type="scene" n="9">
+            <div type="scene" n="2">
                <head>Deuxième scène</head>
                <stage>
                   <p>Faust et Méphistophélès entrent prudemment.</p>
                </stage>
-               <sp n="127">
+               <sp n="1">
                   <speaker>FAUST</speaker>
                   <l>C’est ici ?</l>
                </sp>
-               <sp n="128">
+               <sp n="2">
                   <speaker>MÉPHISTOPHÉLÈS</speaker>
                   <l>Suivez-moi !</l>
                </sp>
-               <sp n="129">
+               <sp n="3">
                   <speaker>FAUST</speaker>
                   <l>Que regardes-tu là ?</l>
                </sp>
-               <sp n="130">
+               <sp n="4">
                   <speaker>MÉPHISTOPHÉLÈS</speaker>
                   <l>Siebel, votre rival.</l>
                </sp>
-               <sp n="131">
+               <sp n="5">
                   <speaker>FAUST</speaker>
                   <l>Siebel !</l>
                </sp>
-               <sp n="132">
+               <sp n="6">
                   <speaker>MÉPHISTOPHÉLÈS</speaker>
                   <l>Chut ! Le voilà !</l>
                   <stage>
                      <p>Il se cache avec Faust dans un bosquet, tandis que Siebel revient, un bouquet à la main.</p>
                   </stage>
                </sp>
-               <sp n="133">
+               <sp n="7">
                   <speaker>SIEBEL</speaker>
                   <l>Mon bouquet n’est-il pas charmant ?</l>
                </sp>
-               <sp n="134">
+               <sp n="8">
                   <speaker>MÉPHISTOPHÉLÈS</speaker>
                   <stage>
                      <p>à part</p>
                   </stage>
                   <l>Charmant !</l>
                </sp>
-               <sp n="135">
+               <sp n="9">
                   <speaker>SIEBEL</speaker>
                   <l>Victoire !</l>
                   <l>Je lui raconterai demain toute l’histoire.</l>
                   <l>Et, si l'on veut savoir le secret de mon cœur,</l>
                   <l>un baiser lui dira le reste !</l>
                </sp>
-               <sp n="136">
+               <sp n="10">
                   <speaker>MÉPHISTOPHÉLÈS</speaker>
                   <stage>
                      <p>à part</p>
@@ -1177,9 +1174,9 @@
                   </stage>
                </sp>
             </div>
-            <div type="scene" n="10">
+            <div type="scene" n="3">
                <head>Troisième scène</head>
-               <sp n="137">
+               <sp n="1">
                   <speaker>MÉPHISTOPHÉLÈS</speaker>
                   <l>Attendez-moi là, cher docteur !</l>
                   <l>Pour tenir compagnie aux fleurs de votre élève,</l>
@@ -1187,11 +1184,11 @@
                   <l>plus merveilleux, plus riche encor</l>
                   <l>que tous ceux qu’elle voit en rêve !</l>
                </sp>
-               <sp n="138">
+               <sp n="2">
                   <speaker>FAUST</speaker>
                   <l>Laisse-moi !</l>
                </sp>
-               <sp n="139">
+               <sp n="3">
                   <speaker>MÉPHISTOPHÉLÈS</speaker>
                   <l>J’obéis... daignez m’attendre ici !</l>
                   <stage>
@@ -1199,9 +1196,9 @@
                   </stage>
                </sp>
             </div>
-            <div type="scene" n="11">
+            <div type="scene" n="4">
                <head>Quatrième scène</head>
-               <sp n="140">
+               <sp n="1">
                   <speaker>FAUST</speaker>
                   <l>Quel trouble inconnu me pénètre !</l>
                   <l>Je sens l’amour s’emparer de mon être.</l>
@@ -1220,22 +1217,22 @@
                   <l>Salut ! demeure chaste et pure, etc.</l>
                </sp>
             </div>
-            <div type="scene" n="12">
+            <div type="scene" n="5">
                <head>Cinquième scène</head>
                <stage>
                   <p>Méphistophélès reparaît, une cassette sous le bras.</p>
                </stage>
-               <sp n="141">
+               <sp n="1">
                   <speaker>MÉPHISTOPHÉLÈS</speaker>
                   <l>Alerte ! la voilà !</l>
                   <l>Si le bouquet l’emporte sur l’écrin</l>
                   <l>je consens à perdre mon pouvoir.</l>
                </sp>
-               <sp n="142">
+               <sp n="2">
                   <speaker>FAUST</speaker>
                   <l>Fuyons ! Je veux ne jamais la revoir !</l>
                </sp>
-               <sp n="143">
+               <sp n="3">
                   <speaker>MÉPHISTOPHÉLÈS</speaker>
                   <l>Quel scrupule vous prend !</l>
                   <stage>
@@ -1249,9 +1246,9 @@
                   </stage>
                </sp>
             </div>
-            <div type="scene" n="13">
+            <div type="scene" n="6">
                <head>Sixième scène</head>
-               <sp n="144">
+               <sp n="1">
                   <speaker>MARGUERITE</speaker>
                   <l>Je voudrais bien savoir quel était ce jeune homme,</l>
                   <l>si c’est un grand seigneur, et comment il se nomme</l>
@@ -1349,9 +1346,9 @@
                   <l>Ah ! je ris me voir, etc.</l>
                </sp>
             </div>
-            <div type="scene" n="14">
+            <div type="scene" n="7">
                <head>Septième scène</head>
-               <sp n="145">
+               <sp n="1">
                   <speaker>MARTHE</speaker>
                   <stage>
                      <p>entrant par le fond</p>
@@ -1360,11 +1357,11 @@
                   <l>Comme vous voilà belle, mon ange !</l>
                   <l>D’où vous vient ce riche écrin ?</l>
                </sp>
-               <sp n="146">
+               <sp n="2">
                   <speaker>MARGUERITE</speaker>
                   <l>Hélas ! On l’aura par mégarde apporté !</l>
                </sp>
-               <sp n="147">
+               <sp n="3">
                   <speaker>MARTHE</speaker>
                   <l>Que non pas !</l>
                   <l>Ces bijoux sont à vous,</l>
@@ -1373,20 +1370,20 @@
                   <l>Mon cher époux jadis était moins généreux !</l>
                </sp>
             </div>
-            <div type="scene" n="15">
+            <div type="scene" n="8">
                <head>Huitième scène</head>
                <stage>
                   <p>Méphistophélès et Faust entrent en scène.</p>
                </stage>
-               <sp n="148">
+               <sp n="1">
                   <speaker>MÉPHISTOPHÉLÈS</speaker>
                   <l>Dame Marthe Schwerdtlein, s’il vous plaît ?</l>
                </sp>
-               <sp n="149">
+               <sp n="2">
                   <speaker>MARTHE</speaker>
                   <l>Qui m’appelle ?</l>
                </sp>
-               <sp n="150">
+               <sp n="3">
                   <speaker>MÉPHISTOPHÉLÈS</speaker>
                   <stage>
                      <p>à Marguerite</p>
@@ -1401,33 +1398,33 @@
                   </stage>
                   <l>Dame Marthe Schwerdtlein ?</l>
                </sp>
-               <sp n="151">
+               <sp n="4">
                   <speaker>MARTHE</speaker>
                   <l>Me voici !</l>
                </sp>
-               <sp n="152">
+               <sp n="5">
                   <speaker>MÉPHISTOPHÉLÈS</speaker>
                   <l>La nouvelle que j’apporte</l>
                   <l>n’est pas pour vous mettre en gaîté.</l>
                   <l>Votre mari, madame, est mort et vous salue !</l>
                </sp>
-               <sp n="153">
+               <sp n="6">
                   <speaker>MARTHE</speaker>
                   <l>Ah ! grand Dieu !</l>
                </sp>
-               <sp n="154">
+               <sp n="7">
                   <speaker>MARGUERITE</speaker>
                   <l>Qu’est-ce donc ?</l>
                </sp>
-               <sp n="155">
+               <sp n="8">
                   <speaker>MÉPHISTOPHÉLÈS</speaker>
                   <l>Rien !</l>
                </sp>
-               <sp n="156">
+               <sp n="9">
                   <speaker>MARTHE</speaker>
                   <l>Ô calamité ! Ô nouvelle imprévue !</l>
                </sp>
-               <sp n="157">
+               <sp n="10">
                   <speaker>MARGUERITE</speaker>
                   <stage>
                      <p>à part</p>
@@ -1435,43 +1432,43 @@
                   <l>Malgré moi mon cœur tremble</l>
                   <l>et tressaille à sa vue !</l>
                </sp>
-               <sp n="158">
+               <sp n="11">
                   <speaker>FAUST</speaker>
                   <stage>
                      <p>à part</p>
                   </stage>
                   <l>La fièvre de mes sens se dissipe à sa vue !</l>
                </sp>
-               <sp n="159">
+               <sp n="12">
                   <speaker>MÉPHISTOPHÉLÈS</speaker>
                   <stage>
                      <p>à Marthe</p>
                   </stage>
                   <l>Votre mari, madame, est mort et vous salue !</l>
                </sp>
-               <sp n="160">
+               <sp n="13">
                   <speaker>MARTHE</speaker>
                   <l>Ne m’apportez-vous rien de lui ?</l>
                </sp>
-               <sp n="161">
+               <sp n="14">
                   <speaker>MÉPHISTOPHÉLÈS</speaker>
                   <l>Rien ! Et, pour le punir,</l>
                   <l>il faut dès aujourd’hui</l>
                   <l>chercher quelqu’un qui le remplace !</l>
                </sp>
-               <sp n="162">
+               <sp n="15">
                   <speaker>FAUST</speaker>
                   <stage>
                      <p>à Marguerite</p>
                   </stage>
                   <l>Pourquoi donc quitter ces bijoux ?</l>
                </sp>
-               <sp n="163">
+               <sp n="16">
                   <speaker>MARGUERITE</speaker>
                   <l>Ces bijoux ne sont pas à moi !</l>
                   <l>Laissez, de grâce !</l>
                </sp>
-               <sp n="164">
+               <sp n="17">
                   <speaker>MÉPHISTOPHÉLÈS</speaker>
                   <stage>
                      <p>à Marthe</p>
@@ -1479,104 +1476,104 @@
                   <l>Qui ne serait heureux d’échanger avec vous</l>
                   <l>la bague d’hyménée ?</l>
                </sp>
-               <sp n="165">
+               <sp n="18">
                   <speaker>MARTHE</speaker>
                   <l>Ah bah ! Plaît-il ?</l>
                </sp>
-               <sp n="166">
+               <sp n="19">
                   <speaker>MÉPHISTOPHÉLÈS</speaker>
                   <l>Hélas ! cruelle destinée !</l>
                </sp>
-               <sp n="167">
+               <sp n="20">
                   <speaker>FAUST</speaker>
                   <stage>
                      <p>à Marguerite</p>
                   </stage>
                   <l>Prenez mon bras un moment !</l>
                </sp>
-               <sp n="168">
+               <sp n="21">
                   <speaker>MARGUERITE</speaker>
                   <l>Laissez ! je vous en conjure !</l>
                </sp>
-               <sp n="169">
+               <sp n="22">
                   <speaker>MÉPHISTOPHÉLÈS</speaker>
                   <stage>
                      <p>à Marthe</p>
                   </stage>
                   <l>Votre bras !</l>
                </sp>
-               <sp n="170">
+               <sp n="23">
                   <speaker>MARTHE</speaker>
                   <stage>
                      <p>à part</p>
                   </stage>
                   <l>Il est charmant !</l>
                </sp>
-               <sp n="171">
+               <sp n="24">
                   <speaker>MÉPHISTOPHÉLÈS</speaker>
                   <stage>
                      <p>à part</p>
                   </stage>
                   <l>La voisine est un peu mûre !</l>
                </sp>
-               <sp n="172">
+               <sp n="25">
                   <speaker>MARGUERITE</speaker>
                   <l>Je vous en conjure !</l>
                </sp>
-               <sp n="173">
+               <sp n="26">
                   <speaker>MARTHE</speaker>
                   <l>Quelle noble allure !</l>
                </sp>
-               <sp n="174">
+               <sp n="27">
                   <speaker>FAUST</speaker>
                   <l>Âme douce et pure !</l>
                </sp>
-               <sp n="175">
+               <sp n="28">
                   <speaker>MÉPHISTOPHÉLÈS</speaker>
                   <l>Elle est un peu mûre !</l>
                </sp>
-               <sp n="176">
+               <sp n="29">
                   <speaker>MARTHE</speaker>
                   <l>Ainsi vous voyagez toujours ?</l>
                </sp>
-               <sp n="177">
+               <sp n="30">
                   <speaker>MÉPHISTOPHÉLÈS</speaker>
                   <l>Toujours ! Dure nécessité, madame,</l>
                   <l>dure nécessité !</l>
                   <l>Sans ami, sans parents, sans femme ! Ah !</l>
                </sp>
-               <sp n="178">
+               <sp n="31">
                   <speaker>MARTHE</speaker>
                   <l>Cela sied encore aux beaux jours !</l>
                   <l>Mais plus tard, combien il est triste</l>
                   <l>de vieillir seul, en égoïste !</l>
                </sp>
-               <sp n="179">
+               <sp n="32">
                   <speaker>MÉPHISTOPHÉLÈS</speaker>
                   <l>J’ai frémi souvent, j’en conviens,</l>
                   <l>devant cette horrible pensée !</l>
                </sp>
-               <sp n="180">
+               <sp n="33">
                   <speaker>MARTHE</speaker>
                   <l>Avant que l’heure en soit passée,</l>
                   <l>digne seigneur, songez-y bien !</l>
                </sp>
-               <sp n="181">
+               <sp n="34">
                   <speaker>MÉPHISTOPHÉLÈS</speaker>
                   <l>J’y songerai !</l>
                </sp>
-               <sp n="182">
+               <sp n="35">
                   <speaker>MARTHE</speaker>
                   <l>Songez-y bien !</l>
                </sp>
-               <sp n="183">
+               <sp n="36">
                   <speaker>FAUST</speaker>
                   <stage>
                      <p>à Marguerite</p>
                   </stage>
                   <l>Eh quoi ! toujours seule ?</l>
                </sp>
-               <sp n="184">
+               <sp n="37">
                   <speaker>MARGUERITE</speaker>
                   <l>Mon frère est soldat ; j’ai perdu ma mère ;</l>
                   <l>puis ce fut un autre malheur,</l>
@@ -1592,21 +1589,21 @@
                   <l>Pour la voir, la pauvre petite,</l>
                   <l>je reprendrais bien tout cela !</l>
                </sp>
-               <sp n="185">
+               <sp n="38">
                   <speaker>FAUST</speaker>
                   <l>Si le ciel, avec un sourire,</l>
                   <l>l’avait faite semblable à toi,</l>
                   <l>c’était un ange ! Oui, je le crois !</l>
                </sp>
-               <sp n="186">
+               <sp n="39">
                   <speaker>MARGUERITE</speaker>
                   <l>Vous moquez-vous ?</l>
                </sp>
-               <sp n="187">
+               <sp n="40">
                   <speaker>FAUST</speaker>
                   <l>Non, je t’admire !</l>
                </sp>
-               <sp n="188">
+               <sp n="41">
                   <speaker>MARGUERITE</speaker>
                   <l>Je ne vous crois pas</l>
                   <l>et de moi tout bas</l>
@@ -1615,7 +1612,7 @@
                   <l>pour vous écouter !</l>
                   <l>Et pourtant j’écoute !</l>
                </sp>
-               <sp n="189">
+               <sp n="42">
                   <speaker>FAUST</speaker>
                   <l>Laisse-moi ton bras !</l>
                   <l>Dieu ne m’a-t-il pas</l>
@@ -1624,7 +1621,7 @@
                   <l>hélas ! d’écouter ?</l>
                   <l>Mon cœur parle ; écoute !</l>
                </sp>
-               <sp n="190">
+               <sp n="43">
                   <speaker>MARTHE</speaker>
                   <l>Vous n’entendez pas,</l>
                   <l>et de moi tout bas</l>
@@ -1633,7 +1630,7 @@
                   <l>pourquoi vous hâter</l>
                   <l>de vous mettre en route ?</l>
                </sp>
-               <sp n="191">
+               <sp n="44">
                   <speaker>MÉPHISTOPHÉLÈS</speaker>
                   <l>Ne m’accusez pas,</l>
                   <l>si je dois, hélas !</l>
@@ -1645,32 +1642,32 @@
                      <p>La nuit commence à tomber.</p>
                   </stage>
                </sp>
-               <sp n="192">
+               <sp n="45">
                   <speaker>MARGUERITE</speaker>
                   <stage>
                      <p>à Faust</p>
                   </stage>
                   <l>Retirez-vous ! Voici la nuit.</l>
                </sp>
-               <sp n="193">
+               <sp n="46">
                   <speaker>FAUST</speaker>
                   <l>Chère âme !</l>
                </sp>
-               <sp n="194">
+               <sp n="47">
                   <speaker>MARGUERITE</speaker>
                   <l>Laissez-moi !</l>
                   <stage>
                      <p>Elle s’enfuit.</p>
                   </stage>
                </sp>
-               <sp n="195">
+               <sp n="48">
                   <speaker>FAUST</speaker>
                   <stage>
                      <p>la poursuivant</p>
                   </stage>
                   <l>Ah, méchante, on me fuit !</l>
                </sp>
-               <sp n="196">
+               <sp n="49">
                   <speaker>MÉPHISTOPHÉLÈS</speaker>
                   <l>L’entretien devient trop tendre !</l>
                   <l>Esquivons-nous !</l>
@@ -1678,7 +1675,7 @@
                      <p>Il se cache derrière un arbre.</p>
                   </stage>
                </sp>
-               <sp n="197">
+               <sp n="50">
                   <speaker>MARTHE</speaker>
                   <stage>
                      <p>à part</p>
@@ -1689,60 +1686,60 @@
                   </stage>
                   <l>Eh bien ! il est parti ! Seigneur !</l>
                </sp>
-               <sp n="198">
+               <sp n="51">
                   <speaker>MÉPHISTOPHÉLÈS</speaker>
                   <stage>
                      <p>à part</p>
                   </stage>
                   <l>Oui.</l>
                </sp>
-               <sp n="199">
+               <sp n="52">
                   <speaker>MARTHE</speaker>
                   <l>Cher seigneur !</l>
                   <stage>
                      <p>Elle s’éloigne.</p>
                   </stage>
                </sp>
-               <sp n="200">
+               <sp n="53">
                   <speaker>MÉPHISTOPHÉLÈS</speaker>
                   <l>Cours après moi ! Ouf !</l>
                   <l>Cette vieille impitoyable</l>
                   <l>de force ou de gré, je crois,</l>
                   <l>allait épouser le diable !</l>
                </sp>
-               <sp n="201">
+               <sp n="54">
                   <speaker>FAUST</speaker>
                   <stage>
                      <p>dans la coulisse</p>
                   </stage>
                   <l>Marguerite !</l>
                </sp>
-               <sp n="202">
+               <sp n="55">
                   <speaker>MARTHE</speaker>
                   <stage>
                      <p>dans la coulisse</p>
                   </stage>
                   <l>Cher seigneur !</l>
                </sp>
-               <sp n="203">
+               <sp n="56">
                   <speaker>MÉPHISTOPHÉLÈS</speaker>
                   <l>Serviteur !</l>
                </sp>
-               <sp n="204">
+               <sp n="57">
                   <speaker>FAUST</speaker>
                   <stage>
                      <p>dans la coulisse</p>
                   </stage>
                   <l>Marguerite !</l>
                </sp>
-               <sp n="205">
+               <sp n="58">
                   <speaker>MARTHE</speaker>
                   <stage>
                      <p>dans la coulisse</p>
                   </stage>
                   <l>Cher seigneur !</l>
                </sp>
-               <sp n="206">
+               <sp n="59">
                   <speaker>MÉPHISTOPHÉLÈS</speaker>
                   <l>Serviteur !</l>
                   <l>Il était temps ! sous le feuillage sombre</l>
@@ -1757,11 +1754,11 @@
                      <p>Il disparaît tandis que Faust et Marguerite rentrent.</p>
                   </stage>
                </sp>
-               <sp n="207">
+               <sp n="60">
                   <speaker>MARGUERITE</speaker>
                   <l>Il se fait tard ! Adieu !</l>
                </sp>
-               <sp n="208">
+               <sp n="61">
                   <speaker>FAUST</speaker>
                   <stage>
                      <p>la retenant</p>
@@ -1773,7 +1770,7 @@
                   <l>dont l’astre de la nuit, comme dans un nuage,</l>
                   <l>caresse ta beauté !</l>
                </sp>
-               <sp n="209">
+               <sp n="62">
                   <speaker>MARGUERITE</speaker>
                   <l>Ô silence ! ô bonheur ! ineffable mystère !</l>
                   <l>enivrante langueur !</l>
@@ -1784,20 +1781,20 @@
                      <p>Elle cueille une marguerite.</p>
                   </stage>
                </sp>
-               <sp n="210">
+               <sp n="63">
                   <speaker>FAUST</speaker>
                   <l>Qu’est-ce donc ?</l>
                </sp>
-               <sp n="211">
+               <sp n="64">
                   <speaker>MARGUERITE</speaker>
                   <l>Un simple jeu !</l>
                   <l>Laissez un peu !</l>
                </sp>
-               <sp n="212">
+               <sp n="65">
                   <speaker>FAUST</speaker>
                   <l>Que dit ta bouche à voix basse ?</l>
                </sp>
-               <sp n="213">
+               <sp n="66">
                   <speaker>MARGUERITE</speaker>
                   <stage>
                      <p>effeuillant la marguerite</p>
@@ -1805,7 +1802,7 @@
                   <l>Il m’aime ! Il ne m’aime pas !</l>
                   <l>Il m’aime ! pas ! Il m’aime ! pas ! Il m’aime !</l>
                </sp>
-               <sp n="214">
+               <sp n="67">
                   <speaker>FAUST</speaker>
                   <l>Oui ! crois-en cette fleur éclose sous tes pas !</l>
                   <l>Qu’elle soit pour ton cœur l’oracle du ciel même !</l>
@@ -1815,11 +1812,11 @@
                   <l>une ardeur toujours nouvelle !</l>
                   <l>Nous enivrer sans fin d’une joie éternelle !</l>
                </sp>
-               <sp n="215">
+               <sp n="68">
                   <speaker>FAUST et MARGUERITE</speaker>
                   <l>Éternelle !</l>
                </sp>
-               <sp n="216">
+               <sp n="69">
                   <speaker>FAUST</speaker>
                   <l>Ô nuit d’amour, ciel radieux !</l>
                   <l>Ô douces flammes !</l>
@@ -1827,34 +1824,34 @@
                   <l>verse les cieux</l>
                   <l>dans nos deux âmes !</l>
                </sp>
-               <sp n="217">
+               <sp n="70">
                   <speaker>MARGUERITE</speaker>
                   <l>Je veux t’aimer et te chérir !</l>
                   <l>Parle encore !</l>
                   <l>Je t’appartiens ! Je t’adore !</l>
                   <l>Pour toi je veux mourir !</l>
                </sp>
-               <sp n="218">
+               <sp n="71">
                   <speaker>FAUST</speaker>
                   <l>Marguerite !</l>
                </sp>
-               <sp n="219">
+               <sp n="72">
                   <speaker>MARGUERITE</speaker>
                   <l>Ah ! partez !</l>
                </sp>
-               <sp n="220">
+               <sp n="73">
                   <speaker>FAUST</speaker>
                   <l>Cruelle !</l>
                </sp>
-               <sp n="221">
+               <sp n="74">
                   <speaker>MARGUERITE</speaker>
                   <l>Je chancelle !</l>
                </sp>
-               <sp n="222">
+               <sp n="75">
                   <speaker>FAUST</speaker>
                   <l>Me séparer de toi ! Cruelle !</l>
                </sp>
-               <sp n="223">
+               <sp n="76">
                   <speaker>MARGUERITE</speaker>
                   <stage>
                      <p>suppliante</p>
@@ -1865,7 +1862,7 @@
                   <l>Ne brisez pas le cœur</l>
                   <l>de Marguerite ! etc.</l>
                </sp>
-               <sp n="224">
+               <sp n="77">
                   <speaker>FAUST</speaker>
                   <l>Tu veux que je te quitte !</l>
                   <l>Vois ma douleur ! Hélas !</l>
@@ -1873,15 +1870,15 @@
                   <l>Tu me brises le cœur !</l>
                   <l>Par pitié !</l>
                </sp>
-               <sp n="225">
+               <sp n="78">
                   <speaker>MARGUERITE</speaker>
                   <l>Si je vous suis chère !</l>
                </sp>
-               <sp n="226">
+               <sp n="79">
                   <speaker>FAUST</speaker>
                   <l>Marguerite !</l>
                </sp>
-               <sp n="227">
+               <sp n="80">
                   <speaker>MARGUERITE</speaker>
                   <l>Par votre amour, par ces aveux</l>
                   <l>que je devais taire,</l>
@@ -1889,7 +1886,7 @@
                   <l>Cédez à mes vœux !</l>
                   <l>Partez, oui, etc.</l>
                </sp>
-               <sp n="228">
+               <sp n="81">
                   <speaker>FAUST</speaker>
                   <l>Tu veux, hélas, etc.</l>
                   <l>Divine pureté !</l>
@@ -1898,18 +1895,18 @@
                   <l>triomphe de ma volonté !</l>
                   <l>J’obéis. Mais demain...</l>
                </sp>
-               <sp n="229">
+               <sp n="82">
                   <speaker>MARGUERITE</speaker>
                   <l>Oui, demain, dès l’aurore !</l>
                   <l>Demain ! Toujours !</l>
                </sp>
-               <sp n="230">
+               <sp n="83">
                   <speaker>FAUST</speaker>
                   <l>Un mot encore !</l>
                   <l>Répète-moi ce doux aveu !</l>
                   <l>Tu m’aimes ?</l>
                </sp>
-               <sp n="231">
+               <sp n="84">
                   <speaker>MARGUERITE</speaker>
                   <stage>
                      <p>s’échappe, s’arrête sur le seuil et envoie un baiser à Faust</p>
@@ -1919,29 +1916,29 @@
                      <p>Elle entre dans le pavillon.</p>
                   </stage>
                </sp>
-               <sp n="232">
+               <sp n="85">
                   <speaker>FAUST</speaker>
                   <l>Félicité du ciel ! Ah, fuyons !</l>
                </sp>
-               <sp n="233">
+               <sp n="86">
                   <speaker>MÉPHISTOPHÉLÈS</speaker>
                   <l>Tête folle !</l>
                </sp>
-               <sp n="234">
+               <sp n="87">
                   <speaker>FAUST</speaker>
                   <l>Tu nous écoutais ?</l>
                </sp>
-               <sp n="235">
+               <sp n="88">
                   <speaker>MÉPHISTOPHÉLÈS</speaker>
                   <l>Par bonheur !</l>
                   <l>Vous auriez grand besoin, docteur,</l>
                   <l>qu’on vous renvoyât à l’école !</l>
                </sp>
-               <sp n="236">
+               <sp n="89">
                   <speaker>FAUST</speaker>
                   <l>Laisse-moi !</l>
                </sp>
-               <sp n="237">
+               <sp n="90">
                   <speaker>MÉPHISTOPHÉLÈS</speaker>
                   <l>Daignez, seulement écouter un moment</l>
                   <l>ce qu’elle va conter aux étoiles,</l>
@@ -1951,7 +1948,7 @@
                      <p>Marguerite paraît à la fenêtre.</p>
                   </stage>
                </sp>
-               <sp n="238">
+               <sp n="91">
                   <speaker>MARGUERITE</speaker>
                   <l>Il m’aime ! Quel trouble en mon cœur !</l>
                   <l>L’oiseau chante, le vent murmure,</l>
@@ -1964,18 +1961,18 @@
                   <l>Demain ? Ah ! presse ton retour,</l>
                   <l>cher bien-aimé ! Viens !</l>
                </sp>
-               <sp n="239">
+               <sp n="92">
                   <speaker>FAUST</speaker>
                   <stage>
                      <p>s’élançant vers la fenêtre et saisissant la main de Marguerite</p>
                   </stage>
                   <l>Marguerite !</l>
                </sp>
-               <sp n="240">
+               <sp n="93">
                   <speaker>MARGUERITE</speaker>
                   <l>Ah !</l>
                </sp>
-               <sp n="241">
+               <sp n="94">
                   <speaker>MÉPHISTOPHÉLÈS</speaker>
                   <l>Ha ! Ha ! Ha ! Ha ! Ha !</l>
                </sp>
@@ -1983,12 +1980,12 @@
          </div>
          <div type="act" n="4">
             <head>QUATRIÈME ACTE</head>
-            <div type="scene" n="16">
+            <div type="scene" n="1">
                <head>Première scène</head>
                <stage>
                   <p>La chambre de Marguerite. Introduction</p>
                </stage>
-               <sp n="242">
+               <sp n="1">
                   <speaker>MARGUERITE</speaker>
                   <stage>
                      <p>seule</p>
@@ -1997,7 +1994,7 @@
                   <l>Je riais avec elles autrefois,</l>
                   <l>maintenant...</l>
                </sp>
-               <sp n="243">
+               <sp n="2">
                   <speaker>JEUNES FILLES</speaker>
                   <stage>
                      <p>au dehors</p>
@@ -2006,7 +2003,7 @@
                   <l>s’enfuit et court encore !</l>
                   <l>Ah, ah, ah, ah, ah !</l>
                </sp>
-               <sp n="244">
+               <sp n="3">
                   <speaker>MARGUERITE</speaker>
                   <l>Elles se cachaient ! Ah, cruelles !</l>
                   <l>Je ne trouvais pas</l>
@@ -2051,54 +2048,54 @@
                      <p>Siebel entre doucement</p>
                   </stage>
                </sp>
-               <sp n="245">
+               <sp n="4">
                   <speaker>SIEBEL</speaker>
                   <l>Marguerite !</l>
                </sp>
-               <sp n="246">
+               <sp n="5">
                   <speaker>MARGUERITE</speaker>
                   <l>Siebel !</l>
                </sp>
-               <sp n="247">
+               <sp n="6">
                   <speaker>SIEBEL</speaker>
                   <l>Encore des pleurs ?</l>
                </sp>
-               <sp n="248">
+               <sp n="7">
                   <speaker>MARGUERITE</speaker>
                   <l>Hélas, vous seul ne me maudissez pas !</l>
                </sp>
-               <sp n="249">
+               <sp n="8">
                   <speaker>SIEBEL</speaker>
                   <l>Je ne suis qu’un enfant</l>
                   <l>mais j’ai la cœur d’un homme,</l>
                   <l>et je vous vengerai de son lâche abandon !</l>
                   <l>Je le tuerai !</l>
                </sp>
-               <sp n="250">
+               <sp n="9">
                   <speaker>MARGUERITE</speaker>
                   <l>Qui donc ?</l>
                </sp>
-               <sp n="251">
+               <sp n="10">
                   <speaker>SIEBEL</speaker>
                   <l>Faut-il que je le nomme ?</l>
                   <l>L’ingrat qui vous trahit !</l>
                </sp>
-               <sp n="252">
+               <sp n="11">
                   <speaker>MARGUERITE</speaker>
                   <l>Non, taisez-vous !</l>
                </sp>
-               <sp n="253">
+               <sp n="12">
                   <speaker>SIEBEL</speaker>
                   <l>Pardon ? Vous l’aimez encore ?</l>
                </sp>
-               <sp n="254">
+               <sp n="13">
                   <speaker>MARGUERITE</speaker>
                   <l>Oui, toujours, toujours !</l>
                   <l>Mais ce n’est pas à vous</l>
                   <l>de plaindre mon ennui !</l>
                   <l>J’ai tort, Siebel, de vous parler de lui.</l>
                </sp>
-               <sp n="255">
+               <sp n="14">
                   <speaker>SIEBEL</speaker>
                   <l>Si le bonheur à sourire t’invite,</l>
                   <l>joyeux alors, je sens un doux émoi ;</l>
@@ -2111,7 +2108,7 @@
                   <l>Ô Marguerite, Ô Marguerite,</l>
                   <l>comme une sœur je t’aimerai toujours !</l>
                </sp>
-               <sp n="256">
+               <sp n="15">
                   <speaker>MARGUERITE</speaker>
                   <stage>
                      <p>prenant la main de Siebel</p>
@@ -2126,12 +2123,12 @@
                   </stage>
                </sp>
             </div>
-            <div type="scene" n="17">
+            <div type="scene" n="2">
                <head>Deuxième scène</head>
                <stage>
                   <p>L’église</p>
                </stage>
-               <sp n="257">
+               <sp n="1">
                   <speaker>MARGUERITE</speaker>
                   <stage>
                      <p>s’agenouillant</p>
@@ -2139,30 +2136,30 @@
                   <l>Seigneur, daignez permettre à votre humble servante</l>
                   <l>de s’agenouiller devant vous !</l>
                </sp>
-               <sp n="258">
+               <sp n="2">
                   <speaker>MÉPHISTOPHÉLÈS</speaker>
                   <l>Non ! tu ne prieras pas ! Frappez-la d’épouvante !</l>
                   <l>Esprits du mal, accourez tous !</l>
                </sp>
-               <sp n="259">
+               <sp n="3">
                   <speaker>CHŒUR DES DÉMONS</speaker>
                   <l>Marguerite !</l>
                </sp>
-               <sp n="260">
+               <sp n="4">
                   <speaker>MARGUERITE</speaker>
                   <l>Qui m’appelle ?</l>
                </sp>
-               <sp n="261">
+               <sp n="5">
                   <speaker>CHŒUR DES DÉMONS</speaker>
                   <l>Marguerite !</l>
                </sp>
-               <sp n="262">
+               <sp n="6">
                   <speaker>MARGUERITE</speaker>
                   <l>Je chancelle ! Je meurs !</l>
                   <l>Dieu bon ! Dieu clément !</l>
                   <l>Est-ce déjà l’heure du châtiment ?</l>
                </sp>
-               <sp n="263">
+               <sp n="7">
                   <speaker>MÉPHISTOPHÉLÈS</speaker>
                   <l>Souviens-toi du passé, quand sous l’aile des anges,</l>
                   <l>abritant ton bonheur,</l>
@@ -2177,56 +2174,56 @@
                   <l>C’est l’éternel remords, c’est l’angoisse éternelle</l>
                   <l>dans l’éternelle nuit !</l>
                </sp>
-               <sp n="264">
+               <sp n="8">
                   <speaker>MARGUERITE</speaker>
                   <l>Dieu ! quelle est cette voix qui me parle dans l’ombre</l>
                   <l>Dieu tout-puissant !</l>
                   <l>Quel voile sombre sur moi descend !</l>
                </sp>
-               <sp n="265">
+               <sp n="9">
                   <speaker>CHŒUR RELIGIEUX</speaker>
                   <l>Quand du Seigneur le jour luira,</l>
                   <l>sa croix au ciel resplendira,</l>
                   <l>et l’univers s’écroulera.</l>
                </sp>
-               <sp n="266">
+               <sp n="10">
                   <speaker>MARGUERITE</speaker>
                   <l>Hélas ! ce chant pieux est plus terrible encore.</l>
                </sp>
-               <sp n="267">
+               <sp n="11">
                   <speaker>MÉPHISTOPHÉLÈS</speaker>
                   <l>Non ! pour toi Dieu n’a plus pardon !</l>
                   <l>Pour toi le ciel n’a plus d’aurore !</l>
                   <l>Non ! Non !</l>
                </sp>
-               <sp n="268">
+               <sp n="12">
                   <speaker>CHŒUR RELIGIEUX</speaker>
                   <l>Que dirai-je alors au Seigneur ?</l>
                   <l>Où trouverai-je un protecteur ?</l>
                   <l>Quand l’innocent n’est pas sans peur !</l>
                </sp>
-               <sp n="269">
+               <sp n="13">
                   <speaker>MARGUERITE</speaker>
                   <l>Ah ! ce chant m’étouffe et m’oppresse !</l>
                   <l>Je suis dans un cercle de fer !</l>
                </sp>
-               <sp n="270">
+               <sp n="14">
                   <speaker>MÉPHISTOPHÉLÈS</speaker>
                   <l>Adieu les nuits d’amour et les jours pleins d’ivresse !</l>
                   <l>À toi malheur ! À toi l’enfer !</l>
                </sp>
-               <sp n="271">
+               <sp n="15">
                   <speaker>MARGUERITE</speaker>
                   <l>Seigneur !</l>
                </sp>
-               <sp n="272">
+               <sp n="16">
                   <speaker>MARGUERITE et LE CHŒUR</speaker>
                   <l>Seigneur, accueillez la prière</l>
                   <l>des cœurs malheureux !</l>
                   <l>Qu’un rayon de votre lumière</l>
                   <l>descende sur eux !</l>
                </sp>
-               <sp n="273">
+               <sp n="17">
                   <speaker>MÉPHISTOPHÉLÈS</speaker>
                   <l>Marguerite !</l>
                   <l>Sois maudite !</l>
@@ -2236,12 +2233,12 @@
                   </stage>
                </sp>
             </div>
-            <div type="scene" n="18">
+            <div type="scene" n="3">
                <head>Troisième scène</head>
                <stage>
                   <p>Une place</p>
                </stage>
-               <sp n="274">
+               <sp n="1">
                   <speaker>CHŒUR DES SOLDATS</speaker>
                   <l>Déposons les armes !</l>
                   <l>Dans nos foyers enfin nous voici revenus !</l>
@@ -2249,18 +2246,18 @@
                   <l>nos mères et nos sœurs</l>
                   <l>ne nous attendront plus.</l>
                </sp>
-               <sp n="275">
+               <sp n="2">
                   <speaker>VALENTIN</speaker>
                   <stage>
                      <p>apercevant Siebel</p>
                   </stage>
                   <l>Eh ! parbleu ! c’est Siebel !</l>
                </sp>
-               <sp n="276">
+               <sp n="3">
                   <speaker>SIEBEL</speaker>
                   <l>En effet, je...</l>
                </sp>
-               <sp n="277">
+               <sp n="4">
                   <speaker>VALENTIN</speaker>
                   <l>Viens vite ! Viens dans mes bras !</l>
                   <stage>
@@ -2268,18 +2265,18 @@
                   </stage>
                   <l>Et Marguerite ?</l>
                </sp>
-               <sp n="278">
+               <sp n="5">
                   <speaker>SIEBEL</speaker>
                   <l>Elle est à l’église, je crois.</l>
                </sp>
-               <sp n="279">
+               <sp n="6">
                   <speaker>VALENTIN</speaker>
                   <l>Oui, priant Dieu pour moi !</l>
                   <l>Chère sœur,</l>
                   <l>comme elle va prêter une oreille attentive</l>
                   <l>au récit de nos combats !</l>
                </sp>
-               <sp n="280">
+               <sp n="7">
                   <speaker>CHŒUR DES SOLDATS</speaker>
                   <l>Oui, c’est plaisir, dans les familles,</l>
                   <l>de conter aux enfants qui frémissent tout bas,</l>
@@ -2313,39 +2310,39 @@
                   </stage>
                </sp>
             </div>
-            <div type="scene" n="19">
+            <div type="scene" n="4">
                <head>Quatrième scène</head>
-               <sp n="281">
+               <sp n="1">
                   <speaker>VALENTIN</speaker>
                   <l>Allons, Siebel !</l>
                   <l>Entrons dans la maison !</l>
                   <l>Un verre en main, tu me feras raison !</l>
                </sp>
-               <sp n="282">
+               <sp n="2">
                   <speaker>SIEBEL</speaker>
                   <stage>
                      <p>vivement</p>
                   </stage>
                   <l>Non ! n’entre pas !</l>
                </sp>
-               <sp n="283">
+               <sp n="3">
                   <speaker>VALENTIN</speaker>
                   <l>Pourquoi ? Tu détournes la tête ?</l>
                   <l>Ton regard fuit le mien !</l>
                   <l>Siebel, explique-toi !</l>
                </sp>
-               <sp n="284">
+               <sp n="4">
                   <speaker>SIEBEL</speaker>
                   <l>Eh bien... non, je ne puis !</l>
                </sp>
-               <sp n="285">
+               <sp n="5">
                   <speaker>VALENTIN</speaker>
                   <stage>
                      <p>se dirigeant vers la maison</p>
                   </stage>
                   <l>Que veux-tu dire ?</l>
                </sp>
-               <sp n="286">
+               <sp n="6">
                   <speaker>SIEBEL</speaker>
                   <stage>
                      <p>l’arrêtant</p>
@@ -2353,7 +2350,7 @@
                   <l>Arrête !</l>
                   <l>Sois clément, Valentin !</l>
                </sp>
-               <sp n="287">
+               <sp n="7">
                   <speaker>VALENTIN</speaker>
                   <stage>
                      <p>se dégageant</p>
@@ -2363,7 +2360,7 @@
                      <p>Il entre dans la maison.</p>
                   </stage>
                </sp>
-               <sp n="288">
+               <sp n="8">
                   <speaker>SIEBEL</speaker>
                   <l>Pardonne-lui !</l>
                   <l>Mon Dieu, je vous implore !</l>
@@ -2373,22 +2370,22 @@
                   </stage>
                </sp>
             </div>
-            <div type="scene" n="20">
+            <div type="scene" n="5">
                <head>Cinqième scène</head>
                <stage>
                   <p>Faust se dirige vers la maison de Marguerite et s’arrête.</p>
                </stage>
-               <sp n="289">
+               <sp n="1">
                   <speaker>MÉPHISTOPHÉLÈS</speaker>
                   <l>Qu’attendez-vous encore ?</l>
                   <l>Entrons dans la maison.</l>
                </sp>
-               <sp n="290">
+               <sp n="2">
                   <speaker>FAUST</speaker>
                   <l>Tais-toi, maudit ! J’ai peur</l>
                   <l>de rapporter ici la honte et le malheur !</l>
                </sp>
-               <sp n="291">
+               <sp n="3">
                   <speaker>MÉPHISTOPHÉLÈS</speaker>
                   <l>À quoi bon la revoir,</l>
                   <l>après l’avoir quittée ?</l>
@@ -2396,11 +2393,11 @@
                   <l>bien mieux fêtée !</l>
                   <l>Le sabbat nous attend !</l>
                </sp>
-               <sp n="292">
+               <sp n="4">
                   <speaker>FAUST</speaker>
                   <l>Marguerite !</l>
                </sp>
-               <sp n="293">
+               <sp n="5">
                   <speaker>MÉPHISTOPHÉLÈS</speaker>
                   <l>Je vois que mes avis sont vains</l>
                   <l>et que l’amour l’emporte.</l>
@@ -2430,18 +2427,18 @@
                   </stage>
                </sp>
             </div>
-            <div type="scene" n="21">
+            <div type="scene" n="6">
                <head>Sixième scène</head>
-               <sp n="294">
+               <sp n="1">
                   <speaker>VALENTIN</speaker>
                   <l>Que voulez-vous, messieurs ?</l>
                </sp>
-               <sp n="295">
+               <sp n="2">
                   <speaker>MÉPHISTOPHÉLÈS</speaker>
                   <l>Pardon, mon camarade,</l>
                   <l>mais ce n’est pas pour vous qu’était la sérénade !</l>
                </sp>
-               <sp n="296">
+               <sp n="3">
                   <speaker>VALENTIN</speaker>
                   <l>Ma sœur l’écouterait mieux que moi,</l>
                   <l>je le sais !</l>
@@ -2449,11 +2446,11 @@
                      <p>Il dégaine et brise la guitare de Méphistophélès d’un coup d’épée.</p>
                   </stage>
                </sp>
-               <sp n="297">
+               <sp n="4">
                   <speaker>FAUST</speaker>
                   <l>Sa sœur !</l>
                </sp>
-               <sp n="298">
+               <sp n="5">
                   <speaker>MÉPHISTOPHÉLÈS</speaker>
                   <stage>
                      <p>à Valentin</p>
@@ -2461,7 +2458,7 @@
                   <l>Quelle mouche vous pique ?</l>
                   <l>Vous n’aimez donc pas la musique ?</l>
                </sp>
-               <sp n="299">
+               <sp n="6">
                   <speaker>VALENTIN</speaker>
                   <l>Assez d’outrage, assez !</l>
                   <l>À qui de vous dois-je demander compte</l>
@@ -2471,7 +2468,7 @@
                      <p>Faust tire son épée.</p>
                   </stage>
                </sp>
-               <sp n="300">
+               <sp n="7">
                   <speaker>MÉPHISTOPHÉLÈS</speaker>
                   <stage>
                      <p>à Valentin</p>
@@ -2482,14 +2479,14 @@
                   </stage>
                   <l>Allons, docteur, à vous !</l>
                </sp>
-               <sp n="301">
+               <sp n="8">
                   <speaker>VALENTIN</speaker>
                   <l>Redouble, ô Dieu puissant,</l>
                   <l>ma force et mon courage !</l>
                   <l>Permets que dans son sang</l>
                   <l>je lave mon outrage !</l>
                </sp>
-               <sp n="302">
+               <sp n="9">
                   <speaker>FAUST</speaker>
                   <stage>
                      <p>à part</p>
@@ -2499,14 +2496,14 @@
                   <l>Dois-je verser le sang</l>
                   <l>du frère que j’outrage ?</l>
                </sp>
-               <sp n="303">
+               <sp n="10">
                   <speaker>MÉPHISTOPHÉLÈS</speaker>
                   <l>De son air menaçant,</l>
                   <l>de son aveugle rage,</l>
                   <l>je ris ! Mon bras puissant</l>
                   <l>va détourner l’orage !</l>
                </sp>
-               <sp n="304">
+               <sp n="11">
                   <speaker>VALENTIN</speaker>
                   <stage>
                      <p>tirant de son sein la médaille que lui a donnée Marguerite</p>
@@ -2519,27 +2516,27 @@
                      <p>Il jette la médaille loin de lui.</p>
                   </stage>
                </sp>
-               <sp n="305">
+               <sp n="12">
                   <speaker>MÉPHISTOPHÉLÈS</speaker>
                   <l>Tu t’en repentiras !</l>
                </sp>
-               <sp n="306">
+               <sp n="13">
                   <speaker>FAUST</speaker>
                   <l>Terrible et frémissant, etc.</l>
                </sp>
-               <sp n="307">
+               <sp n="14">
                   <speaker>VALENTIN</speaker>
                   <l>Redouble, ô Dieu puissant, etc.</l>
                </sp>
-               <sp n="308">
+               <sp n="15">
                   <speaker>MÉPHISTOPHÉLÈS</speaker>
                   <l>De son air menaçant, etc.</l>
                </sp>
-               <sp n="309">
+               <sp n="16">
                   <speaker>VALENTIN</speaker>
                   <l>En garde et défends-toi !</l>
                </sp>
-               <sp n="310">
+               <sp n="17">
                   <speaker>MÉPHISTOPHÉLÈS</speaker>
                   <stage>
                      <p>à Faust</p>
@@ -2556,9 +2553,9 @@
                   </stage>
                </sp>
             </div>
-            <div type="scene" n="22">
+            <div type="scene" n="7">
                <head>Septième scène</head>
-               <sp n="311">
+               <sp n="1">
                   <speaker>MARTHE et LES BOURGEOIS</speaker>
                   <l>Par ici, par ici, mes amis !</l>
                   <l>On se bat dans la rue !</l>
@@ -2569,49 +2566,49 @@
                   <l>Vite, approchons !</l>
                   <l>Il faut le secourir !</l>
                </sp>
-               <sp n="312">
+               <sp n="2">
                   <speaker>VALENTIN</speaker>
                   <l>Merci ! Merci !</l>
                   <l>De vos plaintes, faites-moi grâce !</l>
                   <l>J’ai vu, morbleu, la mort en face</l>
                   <l>trop souvent pour en avoir peur !</l>
                </sp>
-               <sp n="313">
+               <sp n="3">
                   <speaker>MARGUERITE</speaker>
                   <stage>
                      <p>paraissant au fond</p>
                   </stage>
                   <l>Valentin ! Valentin !</l>
                </sp>
-               <sp n="314">
+               <sp n="4">
                   <speaker>VALENTIN</speaker>
                   <l>Marguerite, ma sœur !</l>
                   <l>Que me veux-tu ? Va-t’en !</l>
                </sp>
-               <sp n="315">
+               <sp n="5">
                   <speaker>MARGUERITE</speaker>
                   <l>Ô Dieu !</l>
                </sp>
-               <sp n="316">
+               <sp n="6">
                   <speaker>VALENTIN</speaker>
                   <l>Je meurs par elle !</l>
                   <l>J’ai sottement cherché querelle</l>
                   <l>à son amant !</l>
                </sp>
-               <sp n="317">
+               <sp n="7">
                   <speaker>LE CHŒUR</speaker>
                   <l>Son amant !</l>
                </sp>
-               <sp n="318">
+               <sp n="8">
                   <speaker>SIEBEL</speaker>
                   <l>Grâce, grâce !</l>
                </sp>
-               <sp n="319">
+               <sp n="9">
                   <speaker>MARGUERITE</speaker>
                   <l>Douleur cruelle !</l>
                   <l>Ô châtiment !</l>
                </sp>
-               <sp n="320">
+               <sp n="10">
                   <speaker>SIEBEL</speaker>
                   <stage>
                      <p>à Valentin</p>
@@ -2619,12 +2616,12 @@
                   <l>Grâce pour elle !</l>
                   <l>Soyez clément !</l>
                </sp>
-               <sp n="321">
+               <sp n="11">
                   <speaker>LE CHŒUR</speaker>
                   <l>Il meurt par elle !</l>
                   <l>Il meurt frappé par son amant !</l>
                </sp>
-               <sp n="322">
+               <sp n="12">
                   <speaker>VALENTIN</speaker>
                   <l>Écoute-moi bien, Marguerite !</l>
                   <l>Ce qui doit arriver arrive à l’heure dite !</l>
@@ -2641,14 +2638,14 @@
                   <l>Meurs ! Et si Dieu te pardonne,</l>
                   <l>sois maudite ici-bas !</l>
                </sp>
-               <sp n="323">
+               <sp n="13">
                   <speaker>LA FOULE</speaker>
                   <l>Ô terreur ! Ô blasphème !</l>
                   <l>À ton heure suprême, infortuné,</l>
                   <l>songe, hélas, à toi-même...</l>
                   <l>Pardonne, si tu veux être un jour pardonné !</l>
                </sp>
-               <sp n="324">
+               <sp n="14">
                   <speaker>VALENTIN</speaker>
                   <l>Marguerite !</l>
                   <l>Sois maudite !</l>
@@ -2658,7 +2655,7 @@
                      <p>Il meurt.</p>
                   </stage>
                </sp>
-               <sp n="325">
+               <sp n="15">
                   <speaker>TOUS</speaker>
                   <l>Que le Seigneur ait son âme</l>
                   <l>et pardonne au pécheur.</l>
@@ -2667,12 +2664,12 @@
          </div>
          <div type="act" n="5">
             <head>CINQUIÈME ACTE</head>
-            <div type="scene" n="23">
+            <div type="scene" n="1">
                <head>Première scène</head>
                <stage>
                   <p>Les montagnes du Hartz. C’est la nuit de Walpurgis. Dans l’obscurité, les démons et les sorcières font un sabbat.</p>
                </stage>
-               <sp n="326">
+               <sp n="1">
                   <speaker>CHŒURS DES FEUX FOLLETS</speaker>
                   <l>Dans les bruyères,</l>
                   <l>dans les roseaux,</l>
@@ -2694,37 +2691,37 @@
                      <p>Méphistophélès et Faust paraissent.</p>
                   </stage>
                </sp>
-               <sp n="327">
+               <sp n="2">
                   <speaker>FAUST</speaker>
                   <l>Arrête !</l>
                </sp>
-               <sp n="328">
+               <sp n="3">
                   <speaker>MÉPHISTOPHÉLÈS</speaker>
                   <l>N’as-tu pas promis</l>
                   <l>de m’accompagner sans rien dire ?</l>
                </sp>
-               <sp n="329">
+               <sp n="4">
                   <speaker>FAUST</speaker>
                   <l>Où sommes-nous ?</l>
                </sp>
-               <sp n="330">
+               <sp n="5">
                   <speaker>MÉPHISTOPHÉLÈS</speaker>
                   <l>Dans mon empire !</l>
                   <l>Ici, docteur, tout m’est soumis.</l>
                   <l>Voici la nuit de Walpurgis !</l>
                </sp>
-               <sp n="331">
+               <sp n="6">
                   <speaker>VOIX LOINTAINES</speaker>
                   <l>Voici la nuit de Walpurgis ! Hou ! Hou !</l>
                </sp>
-               <sp n="332">
+               <sp n="7">
                   <speaker>FAUST</speaker>
                   <l>Mon sang se glace !</l>
                   <stage>
                      <p>Il veut fuir.</p>
                   </stage>
                </sp>
-               <sp n="333">
+               <sp n="8">
                   <speaker>MÉPHISTOPHÉLÈS</speaker>
                   <stage>
                      <p>le retenant</p>
@@ -2739,14 +2736,14 @@
                   <l>je t’offre une place au festin</l>
                   <l>des reines et des courtisanes !</l>
                </sp>
-               <sp n="334">
+               <sp n="9">
                   <speaker>LE CHŒUR</speaker>
                   <l>Que les coupes s’emplissent,</l>
                   <l>au nom des anciens dieux !</l>
                   <l>Que les airs retentissent</l>
                   <l>de nos accords joyeux !</l>
                </sp>
-               <sp n="335">
+               <sp n="10">
                   <speaker>MÉPHISTOPHÉLÈS</speaker>
                   <l>Reines de beauté, de l’Antiquité,</l>
                   <l>Cléopâtre aux doux yeux, Laïs au front charmant,</l>
@@ -2761,7 +2758,7 @@
                   <l>prends cette coupe et que ta lèvre</l>
                   <l>y puise l’oubli du passé !</l>
                </sp>
-               <sp n="336">
+               <sp n="11">
                   <speaker>LE CHŒUR</speaker>
                   <l>Que les coupes s’emplissent</l>
                   <l>au nom des anciens dieux, etc.</l>
@@ -2769,7 +2766,7 @@
                      <p>Au comble de l’orgie paraît une vision de Marguerite, inaperçue de Faust qui prend la coupe.</p>
                   </stage>
                </sp>
-               <sp n="337">
+               <sp n="12">
                   <speaker>MÉPHISTOPHÉLÈS</speaker>
                   <l>Que ton ivresse, ô volupté,</l>
                   <l>étouffe le remords dans son cœur enchanté !</l>
@@ -2778,38 +2775,38 @@
                   </stage>
                   <l>Qu’as tu donc ?</l>
                </sp>
-               <sp n="338">
+               <sp n="13">
                   <speaker>FAUST</speaker>
                   <l>Ne la vois-tu pas ?</l>
                   <l>Là, devant nous, muette et blême !</l>
                   <l>Quel étrange ornement</l>
                   <l>autour de ce beau cou !</l>
                </sp>
-               <sp n="339">
+               <sp n="14">
                   <speaker>MÉPHISTOPHÉLÈS</speaker>
                   <l>Vision !</l>
                </sp>
-               <sp n="340">
+               <sp n="15">
                   <speaker>FAUST</speaker>
                   <l>Un ruban rouge qu’elle cache !</l>
                </sp>
-               <sp n="341">
+               <sp n="16">
                   <speaker>MÉPHISTOPHÉLÈS</speaker>
                   <l>Magie !</l>
                </sp>
-               <sp n="342">
+               <sp n="17">
                   <speaker>FAUST</speaker>
                   <l>Un ruban rouge,</l>
                   <l>étroit comme un tranchant de hache !</l>
                </sp>
-               <sp n="343">
+               <sp n="18">
                   <speaker>MÉPHISTOPHÉLÈS</speaker>
                   <l>Sortilège !</l>
                   <stage>
                      <p>La vision disparaît.</p>
                   </stage>
                </sp>
-               <sp n="344">
+               <sp n="19">
                   <speaker>FAUST</speaker>
                   <l>Marguerite ! Je sens se dresser mes cheveux !</l>
                   <l>Je veux la voir ! Viens, je le veux !</l>
@@ -2821,35 +2818,35 @@
                   </stage>
                </sp>
             </div>
-            <div type="scene" n="24">
+            <div type="scene" n="2">
                <head>Deuxième scène</head>
                <l>La prison</l>
                <stage>
                   <p>Marguerite est endormie. Méphistophélès entre avec Faust.</p>
                </stage>
-               <sp n="345">
+               <sp n="1">
                   <speaker>FAUST</speaker>
                   <l>Va-t’en !</l>
                </sp>
-               <sp n="346">
+               <sp n="2">
                   <speaker>MÉPHISTOPHÉLÈS</speaker>
                   <l>Le jour va luire. On dresse l’échafaud ;</l>
                   <l>décide sans retard Marguerite à te suivre.</l>
                   <l>Le geôlier dort. Voici les clefs.</l>
                   <l>Il faut que ta main d’homme la délivre.</l>
                </sp>
-               <sp n="347">
+               <sp n="3">
                   <speaker>FAUST</speaker>
                   <l>Laisse-nous !</l>
                </sp>
-               <sp n="348">
+               <sp n="4">
                   <speaker>MÉPHISTOPHÉLÈS</speaker>
                   <l>J’obéis ! Moi, je veille au-dehors.</l>
                   <stage>
                      <p>Il sort.</p>
                   </stage>
                </sp>
-               <sp n="349">
+               <sp n="5">
                   <speaker>FAUST</speaker>
                   <l>Mon cœur est pénétré d’épouvante !</l>
                   <l>Ô torture !</l>
@@ -2861,7 +2858,7 @@
                   <l>Son pauvre enfant, ô Dieu, tué par elle !</l>
                   <l>Marguerite !</l>
                </sp>
-               <sp n="350">
+               <sp n="6">
                   <speaker>MARGUERITE</speaker>
                   <stage>
                      <p>s’éveillant</p>
@@ -2869,21 +2866,21 @@
                   <l>Ah ! C’est la voix du bien-aimé !</l>
                   <l>À son appel mon cœur s’est ranimé.</l>
                </sp>
-               <sp n="351">
+               <sp n="7">
                   <speaker>FAUST</speaker>
                   <l>Marguerite !</l>
                </sp>
-               <sp n="352">
+               <sp n="8">
                   <speaker>MARGUERITE</speaker>
                   <l>Au milieu de vos éclats de rire,</l>
                   <l>démons qui m’entourez,</l>
                   <l>j’ai reconnu sa voix !</l>
                </sp>
-               <sp n="353">
+               <sp n="9">
                   <speaker>FAUST</speaker>
                   <l>Marguerite !</l>
                </sp>
-               <sp n="354">
+               <sp n="10">
                   <speaker>MARGUERITE</speaker>
                   <l>Sa main, sa douce main m’attire !</l>
                   <l>Je suis libre ! Il est là !</l>
@@ -2896,7 +2893,7 @@
                   <l>C’est toi !</l>
                   <l>Je suis sur ton cœur !</l>
                </sp>
-               <sp n="355">
+               <sp n="11">
                   <speaker>FAUST</speaker>
                   <l>Oui, c’est moi, je t’aime !</l>
                   <l>Malgré l’effort même</l>
@@ -2909,7 +2906,7 @@
                      <p>Il veut l’entraîner. Elle se dégage doucement de ses bras.</p>
                   </stage>
                </sp>
-               <sp n="356">
+               <sp n="12">
                   <speaker>MARGUERITE</speaker>
                   <l>Attends ! Voici la rue,</l>
                   <l>où tu m’as vue</l>
@@ -2921,54 +2918,54 @@
                   <l>« Non, monsieur, je ne suis demoiselle ni belle,</l>
                   <l>et je n’ai pas besoin qu’on me donne la main ! »</l>
                </sp>
-               <sp n="357">
+               <sp n="13">
                   <speaker>FAUST</speaker>
                   <l>Oui, mon cœur se souvient !</l>
                   <l>Mais suis-moi ! l’heure passe !</l>
                </sp>
-               <sp n="358">
+               <sp n="14">
                   <speaker>MARGUERITE</speaker>
                   <l>Et voici le jardin charmant</l>
                   <l>parfumé de myrte et de roses,</l>
                   <l>où chaque soir, discrètement,</l>
                   <l>tu pénétrais à la nuit close.</l>
                </sp>
-               <sp n="359">
+               <sp n="15">
                   <speaker>FAUST</speaker>
                   <l>Viens, viens, Marguerite !</l>
                </sp>
-               <sp n="360">
+               <sp n="16">
                   <speaker>MARGUERITE</speaker>
                   <l>Non !</l>
                </sp>
-               <sp n="361">
+               <sp n="17">
                   <speaker>FAUST</speaker>
                   <l>Viens, viens, fuyons !</l>
                </sp>
-               <sp n="362">
+               <sp n="18">
                   <speaker>MARGUERITE</speaker>
                   <l>Non, reste encore !</l>
                </sp>
-               <sp n="363">
+               <sp n="19">
                   <speaker>FAUST</speaker>
                   <l>Ô ciel ! Elle ne m’entend pas !</l>
                   <stage>
                      <p>Méphistophélès reparaît.</p>
                   </stage>
                </sp>
-               <sp n="364">
+               <sp n="20">
                   <speaker>MÉPHISTOPHÉLÈS</speaker>
                   <l>Alerte, alerte, ou vous êtes perdus !</l>
                   <l>Si vous tardez encor, je ne m’en mêle plus !</l>
                </sp>
-               <sp n="365">
+               <sp n="21">
                   <speaker>MARGUERITE</speaker>
                   <l>Le démon ! le démon !</l>
                   <l>Le vois-tu, là, dans l’ombre,</l>
                   <l>fixant sur nous son œil de feu ?</l>
                   <l>Que nous veut-il ? Chasse-le du saint lieu !</l>
                </sp>
-               <sp n="366">
+               <sp n="22">
                   <speaker>MÉPHISTOPHÉLÈS</speaker>
                   <l>Quittons ce lieu sombre !</l>
                   <l>Le jour est levé ;</l>
@@ -2980,46 +2977,46 @@
                   <l>Viens ! Sauvons-la !</l>
                   <l>Peut-être il en est temps encore !</l>
                </sp>
-               <sp n="367">
+               <sp n="23">
                   <speaker>MARGUERITE</speaker>
                   <l>Mon Dieu, protégez-moi !</l>
                   <l>Mon Dieu, je vous implore !</l>
                </sp>
-               <sp n="368">
+               <sp n="24">
                   <speaker>FAUST</speaker>
                   <l>Viens, fuyons !</l>
                   <l>Peut-être en est-il temps encore !</l>
                </sp>
-               <sp n="369">
+               <sp n="25">
                   <speaker>MARGUERITE</speaker>
                   <l>Anges purs, anges radieux,</l>
                   <l>portez mon âme au sein des cieux !</l>
                   <l>Dieu juste, à toi je m’abandonne !</l>
                   <l>Dieu bon, je suis à toi, pardonne !</l>
                </sp>
-               <sp n="370">
+               <sp n="26">
                   <speaker>FAUST</speaker>
                   <l>Viens, suis-moi, je le veux !</l>
                </sp>
-               <sp n="371">
+               <sp n="27">
                   <speaker>MARGUERITE</speaker>
                   <l>Anges purs, anges radieux,</l>
                   <l>portez mon âme au sein des cieux !</l>
                </sp>
-               <sp n="372">
+               <sp n="28">
                   <speaker>MÉPHISTOPHÉLÈS</speaker>
                   <l>Hâtons-nous ! L’heure sonne !</l>
                </sp>
-               <sp n="373">
+               <sp n="29">
                   <speaker>FAUST</speaker>
                   <l>Viens ! Suis-moi !</l>
                </sp>
-               <sp n="374">
+               <sp n="30">
                   <speaker>MARGUERITE</speaker>
                   <l>Dieu juste, à toi je m’abandonne !</l>
                   <l>Dieu bon, je suis à toi, pardonne !</l>
                </sp>
-               <sp n="375">
+               <sp n="31">
                   <speaker>FAUST</speaker>
                   <l>Viens, suis-moi, je le veux !</l>
                   <l>Viens ! Quittons ces lieux !</l>
@@ -3027,31 +3024,31 @@
                   <l>Viens, c’est moi qui te l’ordonne !</l>
                   <l>Déjà le jour envahit les cieux !</l>
                </sp>
-               <sp n="376">
+               <sp n="32">
                   <speaker>MÉPHISTOPHÉLÈS</speaker>
                   <l>Hâtons-nous de quitter ces lieux !</l>
                   <l>Déjà le jour envahit les cieux !</l>
                   <l>Suis nos pas, ou je t’abandonne !</l>
                   <l>Hâtons-nous de quitter ces lieux !</l>
                </sp>
-               <sp n="377">
+               <sp n="33">
                   <speaker>MARGUERITE</speaker>
                   <l>Anges purs, anges radieux,</l>
                   <l>portez mon âme au sein des cieux !</l>
                </sp>
-               <sp n="378">
+               <sp n="34">
                   <speaker>FAUST</speaker>
                   <l>Marguerite !</l>
                </sp>
-               <sp n="379">
+               <sp n="35">
                   <speaker>MARGUERITE</speaker>
                   <l>Pourquoi ce regard menaçant ?</l>
                </sp>
-               <sp n="380">
+               <sp n="36">
                   <speaker>FAUST</speaker>
                   <l>Marguerite !</l>
                </sp>
-               <sp n="381">
+               <sp n="37">
                   <speaker>MARGUERITE</speaker>
                   <l>Pourquoi ces mains rouges de sang ?</l>
                   <l>Va ! Tu me fais horreur !</l>
@@ -3059,15 +3056,15 @@
                      <p>Elle tombe sans vie.</p>
                   </stage>
                </sp>
-               <sp n="382">
+               <sp n="38">
                   <speaker>FAUST</speaker>
                   <l>Ah !</l>
                </sp>
-               <sp n="383">
+               <sp n="39">
                   <speaker>MÉPHISTOPHÉLÈS</speaker>
                   <l>Jugée !</l>
                </sp>
-               <sp n="384">
+               <sp n="40">
                   <speaker>CHŒUR DES ANGES</speaker>
                   <l>Sauvée !</l>
                   <l>Christ est ressuscité !</l>
