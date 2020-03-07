@@ -39,16 +39,16 @@
    <text>
       <body n="urn:cts:libOp:viaf12370239.viaf54145003740161340822.TNAH2020-fre1" xml:lang="fre">
          <castList>
-            <castItem type="role">Le roi (baryton)</castItem>
-            <castItem type="role">Princesse Némée, sa fille (soprano)</castItem>
-            <castItem type="role">Kadoor Prince (basse)</castItem>
-            <castItem type="role">Zephoris, un pêcheur (ténor)</castItem>
-            <castItem type="role">Zélide, sœur de Zephoris (soprano)</castItem>
-            <castItem type="role">Pifear, un autre pêcheur (ténor)</castItem>
-            <castItem type="role">Zizell, la plage de Vogt (basse)</castItem>
-            <castItem type="role">Le médecin personnel du roi (baryton)</castItem>
-            <castItem type="role">Une dame (soprano)</castItem>
-            <castItem type="role">Courtisans, fonctionnaires, soldats, les pêcheurs (refrain)</castItem>
+            <castItem>Le roi (baryton)</castItem>
+            <castItem>Princesse Némée, sa fille (soprano)</castItem>
+            <castItem>Kadoor Prince (basse)</castItem>
+            <castItem>Zephoris, un pêcheur (ténor)</castItem>
+            <castItem>Zélide, sœur de Zephoris (soprano)</castItem>
+            <castItem>Pifear, un autre pêcheur (ténor)</castItem>
+            <castItem>Zizell, la plage de Vogt (basse)</castItem>
+            <castItem>Le médecin personnel du roi (baryton)</castItem>
+            <castItem>Une dame (soprano)</castItem>
+            <castItem>Courtisans, fonctionnaires, soldats, les pêcheurs (refrain)</castItem>
          </castList>
          <div type="act" n="1">
             <head>Acte I</head>
