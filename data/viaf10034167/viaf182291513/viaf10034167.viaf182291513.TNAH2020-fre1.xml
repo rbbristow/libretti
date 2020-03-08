@@ -1,0 +1,1253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../ODD/out/librettiODD.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>LISCHEN ET FRITZCHEN</title>
+            <author role="songWriter">Jacques Offenbach</author>
+         </titleStmt>
+         <publicationStmt>
+            <p >Ecole nationale des chartes, projet libretti TNAH, promotion 2019-2020</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>https://fr.wikisource.org/wiki/Lischen_et_Fritzchen</p>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <refsDecl n="CTS">
+            <cRefPattern n="speech"
+               matchPattern="(\w+).(\w+).(\w+)"
+               replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@type='act'][@n='$1']/tei:div[@type='scene'][@n='$2']/tei:sp[@n='$3'])">
+               <p>Ce pointeur extrait les niveaux de citation 1, 2 et 3, soit acte, scène et tour de parole.</p>
+            </cRefPattern>
+            <cRefPattern n="scene"
+               matchPattern="(\w+).(\w+)"
+               replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@type='act'][@n='$1']/tei:div[@type='scene'][@n='$2'])">
+               <p>Ce poiteur extrait les niveaux de citation 1 et 2, soit les actes et scènes.</p>
+            </cRefPattern>
+            <cRefPattern n="act"
+               matchPattern="(\w+)"
+               replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@type='act'][@n='$1'])">
+               <p>Ce pointeur extrait le premier niveau de citation du texte, soit les actes.</p>
+            </cRefPattern>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text>
+      <front>
+         <set>
+            <p >Les deux acteurs doivent jouer toute cette pièce avec un accent alsacien
+               très-prononcé.</p>
+            <p >La musique de cet ouvrage se trouve chez G. Brandus et S. Dufour, éditeurs, 103, rue
+               de Richelieu, au premier. Pour la mise en scène s’adresser à M. Desmonts, régisseur
+               général au théâtre des Bouffes-Parisiens.</p>
+            <p >Un carrefour de route, à gauche la maison d’un marchand de vin, une table en dehors,
+               à droite un petit banc de pierre.</p>
+         </set>
+      </front>
+      <body n="urn:cts:libOp:viaf10034167.viaf182291513.TNAH2020-fre1"
+         xml:lang="fre">
+         <castList>
+            <castItem>LISCHEN, alsacienne, marchande de balais Mlle Zulma-Bouffar.</castItem>
+            <castItem>FRITZCHEN, alsacien, domestique M. Désiré.</castItem>
+         </castList>
+         <div type="act" n="1">
+            <div type="scene" n="1">
+               <head>Scène PREMIÈRE</head>
+               <sp n="1">
+                  <speaker>FRITZCHEN.</speaker>
+
+                  <stage>Il entre du fond à droite en pleurnichant, il tient un bâton avec le petit
+                     paquet traditionnel. — Accent alsacien.</stage>
+
+                  <l>Air.</l>
+                  <l>Me chasser,</l>
+                  <l>Me forcer</l>
+                  <l>À laisser</l>
+                  <l>Mon service,</l>
+                  <l>Dieu quel caprice</l>
+                  <l>Que voici</l>
+                  <l>Quel merci</l>
+                  <l>Paye ici</l>
+                  <l>Mon office.</l>
+                  <l>Quelle injustice,</l>
+                  <l>Qu’ai-je donc fait ?</l>
+                  <l>Oui par quel trait</l>
+                  <l>Par quel méfait</l>
+                  <l>Sanguinaire</l>
+                  <l>Ai-je du vieux bourru</l>
+                  <l>Encouru</l>
+                  <l>La colère ?</l>
+                  <l>Tout ce qu’un maître nous demande,</l>
+                  <l>Devient sujet à contredit,</l>
+                  <l>C’est toujours bien quand il commande,</l>
+                  <l>Toujours mal quand on obéit.</l>
+                  <l>Ah ! nous sommes de pauvres êtres</l>
+                  <l>Quand ils nous ont dans leurs filets !</l>
+                  <l>Ce n’est qu’en n’ayant plus de maîtres</l>
+                  <l>Que seraient heureux les valets !</l>
+                  <l>Savez-vous le prétexte qu’il prend pour me renvoyer, il prétend que je ne parle
+                     pas bien français. Pas bien français moi ! Je vous en fais juges. Il dit que je
+                     fais mal les commissions ; vous allez voir… Ah ! il faut vous dire que mon
+                     maître, il va se marier à une jeunesse… L’autre jour, il donnait un repas à sa
+                     future et à son père… c’était le deuxième… pas le deuxième père… non, le
+                     deuxième repas. « Fritzchen qu’il me dit… Fritzchen, au dernier dîner, j’ai
+                     remarqué que ma future adorait les bijoux ; elle s’extasiait sur la pierre que
+                     j’avais devant moi, je veux lui faire une surprise… Quand on sera à table, tu
+                     apporteras la pierre, et tu la mettras devant elle… » C’est bon ! que je dis.
+                     Certainement je m’étonnais de ce qu’il voulait de la bière pour sa future quand
+                     il a de si bon vin dans sa cave ; c’est mon seul regret de quitter la maison,
+                     mais un maître commande, il faut l’obéir. Je vas donc chez le brasseur, et
+                     quand le dîner est servi, je place devant la demoiselle ein sohoen klein glas
+                     de bière : tout le monde part d’un grand éclat de rire, excepté mon maître, qui
+                     se lève furieux, qui me fait une scène terrible et m’appelle imbécile et
+                     s’oublie jusqu’à me frapper devant tout le monde… mais pas devant moi.</l>
+                  <stage>REPRISE.</stage>
+                  <l>Me chasser,</l>
+                  <l>Me forcer, etc, etc.</l>
+                  <l>Ah ! mais v’là assez de pleurnicheries… Après tout c’est pas la mort d’un homme
+                     qu’une place perdue, je sais où aller, moi ! Faut pas croire que je suis venu
+                     au monde comme un champignon. J’ai un père, moi ! et une petite sœur. Et un
+                     père est toujours heureux de revoir l’enfant qu’il a porté dans son sein
+                     maternel. Je vas retourner au pays ; aussi bien ça me tenait au cœur, voilà dix
+                     ans que je ne l’ai vu, mon père, dix ans aussi que je n’ai pas vu ma petite
+                     sœur ; ça fait vingt ans ! et autant qu’ils ont été de leur côté sans me voir,
+                     ça fait quarante ans ! c’est trop ! Je vas casser une croûte et m’embarquer sur
+                     la terre ferme jusqu’à Brumath… Je me suis ménagé des provisions ; avec une
+                     bouteille de superflu que je vais prendre au compte de mon maître ; il me doit
+                     bien ça, je ne lui ai rien répondu ; mais je tiens à me venger comme il m’a
+                     outragé, outragé !… postérieurement. <stage>(Il entre chez le marchand de
+                        vin.)</stage>
+                  </l>
+               </sp>
+            </div>
+
+
+            <div type="scene" n="2">
+               <head>Scène II</head>
+               <sp n="1">
+                  <speaker>LISCHEN,</speaker>
+                  <stage>avec des petits balais.</stage>
+
+                  <stage>Air.</stage>
+                  <l>P’tits balais,</l>
+                  <l>Je vends des petits balais.</l>
+                  <l>Qu’ils sont bien faits,</l>
+                  <l>Qu’ils sont proprets,</l>
+                  <l>Coquets !</l>
+                  <l>Achetez-moi des petits balais.</l>
+                  <l>Voulez-vous, bonnes ménagères,</l>
+                  <l>Que tout soit bien propre chez vous,</l>
+                  <l>Chaises, buffets, table, étagères.</l>
+                  <l>Prenez mes balais pour deux sous.</l>
+                  <l>Voulez-vous, mères de famille,</l>
+                  <l>Eviter le fouet trop brutal,</l>
+                  <l>Tout en frappant garçon et fille ?</l>
+                  <l>Mes balais ne font pas grand mal.</l>
+                  <l>Enfin, sur vos paisibles couches,</l>
+                  <l>Voulez-vous un sommeil charmant ?</l>
+                  <l>Vous n’avez, pour chasser les mouches,</l>
+                  <l>Qu’à faire ainsi tout en dormant.</l>
+                  <stage>(Elle s’évente avec un balai.)</stage>
+
+                  <l>P’tits balais,</l>
+                  <l>Je vends, etc.</l>
+                  <l>Mais, je ne vois venir personne</l>
+                  <l>Qui se dispose à m’acheter.</l>
+                  <l>Ah ! mon commerce s’enguignonne,</l>
+                  <l>Je ferai mieux de le quitter.</l>
+                  <l>J’ai fait Paris et les provinces,</l>
+                  <l>Les provinces ne m’ont donné</l>
+                  <l>Qu’un bénéfice des plus minces,</l>
+                  <l>Sans qu’à Paris j’aie étrenné.</l>
+                  <l>Je ne m’explique pas les causes</l>
+                  <l>Qui de là m’ont pu renvoyer,</l>
+                  <l>Il m’a semblé voir tant de choses,</l>
+                  <l>Qu’on eût bien fait de balayer.</l>
+                  <l>P’tits balais,</l>
+                  <l>Je vends, etc.</l>
+                  <l>C’est égal, ça n’est pas encore ici que je me rattraperai. Décidément les
+                     acheteurs ne sont pas gentils ; c’est qu’ils ne se contentent pas toujours de
+                     passer sans vous regarder ; ils viennent à vous comme s’ils allaient faire du
+                     commerce, et ils se gaussent tout bonnement de votre mise et de votre accent,
+                     quoi ! D’ailleurs mon accent ! est-ce que c’est ma faute ? je parle comme on
+                     parle chez nous. Pour ma mise, eh bien, qu’est-ce qui veulent donc ? Il n’est
+                     pas joli ce petit déshabillé-là ? Ça fait pitié… Bah !… j’ai presque de quoi
+                     retourner jusqu’au pays, moitié en patache et moitié à pied… avec quelques gros
+                     sous de plus. Voyons, je vais faire comme les hannetons, compter mes écus… dans
+                     ma poche, quatre gros sous… et neuf petits : dix-sept, et, dans mon
+                     portefeuille… voyons… <stage>(La lettre tombe.)</stage> Ma lettre, ma pauvre
+                     lettre ! Oh ! j’enrage-t’y de ne pas savoir lire… Mais depuis qu’un malin m’a
+                     joué un vilain tour en me lisant un jour tout le contraire de ce qu’on m’avait
+                     écrit, j’ose pus me confier à personne. C’est que c’est de mon bon papa, ça, et
+                     je veux pas que l’on me trompe sur ce qu’il me dit, le cher homme ; le premier
+                     garde champêtre que je rencontre… <stage>(Elle s’assied.) </stage>Voyons mes
+                     pièces blanches.</l>
+               </sp>
+            </div>
+
+            <div type="scene" n="3">
+               <head>Scène III</head>
+               <stage>LISCHEN,FRITZCHEN.</stage>
+
+
+               <sp n="1">
+                  <speaker>FRITZCHEN</speaker>
+                  <stage>, sortant de chez le marchand de vin avec une bouteille qu’il pose sur la
+                     table avec son paquet.</stage>
+                  <l>V’là un petit vin qui ne me coûtera pas plus que l’eau de notre réservoir. Mon
+                     maitre le trouvera peut-être un peu cher puisque j’ai pas marchandé, mais à
+                     c’t’heure je serai loin.</l>
+               </sp>
+
+
+               <sp n="2">
+                  <speaker>LISCHEN.</speaker>
+                  <l>Vingt-deux francs.</l>
+                  <stage>(Elle serre son portefeuille.)</stage>
+               </sp>
+
+               <sp n="3">
+                  <speaker>FRITZCHEN.</speaker>
+                  <l>Hein !</l>
+               </sp>
+
+
+               <sp n="4">
+                  <speaker>LISCHEN.</speaker>
+                  <l>Vingt-deux francs… dix-sept sous.</l>
+               </sp>
+
+
+               <sp n="5">
+                  <speaker>FRITZCHEN.</speaker>
+                  <l>Tiens un femme !</l>
+               </sp>
+
+
+               <sp n="6">
+                  <speaker>LISCHEN.</speaker>
+                  <l>Tiens ! un homme.</l>
+               </sp>
+
+
+               <sp n="7">
+                  <speaker>FRITZCHEN.</speaker>
+                  <l>Et bigrement gentille !</l>
+               </sp>
+
+               <sp n="8">
+                  <speaker>LISCHEN.</speaker>
+                  <l>Il n’est pas joli, joli.., mais il a quelque chose entre les deux yeux… et puis
+                     il a un joli chapeau.</l>
+               </sp>
+
+
+               <sp n="9">
+                  <speaker>FRITZCHEN.</speaker>
+                  <l>Si je lui parlais ?</l>
+               </sp>
+
+               <sp n="10">
+                  <speaker>LISCHEN.</speaker>
+                  <l>S’il pouvait me renseigner sur une patache.</l>
+               </sp>
+
+
+               <sp n="11">
+                  <speaker>FRITZCHEN.</speaker>
+                  <l>Mam’zelle ?</l>
+               </sp>
+
+
+               <sp n="12">
+                  <speaker>LISCHEN.</speaker>
+                  <l>Monsieur !</l>
+               </sp>
+
+
+               <sp n="13">
+                  <speaker>FRITZCHEN.</speaker>
+                  <l>Mam’zelle, savez-vous que vos joues ils sont fraîches comme une pomme
+                     d’api.</l>
+               </sp>
+
+
+               <sp n="14">
+                  <speaker>LISCHEN,</speaker>
+                  <stage>à part.</stage>
+                  <l>Oh ! le malhonnête, il m’a entendu compter mon argent et il contrefait mon
+                     parler.</l>
+               </sp>
+
+
+               <sp n="15">
+                  <speaker>FRITZCHEN.</speaker>
+                  <l>Hein ! le savez-vous ?</l>
+               </sp>
+
+               <sp n="16">
+                  <speaker>LISCHEN.</speaker>
+                  <l>Vous feriez bien mieux de me dire si la patache passe de ce côté-ci, le
+                     savez-vous ?</l>
+               </sp>
+
+
+               <sp n="17">
+                  <speaker>FRITZCHEN.</speaker>
+                  <l>La patache ! la patache ! Oh ! voyez-vous l’impertinente avec son air narquois…
+                     elle a saisi mon petit accent, et elle me caricature… Vous devriez rougir !
+                     tenez !</l>
+               </sp>
+
+               <sp n="18">
+                  <speaker>LISCHEN.</speaker>
+                  <l>De quoi ? de ce que vous vous moquez de moi.</l>
+               </sp>
+
+
+               <sp n="19">
+                  <speaker>FRITZCHEN.</speaker>
+                  <l>Eh ! oui, allez toujours.</l>
+               </sp>
+
+
+               <sp n="20">
+                  <speaker>LISCHEN.</speaker>
+                  <l>C’est vous, qui me faites pas grâce : tenez, vous êtes un malotru.</l>
+               </sp>
+
+
+               <sp n="21">
+                  <speaker>FRITZCHEN.</speaker>
+                  <l>Et vous, une péronnelle.</l>
+               </sp>
+
+
+               <sp n="22">
+                  <speaker>LISCHEN.</speaker>
+                  <l>Et vous, un butor !</l>
+               </sp>
+
+
+               <sp n="23">
+                  <speaker>FRITZCHEN.</speaker>
+                  <l>Et vous, une gredine !</l>
+               </sp>
+
+
+               <sp n="24">
+                  <speaker>LISCHEN.</speaker>
+                  <l>Et vous, un… pas grand’chose.</l>
+               </sp>
+
+               <sp n="25">
+                  <speaker>FRITZCHEN.</speaker>
+                  <l>Se moquer d’un pauvre garçon !… qui ne dit rien à personne.</l>
+               </sp>
+
+
+               <sp n="26">
+                  <speaker>LISCHEN.</speaker>
+                  <l>C’est vous qui attaquez une jeunesse tranquille.</l>
+               </sp>
+
+
+               <sp n="27">
+                  <speaker>FRITZCHEN.</speaker>
+                  <l>Moi ? et en quoi donc, s’il vous plait ?</l>
+               </sp>
+
+
+               <sp n="28">
+                  <speaker>LISCHEN.</speaker>
+                  <l>En imitant l’accent que j’ai, mauvais plaisant.</l>
+               </sp>
+
+
+               <sp n="29">
+                  <speaker>FRITZCHEN.</speaker>
+                  <l>Que vous avez ? que vous avez ? je connais cette farce ; que vous prenez…. pour
+                     gouailler le mien.</l>
+               </sp>
+
+
+               <sp n="30">
+                  <speaker>LISCHEN.</speaker>
+                  <l>Comment ? votre langage serait…</l>
+               </sp>
+
+               <sp n="31">
+                  <speaker>FRITZCHEN.</speaker>
+                  <l>Vot’ jargon ne serait pas… une plaisanterie ?</l>
+               </sp>
+
+
+               <sp n="32">
+                  <speaker>LISCHEN.</speaker>
+                  <l>Vous seriez… ?</l>
+               </sp>
+
+               <sp n="33">
+                  <speaker>FRITZCHEN.</speaker>
+                  <l>De l’Alsace… et vous ?</l>
+               </sp>
+
+
+               <sp n="34">
+                  <speaker>LISCHEN.</speaker>
+                  <l>Moi !</l>
+               </sp>
+
+               <stage>DUO.</stage>
+               <sp n="35">
+                  <speaker>LISCHEN.</speaker>
+                  <l>Je suis Alsacienne.</l>
+               </sp>
+
+               <sp n="36">
+                  <speaker>FRITZCHEN.</speaker>
+                  <l>Je suis Alsacien.</l>
+               </sp>
+               <sp n="37">
+                  <speaker>LISCHEN.</speaker>
+                  <l>Quand une Alsacienne</l>
+                  <l>Trouve un Alsacien.</l>
+               </sp>
+               <sp n="38">
+                  <speaker>FRITZCHEN.</speaker>
+                  <l>La main dans la sienne,</l>
+                  <l>Chantant leur lien.</l>
+               </sp>
+
+               <sp n="39">
+                  <speaker>LISCHEN.</speaker>
+                  <l>Top ! dit l’Alsacienne,</l>
+               </sp>
+               <sp n="40">
+                  <speaker>FRITZCHEN.</speaker>
+                  <l>Top ! dit l’Alsacien.</l>
+               </sp>
+               <sp n="41">
+                  <speaker>ENSEMBLE.</speaker>
+                  <l>Oh ! hé ! etc,</l>
+                  <l>Jucche ! das Leben ist doch eine Freude</l>
+                  <l>Jucche ! das Leben ist doch ein plaisir.</l>
+               </sp>
+
+               <sp n="42">
+                  <speaker>FRITZCHEN.</speaker>
+                  <l>Vive nos ballades,</l>
+                  <l>Nos vieilles chansons !</l>
+               </sp>
+
+               <sp n="43">
+                  <speaker>LISCHEN.</speaker>
+                  <l>Nos folles gambades</l>
+                  <l>Sur nos frais gazons.</l>
+               </sp>
+
+               <sp n="44">
+                  <speaker>FRITZCHEN.</speaker>
+                  <l>C’est dans nos famille</l>
+                  <l>Qu’on voit, Dieu merci,</l>
+               </sp>
+
+               <sp n="45">
+                  <speaker>LISCHEN.</speaker>
+                  <l>Les plus belles filles,</l>
+                  <l>Je dois croire ainsi</l>
+                  <l>C’est dans nos villages</l>
+                  <l>Qu’on voit de tout temps</l>
+               </sp>
+
+               <sp n="46">
+                  <speaker>FRITZCHEN.</speaker>
+                  <l>Des heureux ménages</l>
+                  <l>De nombreux enfants.</l>
+                  <l>Qui comme père et mère</l>
+                  <l>Chantent d’une voix fière :</l>
+               </sp>
+               <stage>REPRISE</stage>
+               <sp n="47">
+                  <speaker>ENSEMBLE.</speaker>
+                  <l>Jucche das Leben, etc.</l>
+               </sp>
+
+               <sp n="48">
+                  <speaker>LISCHEN.</speaker>
+                  <l>Rien ne vaut nos campagnes</l>
+                  <l>Nos vallons, nos torrents !</l>
+               </sp>
+
+               <sp n="49">
+                  <speaker>FRITZCHEN.</speaker>
+                  <l>Rien ne vaut nos montagnes,</l>
+                  <l>Et nos prés odorants !</l>
+               </sp>
+
+               <sp n="50">
+                  <speaker>LISCHEN.</speaker>
+                  <l>Rien ne vaut nos gambades</l>
+                  <l>Sur nos riants gazons.</l>
+               </sp>
+
+               <sp n="51">
+                  <speaker>FRITZCHEN.</speaker>
+                  <l>Au pays d’où nous sommes</l>
+                  <l>Je sais qu’on dit aussi</l>
+                  <l>N’avoir que de beaux hommes…</l>
+                  <l>Et je dois croire ainsi.</l>
+               </sp>
+               <sp n="52">
+                  <speaker>ENSEMBLE.</speaker>
+                  <l>Bref, pas un mortel, fut-ce</l>
+                  <l>Un Anglais, un Danois</l>
+                  <l>Ou Grec, ou Turc, ou Russe,</l>
+                  <l>Suisse, Italien, Hongrois,</l>
+                  <l>Ne peut à ma manière</l>
+                  <l>Chanter d’une voix fière</l>
+                  <l>Ah !</l>
+                  <l>Je suis Alsacienne, etc.</l>
+               </sp>
+
+               <sp n="53">
+                  <speaker>LISCHEN.</speaker>
+                  <l>Ach ! was ist das doch ein Glück so ein Landsmann zu finden.</l>
+               </sp>
+
+
+               <sp n="54">
+                  <speaker>FRITZCHEN.</speaker>
+                  <l>Ja, ja !</l>
+               </sp>
+
+
+               <sp n="55">
+                  <speaker>LISCHEN.</speaker>
+                  <l>Was ist das ein plaisir !</l>
+               </sp>
+
+
+               <sp n="56">
+                  <speaker>FRITZCHEN.</speaker>
+                  <l>Ja, ja !</l>
+               </sp>
+
+
+               <sp n="57">
+                  <speaker>LISCHEN.</speaker>
+                  <l>Und noch ein gross’res Glück, wenn man so eine Landsmannin findet !</l>
+               </sp>
+
+               <sp n="58">
+                  <speaker>FRITZCHEN.</speaker>
+                  <l>Ja, ja ! </l>
+                  <stage>(Après la conversation allemande Fritschen veut l’embrasser ; elle
+                     refuse.)</stage>
+                  <l>Gub mir ein Schmatz ?</l>
+               </sp>
+
+
+               <sp n="59">
+                  <speaker>LISCHEN.</speaker>
+                  <l>Nur nicht so hilzig.</l>
+               </sp>
+
+               <sp n="60">
+                  <speaker>FRITZCHEN.</speaker>
+                  <l>Vous êtes si gentille.</l>
+               </sp>
+
+               <sp n="61">
+                  <speaker>LISCHEN.</speaker>
+                  <l>Je le sais bien.</l>
+               </sp>
+
+
+               <sp n="62">
+                  <speaker>FRITZCHEN.</speaker>
+                  <l>Et moi je suis aussi un beau garçon.</l>
+               </sp>
+
+
+               <sp n="63">
+                  <speaker>LISCHEN.</speaker>
+                  <l>Oh ! pour ça !…</l>
+               </sp>
+
+
+               <sp n="64">
+                  <speaker>FRITZCHEN.</speaker>
+                  <stage>, à part.</stage>
+                  <l>Elle en doute.</l>
+                  <stage>(Il l’embrasse.)</stage>
+               </sp>
+
+               <sp n="65">
+                  <speaker>LISCHEN.</speaker>
+                  <l>Non, non, non, assez.</l>
+               </sp>
+
+
+               <sp n="66">
+                  <speaker>FRITZCHEN.</speaker>
+                  <l>Et comme ça vous étiez en service de ce côté ?</l>
+               </sp>
+
+
+               <sp n="67">
+                  <speaker>LISCHEN.</speaker>
+                  <l>Du tout, monsieur, je suis commerçante.</l>
+               </sp>
+
+               <sp n="68">
+                  <speaker>FRITZCHEN.</speaker>
+                  <l>Ah !… commerçante ! et de quoi ?</l>
+               </sp>
+
+
+               <sp n="69">
+                  <speaker>LISCHEN.</speaker>
+                  <l>Comment ? de quoi ? vous voyez bien.</l>
+                  <stage>(Elle montre ses balais.)</stage>
+                  <l>Je vends des palais.</l>
+               </sp>
+
+
+               <sp n="70">
+                  <speaker>FRITZCHEN.</speaker>
+                  <l>Ah ! comme vous dites mal, on ne dit pas palais : on dit palais, et, vous dites
+                     palais.</l>
+               </sp>
+
+               <sp n="71">
+                  <speaker>LISCHEN.</speaker>
+                  <l>Eh bien, et vous ?</l>
+               </sp>
+
+
+               <sp n="72">
+                  <speaker>FRITZCHEN.</speaker>
+                  <l>Je dis palais.</l>
+               </sp>
+
+
+               <sp n="73">
+                  <speaker>LISCHEN.</speaker>
+                  <l>Eh bien, c’est vous qui dites mal, on entend palais, moi je dis des palais.
+                     Lassen sie mich doch gehen !</l>
+               </sp>
+
+               <sp n="74">
+                  <speaker>FRITZCHEN.</speaker>
+                  <l>À la bonne heure, j’accepte vos excuses ; maintenant vous dites comme moi !… et
+                     c’est y bon le petit commerce ?</l>
+               </sp>
+
+               <sp n="75">
+                  <speaker>LISCHEN.</speaker>
+                  <l>Mauvais comme tout, mon pauvre pays ! ils traitent mes palais de superflus.</l>
+               </sp>
+
+               <sp n="76">
+                  <speaker>FRITZCHEN.</speaker>
+                  <l>Oh ! les malhonnêtes ! Attendez, je vas faire remonter l’article, moi ;
+                     donnez-m’en un pour deux sous.</l>
+               </sp>
+
+               <sp n="77">
+                  <speaker>LISCHEN.</speaker>
+                  <l>En v’là deux, mais qu’est-ce que vous en ferez ?</l>
+               </sp>
+               <sp n="78">
+                  <speaker>FRITCHEN.</speaker>
+                  <l>J’ai oublié mon démêloir et ma brosse à dents ; ça les supplémentera.</l>
+               </sp>
+
+               <sp n="79">
+                  <speaker>LISCHEN.</speaker>
+                  <l>Il est bien loustic mon pays, et puis il a un bien joli chapeau. Ah ! vous êtes
+                     bien aimable.</l>
+               </sp>
+
+               <sp n="80">
+                  <speaker>FRITZCHEN.</speaker>
+                  <l>Et vous bigrement gentille, et j’ajouterais bien un baiser au payement de la
+                     marchande.</l>
+               </sp>
+
+               <sp n="81">
+                  <speaker>LISCHEN.</speaker>
+                  <l>Oh ! je n’aurais pas de quoi vous rendre.</l>
+               </sp>
+
+               <sp n="82">
+                  <speaker>FRITZCHEN.</speaker>
+                  <l>Oh ! en cherchant bien… </l>
+                  <stage>(A part.)</stage>
+                  <l>Mein Gott ! comme elle me va, la payse !… ça ferait une jolie petite femme tout
+                     d’même, si on était sûr que… mais on n’est jamais sûr que… la jeunesse est si
+                     fragile… Et vous retournez au pays ?</l>
+               </sp>
+
+               <sp n="83">
+                  <speaker>LISCHEN.</speaker>
+                  <l>Oui !</l>
+               </sp>
+
+
+               <sp n="84">
+                  <speaker>FRITZCHEN.</speaker>
+                  <l>Eh bien, puisque nous allons tous les deux en Alsace, nous allons toujours
+                     faire un brin de route ensemble.</l>
+               </sp>
+
+               <sp n="85">
+                  <speaker>LISCHEN.</speaker>
+                  <l>Mais je veux bien.</l>
+               </sp>
+
+               <sp n="86">
+                  <speaker>FRITZCHEN.</speaker>
+                  <l>Et nous allons auparavant nous donner des forces dans les jambes en les faisant
+                     passer par nos estomacs… Avez-vous faim ?</l>
+               </sp>
+
+               <sp n="87">
+                  <speaker>LISCHEN.</speaker>
+                  <l>Oh ! oui. </l>
+                  <stage>(Elle s’assied sur le banc et tire de son sac du pain noir et du
+                     fromage.)</stage>
+               </sp>
+
+
+               <sp n="88">
+                  <speaker>FRITZCHEN.</speaker>
+                  <stage>, à la table.</stage>
+                  <l>Eh bien, venez par ici.</l>
+               </sp>
+
+               <sp n="89">
+                  <speaker>LISCHEN.</speaker>
+                  <l>Je vous remercie, j’ai tout ce qu’il me faut.</l>
+               </sp>
+
+               <sp n="90">
+                  <speaker>FRITZCHEN.</speaker>
+                  <l>Comment ! du pain noir et du fromage ? Du fromage, c’est bon pour le dessert ;
+                     mais regardez donc par ici. </l>
+                  <stage>(Vidant sa valise.)</stage>
+                  <l>Une cuisse de canard, du pâté, du bœuf piqué, de l’oie, une tranche de veau,
+                     une saucisse fumée, un morceau de gâteau de riz, il faut toujours avoir une
+                     poire pour la soif ; un petit doigt de vin, du fameux, allez.</l>
+               </sp>
+
+               <sp n="91">
+                  <speaker>LISCHEN.</speaker>
+                  <l>Oh ! c’est très-appétissant, mais je mange ça de bon cœur.</l>
+               </sp>
+
+               <sp n="92">
+                  <speaker>FRITZCHEN.</speaker>
+                  <l>Mais venez donc, venez.</l>
+               </sp>
+
+               <sp n="93">
+                  <speaker>LISCHEN.</speaker>
+                  <l>Ah ! dame, vous insistez tant.</l>
+               </sp>
+
+               <sp n="94">
+                  <speaker>FRITZCHEN.</speaker>
+                  <l>Quand j’ai du chagrin, il y a une chose qui me console, toujours c’est que j’ai
+                     de l’appétit. </l>
+                  <stage>(Lischen s’approche, quand elle est près de la table, on entend un bruit de
+                     cor. Fritzchen bondit sur son siège.)</stage>
+               </sp>
+
+
+               <sp n="95">
+                  <speaker>LISCHEN.</speaker>
+                  <l>Qu’est-ce qui vous prend donc ?</l>
+               </sp>
+
+               <sp n="96">
+                  <speaker>FRITZCHEN.</speaker>
+                  <l>C’est que mon maître chasse dans les environs et je croyais avoir entendu le
+                     son du cor.</l>
+               </sp>
+
+               <sp n="97">
+                  <speaker>LISCHEN.</speaker>
+                  <l>Ah ! vous voyez bien que j’avais raison de rester dans mon coin et de me
+                     contenter… de mon pain et de mon fromage.</l>
+               </sp>
+
+               <sp n="98">
+                  <speaker>FRITZCHEN.</speaker>
+                  <l>C’était une fausse alerte, je m’étais trompé. Venez, venez, mais venez
+                     donc.</l>
+               </sp>
+
+               <sp n="99">
+                  <speaker>LISCHEN.</speaker>
+                  <l>Non, non… et tenez votre peur me rappelle une petite fable que je chantais et
+                     qui m’a fait gagner bien des sous quand les balais étaient en baisse.</l>
+               </sp>
+
+               <sp n="100">
+                  <speaker>FRITZCHEN.</speaker>
+                  <l>Une fable ?</l>
+               </sp>
+
+               <sp n="101">
+                  <speaker>LISCHEN.</speaker>
+                  <l>Le rat de ville et le rat des champs.</l>
+               </sp>
+
+               <sp n="102">
+                  <speaker>FRITZCHEN.</speaker>
+                  <l>Ça doit être gentil ! Eh bien, je vous donne deux sous pour la chanter… De qui
+                     est-elle ?</l>
+               </sp>
+
+               <sp n="103">
+                  <speaker>LISCHEN.</speaker>
+                  <l>C’est de la Fontaine.</l>
+               </sp>
+
+               <sp n="104">
+                  <speaker>FRITZCHEN.</speaker>
+                  <l>La musique doit être fraiche, puisqu’elle vient de la fontaine… Ah ! ah ! ah !
+                     ah ! la fable ! la fable !</l>
+               </sp>
+
+
+               <sp n="105">
+                  <speaker>LISCHEN.</speaker>
+                  <stage>Air.</stage>
+                  <l>Un jour un rat de ville</l>
+                  <l>Invita le rat des champs,</l>
+                  <l>D’une manière fort civile,</l>
+                  <l>Â manger des plats friands,</l>
+                  <l>Sur un cachemir des Indes,</l>
+                  <l>Le couvert se trouva mis,</l>
+                  <l>Restants de gigots, de dindes</l>
+                  <l>Quell’ noc’ pour les deux amis,</l>
+                  <l>Le régal fut fort honnête,</l>
+                  <l>Mais les médaill’s ont des revers ;</l>
+                  <l>Or quelqu’un troublant la fête,</l>
+                  <l>Les fit avaler de travers.</l>
+                  <l>C’est du côté de l’alcôve</l>
+                  <l>Qu’ils entendirent du bruit ;</l>
+                  <l>Le rat de ville se sauve,</l>
+                  <l>Le rat des champs le suit.</l>
+                  <l>Le bruit cesse, on se hasarde,</l>
+                  <l>Le citadin veut revenir,</l>
+                  <l>Et dit à la campagnarde</l>
+                  <l>Y a le croupion zà finir.</l>
+                  <l>Non ! dit l’autr’ je reprends ma route,</l>
+                  <l>Demain vous viendrez chez moi</l>
+                  <l>De vrai, j’ n’ai que d’la choucroute,</l>
+                  <l>Au lieu de vos morceaux de roi ;</l>
+                  <l>Mais mes joies ne sont pas fausses</l>
+                  <l>Je mang’ sans tribulations,</l>
+                  <l>Et je m’ fiche de bonnes sauces</l>
+                  <l>Qui donnent des indigestions.</l>
+               </sp>
+
+               <sp n="106">
+                  <speaker>FRITZCHEN.</speaker>
+                  <l>Bravo, la chanteuse, bravo ! vous chantez comme un petit rossignol ! c’est
+                     vrai, ça, mais ce qui est plus vrai encore, c’est que vous êtes un petite rate
+                     a croquer.</l>
+                  <stage>(À part.)</stage>
+                  <l>Oh ! je suis dans le ravissement de l’amour, jusqu’à la pointe des cheveux… je
+                     vous ai pas assez payée, il faut que je vous embrasse encore.</l>
+               </sp>
+
+               <sp n="107">
+                  <speaker>LISCHEN.</speaker>
+                  <l>Du tout, du tout, vous me payez trop de cette monnaie-là.</l>
+               </sp>
+
+               <sp n="108">
+                  <speaker>FRITZCHEN.</speaker>
+                  <l>Eh bien, voyons, rien qu’un petit baiser.</l>
+                  <stage>(Il veut l’embrasser.)</stage>
+               </sp>
+
+
+               <sp n="109">
+                  <speaker>LISCHEN.</speaker>
+                  <stage>, saisissant ses balais.</stage>
+                  <l>Ah ! vous savez qu’il me reste des balais.</l>
+               </sp>
+
+               <sp n="110">
+                  <speaker>FRITZCHEN.</speaker>
+                  <l>Bigre ! elle est sage la payse, c’est une vertu. C’est égal, ça ferait une
+                     jolie petite femme tout de même. Dites donc, est-ce que vous avez un amoureux
+                     ?</l>
+               </sp>
+
+               <sp n="111">
+                  <speaker>LISCHEN.</speaker>
+                  <l>Non, mon Dieu !</l>
+               </sp>
+
+
+               <sp n="112">
+                  <speaker>FRITZCHEN.</speaker>
+                  <l>Non ! eh bien, nous allons faire route ensemble, je vous conduirai dans votre
+                     famille, j’ai un projet, et là je verrai à voir ce que j’aurai à faire… Topez-y
+                     t’y, vous ?</l>
+               </sp>
+
+               <sp n="113">
+                  <speaker>LISCHEN.</speaker>
+                  <l>Qué dit, qué fait, topez !</l>
+               </sp>
+
+
+               <sp n="114">
+                  <speaker>FRITZCHEN.</speaker>
+                  <l>C’est ça, faisons nos paquets pour nous mettre en route. </l>
+                  <stage>(Ils font leurs paquets.)</stage>
+                  <l>Et votre village, c’est ?</l>
+               </sp>
+
+               <sp n="115">
+                  <speaker>LISCHEN.</speaker>
+                  <l>Brumath.</l>
+               </sp>
+
+               <sp n="116">
+                  <speaker>FRITZCHEN.</speaker>
+                  <l>Comment que vous dites ça ?</l>
+               </sp>
+
+               <sp n="117">
+                  <speaker>LISCHEN.</speaker>
+                  <l>Brumath.</l>
+               </sp>
+
+               <sp n="118">
+                  <speaker>FRITZCHEN.</speaker>
+                  <l>Tarteifle ! c’est aussi le mien.</l>
+               </sp>
+
+               <sp n="119">
+                  <speaker>LISCHEN.</speaker>
+                  <l>Vraiment ?</l>
+               </sp>
+
+               <sp n="120">
+                  <speaker>FRITZCHEN.</speaker>
+                  <l>Oui ! et votre père, c’est qui ?</l>
+               </sp>
+
+               <sp n="121">
+                  <speaker>LISCHEN.</speaker>
+                  <l>Non, le vôtre ?</l>
+               </sp>
+
+               <sp n="122">
+                  <speaker>FRITZCHEN.</speaker>
+                  <l>Non, vous ?…</l>
+               </sp>
+
+
+               <sp n="123">
+                  <speaker>LISCHEN.</speaker>
+                  <l>Mais je m’appelle Lischen Freulisch.</l>
+               </sp>
+
+               <sp n="124">
+                  <speaker>FRITZCHEN.</speaker>
+                  <l>Et moi Fritzchen Freulisch.</l>
+               </sp>
+
+               <sp n="125">
+                  <speaker>LISCHEN.</speaker>
+                  <l>Mon frère !</l>
+               </sp>
+
+
+               <sp n="126">
+                  <speaker>FRITZCHEN.</speaker>
+                  <stage>, tombant assis.</stage>
+                  <l>Ma sœur !…</l>
+               </sp>
+
+
+               <sp n="127">
+                  <speaker>LISCHEN.</speaker>
+                  <l>Ah ! comment c’est là la joie de retrouver une petite sœur que tu n’as pas vue
+                     depuis dix ans !</l>
+               </sp>
+
+
+               <sp n="128">
+                  <speaker>FRITZCHEN.</speaker>
+                  <l>Pardonne-moi, vois-tu, la joie, l’émotion, la fable !… et puis je m’attendais
+                     si peu !… Sais-tu que tu es joliment changée ?</l>
+               </sp>
+
+               <sp n="129">
+                  <speaker>LISCHEN.</speaker>
+                  <l>Et toi donc !</l>
+               </sp>
+
+
+               <sp n="130">
+                  <speaker>FRITZCHEN.</speaker>
+                  <l>Et renforcie !</l>
+               </sp>
+
+
+               <sp n="131">
+                  <speaker>LISCHEN.</speaker>
+                  <l>Et toi donc !</l>
+               </sp>
+
+
+               <sp n="132">
+                  <speaker>FRITZCHEN.</speaker>
+                  <l>Et embellie.</l>
+               </sp>
+
+               <sp n="133">
+                  <speaker>LISCHEN.</speaker>
+                  <l>Et toi… donc… oh !… c’est-à-dire…</l>
+               </sp>
+
+
+               <sp n="134">
+                  <speaker>FRITZCHEN.</speaker>
+                  <l>Comment ? c’est-à-dire…</l>
+               </sp>
+
+
+               <sp n="135">
+                  <speaker>LISCHEN.</speaker>
+                  <l>T’as pas changé, sous ce rapport-là.</l>
+               </sp>
+
+               <sp n="136">
+                  <speaker>FRITZCHEN.</speaker>
+                  <l>Mais comment not’ père t’a-t-il laissé partir ?</l>
+               </sp>
+
+               <sp n="137">
+                  <speaker>LISCHEN.</speaker>
+                  <l>J’ai voulu gagner un peu d’argent pour l’aider, le pauvre cher homme, je suis
+                     partie avec plusieurs petites filles ; elles se plaisent à Paris, les autres,
+                     mais moi, je m’ennuyais là-bas, loin de tous ceux que j’aime.</l>
+               </sp>
+
+               <sp n="138">
+                  <speaker>FRITZCHEN.</speaker>
+                  <stage>, l’embrassant.</stage>
+                  <l>Bonne Lischen, bonne soeur… Das is goutt… c’est y contrariant qu’elle soit… au
+                     moment où… allons ! allons, je deviens bête à présent.</l>
+               </sp>
+
+               <sp n="139">
+                  <speaker>LISCHEN.</speaker>
+                  <stage>, à part.</stage>
+                  <l>Mais qu’est-ce qu’il a donc ?… Sais-tu bien que tu n’as pas l’air enchanté du
+                     tout de m’avoir retrouvée ?</l>
+               </sp>
+
+               <sp n="140">
+                  <speaker>FRITZCHEN.</speaker>
+                  <l>Je réfléchis… je pense que si on ne savait pas… on pourrait comme ça… au bout
+                     de quelque temps… c’est désolant ça.</l>
+               </sp>
+
+               <sp n="141">
+                  <speaker>LISCHEN.</speaker>
+                  <stage>, lui prenant le bras.</stage>
+                  <l>Maintenant quel joli voyage nous allons faire ensemble.</l>
+               </sp>
+
+               <sp n="142">
+                  <speaker>FRITZCHEN.</speaker>
+                  <l>Oui, quel joli voyage, nous allons faire… tous… les deux… Mais non, je
+                     réfléchis, je ne peux pas partir avec toi.</l>
+               </sp>
+
+               <sp n="143">
+                  <speaker>LISCHEN.</speaker>
+                  <l>Comment, tu me laisserais partir seule ?</l>
+               </sp>
+
+               <sp n="144">
+                  <speaker>FRITZCHEN.</speaker>
+                  <l>Oui ; il faut que je songe à gagner un peu d’argent, j’ai deux bons bras, je
+                     veux être cocher. Not’ père, il n’en a pas plus qu’il faut, et puis ce sera
+                     assez de toi dans la maison.</l>
+               </sp>
+
+               <sp n="145">
+                  <speaker>LISCHEN.</speaker>
+                  <l>Mais tu me proposais tout à l’heure de…</l>
+               </sp>
+
+
+               <sp n="146">
+                  <speaker>FRITZCHEN.</speaker>
+                  <l>Oui, mais j’ai réfléchi… ça ne se peut pas.</l>
+               </sp>
+
+               <sp n="147">
+                  <speaker>LISCHEN.</speaker>
+                  <l>Cependant… voyons… viens donc.</l>
+               </sp>
+
+               <sp n="148">
+                  <speaker>FRITZCHEN.</speaker>
+                  <l>C’est impossible, ça ne se peut pas… ça ne se peut pas.</l>
+               </sp>
+
+               <sp n="149">
+                  <speaker>LISCHEN.</speaker>
+                  <l>Et pourquoi ?</l>
+               </sp>
+
+               <sp n="150">
+                  <speaker>FRITZCHEN.</speaker>
+                  <l>Parce que, ça ne se peut pas ; tu comprends, ma petite Lischen, la société a
+                     ses lois, mon Dieu, c’est, comme ça, elle les a… Vois-tu, on arrive dans le
+                     monde, on y trouve une petite femme gentille à en mourir… et puis pas du tout,
+                     parce que sans vous en avoir prévenu… il se trouve… qu’elle a ses lois… la
+                     société… voilà pourquoi, ça ne se peut pas… Oh mais, c’est égal</l>
+                  <stage>(pleurant)</stage>
+                  <l>je suis bien content. Oh ! mais là bien content de t’avoir retrouvée, mais
+                     enfin, ça ne se peut pas.</l>
+               </sp>
+
+               <sp n="151">
+                  <speaker>LISCHEN.</speaker>
+                  <stage>FINAL.</stage>
+                  <l>Quoi ! Fritschen, sans qu’il t’en coûte,</l>
+                  <l>Tu m’isoles sur la route,</l>
+                  <l>Mais tu ne m’aimes donc pas ?</l>
+               </sp>
+
+               <sp n="152">
+                  <speaker>FRITZCHEN.</speaker>
+                  <l>Moi ne pas t’aimer, hélas !</l>
+               </sp>
+
+               <sp n="153">
+                  <speaker>LISCHEN.</speaker>
+                  <l>Mais quand on s’aime, il me semble</l>
+                  <l>Que l’on doit rester ensemble.</l>
+
+               </sp>
+               <sp n="154">
+                  <speaker>FRITZCHEN.</speaker>
+                  <l>Dût le cœur se déchirer,</l>
+                  <l>Il est un moment suprême,</l>
+                  <l>Lischen, où plus on s’aime,</l>
+                  <l>Plus il faut se séparer,</l>
+                  <l>Mon chemin est là.</l>
+                  <stage>(A gauche.)</stage>
+               </sp>
+
+
+               <sp n="155">
+                  <speaker>LISCHEN.</speaker>
+                  <l>Le mien le voilà.</l>
+                  <stage>(A droite.)</stage>
+               </sp>
+
+               <sp n="156">
+                  <speaker>ENSEMBLE.</speaker>
+                  <l>De son côté chacun ira ;</l>
+                  <l>Mais sur tous deux Dieu veillera.</l>
+               </sp>
+
+               <sp n="157">
+                  <speaker>FRITZCHEN.</speaker>
+                  <l>Mais en route pour te mettre,</l>
+                  <l>L’argent te manque peut-être,</l>
+                  <l>Donne ta bourse, en voici.</l>
+               </sp>
+
+               <sp n="158">
+                  <speaker>LISCHEN.</speaker>
+                  <l>J’accepte, frère, merci.</l>
+                  <stage>(Elle ouvre son porte-monnaie et laisse tomber sa lettre.)</stage>
+               </sp>
+
+
+               <sp n="159">
+                  <speaker>FRITZCHEN.</speaker>
+                  <l>Une lettre !</l>
+               </sp>
+
+               <sp n="160">
+                  <speaker>LISCHEN.</speaker>
+                  <l>Ma pauvre lettre,</l>
+                  <l>Oui c’est le père Schwartz, en passant à Paris,</l>
+                  <l>Qui me l’a fait remettre.</l>
+               </sp>
+
+               <sp n="161">
+                  <speaker>FRITZCHEN.</speaker>
+                  <l>Que vois-je ? ah ! mais vraiment,</l>
+                  <l>C’est écrit par notre vieux père.</l>
+               </sp>
+
+               <sp n="162">
+                  <speaker>LISCHEN.</speaker>
+                  <l>Tu lis donc couramment,</l>
+                  <l>Quel bonheur ! lis donc vite, mon frère.</l>
+               </sp>
+               <sp n="163">
+                  <speaker>ENSEMBLE.</speaker>
+                  <l>Voyons vite, lisons</l>
+                  <l>Commençons, commençons.</l>
+               </sp>
+               <sp n="164">
+                  <speaker>FRITZCHEN.</speaker>
+                  <stage>, lisant.</stage>
+                  <l>« Ma chère Lischen, je t’écris à peine relevé d’une maladie qui a failli me
+                     tuer ; j’ai compris qu’il fallait que je te dise un secret que je cache depuis
+                     longtemps. »</l>
+                  <stage>(Parlé.)</stage>
+                  <l>Un secret !</l>
+                  <stage>(continuant.)</stage>
+                  <l>« Une de mes sœurs avait été trompée ; je recueillis l’infortunée pour cacher
+                     la honte de la famille, elle allait donner le jour à un petit innocent, presque
+                     en même temps que ma femme. Grâce à cette circonstance et à la discrétion du
+                     brave médecin qui nous secondait, tout le village me crut père de deux jumeaux.
+                     Voilà la vérité, que j’ai cru te devoir, je n’en compte pas moins sur ton amour
+                     de fille, comme tu peux compter sur mon amour de père, au logis comme dans mon
+                     cœur, tu seras toujours la petite sœur de Fritzchen. »</l>
+               </sp>
+
+
+               <sp n="165">
+                  <speaker>FRITZCHEN.</speaker>
+                  <l>Ah ! bonheur, Lischen, Je tremble</l>
+                  <l>Partons ensemble.</l>
+                  <l>Et de quelle nouvelle ardeur</l>
+                  <l>Nous pourrons répéter en chœur</l>
+               </sp>
+               <sp n="166">
+                  <speaker>ENSEMBLE.</speaker>
+                  <l>Je suis Alsacienne,</l>
+                  <l>Je suis Alsacien, etc.</l>
+               </sp>
+               <stage>FIN.</stage>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>
