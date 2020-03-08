@@ -10,12 +10,12 @@
          <publicationStmt>
             <p>Ecole nationale des chartes, projet libretti TNAH, promotion 2019-2020</p>
          </publicationStmt>
-         <sourceDesc default="false">
+         <sourceDesc>
             <p>https://fr.wikisource.org/wiki/La_Rose_de_Saint-Flour</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <refsDecl n="CTS" default="false">
+         <refsDecl n="CTS">
             <cRefPattern n="speech"
                          matchPattern="(\w+).(\w+).(\w+)"
                          replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@type='act'][@n='$1']/tei:div[@type='scene'][@n='$2']/tei:sp[@n='$3'])">
