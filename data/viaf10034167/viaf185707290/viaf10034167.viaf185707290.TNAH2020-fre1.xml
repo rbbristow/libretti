@@ -55,7 +55,7 @@
             <div type="scene" n="1">
                <head>Scène PREMIÈRE</head>
                <sp n="1">
-                  <speaker>Pierrette,</speaker>
+                  <speaker>Pierrette</speaker>
                   <stage>seule. Elle ramasse les débris d’une marmite cassée, auprès de la
                      cheminée.</stage>
                   <p>C’est-il un guignon !… j’ai cassé ma marmite, fichtra !… Comment, à présent,
@@ -98,7 +98,7 @@
                      marmite pour faire ma choupe !… des beaux chouliers avec des paillettes, et une
                      belle marmite en fer, qui ne se casserait plus : voilà l’ rêve de ma vie. Mais
                      faut penser à la choupe ; allons chercher mes choux et emprunter une marmite,</p>
-                  <stage>Elle prend un panier,</stage>
+                  <stage>Elle prend un panier</stage>
                   <p>et puis faire une visite au potager.</p>
                   <stage>Elle sort par la droite</stage>
                </sp>
@@ -107,7 +107,7 @@
                <head>Scène II</head>
                <sp n="1">
                   <speaker>MARCACHU</speaker>
-                  <stage>, entrant par le fond. — Il porte une marmite en fonte sur le bras.</stage>
+                  <stage>entrant par le fond. — Il porte une marmite en fonte sur le bras.</stage>
                   <p>Elle n’est pas là !… Ah ! chacrelotte de chacrelotte !… oùch’ qu’elle peut être
                      allée ?… Le serpent de la jalousie me ronge l’eschtomach ; le Chapailloux
                      m’aurait-il devancé ?… Je le casserais en miettes, nom d’un chaudron !… J’ai du
@@ -151,7 +151,7 @@
             <div type="scene" n="3">
                <head>Scène III</head>
                <sp n="1">
-                  <speaker>CHAPAILLOUX,</speaker>
+                  <speaker>CHAPAILLOUX</speaker>
                   <stage>entrant par le fond.</stage>
                   <lg>
                      <head>Air.</head>
@@ -211,7 +211,7 @@
                <stage>Pierrette, puis Marcachu.</stage>
                <sp n="1">
                   <speaker>PIERRETTE</speaker>
-                  <stage>, revenant par le fond avec son panier.</stage>
+                  <stage>revenant par le fond avec son panier.</stage>
                   <l>Pas de marmite !… tout le village est à la fête… v’là des choux, des navets,
                      des carottes, mais pas la plus petite marmite… comment que je vas faire ?…</l>
                         <stage>Elle voit la marmite pendue à la crémaillère.</stage>
@@ -259,7 +259,7 @@
                </sp>
                <sp n="11">
                   <speaker>PIERRETTE</speaker>
-                  <stage>, lui touchant le bras.</stage>
+                  <stage>lui touchant le bras.</stage>
                   <l>Ch’est cholide !</l>
                </sp>
                <sp n="12">
@@ -288,17 +288,17 @@
                </sp>
                <sp n="17">
                   <speaker>PIERRETTE</speaker>
-                  <stage>, lui donnant une bourrade.</stage>
+                  <stage>lui donnant une bourrade.</stage>
                   <l>Eh ! farceur !</l>
                </sp>
                <sp n="18">
                   <speaker>MARCACHU</speaker>
-                  <stage>, lui rendant une bourrade.</stage>
+                  <stage>lui rendant une bourrade.</stage>
                   <l>Eh ! la p’tite mère !</l>
                </sp>
                <sp n="19">
                   <speaker>PIERRETTE</speaker>
-                  <stage>, lui donnant un coup de poing.</stage>
+                  <stage>lui donnant un coup de poing.</stage>
                   <l>Che va-t-il finir, cha ?</l>
                </sp>
                <sp n="20">
@@ -391,7 +391,7 @@
                </sp>
                <sp n="36">
                   <speaker>PIERRETTE</speaker>
-                  <stage>, seule.</stage>
+                  <stage>seule.</stage>
                   <l>Mettons de l’eau dans la marmite.</l>
                   <stage>Elle y verse de l’eau.</stage>
                   <l>Ce mochieu Marcachu me fait peur pour ce pauvre Chapailloux… s’il lui cassait
@@ -399,13 +399,13 @@
                </sp>
                <sp n="37">
                   <speaker>MARCACHU</speaker>
-                  <stage>, revenant.</stage>
+                  <stage>revenant.</stage>
                   <l>V’là le lard.</l>
                   <stage>Il apporte un paquet enveloppé dans du papier.</stage>
                </sp>
                <sp n="38">
                   <speaker>PIERRETTE</speaker>
-                  <stage>, le prenant.</stage>
+                  <stage>le prenant.</stage>
                   <l>Faites-le-moi passer !… Qu’est ce que ch’est que vous m’apportez ?… ch’est pas
                      du lard ça ?… ch’est des chandelles.</l>
                </sp>
@@ -428,16 +428,16 @@
                   <speaker>MARCACHU</speaker>
                   <l>Je crois que je chuis le préféré !… elle m’a lancé un regard !</l> 
                   <stage>Voyant le
-                        paquet déposé par Chapailloux sur la table.</stage> 
+                        paquet déposé par Chapailloux sur la table</stage>
                   <l>Mais qu’est-che que
                   ch’est que cha ?… un paquet ?…</l>
-                  <stage>Il l’ouvre.</stage> 
+                  <stage>Il l’ouvre</stage>
                   <l>Nom d’une casserole
                   !… ch’est des chouliers !…</l>
                   <stage>Il en prend un qu’il examine.</stage>
                   <l>des
                   escarpins de femme !… dernier genre !…</l>
-                  <stage>Montrant les clous.</stage> 
+                  <stage>Montrant les clous</stage>
                   <l>avec
                      des paillettes !… Le Chapailloux est venu, et il a apporté ça pour mam’jelle
                      Pierrette !… Oh ! la colère ! ch’est pour qu’elle dansa avec lui qu’il lui a
@@ -457,14 +457,14 @@
                </sp>
                <sp n="4">
                   <speaker>PIERRETTE</speaker>
-                  <stage>, mettant sur la table le lard.</stage>
+                  <stage>mettant sur la table le lard.</stage>
                   <l>Voyons, faut travailler, monssieu Marcachu, mettez le lard dans la marmite ;
                      moi je vas éplucher les légumes.</l>
                   <stage>Elle prend le panier.</stage>
                </sp>
                <sp n="5">
                   <speaker>MARCACHU</speaker>
-                  <stage>, troublé.</stage>
+                  <stage>troublé.</stage>
                   <l>Oui, mam’jelle Pierrette.</l> 
                   <stage>À part.</stage>
                   <l>Pourvu qu’elle ne voite pas le choulier !</l>
@@ -477,7 +477,7 @@
                </sp>
                <sp n="7">
                   <speaker>MARCACHU</speaker>
-                  <stage>, à part.</stage>
+                  <stage>à part.</stage>
                   <l>Elle va voir le choulier !…</l>
                   <stage>Haut.</stage>
                   <l>Pourquoi que vous épluchez tout ça, mam’zelle Pierrette ?… vous ôtez le plus bon.</l>
@@ -497,12 +497,12 @@
                </sp>
                <sp n="11">
                   <speaker>MARCACHU</speaker>
-                  <stage>, à part.</stage>
+                  <stage>à part.</stage>
                   <l>Elle n’a pas va le choulier !</l>
                </sp>
                <sp n="12">
                   <speaker>PIERRETTE</speaker>
-                  <stage>, voyant le lard sur la table.</stage>
+                  <stage>voyant le lard sur la table.</stage>
                   <l>Ah ça ! vous n’avez donc pas mis le lard dans la marmite ?</l>
                </sp>
                <sp n="13">
@@ -515,9 +515,9 @@
                </sp>
                <sp n="15">
                   <speaker>MARCACHU</speaker>
-                  <stage>, à part.</stage>
+                  <stage>à part.</stage>
                   <l>Fichtra !… j’ai mis les chandelles !… Bah ! ça n’en chera que, plus bon…</l>
-                  <stage>Haut.</stage> 
+                  <stage>Haut</stage>
                   <l>Je vas mettre le lard.</l>
                   <stage>Il le jette dans la marmite.</stage>
                   
@@ -526,7 +526,7 @@
                   <speaker>PIERRETTE</speaker>
                   <l>Et puis les légumes aussi…</l> 
                   <stage>Elle jette dans la marmite tout le contenu du
-                        panier.</stage> 
+                        panier</stage>
                   <l>Ça fera une fameuse choupe, ça !… Il n’y manquera rien !</l>
                   
                </sp>
@@ -540,7 +540,7 @@
                <stage>Les mêmes, CHAPAILLOUX.</stage>
                <sp n="1">
                   <speaker>CHAPAILLOUX</speaker>
-                  <stage>, entrent par le fond, à part.</stage>
+                  <stage>entrent par le fond, à part.</stage>
                   <l>Jouissons de sa churprise…</l> 
                   <stage>Haut.</stage>
                   <l>Bonjour, mam’jelle Pierrette…</l>
@@ -551,12 +551,12 @@
                </sp>
                <sp n="3">
                   <speaker>MARCACHU</speaker>
-                  <stage>, à part.</stage>
+                  <stage>à part.</stage>
                   <l>Fichtrrr !… mon rival !</l>
                </sp>
                <sp n="4">
                   <speaker>CHAPAILLOUX</speaker>
-                  <stage>, à part.</stage>
+                  <stage>à part.</stage>
                   <l>Bigrr !… le Marcachu…</l>
                </sp>
                <sp n="5">
@@ -567,7 +567,7 @@
                <sp n="6">
                   <speaker>CHAPAILLOUX</speaker>
                   <l>Non, je viens pour autre chose.</l> 
-                  <stage>À part.</stage> 
+                  <stage>À part</stage>
                   <l>Elle n’a pas l’air surprise du tout.</l>
                </sp>
                <sp n="7">
@@ -610,7 +610,7 @@
                </sp>
                <sp n="15">
                   <speaker>MARCACHU</speaker>
-                  <stage>, qui écume la marmite, à part.</stage>
+                  <stage>qui écume la marmite, à part.</stage>
                   <l>Ch’est drôle, comme elle danchera !…</l>
                   <stage>Il tape sur la marmite avec la cuillère.</stage>
                </sp>
@@ -663,7 +663,7 @@
                </sp>
                <sp n="27">
                   <speaker>MARCACHU</speaker>
-                  <stage>, se levant.</stage>
+                  <stage>se levant.</stage>
                   <l>Ch’est avec moi qu’elle danchera !…</l>
                </sp>
                <sp n="28">
@@ -672,17 +672,17 @@
                </sp>
                <sp n="29">
                   <speaker>MARCACHU</speaker>
-                  <stage>, la tirant aussi.</stage>
+                  <stage>la tirant aussi.</stage>
                   <l>Ch’est avec moi !…</l>
                </sp>
                <sp n="30">
                   <speaker>CHAPAILLOUX</speaker>
-                  <stage>, même jeu.</stage>
+                  <stage>même jeu.</stage>
                   <l>Je te défends de dancher avec elle.</l>
                </sp>
                <sp n="31">
                   <speaker>MARCACHU</speaker>
-                  <stage>, même jeu.</stage>
+                  <stage>même jeu.</stage>
                   <l>Je te le défends auchi.</l>
                   <stage>Ils la tirent chacun d’un côté.</stage>
                </sp>
@@ -720,7 +720,7 @@
                </sp>
                <sp n="40">
                   <speaker>PIERRETTE</speaker>
-                  <stage>, fredonnant.</stage>
+                  <stage>fredonnant.</stage>
                   <l>“Celui que je préfère</l>
                   <l>“Il le saura ce soir…</l>
                   <l>Je vais chercher les achiettes !…</l> 
@@ -746,9 +746,9 @@
                </sp>
                <sp n="4">
                   <speaker>CHAPAILLOUX</speaker>
-                  <stage>, à part.</stage>
+                  <stage>à part.</stage>
                   <l>Bigre !… il est bien fort ! c’est égal !…</l>
-                  <stage>Haut.</stage> 
+                  <stage>Haut</stage>
                   <l>Sortons !</l> 
                   <stage>DUO.</stage>
                </sp>
@@ -792,7 +792,7 @@
                </sp>
                <sp n="14">
                   <speaker>CHAPAILLOUX</speaker>
-                  <stage>, à part</stage>
+                  <stage>à part</stage>
                   <l>Je tremble !</l>
                   <l>Je tremble !</l>
                </sp>
@@ -829,10 +829,10 @@
                <stage>Les mêmes, PIERRETTE.</stage>
                <sp n="1">
                   <speaker>PIERRETTE</speaker>
-                  <stage>, apportant des assiettes.</stage>
+                  <stage>apportant des assiettes.</stage>
                   <l>Ah ! mon Dieu ! les malheureux !… ils vont s’écharper !… voulez-vous bien finir
                      !</l>
-                  <stage>Elle les sépare.</stage> 
+                  <stage>Elle les sépare</stage>
                </sp>
                <sp n="2">
                   <speaker>MARCACHU</speaker>
@@ -846,7 +846,7 @@
                   <speaker>PIERRETTE</speaker>
                   <l>Encore une fois, je vous défends de vous démolir ici !… Je connais rien de plus
                      malpropre que deux Auvergnats qui se fichent une trempée chez une cabaretière.</l>
-                        <stage>Elle va à la cheminée.</stage>                  
+                        <stage>Elle va à la cheminée</stage>                 
                </sp>
                <sp n="5">
                   <speaker>CHAPAILLOUX</speaker>
@@ -864,7 +864,7 @@
                </sp>
                <sp n="8">
                   <speaker>PIERRETTE</speaker>
-                  <stage>, apporte la table.</stage>
+                  <stage>apporte la table.</stage>
                   <l>Allons, à table !…</l>
                </sp>
                <sp n="9">
@@ -874,7 +874,7 @@
                </sp>
                <sp n="10">
                   <speaker>PIERRETTE</speaker>
-                  <stage>, servant la soupe.</stage>
+                  <stage>servant la soupe.</stage>
                   <l>Mangez cha ; ch’est nourrissant !…</l>
                </sp>
                <sp n="11">
@@ -891,7 +891,7 @@
                </sp>
                <sp n="14">
                   <speaker>CHAPAILLOUX</speaker>
-                  <stage>, mangeant.</stage>
+                  <stage>mangeant.</stage>
                   <l>Qu’est-ce qu’elle chent donc la choupe ?… Elle chent le rance !… on dirait
                      comme un petit goût de cuir brûlé…</l>
                </sp>
@@ -937,7 +937,7 @@
                </sp>
                <sp n="24">
                   <speaker>CHAPAILLOUX</speaker>
-                  <stage>, puisant à la marmite.</stage>
+                  <stage>puisant à la marmite.</stage>
                   <l>Cha donne un bien bon goût !…</l>
                   <stage>Il trouve encore un bouquet dans la marmite.</stage>
                   <l>Ah cha !… v’là un bouquet à present !… Il y a donc de tout
@@ -957,7 +957,7 @@
                   <speaker>PIERRETTE</speaker>
                   <l>Ah ! monsieur Marcachu, ch’est d’une galanterie… ce bouquet ne me quittera
                      plus…</l> 
-                  <stage>Elle jette le bouquet sous la table.</stage> 
+                  <stage>Elle jette le bouquet sous la table</stage>
                   <l>Maintenant je propose
                      la petite chansonnette…</l>
                </sp>
@@ -974,7 +974,7 @@
                </sp>
                <sp n="30">
                   <speaker>CHAPAILLOUX ET MARCACHU</speaker>
-                  <stage>, dansant.</stage>
+                  <stage>dansant.</stage>
                   <l>Nous n’étions ni hommes ni femmes !</l>
                   <l>Nous étions tous Auvergnats.</l>
                </sp>
@@ -1026,10 +1026,10 @@
                </sp>
                <sp n="39">
                   <speaker>CHAPAILLOUX</speaker>
-                  <stage>, à part.</stage>
+                  <stage>à part.</stage>
                   <l>Est-il galant !… est-il galant !</l> 
                   <stage>Il met avec colère sa cuiller dans la
-                        marmite.</stage> 
+                        marmite</stage>
                   <l>Encore une tournée de choupe ?…</l> 
                </sp>
                <sp n="40">
@@ -1042,12 +1042,12 @@
                </sp>
                <sp n="42">
                   <speaker>CHAPAILLOUX</speaker>
-                  <stage>, qui retire un soulier de la marmite.</stage>
+                  <stage>qui retire un soulier de la marmite.</stage>
                   <l>Qu’est-ce que ch’est encore que cha ?…</l>
                </sp>
                <sp n="43">
                   <speaker>MARCACHU</speaker>
-                  <stage>, à part.</stage>
+                  <stage>à part.</stage>
                   <l>Ah ! fouchtrr !…</l> 
                   <stage>Haut.</stage>
                   <l>Je sais ce que ch’est…</l> 
@@ -1063,7 +1063,7 @@
                </sp>
                <sp n="46">
                   <speaker>MARCACHU</speaker>
-                  <stage>, embarrassé.</stage>
+                  <stage>embarrassé.</stage>
                   <l>Qui ? qui ?… je ne sais pas moi.</l>
                </sp>
                <sp n="47">
@@ -1085,7 +1085,7 @@
                </sp>
                <sp n="51">
                   <speaker>CHAPAILLOUX</speaker>
-                  <stage>, à part.</stage>
+                  <stage>à part.</stage>
                   <l>Bigre !</l>
                </sp>
                <sp n="52">
@@ -1104,14 +1104,14 @@
                </sp>
                <sp n="55">
                   <speaker>PIERRETTE</speaker>
-                  <stage>, effrayée.</stage>
+                  <stage>effrayée.</stage>
                   <l>Ah mon Dieu !… il casse mon ménage !…</l>
                </sp>
                <sp n="56">
                   <speaker>MARCACHU</speaker>
                   <l>Et la vaichelle aussi !… v’lan…</l> 
                   <stage>Il prend les assiettes et les jette une
-                        à une par la fenêtre ; on les entend se briser.</stage> 
+                        à une par la fenêtre ; on les entend se briser</stage>
                   <l>V’li ! v’lan ! tout
                      y pachera !</l> 
                </sp>
@@ -1147,7 +1147,7 @@
                </sp>
                <sp n="2">
                   <speaker>CHAPAILLOUX</speaker>
-                  <stage>, qui s’était réfugié dans un coin.</stage>
+                  <stage>qui s’était réfugié dans un coin.</stage>
                   <l>J’allais l’assomma, fouchtrra ! mais il ne m’en a pas donné le temps.</l>
                </sp>
                <sp n="3">
@@ -1162,7 +1162,7 @@
                </sp>
                <sp n="4">
                   <speaker>CHAPAILLOUX</speaker>
-                  <stage>, à part.</stage>
+                  <stage>à part.</stage>
                   <l>Merchi ! cent fois merchi. J’ai peur que le gredin</l>
                   <l>Ne revienne… et j’en tremble d’avanche !</l>
                </sp>
@@ -1172,7 +1172,7 @@
                </sp>
                <sp n="6">
                   <speaker>CHAPAILLOUX</speaker>
-                  <stage>, hésitant toujours.</stage>
+                  <stage>hésitant toujours.</stage>
                   <l>Moi ? par exemple !…</l>
                </sp>
                <sp n="7">
@@ -1181,7 +1181,7 @@
                </sp>
                <sp n="8">
                   <speaker>CHAPAILLOUX</speaker>
-                  <stage>, à part, regardant autour de lui.</stage>
+                  <stage>à part, regardant autour de lui.</stage>
                   <stage>Haut.</stage>
                   <l>Il n’est plus là ?… C’est le plaisir qui me suffoque !</l>
                   <l>Et du Marcachu je me moque !…</l>
@@ -1204,7 +1204,7 @@
                </sp>
                <sp n="10">
                   <speaker>CHAPAILLOUX</speaker>
-                  <stage>, tout à fait rassuré.</stage>
+                  <stage>tout à fait rassuré.</stage>
                   <l>Ah ! cette fois, voichi ma main.</l>
                   <stage>Il donne avec confiance sa main à Pierrette. À part.</stage>
                   <l>Il n’est pas si méchant… qu’il était che matin !</l>
