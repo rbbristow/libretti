@@ -58,7 +58,8 @@
         <castItem>UN MESSAGER PHILISTINS</castItem>
         <castItem>PREMIER PHILISTINS</castItem>
         <castItem>DEUXIÈME PHILISTIN</castItem>
-        <castItem>CHOEUR : Hébreux, Philistins</castItem>
+        <castItem>CHOEUR DES HEBREUX</castItem>
+        <castItem>CHOEUR DES PHILISTINS</castItem>
       </castList>
 
       <div type="act" n="1">
@@ -415,8 +416,8 @@
           </sp>
 
           <stage>Ils sortent, emportant le cadavre d'Abimélech.</stage>
-          <l>Au moment où les Philistins quittent la scène suivis du Grand-Prêtre, les Hébreux
-            vieillards et femmes, entrent.</l>
+          <stage>Au moment où les Philistins quittent la scène suivis du Grand-Prêtre, les Hébreux
+            vieillards et femmes, entrent.</stage>
         </div>
 
         <div type="scene" n="5">
@@ -489,7 +490,7 @@
 
           <sp n="2">
             <speaker>DALILA</speaker>
-            <l>s'adressant à Samson</l>
+            <stage>s'adressant à Samson</stage>
             <l>Je viens célébrer la victoire</l>
             <l>De celui qui règne en mon coeur.</l>
             <l>Dalila veut pour son vainqeur</l>
@@ -1246,7 +1247,7 @@
 
           <sp n="41">
             <speaker>DALILA</speaker>
-            <l>paraissant sur la terrasse</l>
+            <stage>paraissant sur la terrasse</stage>
             <l>A moi! Philistins! à moi!</l>
           </sp>
 
@@ -1386,11 +1387,11 @@
               <l>Le soleil luit,</l>
               <l>Dardant ses rayons au sein des campagnes.</l>
             </sp>
+            <stage>Bacchanale</stage>
 
           </div>
           <div type="scene" n="3">
             <head>SCÈNE III</head>
-            <stage>Bacchanale</stage>
             <stage>Les mêmes, Samson entre conduit par un enfant.</stage>
 
             <sp n="1">
@@ -1593,7 +1594,7 @@
               <l>Allons, Samson, viens avec nous,</l>
               <l>A Dagon, le dieu redoutable,</l>
               <l>Offrir ta coupe à genoux!</l>
-              <l>à l'enfant</l>
+              <stage>à l'enfant</stage>
               <l>Guidez ses pas vers le milieu du temple,</l>
               <l>Pour que de loin le peuple le contemple.</l>
             </sp>
@@ -1601,7 +1602,7 @@
             <sp n="19">
               <speaker>SAMSON</speaker>
               <l>Seigneur, inspire-moi, ne m'abandonne pas!</l>
-              <l>à l'enfant</l>
+              <stage>à l'enfant</stage>
               <l>Vers les piliers de marbre, enfant, guide mes pas!</l>
             </sp>
 
