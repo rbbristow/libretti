@@ -75,9 +75,9 @@
                </sp>
                <sp n="2">
                   <speaker>LE MARQUIS</speaker>
+                  <stage>Sursautant</stage>
                   <l>Ma foi, je n'en sais rien, pourquoi diable ne le demandez-vous pas à ses femmes
                      au lieu d'entrer chez moi sans crier gare, comme un Turc?</l>
-                  <stage>Sursautant</stage>
                </sp>
                <sp n="3">
                   <speaker>LE CHEVALIER</speaker>
@@ -117,10 +117,10 @@
                      soir du mariage du Dauphin. Le feu d'artifice commence, mais soudain des
                      caisses de fusées s'enflamment. Voilà la panique qui s'empare de la foule.
                      Votre mère pousse le verrou de son carrosse. Le cocher fouette les chevaux qui
-                     s'emballent. On arrête le carrosse. Une vitre vole en éclats. Les soldats
-                     surviennent à temps pour dégager le carrosse. Quelques heures plus tard,
-                     revenue en cet hôtel, votre mère mourut, en donnant le jour à Blanche.</l>
-                  <stage>Le marquis se cache la tète dans les mains</stage>
+                     s'emballent. On arrête le carrosse. Une vitre vole en éclats.</l>
+                  <stage>Le marquis se cache la tète dans les mains</stage> 
+                  <l>Les soldats surviennent à temps pour dégager le carrosse. Quelques heures plus tard,
+                     revenue en cet hôtel, votre mère mourut, en donnant le jour à Blanche.</l>   
                </sp>
                <sp n="9">
                   <speaker>LE CHEVALIER</speaker>
@@ -173,9 +173,10 @@
                </sp>
                <sp n="18">
                   <speaker>LE MARQUIS</speaker>
-                  <l>Enfantillages! Blanche, votre frère avait grand'hâte de vous revoir.</l>
+                  <l>Enfantillages!</l> 
                   <stage>Par la porte ouverte, Blanche paraît assez inopinément pour qu'on puisse se
                      demander si elle a ou non entendu les derniers mots</stage>
+                  <l>Blanche, votre frère avait grand'hâte de vous revoir.</l>
                </sp>
                <sp n="19">
                   <speaker>BLANCHE</speaker>
@@ -188,11 +189,11 @@
                </sp>
                <sp n="21">
                   <speaker>BLANCHE</speaker>
+                  <stage>S'efforçant de parler avec enjouement</stage>
                   <l>Les lièvres n'ont pas l'habitude de passer la journée hors de leur gîte. Il est
                      vrai que je transportais le mien avec moi. Mais une simple glace entre cette
                      foule et ma craintive personne m'a paru un moment, je vous assure, une
                      protection bien dérisoire. Je devais avoir l'air très ridicule.</l>
-                  <stage>S'efforçant de parler avec enjouement</stage>
                </sp>
                <sp n="22">
                   <speaker>LE CHEVALIER</speaker>
@@ -204,11 +205,12 @@
                   <l>Oh! M. de Damas n'a sans doute vu que ce qu'il voulait voir... Réellement, je
                      faisais bonne contenance? Mon Dieu, il en est peut-être du péril comme de l'eau
                      froide qui d'abord vous coupe le souffle et où l'on se trouve à l'aise, dès
-                     qu'on y est entré jusqu'au cou. Cette cérémonie chez les dames de la Visitation
+                     qu'on y est entré jusqu'au cou.</l> 
+                  <stage>Prête à défaillir, elle s'appuie à une chaise</stage>
+                  <l>Cette cérémonie chez les dames de la Visitation
                      a été très longue et m'a beaucoup fatiguée. Voilà sans doute pourquoi je
                      déraisonne. Avec votre permission, mon père, je vais prendre un peu de repos
                      avant le souper. Tiens! comme le jour tombe vite ce soir.</l>
-                  <stage>Prête à défaillir, elle s'appuie à une chaise</stage>
                </sp>
                <sp n="24">
                   <speaker>LE MARQUIS</speaker>
@@ -232,53 +234,46 @@
                </sp>
                <sp n="27">
                   <speaker>LE MARQUIS</speaker>
+                  <stage>S'efforçant de se rassurer</stage>
                   <l>Son imagination va toujours d'un extrême à l'autre. Que signifie ce dernier
                      trait?</l>
-                  <stage>
-                     <p>S'efforçant de se rassurer</p>
-                     <p>Il s'installe dans sa bergère</p>
-                  </stage>
+                  <stage>Il s'installe dans sa bergère</stage>
                </sp>
                <sp n="28">
                   <speaker>LE CHEVALIER</speaker>
-                  <l>Je n'en sais rien, qu'importe! C'est son regard et sa voix qui vont à l'âme...
-                     Les chevaux sont maintenant dételés. Je m'en vais interroger le vieil
+                  <l>Je n'en sais rien, qu'importe! C'est son regard et sa voix qui vont à l'âme...</l>
+                  <stage>Se décidant tout à coup à rompre cette atmosphère lourde</stage>
+                  <l>Les chevaux sont maintenant dételés. Je m'en vais interroger le vieil
                      Antoine.</l>
-                  <stage>
-                     <p>Se décidant tout à coup à rompre cette atmosphère lourde</p>
-                     <p>Il sort. Le marquis somnole</p>
-                  </stage>
+                  <stage>Il sort. Le marquis somnole</stage>
                </sp>
                <sp n="29">
                   <speaker>BLANCHE</speaker>
-                  <l>Ah!</l>
                   <stage>Dans une autre chambre</stage>
+                  <l>Ah!</l>
                </sp>
                <sp n="30">
                   <speaker>LE MARQUIS</speaker>
-                  <l>C'est toi, Thierry? Que se passe-t-il, mon garçon?</l>
-                  <stage>
-                     <p>Sursautant</p>
-                     <p>Se précipitant vers la porte d'où il appelle</p>
-                     <p>Entre Thierry; c'est un grand laquais un peu niais</p>
-                  </stage>
+                  <stage>Sursautant</stage>
+                  <l>C'est toi, Thierry?</l>
+                  <stage>Se précipitant vers la porte d'où il appelle</stage> 
+                  <l>Que se passe-t-il, mon garçon?</l>
+                  <stage>Entre Thierry; c'est un grand laquais un peu niais</stage>
                </sp>
                <sp n="31">
                   <speaker>THIERRY</speaker>
+                  <stage>Au comble de l'effroi</stage>
                   <l>J'allumais les flambeaux, lorsque Mademoiselle Blanche est entrée dans la
                      chambre... Je pense qu'elle a d'abord vu mon ombre sur le mur. J'avais tiré les
                      rideaux.</l>
-                  <stage>
-                     <p>Au comble de l'effroi</p>
-                     <p>Blanche, livide, apparaît sur le seuil. Sa voix, son attitude, les traits de
+                  <stage>Blanche, livide, apparaît sur le seuil. Sa voix, son attitude, les traits de
                         son visage marquent une espèce de résolution et de résignation
-                        désespérée</p>
-                  </stage>
+                        désespérée</stage>
                </sp>
                <sp n="32">
                   <speaker>LE MARQUIS</speaker>
-                  <l>Je vois qu'il n'y a heureusement rien de grave.</l>
                   <stage>S'efforçant d'être enjoué</stage>
+                  <l>Je vois qu'il n'y a heureusement rien de grave.</l>
                </sp>
                <sp n="33">
                   <speaker>BLANCHE</speaker>
@@ -347,13 +342,14 @@
                </stage>
                <sp n="1">
                   <speaker>LA PRIEURE</speaker>
+                  <stage>Essayant maladroitement de rapprocher son fauteuil de la grille</stage>
                   <l>N'allez pas croire que ce fauteuil soit un privilège de ma charge, comme le
                      tabouret des duchesses! Hélas! par charité pour mes chères filles qui en
                      prennent si grand soin, je voudrais m'y sentir à mon aise. Mais il n'est pas
                      facile de retrouver d'anciennes habitudes depuis trop longtemps perdues, et je
                      vois bien que ce qui devrait être un agrément ne sera jamais plus pour moi
                      qu'une humiliante nécessité.</l>
-                  <stage>Essayant maladroitement de rapprocher son fauteuil de la grille</stage>
+                  
                </sp>
                <sp n="2">
                   <speaker>BLANCHE</speaker>
@@ -409,6 +405,7 @@
                </sp>
                <sp n="13">
                   <speaker>LA PRIEURE</speaker>
+                  <stage>En pesant sur les mots</stage>
                   <l>Qu'on vous en dépouille... Il faudra vous charger seule de ce soin, ma fille.
                      Chacune ici a déjà trop à faire de ses propres illusions. Ma fille, les bonnes
                      gens se demandent à quoi nous servons, et après tout ils sont bien excusables
@@ -423,7 +420,6 @@
                      n'est pas selon l'esprit du Carmel de s'attendrir, mais je suis vieille et
                      malade, me voilà très près de ma fin, je peux bien m'attendrir sur vous. De
                      grandes épreuves vous attendent, ma fille.</l>
-                  <stage>En pesant sur les mots</stage>
                </sp>
                <sp n="14">
                   <speaker>BLANCHE</speaker>
@@ -480,9 +476,11 @@
                   <speaker>CONSTANCE</speaker>
                   <l>Tiens! voilà notre gros fer à repasser que nous réclamons depuis si longtemps!
                      Regardez comme la poignée en est bien regarnie... Nous n'entendrons plus soeur
-                     Jeanne de la Divine Enfance crier en soufflant sur ses doigts: "C'est-y
-                     possible de repasser avec un fer pareil!" "C'est-y!" Je me mords chaque fois la
-                     langue pour ne pas rire, mais je suis si contente! Ce "C'est-y" me rappelle la
+                     Jeanne de la Divine Enfance crier en soufflant sur ses doigts:</l> 
+                  <stage>Contrefaisant une voix criarde</stage> 
+                  <l>"C'est-y possible de repasser avec un fer pareil!" "C'est-y!"</l>
+                  <stage>Avec une voix normale</stage>
+                  <l>Je me mords chaque fois la langue pour ne pas rire, mais je suis si contente! Ce "C'est-y" me rappelle la
                      campagne, et nos bons villageois de Tilly. Oh! soeur Blanche, six semaines
                      avant mon entrée en religion, on a fêté là-bas le mariage de mon frère. Tous
                      les paysans étaient rassemblés, vingt filles lui ont présenté un bouquet au son
@@ -490,10 +488,6 @@
                      J'ai dansé cinq contredanses de tout mon coeur, je vous assure. Ces pauvres
                      gens m'aimaient tous à la folie, parce que j'étais gaie et que je sautais aussi
                      bien qu'eux...</l>
-                  <stage>
-                     <p>Contrefaisant une voix criarde</p>
-                     <p>Avec une voix normale</p>
-                  </stage>
                </sp>
                <sp n="4">
                   <speaker>BLANCHE</speaker>
@@ -701,21 +695,21 @@
                </sp>
                <sp n="13">
                   <speaker>LA PRIEURE</speaker>
-                  <l>La voici, priez-la d'entrer. Relevez-vous, ma fille. J'avais fait le projet de
+                  <l>La voici, priez-la d'entrer.</l>
+                  <stage>Mère Marie va jusqu'à la porte, s'efface pour laisser entrer Blanche, puis
+                        sort. Blanche vient s'agenouiller près du lit</stage> 
+                  <l>Relevez-vous, ma fille. J'avais fait le projet de
                      vous entretenir un peu longuement, mais la conversation que je viens d'avoir
                      m'a beaucoup fatiguée. Vous êtes la dernière venue, et pour ce fait la plus
                      chère à mon coeur. Oui, de toutes mes filles, la plus chère, comme l'enfant de
                      la vieillesse, et aussi la plus hasardée, la plus menacée. Pour détourner cette
                      menace, j'aurais bien donné ma pauvre vie, oh! certes, je l'eusse donnée. Je ne
-                     puis donner maintenant que ma mort, une très pauvre mort... Dieu se glorifie
+                     puis donner maintenant que ma mort, une très pauvre mort...</l>
+                  <stage>Blanche se jette de nouveau à genoux et sanglote. La prieure pose la main
+                        sur sa tête</stage>
+                  <l>Dieu se glorifie
                      dans ses saints, ses héros et ses martyrs. Il se glorifie aussi dans ses
-                     pauvres.</l>
-                  <stage>
-                     <p>Mère Marie va jusqu'à la porte, s'efface pour laisser entrer Blanche, puis
-                        sort. Blanche vient s'agenouiller près du lit</p>
-                     <p>Blanche se jette de nouveau à genoux et sanglote. La prieure pose la main
-                        sur sa tête</p>
-                  </stage>
+                     pauvres.</l>  
                </sp>
                <sp n="14">
                   <speaker>BLANCHE</speaker>
@@ -731,10 +725,12 @@
                      une chose du diable, et surtout ne vous méprisez jamais. Dieu a pris votre
                      honneur en charge, et il est plus en sûreté dans ses mains que dans les vôtres.
                      Relevez-vous cette fois pour tout de bon. A Dieu, je vous bénis. A Dieu, ma
-                     petite enfant... Monsieur Javelinot, je vous prie de me donner une nouvelle
-                     dose de ce remède.</l>
+                     petite enfant...</l>
                   <stage>Blanche sort. Mère Marie de l'Incarnation rentre avec le médecin et soeur
-                     Anne de la Croix</stage>
+                     Anne de la Croix</stage> 
+                  <l>Monsieur Javelinot, je vous prie de me donner une nouvelle
+                     dose de ce remède.</l>
+                  
                </sp>
                <sp n="16">
                   <speaker>M. JAVELINOT</speaker>
@@ -762,29 +758,24 @@
                </sp>
                <sp n="20">
                   <speaker>MÈRE MARIE</speaker>
+                  <stage>Presque durement</stage>
                   <l>Votre Révérence délire.</l>
-                  <stage>
-                     <p>Presque durement</p>
-                     <p>La tête de la prieure retombe lourdement sur l'oreiller. Presque aussitôt,
-                        on entend son râle</p>
-                  </stage>
+                  <stage>La tête de la prieure retombe lourdement sur l'oreiller. Presque aussitôt,
+                        on entend son râle</stage>
                </sp>
                <sp n="21">
                   <speaker>MÈRE MARIE</speaker>
+                  <stage>À soeur Anne de la Croix</stage>
                   <l>Poussez tout à fait cette fenêtre. Notre révérende mère n'est plus responsable
                      des propos qu'elle tient, mais il est préférable qu'ils ne scandalisent
                      personne...</l>
-                  <stage>À soeur Anne de la Croix</stage>
+                  <stage>Soeur Anne défaille</stage>
                   <l>Allons! Soeur Anne de la Croix, vous n'allez pas vous évanouir comme une
                      femmelette. Mettez-vous à genoux, priez! Cela vous vaudra mieux que des
                      sels.</l>
-
-                  <stage>
-                     <p>Soeur Anne défaille</p>
-                     <p>Tandis que mère Marie parle, la prieure s'est presque soulevée sur son
+                  <stage>Tandis que mère Marie parle, la prieure s'est presque soulevée sur son
                         séant. Elle a les yeux fixes, et dès qu'elle cesse de parler sa mâchoire
-                        inférieure retombe</p>
-                  </stage>
+                        inférieure retombe</stage>
                </sp>
                <sp n="22">
                   <speaker>LA PRIEURE</speaker>
@@ -808,21 +799,18 @@
                <sp n="26">
                   <speaker>LA PRIEURE</speaker>
                   <l>Ne rien dire... Ne rien dire... Qu'importe ce que je dis! Je ne commande pas
-                     plus à ma langue qu'à mon visage.L'angoisse adhère à ma peau comme un masque de
+                     plus à ma langue qu'à mon visage.</l>
+                  <stage>Elle essaie de se dresser sur son lit</stage> 
+                  <l>L'angoisse adhère à ma peau comme un masque de
                      cire... Oh! que ne puis-je arracher ce masque avec mes ongles!</l>
-                  <stage>
-                     <p>Elle essaie de se dresser sur son lit</p>
-                     <p>Elle se laisse de nouveau retomber sur l'oreiller</p>
-                  </stage>
+                  <stage>Elle se laisse de nouveau retomber sur l'oreiller</stage>
                </sp>
                <sp n="27">
                   <speaker>MÈRE MARIE</speaker>
+                  <stage>À soeur Anne de la Croix</stage>
                   <l>Prévenez vos soeurs qu'elles ne verront pas la révérende mère aujourd'hui. A
                      dix heures, récréation, comme d'habitude.</l>
-                  <stage>
-                     <p>À soeur Anne de la Croix</p>
-                     <p>Soeur Anne de la Croix sort. La prieure, qui a tout entendu, se redresse</p>
-                  </stage>
+                  <stage>Soeur Anne de la Croix sort. La prieure, qui a tout entendu, se redresse</stage>
                </sp>
                <sp n="28">
                   <speaker>LA PRIEURE</speaker>
@@ -1114,8 +1102,9 @@
                <sp n="19">
                   <speaker>LA PRIEURE</speaker>
                   <l>Qu'on aille prévenir Blanche de la Force. Les circonstances autorisent cette
-                     infraction à la règle. Je désire que vous assistiez à l'entretien</l>
-                  <stage>Rappelant mère Marie qui commençait à sortir</stage>
+                     infraction à la règle.</l>
+                  <stage>Rappelant mère Marie qui commençait à sortir</stage> 
+                  <l>Je désire que vous assistiez à l'entretien</l>
                </sp>
                <sp n="20">
                   <speaker>MÈRE MARIE</speaker>
@@ -1263,11 +1252,10 @@
                <sp n="25">
                   <speaker>MÈRE MARIE</speaker>
                   <l>II n'est qu'un moyen de rabaisser son orgueil, c'est de s'élever plus haut que
-                     lui. Tenez-vous fière.</l>
-                  <stage>
-                     <p>Retenant la taille un peu ployée de Blanche</p>
-                     <p>Elles sortent</p>
-                  </stage>
+                     lui.</l> 
+                  <stage>Retenant la taille un peu ployée de Blanche</stage>
+                  <l>Tenez-vous fière.</l>
+                  <stage>Elles sortent</stage>
                </sp>
             </div>
             <div type="tableau" n="4">
@@ -1324,9 +1312,9 @@
                </sp>
                <sp n="10">
                   <speaker>BLANCHE</speaker>
+                  <stage>Au comble de la frayeur</stage>
                   <l>Mais si ce qu'on raconte est vrai, ils vous tueront, s'ils vous
                      reconnaissent.</l>
-                  <stage>Au comble de la frayeur</stage>
                </sp>
                <sp n="11">
                   <speaker>L'AUMÔNIER</speaker>
@@ -1340,12 +1328,11 @@
                   <speaker>L'AUMÔNIER</speaker>
                   <l>Oui. Tels sont les ordres que nous avons reçus. Chère sueur Blanche, votre
                      imagination s'échauffe toujours trop vite. Oui, mon enfant. Rassurez-vous. Je
-                     resterai près de cette maison. J'y viendrai le plus souvent possible.</l>
-                  <stage>
-                     <p>Sur le seuil il la bénit d'un geste</p>
-                     <p>Il sort. Très calme, mère Marie pousse les lourds verrous de la grande
-                        porte</p>
-                  </stage>
+                     resterai près de cette maison.</l>
+                  <stage>Sur le seuil il la bénit d'un geste</stage> 
+                  <l>J'y viendrai le plus souvent possible.</l>
+                  <stage>Il sort. Très calme, mère Marie pousse les lourds verrous de la grande
+                        porte</stage>
                </sp>
                <sp n="14">
                   <speaker>CONSTANCE</speaker>
@@ -1359,8 +1346,8 @@
                </sp>
                <sp n="16">
                   <speaker>BLANCHE</speaker>
-                  <l>La peur est peut-être, en effet, une maladie. </l>
                   <stage>Comme malgré elle, d'une voix presque sans timbre</stage>
+                  <l>La peur est peut-être, en effet, une maladie. </l>
                </sp>
                <sp n="17">
                   <speaker>CONSTANCE</speaker>
@@ -1373,10 +1360,10 @@
                </sp>
                <sp n="19">
                   <speaker>MÈRE MARIE</speaker>
+                  <stage>D'une voix martelée pleine de passion contenue</stage>
                   <l>Il me semble que l'Esprit-Saint vient de parler par la bouche de Sa Révérence.
                      Pour que la France ait encore des prêtres, les filles du Carmel n'ont plus à
                      donner que leur vie.</l>
-                  <stage>D'une voix martelée pleine de passion contenue</stage>
                </sp>
                <sp n="20">
                   <speaker>LA PRIEURE</speaker>
@@ -1397,8 +1384,8 @@
                </sp>
                <sp n="23">
                   <speaker>LA FOULE</speaker>
+                  <stage>Dans la rue</stage>
                   <l>Ah!</l>
-                  <stage>dans la rue</stage>
                </sp>
                <sp n="24">
                   <speaker>L'AUMÔNIER</speaker>
@@ -1457,13 +1444,11 @@
                </sp>
                <sp n="36">
                   <speaker>MÈRE MARIE</speaker>
+                  <stage>À Constance</stage>
                   <l>Allez ouvrir, ma petite fille.</l>
-                  <stage>
-                     <p>À Constance</p>
-                     <p>D'un pas ferme, Constance va ouvrir les verrous. Entrée des quatre
+                  <stage>D'un pas ferme, Constance va ouvrir les verrous. Entrée des quatre
                         commissaires, dont deux restent près de la porte. La foule est maintenue par
-                        des gardes armes de longues piques</p>
-                  </stage>
+                        des gardes armes de longues piques</stage>
                </sp>
                <sp n="37">
                   <speaker>PREMIER COMMISSAIRE</speaker>
@@ -1483,12 +1468,12 @@
                </sp>
                <sp n="41">
                   <speaker>DEUXIÈME COMMISSAIRE</speaker>
+                  <stage>Lit</stage>
                   <l>"Ainsi qu'en a décidé l'Assemblée législative, siégeant le 17 août 1792: Pour
                      le premier octobre prochain, toutes les maisons encore actuellement occupées
                      par des religieuses ou par des religieux seront évacuées par les dits religieux
                      et religieuses et seront mises en vente à la diligence des corps
                      administratifs."</l>
-                  <stage>Lit</stage>
                </sp>
                <sp n="42">
                   <speaker>PREMIER COMMISSAIRE</speaker>
@@ -1502,9 +1487,10 @@
                </sp>
                <sp n="44">
                   <speaker>PREMIER COMMISSAIRE</speaker>
-                  <l>Soit! Etes-vous donc si pressées de quitter ces défroques, et de vous habiller
-                     comme tout le monde?</l>
+                  <l>Soit!</l> 
                   <stage>Goguenard</stage>
+                  <l>Etes-vous donc si pressées de quitter ces défroques, et de vous habiller
+                     comme tout le monde?</l>
                </sp>
                <sp n="45">
                   <speaker>MÈRE MARIE</speaker>
@@ -1532,13 +1518,12 @@
                <sp n="50">
                   <speaker>PREMIER COMMISSAIRE</speaker>
                   <l>Ces paroles-là pourraient vous coûter cher si vous les disiez à un autre que
-                     moi. Me prenez-vous pour un de ces buveurs de sang? J'étais sacristain à la
+                     moi.</l> 
+                  <stage>À mère Marie, en aparté</stage>
+                  <l>Me prenez-vous pour un de ces buveurs de sang? J'étais sacristain à la
                      paroisse de Chelles, le seigneur vicaire était mon frère de lait. Mais il faut
                      bien que je hurle avec les loups!</l>
-                  <stage>
-                     <p>À mère Marie, en aparté</p>
-                     <p>Le calme de mère Marie intimide le commissaire</p>
-                  </stage>
+                  <stage>Le calme de mère Marie intimide le commissaire</stage>
                </sp>
                <sp n="51">
                   <speaker>MÈRE MARIE</speaker>
@@ -1557,17 +1542,18 @@
                <sp n="53">
                   <speaker>MÈRE MARIE</speaker>
                   <l>Mes soeurs, notre révérende mère viendra bientôt nous faire ses adieux, car
-                     elle doit se rendre à Paris. Ma petite soeur Blanche, vous savez que la nuit de
-                     Noël, on portait notre Petit Roi dans chaque cellule. J'espère qu'il vous
-                     donnera du courage. </l>
+                     elle doit se rendre à Paris.</l> 
                   <stage>Mère Jeanne jette un regard apitoyé à soeur Blanche, puis se dirige vers un
                      placard d'où elle sort le Petit Roi de Gloire qu'elle tend, comme un jouet, á
                      Blanche</stage>
+                  <l>Ma petite soeur Blanche, vous savez que la nuit de
+                     Noël, on portait notre Petit Roi dans chaque cellule. J'espère qu'il vous
+                     donnera du courage. </l>
                </sp>
                <sp n="54">
                   <speaker>BLANCHE</speaker>
+                  <stage>Prenant le Petit Roi dans ses bras</stage>
                   <l>Oh! qu'il est petit! qu'il est faible! </l>
-                  <stage>prenant le Petit Roi dans ses bras</stage>
                </sp>
                <sp n="55">
                   <speaker>MÈRE MARIE</speaker>
@@ -1575,8 +1561,8 @@
                </sp>
                <sp n="56">
                   <speaker>LA FOULE</speaker>
+                  <stage>Dans la rue</stage>
                   <l>Ah! ça ira! ça ira! ça ira! </l>
-                  <stage>dans la rue</stage>
                </sp>
                <sp n="57">
                   <speaker>BLANCHE</speaker>
@@ -1586,8 +1572,8 @@
                </sp>
                <sp n="58">
                   <speaker>BLANCHE</speaker>
-                  <l>Le Petit Roi est mort! Il ne nous reste plus que l'Agneau de Dieu.</l>
                   <stage>Terrifiée, avec l'expression d'une stigmatisée</stage>
+                  <l>Le Petit Roi est mort! Il ne nous reste plus que l'Agneau de Dieu.</l>
                </sp>
                <sp n="59">
                   <speaker>LA FOULE</speaker>
@@ -1624,11 +1610,12 @@
                <sp n="3">
                   <speaker>MÈRE MARIE</speaker>
                   <l>Mes filles, je propose que nous fassions ensemble le voeu du martyre pour
-                     mériter le maintien du Carmel, et le salut de notre patrie. Je me félicite de
+                     mériter le maintien du Carmel, et le salut de notre patrie.</l> 
+                  <stage>Les soeurs se regardent entre elles</stage>
+                  <l>Je me félicite de
                      vous voir accueillir cette proposition aussi froidement que le Seigneur
                      m'inspire de la faire. II ne s'agit pas, en effet, d'offrir nos pauvres vies en
                      nous faisant trop d'illusions sur le prix qu'elles valent.</l>
-                  <stage>Les soeurs se regardent entre elles</stage>
                </sp>
                <sp n="4">
                   <speaker>MÈRE JEANNE</speaker>
@@ -1655,14 +1642,12 @@
                </sp>
                <sp n="8">
                   <speaker>SOEUR MATHILDE</speaker>
+                  <stage>Désignant soeur Blanche à une autre religieuse</stage>
                   <l>Gageons qu'il y aura une voix contre.</l>
-                  <stage>
-                     <p>Désignant soeur Blanche à une autre religieuse</p>
-                     <p>Une à une les religieuses passent derrière l'autel et reparaissent presque
+                  <stage>Une à une les religieuses passent derrière l'autel et reparaissent presque
                         aussitôt. Lorsque Blanche reparaît, son visage est hagard. Constance la suit
                         du regard. L'aumônier s'approche de mère Marie et lui dit quelques mots à
-                        voix basse</p>
-                  </stage>
+                        voix basse<</stage>
                </sp>
                <sp n="9">
                   <speaker>MÈRE MARIE</speaker>
@@ -1670,30 +1655,29 @@
                </sp>
                <sp n="10">
                   <speaker>SOEUR MATHILDE</speaker>
-                  <l>On sait laquelle... </l>
                   <stage>À sa voisine</stage>
+                  <l>On sait laquelle... </l>
                </sp>
                <sp n="11">
                   <speaker>CONSTANCE</speaker>
-                  <l>II s'agit de moi! M. l'Aumônier sait que je dis vrai... Mais... mais... je me
+                  <l>II s'agit de moi!</l>
+                  <stage>Stupéfaction générale. Blanche commence à pleurer, la tête dans ses
+                     mains</stage> 
+                  <l>M. l'Aumônier sait que je dis vrai... Mais... mais... je me
                      déclare maintenant d'accord avec vous toutes, et... je... le désire... je
                      voudrais que vous me laissiez prononcer ce voeu. . Je vous en supplie au nom du
                      bon Dieu.</l>
-                  <stage>Stupéfaction générale. Blanche commence à pleurer, la tête dans ses
-                     mains</stage>
                </sp>
                <sp n="12">
                   <speaker>L'AUMÔNIER</speaker>
-                  <l>J'en décide ainsi. Rejoignez vos compagnes. Vous viendrez ici, deux par deux.
-                     Soeur sacristine, ouvrez le livre des Saints Evangiles, et posez-le sur le
+                  <l>J'en décide ainsi. Rejoignez vos compagnes. Vous viendrez ici, deux par deux.</l>
+                  <stage>L'aumônier revêt ses ornements</stage>
+                  <l>Soeur sacristine, ouvrez le livre des Saints Evangiles, et posez-le sur le
                      prie-Dieu. Les plus jeunes d'abord. Soeur Blanche et soeur Constance, je vous
                      prie.</l>
-                  <stage>
-                     <p>L'aumônier revêt ses ornements</p>
-                     <p>Blanche et Constance s'agenouillent côte à côte, et offrent leur vie à Dieu.
+                  <stage>Blanche et Constance s'agenouillent côte à côte, et offrent leur vie à Dieu.
                         Les autres religieuses se poussent pour prendre leur rang. Blanche, à la
-                        faveur du brouhaha, s 'enfuit</p>
-                  </stage>
+                        faveur du brouhaha, s 'enfuit</stage>
                </sp>
                <stage>
                   <p>Interlude 1</p>
@@ -1731,10 +1715,10 @@
                </sp>
                <sp n="16">
                   <speaker>LA PRIEURE</speaker>
+                  <stage>Se tournant vers les religieuses</stage>
                   <l>Chacune de vous répondra de son voeu devant Dieu, mais c'est moi qui répondrai
                      de vous toutes et je suis assez vieille pour savoir tenir mes comptes en
                      règle.</l>
-                  <stage>Se tournant vers les religieuses</stage>
                </sp>
             </div>
             <div type="tableau" n="2">
@@ -1757,10 +1741,10 @@
                   <l>Oui, je viens vous chercher. II est temps. </l>
                </sp>
                <sp n="3">
-                  <speaker>BLANCHE</speaker>
+                  <speaker>BLANCHE</speaker> 
+                  <stage>hagarde</stage>
                   <l>Je ne suis pas libre maintenant de vous suivre... Mais dans quelque temps...
                      peut-être.</l>
-                  <stage>hagarde</stage>
                </sp>
                <sp n="4">
                   <speaker>MÈRE MARIE</speaker>
@@ -1801,19 +1785,19 @@
                <sp n="11">
                   <speaker>BLANCHE</speaker>
                   <l>Je pleure de vous voir si bonne. Mais j'ai honte aussi de pleurer. Je voudrais
-                     qu'on me laisse en paix, que personne ne pensât plus à moi... Qu'est-ce qu'on
+                     qu'on me laisse en paix, que personne ne pensât plus à moi...</l> 
+                  <stage>Avec une soudaine violence</stage>
+                  <l>Qu'est-ce qu'on
                      me reproche? Qu'est-ce que j'ai fait de mal? Je n'offense pas le bon Dieu. La
                      peur n'offense pas le bon Dieu. Je suis née dans la peur, j'y ai vécu, j'y vis
                      encore, tout le monde méprise la peur, il est donc juste que je vive aussi dans
                      le mépris. Voilà longtemps que je le pense. Le seul être qui aurait pu
                      m'empêcher de le dire, c'était mon père. II est mort. Ils l'ont guillotiné
-                     voilà peu de jours. Dans sa propre maison, moi si indigne de lui et de son nom,
+                     voilà peu de jours.</l> 
+                  <stage>Se jetant sur le lit de sangles</stage>
+                  <l>Dans sa propre maison, moi si indigne de lui et de son nom,
                      quel autre rôle ai-je à tenir que celui d'une misérable servante? Hier, ils
                      m'ont frappée... Oui, ils m'ont frappée.</l>
-                  <stage>
-                     <p>Avec une soudaine violence</p>
-                     <p>Se jetant sur le lit de sangles</p>
-                  </stage>
                </sp>
                <sp n="12">
                   <speaker>MÈRE MARIE</speaker>
@@ -1841,12 +1825,10 @@
                </sp>
                <sp n="17">
                   <speaker>LA VOIX D'UNE FEMME</speaker>
+                  <stage>En dehors de la salle</stage>
                   <l>Blanche, les commissions!</l>
-                  <stage>
-                     <p>En dehors de la salle</p>
-                     <p>Blanche se sauve par une petite porte. Mère Marie, un instant interdite,
-                        s'esquive par la porte d'entrée</p>
-                  </stage>
+                  <stage>Blanche se sauve par une petite porte. Mère Marie, un instant interdite,
+                        s'esquive par la porte d'entrée</stage>
                </sp>
                <stage>
                   <p>Interlude 2</p>
@@ -1877,16 +1859,17 @@
                </sp>
                <sp n="23">
                   <speaker>BLANCHE</speaker>
-                  <l>Vous venez de Compiègne?</l>
                   <stage>D'une voix altérée</stage>
+                  <l>Vous venez de Compiègne?</l>
                </sp>
                <sp n="24">
                   <speaker>DEUXIÈME VIEILLE</speaker>
                   <l>Oui, ma belle. J'en vins hier, avec une carriole de légumes. II y a là-bas deux
                      douzaines de mauvais drôles qui ont peur les uns des autres, et qui pour se
                      rassurer font du bruit comme six cents. Avant-hier, ils ont arrêté ces dames du
-                     Carmel.C'est-y que vous avez là des parents?</l>
+                     Carmel.</l>
                   <stage>Regardant le visage bouleversé de Blanche</stage>
+                  <l>C'est-y que vous avez là des parents?</l>
                </sp>
                <sp n="25">
                   <speaker>BLANCHE</speaker>
@@ -1960,6 +1943,7 @@
                </sp>
                <sp n="9">
                   <speaker>LE GEÔLIER</speaker>
+                  <stage>Lit</stage>
                   <l>"Le Tribunal révolutionnaire expose que les exreligieuses carmélites, demeurant
                      à Compiègne, département de l'Oise, -Madeleine Lidoine, Anne Pellerat,
                      MadeleineTouret, Marie-Anne Hanniset, Marie-Anne Piedcourt. Marie-Anne Brideau,
@@ -1973,11 +1957,8 @@
                      sang que leurs infâmes machinations ont fait répandre au nom du ciel. Le
                      Tribunal révolutionnaire déclare en conséquence que toutes les prévenues
                      susnommées sont condamnées à mort."</l>
-                  <stage>
-                     <p>Lit</p>
-                     <p>Le geôlier replie son édit. Toutes les religieuses baissent la tête. Le
-                        geôlier sort</p>
-                  </stage>
+                  <stage>Le geôlier replie son édit. Toutes les religieuses baissent la tête. Le
+                        geôlier sort</stage>
                </sp>
                <sp n="10">
                   <speaker>LA PRIEURE</speaker>
@@ -2014,8 +1995,9 @@
                </sp>
                <sp n="15">
                   <speaker>L'AUMÔNIER</speaker>
-                  <l>Ce sera pour aujourd'hui sans doute, ou demain… Que faites-vous, ma mère?</l>
+                  <l>Ce sera pour aujourd'hui sans doute, ou demain…</l> 
                   <stage>Mère Marie s'écarte</stage>
+                  <l>Que faites-vous, ma mère?</l>
                </sp>
                <sp n="16">
                   <speaker>MÈRE MARIE</speaker>
@@ -2081,14 +2063,13 @@
                </sp>
                <sp n="3">
                   <speaker>CONSTANCE</speaker>
-                  <l>O clemens... O pia, o dulcis Virgo Ma...</l>
-                  <stage>
-                     <p>Constance l'aperçoit et son visage s'irradie de bonheur. Elle s'arrête un
+                  <l>O clemens...</l> 
+                  <stage>Constance l'aperçoit et son visage s'irradie de bonheur. Elle s'arrête un
                         court instant. Reprenant sa marche à l'échafaud, elle sourit doucement à
-                        Blanche</p>
-                     <p>Incroyablement calme, Blanche émerge de la foule stupéfaite et monte au
-                        supplice</p>
-                  </stage>
+                        Blanche</stage>
+                  <l>O pia, o dulcis Virgo Ma...</l>
+                  <stage>Incroyablement calme, Blanche émerge de la foule stupéfaite et monte au
+                        supplice</stage>
                </sp>
                <sp n="4">
                   <speaker>BLANCHE</speaker>
