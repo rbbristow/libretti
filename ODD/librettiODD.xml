@@ -71,7 +71,7 @@
                               
                               matchPattern="(\w+).(\w+).(\w+)"
                               
-                              replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div1[@n='$1']/tei:div2[@n='$2']/tei:sp[@n='$3'])">
+                              replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@type='act'][@n='$1']/tei:div[@type='scene'][@n='$2']/tei:sp[@n='$3'])">
                               
                               <p>Ce pointeur extrait les niveaux de citation 1, 2 et 3, soit acte, scène et tour de parole.</p>
                               
@@ -83,7 +83,7 @@
                               
                               matchPattern="(\w+).(\w+)"
                               
-                              replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div1[@n='$1']/tei:div2[@n='$2'])">
+                              replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@type='act'][@n='$1']/tei:div[@type='scene'][@n='$2'])">
                               
                               <p>Ce poiteur extrait les niveaux de citation 1 et 2, soit les actes et scènes.</p>
                               
@@ -95,7 +95,7 @@
                               
                               matchPattern="(\w+)"
                               
-                              replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div1[@n='$1'])">
+                              replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@type='act'][@n='$1'])">
                               
                               <p>Ce pointeur extrait le premier niveau de citation du texte, soit les actes.</p>
                               
@@ -173,7 +173,7 @@
                      <specDesc key="publicationStmt"/>
                      <specDesc key="sourceDesc"/>
                   </specList></p>
-                  <p>On trouve dans le <gi>titleStmt</gi> au minimum deux informations : la balise <gi>title</gi> qui correspond au titre de l'opéra encodé, et la balise <gi>author</gi>. Pour cette dernière, il a été décidé de rendre l'attribut <att>role</att> obligatoire, ainsi que la valeur <val>songwritter</val>,car un lecteur lambda recherchera intuitivement un opéra selon son compositeur, et non l'auteur du livret. Toutefois, il est possible de rendre hommage aux librettistes grâce à la valeur <val>librettist</val> également associée à l'attribut <att>role</att>.</p>
+                  <p>On trouve dans le <gi>titleStmt</gi> au minimum deux informations : la balise <gi>title</gi> qui correspond au titre de l'opéra encodé, et la balise <gi>author</gi>. Pour cette dernière, il a été décidé de rendre l'attribut <att>role</att> obligatoire, ainsi que la valeur <val>songwriter</val>,car un lecteur lambda recherchera intuitivement un opéra selon son compositeur, et non l'auteur du livret. Toutefois, il est possible de rendre hommage aux librettistes grâce à la valeur <val>librettist</val> également associée à l'attribut <att>role</att>.</p>
                   <p>Le <gi>publicationStmt</gi> contient une seule balise <gi>p</gi> obligatoire afin de spécifier les responsables de l'encodage et le contexte de la publication des livrets encodés. Cette spécifiation prend la forme suivante :
                      <egXML xmlns="http://www.tei-c.org/ns/Examples">
                         <publicationStmt>
@@ -188,19 +188,19 @@
                               <cRefPattern 
                                  n="speech"
                                  matchPattern="(\w+).(\w+).(\w+)"
-                                 replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div1[@n='$1']/tei:div2[@n='$2']/tei:sp[@n='$3'])">
+                                 replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@type='act'][@n='$1']/tei:div[@type='scene'][@n='$2']/tei:sp[@n='$3'])">
                                  <p>Ce pointeur extrait les niveaux de citation 1, 2 et 3, soit acte, scène et tour de parole.</p>
                               </cRefPattern>
                               <cRefPattern 
                                  n="scene"
                                  matchPattern="(\w+).(\w+)"
-                                 replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div1[@n='$1']/tei:div2[@n='$2'])">
+                                 replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@type='act'][@n='$1']/tei:div[@type='scene'][@n='$2'])">
                                  <p>Ce poiteur extrait les niveaux de citation 1 et 2, soit les actes et scènes.</p>
                               </cRefPattern>
                               <cRefPattern 
                                  n="act"
                                  matchPattern="(\w+)"
-                                 replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div1[@n='$1'])">
+                                 replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@type='act'][@n='$1'])">
                                  <p>Ce pointeur extrait le premier niveau de citation du texte, soit les actes.</p> 
                               </cRefPattern> 
                            </refsDecl>  
@@ -620,7 +620,7 @@
                   <attList>
                      <attDef ident="role" usage="req" mode="change">
                         <valList mode="add" type="closed">
-                           <valItem ident="songWritter"></valItem>
+                           <valItem ident="songWriter"></valItem>
                            <valItem ident="librettist"></valItem>
                         </valList>
                      </attDef>

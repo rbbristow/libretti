@@ -1,0 +1,1673 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../ODD/out/librettiODD.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Samson et Dalila</title>
+        <author role="songWriter">Camille Saint-Saëns</author>
+        <author role="librettist">Ferdinand Lemaire</author>
+      </titleStmt>
+      <publicationStmt>
+        <p>Ecole nationale des chartes, projet libretti TNAH, promotion 2019-2020</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>https://opera-guide.ch/operas/samson+et+dalila/libretto/fr/</p>
+      </sourceDesc>
+    </fileDesc>
+    
+    <encodingDesc>
+      <refsDecl n="CTS">
+
+        <cRefPattern n="speech" matchPattern="(\w+).(\w+).(\w+)"
+          replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@type='act'][@n='$1']/tei:div[@type='scene'][@n='$2']/tei:sp[@n='$3'])">
+
+          <p>Ce pointeur extrait les niveaux de citation 1, 2 et 3, soit acte, scène et tour de
+            parole.</p>
+
+        </cRefPattern>
+
+        <cRefPattern n="scene" matchPattern="(\w+).(\w+)"
+          replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@type='act'][@n='$1']/tei:div[@type='scene'][@n='$2'])">
+
+          <p>Ce poiteur extrait les niveaux de citation 1 et 2, soit les actes et scènes.</p>
+
+        </cRefPattern>
+
+        <cRefPattern n="act" matchPattern="(\w+)"
+          replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@type='act'][@n='$1'])">
+
+          <p>Ce pointeur extrait le premier niveau de citation du texte, soit les actes.</p>
+
+        </cRefPattern>
+
+      </refsDecl>
+
+    </encodingDesc>
+  </teiHeader>
+
+  <text>
+    <body n="urn:cts:libOp:viaf7575200.viaf175352658.TNAH2020-fre1" xml:lang="fre">
+      <!-- Pour le l'identifiant VIAF de l'oeuvre (175352658), choix du livret écrit par Ferdinand Lemaire et non de l'oeuvre. -->
+      <castList>
+        <castItem>DALILA</castItem>
+        <castItem>SAMSON</castItem>
+        <castItem>LE GRAN-PRÊTRE de Dagon </castItem>
+        <castItem>ABIMÉLECH</castItem>
+        <castItem>UN VIEILLARD HÉBREU </castItem>
+        <castItem>UN MESSAGER PHILISTINS</castItem>
+        <castItem>PREMIER PHILISTINS</castItem>
+        <castItem>DEUXIÈME PHILISTIN</castItem>
+        <castItem>CHOEUR DES HEBREUX</castItem>
+        <castItem>CHOEUR DES PHILISTINS</castItem>
+      </castList>
+
+      <div type="act" n="1">
+        
+        <head>PREMIER ACTE</head>
+
+        <stage>Une place publique dans la ville de Gaza, en Palestine </stage>
+        <sp n="1">
+          <speaker>CHOEUR DES HÉBREUX</speaker>
+          <stage>derrière le rideau</stage>
+          <l>Dieu!</l>
+          <l>Dieu d'Israël! Ecoute la prière</l>
+          <l>De tes enfants t'implorant à genoux.</l>
+          <l>Prends en pitié ton peuple et sa misère!</l>
+          <l>Que sa douleur désarme ton courroux!</l>
+        </sp>
+
+        <sp n="2">
+          <speaker>LES FEMMES</speaker>
+          <stage>derrière le rideau</stage>
+          <l>Un jour, de nous tu détournas ta face,</l>
+          <l>Et de ce jour ton peuple fut vaincu!</l>
+        </sp>
+
+        <div type="scene" n="1">
+          <head>SCÈNE I</head>
+          <stage>Samson, les Hébreux.</stage>
+
+          <stage>A gauche le portique du temple de Dagon.</stage>
+          <stage>Une foule d'Hébreux, hommes et femmes, sont réunis sur la place dans l'attitude de
+            la douleur et de la prière. Samson est parmi eux. Il fait nuit.</stage>
+
+          <sp n="1">
+            <speaker>LES HÉBREUX</speaker>
+            <l>Quoi! veux-tu donc qu'à jamais on efface</l>
+            <l>Des nations celle qui t'a connu?</l>
+            <l>Mais vainement tout le jour je l'implore;</l>
+            <l>Sourd à ma voix, il ne me répond pas!</l>
+            <l>Et cependant, du soir jusqu'à l'aurore,</l>
+            <l>J'implore ici le secours de son bras!</l>
+            <l>Nous avons vu nos cités renversées,</l>
+            <l>Et les Gentils profanant ton autel;</l>
+            <l>Et sous leur joug nos tribus dispersées</l>
+            <l>Ont tout perdu, jusqu'au nom d'Israël! Ah!</l>
+            <l>N'es-tu donc plus ce Dieu de délivrance</l>
+            <l>Qui de l'Egypte arrachait nos tribus?</l>
+            <l>Dieu!</l>
+            <l>As-tu rompu cette sainte alliance,</l>
+            <l>Divins serments, par nos aïeux reçus?</l>
+          </sp>
+
+          <sp n="2">
+            <speaker>SAMSON</speaker>
+            <stage>sortant de la foule</stage>
+            <l>Arrêtez, ô mes frères!</l>
+            <l>Et bénissez le nom</l>
+            <l>Du Dieu saint de nos pères!</l>
+            <l>Car l'heure du pardon</l>
+            <l>Est peut-être arrivée!</l>
+            <l>Oui, j'entends dans mon cour</l>
+            <l>Une voix élevée!</l>
+            <l>C'est la voix du Seigneur</l>
+            <l>Qui parle par ma bouche.</l>
+            <l>Ce Dieu plein de bonté,</l>
+            <l>Que la prière touche,</l>
+            <l>Promet la liberté!</l>
+            <l>Frères, brisons nos chaînes,</l>
+            <l>Et relevons l'autel</l>
+            <l>Du seul Dieu d'Israël!</l>
+          </sp>
+
+          <sp n="3">
+            <speaker>LES HÉBREUX</speaker>
+            <l>Hélas! paroles vaines!</l>
+            <l>Pour marcher aux combats,</l>
+            <l>Où donc trouver des armes?</l>
+            <l>Comment armer nos bras?</l>
+            <l>Nous n'avons que nos larmes!</l>
+          </sp>
+
+          <sp n="4">
+            <speaker>SAMSON</speaker>
+            <l>L'as-tu donc oublié,</l>
+            <l>Celui dont la puissance</l>
+            <l>Se fit ton allié?</l>
+            <l>Lui qui, plein de clémence,</l>
+            <l>A si souvent pour toi</l>
+            <l>Fait parler ses oracles</l>
+            <l>Et rallumé ta foi</l>
+            <l>Au feu de ses miracles?</l>
+            <l>Lui qui, dans l'Océan,</l>
+            <l>Sut frayer un passage</l>
+            <l>A nos pères fuyant</l>
+            <l>Un honteux esclavage?</l>
+          </sp>
+
+          <sp n="5">
+            <speaker>LES HÉBREUX</speaker>
+            <l>Ils ne sont plus, ces temps</l>
+            <l>Où le Dieu de nos pères</l>
+            <l>Protégeait ses enfants,</l>
+            <l>Entendait leurs prières!</l>
+          </sp>
+
+          <sp n="6">
+            <speaker>SAMSON</speaker>
+            <l>Malheureux, taisez-vous!</l>
+            <l>Le doute est un blasphème!</l>
+            <l>Implorons à genoux</l>
+            <l>Le Seigneur qui nous aime!</l>
+            <l>Remettons dans ses mains</l>
+            <l>Le soin de notre gloire,</l>
+            <l>Et puis ceignons nos reins,</l>
+            <l>Certains de la victoire!</l>
+            <l>C'est le Dieu des combats,</l>
+            <l>C'est le Dieu des armées!</l>
+            <l>Il armera vos bras</l>
+            <l>D'invincibles épées!</l>
+          </sp>
+
+          <sp n="7">
+            <speaker>LES HÉBREUX</speaker>
+            <l>Ah! le souffle du Seigneur</l>
+            <l>A passé dans son âme!</l>
+            <l>Ah! chassons de notre coeur</l>
+            <l>Une terreur infâme!</l>
+            <l>Et marchons avec lui</l>
+            <l>Pour notre délivrance!</l>
+            <l>Jéhovah le conduit</l>
+            <l>Et nous rend l'espérance!</l>
+          </sp>
+        </div>
+
+        <div type="scene" n="2">
+          <head>SCÈNE II</head>
+          <stage>Les mêmes, Abimélech, Satrape de Gaza, Philistins.</stage>
+
+          <stage>Abimélech entre, suivi de plusieurs soldais et guerriers philistins.</stage>
+
+          <sp n="1">
+            <speaker>ABIMÉLECH</speaker>
+            <l>Qui donc élève ici la voix?</l>
+            <l>Encor ce vil troupeau d'esclaves,</l>
+            <l>Osant toujours braver nos lois</l>
+            <l>Et voulant briser leurs entraves!</l>
+            <l>Cachez vos soupirs et vos pleurs</l>
+            <l>Qui lassent notre patience;</l>
+            <l>Invoquez plutôt la clémence</l>
+            <l>De ceux qui furent vos vainqueurs!</l>
+            <l>Ce Dieu que votre voix implore</l>
+            <l>Est demeuré sourd à vos cris,</l>
+            <l>Et vous l'osez prier encore,</l>
+            <l>Quand il vous livre à nos mépris?</l>
+            <l>Si sa puissance n'est pas vaine,</l>
+            <l>Qu'il montre sa divinité!</l>
+            <l>Qu'il vienne briser votre chaîne,</l>
+            <l>Qu'il vous rende la liberté!</l>
+            <l>Croyez-vous ce Dieu comparable</l>
+            <l>A Dagon, le plus grand des dieux,</l>
+            <l>Guidant de son bras redoutable</l>
+            <l>Nos guerriers victorieux?</l>
+            <l>Votre divinité craintive,</l>
+            <l>Tremblante fuyait devant lui,</l>
+            <l>Comme la colombe plaintive</l>
+            <l>Fuit le vautour qui la poursuit!</l>
+          </sp>
+
+          <sp n="2">
+            <speaker>SAMSON</speaker>
+            <l>C'est toi que sa bouche invective,</l>
+            <l>Et la terre n'a point tremblé?</l>
+            <l>O Seigneur, l'abîme est comblé!</l>
+            <l>Je vois aux mains des anges</l>
+            <l>Briller l'arme de feu,</l>
+            <l>Et du ciel les phalanges</l>
+            <l>Accourent venger Dieu.</l>
+            <l>Oui, l'ange des ténèbres,</l>
+            <l>En passant devant eux,</l>
+            <l>Pousse des cris funèbres</l>
+            <l>Qui font frémir les cieux!</l>
+            <l>Enfin, l'heure est venue,</l>
+            <l>L'heure du Dieu vengeur,</l>
+            <l>Et j'entends dans la nue</l>
+            <l>Eclater sa fureur.</l>
+            <l>Oui, devant sa colère</l>
+            <l>Tout s'épouvante et fuit!</l>
+            <l>On sent trembler la terre,</l>
+            <l>Aux cieux la foudre luit!</l>
+          </sp>
+
+          <sp n="3">
+            <speaker>LES HÉBREUX</speaker>
+            <l>Oui, devant sa colère</l>
+            <l>Tout s'épouvante et fuit!</l>
+            <l>On sent trembler la terre;</l>
+            <l>Aux cieux la foudre luit!</l>
+          </sp>
+
+          <sp n="4">
+            <speaker>ABIMÉLECH</speaker>
+            <l>Arrête! insensé, téméraire,</l>
+            <l>Ou crains d'exciter ma colère!</l>
+          </sp>
+
+          <sp n="5">
+            <speaker>SAMSON</speaker>
+            <l>Israël! romps ta chaîne!</l>
+            <l>O peuple, lève-toi!</l>
+            <l>Viens assouvir ta haine!</l>
+            <l>Le Seigneur est en moi!</l>
+            <l>O toi, Dieu de lumière,</l>
+            <l>Comme aux jours d'autrefois</l>
+            <l>Exauce ma prière</l>
+            <l>Et combats pour tes lois!</l>
+          </sp>
+
+          <sp n="6">
+            <speaker>LES HÉBREUX</speaker>
+            <l>Israël! romps ta chaîne!</l>
+            <l>O peuple, lève-toi!</l>
+            <l>Viens assouvir ta haine!</l>
+            <l>Le Seigneur est en moi!</l>
+            <l>O toi, Dieu de lumière,</l>
+            <l>Comme aux jours d'autrefois</l>
+            <l>Exauce ma prière</l>
+            <l>Et combats pour tes lois!</l>
+          </sp>
+
+          <sp n="7">
+            <speaker>SAMSON</speaker>
+            <l>Oui, devant sa colère</l>
+            <l>Tout s'épouvante et fuit!</l>
+            <l>On sent trembler la terre,</l>
+            <l>Aux cieux la foudre luit!</l>
+            <l>Il déchaîne l'orage,</l>
+            <l>Commande à l'ouragan,</l>
+            <l>On voit sur son passage</l>
+            <l>Reculer l'Océan!</l>
+          </sp>
+
+          <sp n="8">
+            <speaker>LES HÉBREUX, SAMSON</speaker>
+            <l>Israël! romps ta chaîne!</l>
+            <l>O peuple, lève-toi!</l>
+            <l>Viens assouvir ta haine!</l>
+            <l>Le Seigneur est en moi!</l>
+            <l>O toi, Dieu de lumière,</l>
+            <l>Comme aux jours d'autrefois</l>
+            <l>Exauce ma prière</l>
+            <l>Et combats pour tes lois!</l>
+            <l>Israël! lève-toi! lève-toi!</l>
+          </sp>
+
+          <stage>Abimélech se précipite sur Samson l'épée à la mainpour le frapper; Samson lui
+            arrache l'épée des mains et le frappe.</stage>
+          <stage>Abimélech tombe en criant: «A moi!»</stage>
+          <stage>Les Philistins qui accompagnent le Satrape veulent le secourir; Samson, brandissant
+            son épée,les éloigne. La plus grande confusion règne parmiles Philistins.</stage>
+          <stage>Samson et les Hébreux sortent.</stage>
+        </div>
+
+        <div type="scene" n="3">
+          <head>SCÈNE III</head>
+          <stage>Les mêmes, le Grand-Prêtre, serviteurs, gardes.</stage>
+
+          <stage>Les portes du temple de Dagon s'ouvrent; le Grand-Prêtre, suivi de nombreux
+            serviteurs et gardes,descend les degrés du portique; il s'arrête devantle cadavre d
+            'Abimélech; les Philistins s'écartent devant lui.</stage>
+
+          <sp n="1">
+            <speaker>LE GRAND-PRÊTRE</speaker>
+            <l>Que vois-je? Abimélech! frappé par des esclaves!</l>
+            <l>Pourquoi les laisser fuir'? Courons, courons, mes braves!</l>
+            <l>Pour venger votre Prince, écrasez sous vos coups</l>
+            <l>Ce peuple révolté bravant votre courroux!</l>
+          </sp>
+
+          <sp n="2">
+            <speaker>PREMIER PHILISTIN</speaker>
+            <l>J'ai senti dans mes veines</l>
+            <l>Tout mon sang se glacer;</l>
+            <l>Il semble que des chaînes</l>
+            <l>Soudain vont m'enlacer.</l>
+
+          </sp>
+          <sp n="3">
+            <speaker>DEUXIÈME PHILISTIN</speaker>
+            <l>Je cherche en vain mes armes,</l>
+            <l>Mes bras sont impuissants,</l>
+            <l>Mon cour est plein d'alarmes,</l>
+            <l>Mes genoux sont tremblants.</l>
+          </sp>
+
+          <sp n="4">
+            <speaker>LE GRAND-PRÊTRE</speaker>
+            <l>Lâches! Plus lâches que des femmes!</l>
+            <l>Vous fuyez devant les combats!</l>
+            <l>De leur Dieu craignez-vous les flammes</l>
+            <l>Qui doivent dessécher vos bras?</l>
+          </sp>
+        </div>
+
+        <div type="scene" n="4">
+          <head>SCÈNE IV</head>
+          <stage>Les mêmes, un messager philistin</stage>
+
+          <sp n="1">
+            <speaker>LE MESSAGER</speaker>
+            <l>Seigneur! la troupe furieuse</l>
+            <l>Que conduit et guide Samson</l>
+            <l>Dans sa révolte audacieuse</l>
+            <l>Accourt, ravageant a moisson!</l>
+          </sp>
+
+          <sp n="2">
+            <speaker>LES DEUX PHILISTINS, LE MESSAGER</speaker>
+            <l>Fuyons un danger inutile!</l>
+            <l>Quittons au plus vite ces lieux;</l>
+            <l>Seigneur, abandonnons la ville</l>
+            <l>Et cachons notre honte aux yeux.</l>
+          </sp>
+
+          <sp n="3">
+            <speaker>LE GRAND-PRÊTRE</speaker>
+            <l>Maudite à jamais soit a race</l>
+            <l>Des enfants d'Israël!</l>
+            <l>Je veux en effacer la trace,</l>
+            <l>Les abreuver de fiel!</l>
+            <l>Maudit soit celui qui lesguide!</l>
+            <l>J'écraserai du pied</l>
+            <l>Ses os brisés, sa gorge aride</l>
+            <l>Sans frémir de pitié!</l>
+            <l>Maudit soit le sein de lafemme</l>
+            <l>Qui lui donna le jour!</l>
+            <l>Qu'enfin une compagneinfâme</l>
+            <l>Trahisse son amour!</l>
+            <l>Maudit soit le Dieu qu'iladore,</l>
+            <l>Ce Dieu, son seul espoir</l>
+            <l>Et dont ma haine insulte encore</l>
+            <l>L'autel et le pouvoir!</l>
+          </sp>
+
+          <sp n="4">
+            <speaker>LE MESSAGER, DEUX PHILISTINS</speaker>
+            <l>Fuyons dans les montagnes,</l>
+            <l>Abandonnons ces lieux,</l>
+            <l>Nos maisons, nos compagnes,</l>
+            <l>Et jusques à nos dieux!</l>
+          </sp>
+
+          <sp n="5">
+            <speaker>LE GRAND-PRÊTRE</speaker>
+            <l>Qu'Israël soit maudit par nos dieux!</l>
+          </sp>
+
+          <stage>Ils sortent, emportant le cadavre d'Abimélech.</stage>
+          <stage>Au moment où les Philistins quittent la scène suivis du Grand-Prêtre, les Hébreux
+            vieillards et femmes, entrent.</stage>
+        </div>
+
+        <div type="scene" n="5">
+          <head>SCÈNE V</head>
+          <stage>Les femmes et les vieillards hébreux - puis Samson, suivi des Hébreux
+            victorieux.</stage>
+          <stage>Le jour se lève progressivement.</stage>
+
+          <stage>Le soleil est complètement levé.</stage>
+
+          <sp n="1">
+            <speaker>VIEILLARDS HÉBREUX</speaker>
+            <l>Hymne de joie, hymne de délivrance,</l>
+            <l>Montez vers l'Eternel!</l>
+            <l>Il a daigné dans sa toute-puissance</l>
+            <l>Secourir Israël!</l>
+            <l>Par lui le faible est devenu le maître</l>
+            <l>Du fort qui l'opprimait!</l>
+            <l>Il a vaincu l'orgueilleux et le traître</l>
+            <l>Dont la voix l'insultait!</l>
+          </sp>
+          <stage>Les jeunes Hébreux conduits par Samson entrent.</stage>
+
+          <sp n="2">
+            <speaker>UN VIEILLARD HÉBREU</speaker>
+            <l>Il nous frappait dans sa colère,</l>
+            <l>Car nous avions bravé ses lois.</l>
+            <l>Plus tard, le front dans la poussière,</l>
+            <l>Vers lui nous élevions la voix.</l>
+            <l>Il dit à ses tribus aimées:</l>
+            <l>Levez-vous, marchez aux combats!</l>
+            <l>Je suis le Seigneur des armées,</l>
+            <l>Je suis la force de vos bras!</l>
+          </sp>
+
+          <sp n="3">
+            <speaker>VIEILLARDS HÉBREUX</speaker>
+            <l>Il est venu vers nous dans la détresse,</l>
+            <l>Car ses fils lui sont chers.</l>
+            <l>Que l'univers tressaille d'allégresse!</l>
+            <l>Il a rompu nos fers!</l>
+            <l>Hymne de joie, hymne de délivrance,</l>
+            <l>Montez vers l'Eternel!</l>
+            <l>Il a daigné dans sa toute-puissance</l>
+            <l>Secourir Israël!</l>
+          </sp>
+        </div>
+
+        <div type="scene" n="6">
+          <head>SCÈNE VI</head>
+          <stage>Samson, Dalila, les Philistines, le vieillard hébreu,les Hébreux.</stage>
+
+          <stage>Les portes du temple de Dagon s'ouvrent.</stage>
+          <stage>Dalila sortdu temple avec les femmes philistines tenant dansleurs mains des
+            guirlandes de fleurs.</stage>
+
+          <sp n="1">
+            <speaker>LES PHILISTINES</speaker>
+            <l>Voici le printemps nous portant des fleurs</l>
+            <l>Pour orner le front des guerriers vainqueurs!</l>
+            <l>Mêlons nos accents aux parfums des roses</l>
+            <l>A peine écloses!</l>
+            <l>Avec l'oiseau chantons, mes sours!</l>
+            <l>Beauté, don du ciel, printemps de nos jours,</l>
+            <l>Doux charme des yeux, espoir des amours,</l>
+            <l>Pénètre les coeurs, verse dans les âmes</l>
+            <l>Tes douces flammes!</l>
+            <l>Aimons, mes soeurs, aimons toujours!</l>
+          </sp>
+
+          <sp n="2">
+            <speaker>DALILA</speaker>
+            <stage>s'adressant à Samson</stage>
+            <l>Je viens célébrer la victoire</l>
+            <l>De celui qui règne en mon coeur.</l>
+            <l>Dalila veut pour son vainqeur</l>
+            <l>Encor plus d'amour que de gloire!</l>
+            <l>O mon bien-aimé, suis mes pas</l>
+            <l>Vers Soreck, la douce vallée,</l>
+            <l>Dans cette demeure isolée</l>
+            <l>Où Dalila t'ouvre ses bras!</l>
+          </sp>
+
+          <sp n="3">
+            <speaker>SAMSON</speaker>
+            <stage>à part</stage>
+            <l>Ô Dieu! Toi qui vois ma faiblesse,</l>
+            <l>Prends pitié de ton serviteur!</l>
+            <l>Ferme mes yeux, ferme mon coeur</l>
+            <l>A la douce voix qui me presse!</l>
+          </sp>
+
+          <sp n="4">
+            <speaker>DALILA</speaker>
+            <l>Pour toi, j'ai couronné mon front</l>
+            <l>Des grappes noires du troène,</l>
+            <l>Et mis des roses de Saron</l>
+            <l>Dans ma chevelure d'ébène!</l>
+          </sp>
+
+          <sp n="5">
+            <speaker>LE VIEILLARD HÉBREU</speaker>
+            <l>Détourne-toi, mon fils, de son chemin!</l>
+            <l>Evite et crains cette fille étrangère!</l>
+            <l>Ferme l'oreille à sa voix mensongère,</l>
+            <l>Et du serpent évite le venin!</l>
+          </sp>
+
+          <sp n="6">
+            <speaker>SAMSON</speaker>
+            <stage>à part</stage>
+            <l>Voile ses traits dont la beauté</l>
+            <l>Trouble mes sens, trouble mon âme!</l>
+            <l>Et de ses yeux éteins a flamme</l>
+            <l>Qui me ravit la liberté!</l>
+          </sp>
+
+          <sp n="7">
+            <speaker>DALILA</speaker>
+            <l>Doux est le muguet parfumé;</l>
+            <l>Mes baisers le sont plus encore;</l>
+            <l>Et le suc de la mandragore</l>
+            <l>Est moins suave, ô bien-aimé!</l>
+            <l>Ouvre tes bras à ton amante,</l>
+            <l>Et dépose-la sur ton coeur,</l>
+            <l>Comme un sachet de douce odeur</l>
+            <l>Dont la senteur est enivrante!</l>
+            <l>Ah! viens!</l>
+          </sp>
+
+          <sp n="8">
+            <speaker>SAMSON</speaker>
+            <stage>à part</stage>
+            <l>Flamme ardente qui me dévore,</l>
+            <l>Et qu'elle ravive en ce lieu,</l>
+            <l>Apaise-toi devant mon Dieu!</l>
+            <l>Pitié, Seigneur, pour celui qui t'implore!</l>
+          </sp>
+
+          <sp n="9">
+            <speaker>LE VIEILLARD HÉBREU</speaker>
+            <l>Malheur à toi, situ subis les charmes</l>
+            <l>De cette voix plus douce que e miel!</l>
+            <l>Jamais tes yeux n'auront assez de larmes</l>
+            <l>Pour désarmer la colère du ciel'</l>
+          </sp>
+
+          <stage>Danse des Prêtresses de Dagon</stage>
+
+          <stage>Les jeunes filles qui accompagnent Dalila dansent en agitant des guirlandes de
+            fleurs et semblent provoquer les guerriers Hébreux qui accompagnent Samson.</stage>
+          <stage>Ce dernier, profondément troublé, cherche en vain à éviter les regards de Dalila;
+            ses yeux, malgré lui, suivent tous les mouvements del'enchanteresse qui reste au milieu
+            des jeunes Philistines prenant part à leurs poses et à leurs gestes voluptueux.</stage>
+
+          <sp n="10">
+            <speaker>DALILA</speaker>
+            <l>Printemps qui commence,</l>
+            <l>Portant l'espérance</l>
+            <l>Aux coeurs amoureux,</l>
+            <l>Ton souffle qui passe,</l>
+            <l>De la terre efface</l>
+            <l>Les jours malheureux.</l>
+            <l>Tout brûle en notre âme,</l>
+            <l>Et ta douce flamme</l>
+            <l>Vient sécher nos pleurs;</l>
+            <l>Tu rends à la terre,</l>
+            <l>Par un doux mystère,</l>
+            <l>Les fruits et les fleurs.</l>
+            <l>En vain je suis belle!</l>
+            <l>Mon coeur plein d'amour,</l>
+            <l>Pleurant l'infidèle,</l>
+            <l>Attend sou retour!</l>
+            <l>Vivant d'espérance,</l>
+            <l>Mon coeur désolé</l>
+            <l>Garde souvenance</l>
+            <l>Du bonheur passé!</l>
+
+            <l>A la nuit tombante,</l>
+            <l>J'irai, triste amante,</l>
+            <l>M'asseoir au torrent,</l>
+            <l>L'attendre en pleurant!</l>
+            <l>Chassant ma tristesse,</l>
+            <l>S'il revient un jour,</l>
+            <l>A lui ma tendresse</l>
+            <l>Et la douce ivresse</l>
+            <l>Qu'un brûlant autour</l>
+            <l>Garde à son retour!</l>
+          </sp>
+
+          <sp n="11">
+            <speaker>LE VIEILLARD HÉBREUX</speaker>
+            <l>L'esprit du mal a conduit cette femme</l>
+            <l>Sur ou chemin pour troubler ton repos.</l>
+            <l>De ses regards fuis la brûlante flamme!</l>
+            <l>C'est un poison qui consume les os!</l>
+          </sp>
+
+          <sp n="12">
+            <speaker>DALILA</speaker>
+            <l>Chassant ma tristesse,</l>
+            <l>S'il revient un jour,</l>
+            <l>A lui ma tendresse</l>
+            <l>Ft la douce ivresse</l>
+            <l>Qu'un brûlant amour</l>
+            <l>Garde à son retour!</l>
+          </sp>
+
+          <stage>Dalila regagne en chantant les degrés du temple et provoque Samson du regard;
+            celui-ci semble sousle charme. Il hésite, il lutte et trahit le trouble de son
+            âme.</stage>
+        </div>
+      </div>
+
+      <div type="act" n="2">
+        <head>DEUXIÈME ACTE</head>
+
+        <stage>La vallée de Soreck en Palestine.</stage>
+
+        <stage>La demeure de Dalila, précédée d'un léger portique et entourée de plantes asiatiques
+          et de lianes luxuriantes. La nuit commence et se fait plus complète pendant toute la durée
+          de l'acte.</stage>
+
+        <div type="scene" n="1">
+          <head>SCÈNE I</head>
+          <stage>Dalila</stage>
+          <stage>Au lever du rideau, elle est assise sur une roche, près du portique de sa maison et
+            semble rêveuse.</stage>
+
+          <sp n="1">
+            <speaker>DALILA</speaker>
+            <l>Samson, recherchant ma présence,</l>
+            <l>Ce soir doit venir en ces lieux.</l>
+            <l>Voici l'heure de la vengeance</l>
+            <l>Qui doit satisfaire nos dieux!</l>
+
+            <l>Amour! viens aider ma faiblesse!</l>
+            <l>Verse le poison dans son sein!</l>
+            <l>Fais que, vaincu par mon adresse,</l>
+            <l>Samson soit enchaîné demain!</l>
+            <l>Il voudrait en vain de son âme</l>
+            <l>Pouvoir me chasser, nie bannir!</l>
+            <l>Pourrait-il éteindre la flamme</l>
+            <l>Qu'alimente le souvenir?</l>
+            <l>Il est à moi! c'est mon esclave!</l>
+            <l>Mes frères craignent son courroux;</l>
+            <l>Moi, seule entre tous, je le brave</l>
+            <l>Et le retiens à nies genoux!</l>
+            <l>Amour! viens aider ma faiblesse!</l>
+            <l>Verse le Poison dans son sein!</l>
+            <l>Fais que, vaincu par mon adresse,</l>
+            <l>Samson soit enchaîné demain!</l>
+            <l>Contre l'amour, sa force est vaine;</l>
+            <l>Et lui, le fort parmi les forts,</l>
+            <l>Lui, qui d'un peuple rompt la chaîne,</l>
+            <l>Succombera sous mes efforts!</l>
+          </sp>
+
+          <stage>Eclair lointain</stage>
+        </div>
+
+        <div type="scene" n="2">
+          <head>SCÈNE II</head>
+          <stage>Dalila, le Grand-Prêtre de Dagon</stage>
+
+          <stage>Le Grand- Prêtre entre et va vers Dalila</stage>
+
+          <sp n="1">
+            <speaker>LE GRAND-PRÊTRE</speaker>
+            <l>J'ai gravi la montagne</l>
+            <l>Pour venir jusqu'à toi;</l>
+            <l>Dagon qui m'accompagne</l>
+            <l>M'a guidé vers ton toit.</l>
+          </sp>
+
+          <sp n="2">
+            <speaker>DALILA</speaker>
+            <l>Salut à vous, mon père!</l>
+            <l>Soyez le bienvenu,</l>
+            <l>Vous qu'ici l'on révère!</l>
+          </sp>
+
+          <sp n="3">
+            <speaker>LE GRAND-PRÊTRE</speaker>
+            <l>Notre sort t'est connu!</l>
+            <l>La victoire facile</l>
+            <l>Des esclaves Hébreux</l>
+            <l>Leur a livré la ville.</l>
+            <l>Nos soldats devant eux</l>
+            <l>Ont fui, pleins d'épouvante</l>
+            <l>Au seul nom de Samson</l>
+            <l>Dont l'audace effrayante</l>
+            <l>A troublé leur raison.</l>
+            <l>Fatal è notre rare,</l>
+            <l>il reçut de son Dieu</l>
+            <l>La force avec l'audace.</l>
+            <l>Enchaîné par un voeu,</l>
+            <l>Samson, dès sa naissance,</l>
+            <l>Fut marqué par le ciel</l>
+            <l>Pour rendre la puissance</l>
+            <l>Au peuple d'israël.</l>
+          </sp>
+
+          <sp n="4">
+            <speaker>DALILA</speaker>
+            <l>Je sais que son courage</l>
+            <l>Brave votre courroux,</l>
+            <l>Et qu'il n'est pas d'outrage</l>
+            <l>Qu'il ne garde pour vous.</l>
+          </sp>
+
+          <sp n="5">
+            <speaker>LE GRAND-PRÈTRE</speaker>
+            <l>A tes genoux sa force</l>
+            <l>Un jour l'abandonna;</l>
+            <l>Mats depuis il s'efforce</l>
+            <l>D'oublier Dalila.</l>
+            <l>On dit que, dans son âme</l>
+            <l>Oubliant ton amour,</l>
+            <l>Il se rit de la flamme</l>
+            <l>Qui ne dura qu'un jour!</l>
+          </sp>
+
+          <sp n="6">
+            <speaker>DALILA</speaker>
+            <l>Je sais que de ses frères</l>
+            <l>Ecoutant les discours,</l>
+            <l>Et les plaintes amères</l>
+            <l>Que causent nos amours,</l>
+            <l>Samson, malgré lui-même,</l>
+            <l>Combat et lutte en vain;</l>
+            <l>Je sais combien il m'aime</l>
+            <l>Et mon cour ne craint rien.</l>
+            <l>C'est en vain qu'il me brave,</l>
+            <l>Il est fort aux combats,</l>
+            <l>Mais il est mon esclave</l>
+            <l>Et tremble dans mes bras.</l>
+          </sp>
+
+          <sp n="7">
+            <speaker>LE GRAND-PRÊTRE</speaker>
+            <l>Sers-nous de ta puissance!</l>
+            <l>Prête-nous ton appui!</l>
+            <l>Que surpris, sans défense,</l>
+            <l>Il succombe aujourd'hui!</l>
+            <l>Vends-moi ton esclave Samson!</l>
+            <l>Et, pour te payer sa rançon,</l>
+            <l>Je ne ferai point de promesses;</l>
+            <l>Tu peux choisir dans mes richesses.</l>
+          </sp>
+
+          <sp n="8">
+            <speaker>DALILA</speaker>
+            <l>Qu'importe à Dalila ton or?</l>
+            <l>Et que pourrait tout un trésor,</l>
+            <l>Si je ne rêvais de vengeance?</l>
+            <l>Toi-même, malgré ta science,</l>
+            <l>Je t'ai trompé par cet amour.</l>
+            <l>Samson sut vous dompter un jour;</l>
+            <l>Mais il n'a pu me vaincre encore,</l>
+            <l>Car, autant que toi, je l'abhorre!</l>
+          </sp>
+
+          <sp n="9">
+            <speaker>LE GRAND-PRÊTRE</speaker>
+            <l>J'aurai dû deviner ta haine et ton dessein!</l>
+            <l>Mon coeur en t'écoutant tressaille d'allégresse.</l>
+            <l>Mais sur son coeur déjà n'aurais-tu pas en vain</l>
+            <l>Mesuré ta puissance, essayé ton adresse?</l>
+          </sp>
+
+          <sp n="10">
+            <speaker>DALILA</speaker>
+            <l>Oui! .. déjà par trois fois, déguisant mon projet,</l>
+            <l>J'ai voulu de sa force éclaircir le secret.</l>
+            <l>J'allumai cet amour, espérant qu'à sa flamme</l>
+            <l>Je lirais l'inconnu dans te fond de son âme.</l>
+            <l>Mais, par trois fois aussi, déjouant mon espoir,</l>
+            <l>H ne s'est point livré, ne m'a rien laissé voir.</l>
+            <l>En vain d'un fol amour j'imitai les tendresses,</l>
+            <l>Espérant amollir son coeur par mes caresses!</l>
+            <l>J'ai vu ce fier captif, enlacé dans mes bras,</l>
+            <l>S'arracher de ma couche et courir aux combats.</l>
+            <l>Auiourd'hui cependant il subit ma puissance,</l>
+            <l>Car je l'ai vu pâlir, trembler en ma présence,</l>
+            <l>Et je sais qu'à cette heure, abandonnant les siens,</l>
+            <l>Il revient en ces lieux resserrer nos liens.</l>
+            <l>Pour ce dernier combat j'ai préparé mes armes:</l>
+            <l>Samson ne pourra pas résister à nies larmes.</l>
+          </sp>
+
+          <sp n="11">
+            <speaker>LE GRAND-PRÊTRE</speaker>
+            <l>Que Dagon, notre Dieu, daigne étendre son bras!</l>
+            <l>Tu combats pour sa gloire, et par lui tu vaincras!</l>
+          </sp>
+
+          <sp n="12">
+            <speaker>DALILA</speaker>
+            <l>Il faut, pour assouvir ma haine,</l>
+            <l>Il faut que Dalila l'enchaîne!</l>
+            <l>Je veux que, vaincu par l'amour,</l>
+            <l>Il courbe le front à son tour!</l>
+          </sp>
+
+          <sp n="13">
+            <speaker>LE GRAND-PRÊTRE</speaker>
+            <l>Je veux, pour assouvir ma haine,</l>
+            <l>Je veux que Dalila l'enchaîne;</l>
+            <l>Il faut que, vaincu par l'amour,</l>
+            <l>Il courbe le front à son tour!</l>
+          </sp>
+
+          <sp n="14">
+            <speaker>DALILA</speaker>
+            <l>Il faut, pour assouvir ma haine,</l>
+            <l>Il faut que mon pouvoir l'enchaîne.</l>
+          </sp>
+
+          <sp n="15">
+            <speaker>LE GRAND-PRÊTRE</speaker>
+            <l>En toi seule est mon espérance.</l>
+          </sp>
+
+          <sp n="16">
+            <speaker>DALILA</speaker>
+            <l>Je veux que, vaincu par l'amour,</l>
+            <l>Il courbe le front à son tour!</l>
+          </sp>
+
+          <sp n="17">
+            <speaker>LE GRAND-PRÊTRE</speaker>
+            <l>A toi l'honneur de la vengeance!</l>
+          </sp>
+
+          <sp n="18">
+            <speaker>DALILA, LE GRAND-PRÊTRE</speaker>
+            <l>A moi (A toi) l'honneur de la vengeance!</l>
+            <l>Il faut (Je veux), pour assouvir ma haine,</l>
+            <l>II faut (Je veux) que mon pouvoir (Dalila)</l>
+            <l>l'enchaîne!</l>
+            <l>Je veux que, vaincu par l'amour,</l>
+            <l>Il courbe le front à son tour!</l>
+            <l>Unissons-nous tous deux!</l>
+            <l>Mort au chef des Hébreux!</l>
+          </sp>
+
+          <sp n="19">
+            <speaker>LE GRAND-PRÊTRE</speaker>
+            <l>Samson, me disais-tu, dans ces lieux doit se rendre?</l>
+          </sp>
+
+          <sp n="20">
+            <speaker>DALILA</speaker>
+            <l>Je l'attends!</l>
+          </sp>
+
+          <sp n="21">
+            <speaker>LE GRAND-PRÊTRE</speaker>
+            <l>Je m'éloigne, il pourrait nous surprendre.</l>
+            <l>Bientôt, je reviendrai par de secrets chemins.</l>
+            <l>Le destin demon peuple, ô femme, est danstes mains.</l>
+            <l>Déchire de son cour l'invulnérable écorce,</l>
+            <l>Et surprends le secret qui nous cache sa force.</l>
+          </sp>
+
+          <stage>Il sort. Dalila se rapproche de sa maison et s'appuie, rêveuse, contre un des
+            piliers.</stage>
+
+          <sp n="22">
+            <speaker>DALILA</speaker>
+            <l>Se pourrait-il que sur son coeur</l>
+            <l>L'amour eût perdu sa puissance?</l>
+            <l>La nuit est sombre et sans lueur</l>
+            <l>Rien ne petit trahir sa présence.</l>
+            <l>Hélas!</l>
+            <l>Il ne vient pas!</l>
+          </sp>
+
+          <stage>Elle rentre dans sa maison.</stage>
+        </div>
+
+        <div type="scene" n="3">
+          <head>SCÈNE III</head>
+          <stage>Dalila, Samson</stage>
+
+          <stage>Samson arrive. Il semble ému, troublé, hésitant; il regarde autour de lui. La nuit
+            s'assombrit de plus en plus. - Eclairs lointains.</stage>
+
+          <sp n="1">
+            <speaker>SAMSON</speaker>
+            <l>En ces lieux, malgré moi, m'ont ramené mes pas. t</l>
+            <l>Je voudrais fuir, hélas! et ne puis pas.</l>
+            <l>Je maudis mon amour.. . et pourtant j'aime encore.</l>
+            <l>Fuyons, fuyons ces lieux que ma faiblesse adore!</l>
+          </sp>
+
+          <sp n="2">
+            <speaker>DALILA</speaker>
+            <l>s'élance vers Samson</l>
+            <l>C'est toi, mon bien-aimé! j'attendais ta présence!</l>
+            <l>J'oublie, en te voyant, des heures de souffrance!</l>
+            <l>Salut! salut! ô mon doux maître!</l>
+          </sp>
+
+          <sp n="3">
+            <speaker>SAMSON</speaker>
+            <l>Arrête ces transports!</l>
+            <l>Je ne puis t'écouter sans honte et sans remords!</l>
+          </sp>
+
+          <sp n="4">
+            <speaker>DALILA</speaker>
+            <l>Samson! ô toi! mon bien-aimé,</l>
+            <l>Pourquoi repousser ma tendresse?</l>
+            <l>Pourquoi, de mon front parfumé,</l>
+            <l>Pourquoi détourner tes caresses?</l>
+          </sp>
+
+          <sp n="5">
+            <speaker>SAMSON</speaker>
+            <l>Tu fus toujours chère à mon cour,</l>
+            <l>Et tu n'en peux être bannie!</l>
+            <l>J'aurais voulu donner ma vie</l>
+            <l>A l'amour qui fit mon bonheur!</l>
+          </sp>
+
+          <sp n="6">
+            <speaker>DALILA</speaker>
+            <l>Près de moi pourquoi ces alarmes?</l>
+            <l>Aurais-tu douté demon cour?</l>
+            <l>N'es-tu pas mon maître et seigneur?</l>
+            <l>L'amour a-t-il perdu ses charmes?</l>
+          </sp>
+
+          <sp n="7">
+            <speaker>SAMSON</speaker>
+            <l>Hélas! esclave de mon Dieu,</l>
+            <l>Je subis sa volonté sainte;</l>
+            <l>Il faut, par un dernier adieu,</l>
+            <l>Rompre sans murmure et sans crainte</l>
+            <l>Le doux lien de notre amour.</l>
+            <l>D'Israël renaît l'espérance.</l>
+            <l>Le Seigneur a marqué le jour</l>
+            <l>Qui verra notre délivrance!</l>
+            <l>II a dit à son serviteur:</l>
+            <l>Je t'ai choisi parmi tes frères,</l>
+            <l>Pour les guider vers le Seigneur</l>
+            <l>Et mettre un terme à leurs misères.</l>
+          </sp>
+
+          <sp n="8">
+            <speaker>DALILA</speaker>
+            <l>Qu'importe à mon coeur désolé</l>
+            <l>Le sort d'Israël et sa gloire!</l>
+            <l>Pour moi le bonheur envolé</l>
+            <l>Est le seul fruit de ta victoire.</l>
+            <l>L'amour égarait ma raison</l>
+            <l>Quand je croyais à tes promesses,</l>
+            <l>Et je n'ai bu que le poison</l>
+            <l>En m'enivrant de tes caresses.</l>
+          </sp>
+
+          <sp n="9">
+            <speaker>SAMSON</speaker>
+            <l>Ah! cesse d'affliger mon cour!</l>
+            <l>Je subis une loi suprême.</l>
+            <l>Tes pleurs ravivent ma douleur!</l>
+            <l>Dalila! Dalila! je t'aime!</l>
+          </sp>
+
+          <stage>Eclairs lointains</stage>
+
+          <sp n="10">
+            <speaker>DALILA</speaker>
+            <l>Un dieu plus puissant que le tien,</l>
+            <l>Ami, te parle par ma bouche:</l>
+            <l>C'est le dieu d'amour, c'est le mien!</l>
+            <l>Et, si ce souvenir te touche,</l>
+            <l>Rappelle à ton cour ces beaux jours</l>
+            <l>Passés aux genoux d'une amante</l>
+            <l>Que tu devais aimer toujours,</l>
+            <l>Et qui seule, hélas! est constante!</l>
+          </sp>
+
+          <sp n="11">
+            <speaker>SAMSON</speaker>
+            <l>Insensée! oser m'accuser!</l>
+            <l>Quand pour toi tout parle à mon âme!</l>
+            <l>Oui! dût la foudre m'écraser,</l>
+            <l>Dussé-je périr de sa flamme,</l>
+
+            <stage>Eclairs plus rapprochés</stage>
+
+            <l>Pour toi si grand est mon amour,</l>
+            <l>Que j'ose aimer malgré Dieu même!</l>
+            <l>Oui! dussé-je en mourir un jour,</l>
+            <l>Dalila! Dalila! je t'aime!</l>
+          </sp>
+
+          <sp n="12">
+            <speaker>DALILA</speaker>
+            <l>Mon coeur s'ouvre à ta voix comme s'ouvrent les fleurs</l>
+            <l>Aux baisers de l'aurore!</l>
+            <l>Mais, ô mon bien-aimé, pour mieux sécher mes pleurs,</l>
+            <l>Que ta voix parle encore!</l>
+            <l>Dis-moi qu'à Dalila tu reviens pour jamais!</l>
+            <l>Redis à ma tendresse</l>
+            <l>Les serments d'autrefois, ces serments que j'aimais!</l>
+            <l>Ah! réponds à ma tendresse,</l>
+            <l>Verse-moi, verse-moi l'ivresse!</l>
+            <l>Réponds à ma tendresse.</l>
+            <l>Ah! verse-moi, verse-moi l'ivresse!</l>
+          </sp>
+
+          <sp n="13">
+            <speaker>SAMSON</speaker>
+            <l>Dalila! Dalila! je t'aime!</l>
+          </sp>
+
+          <sp n="14">
+            <speaker>DALILA</speaker>
+            <l>Ainsi qu'on voit des blés les épis onduler</l>
+            <l>Sous la brise légère,</l>
+            <l>Ainsi frémit mon cour, prêt à se consoler,</l>
+            <l>A ta voix qui m'est chère!</l>
+            <l>La flèche est moins rapide à porter le trépas</l>
+            <l>Que ne l'est ton amante à voler dans tes bras!</l>
+            <l>Ah! réponds à ma tendresse!</l>
+            <l>Verse-moi, verse-moi l'ivresse!</l>
+          </sp>
+
+          <sp n="15">
+            <speaker>SAMSON</speaker>
+            <l>Par mes baisers je veux sécher tes larmes,</l>
+            <l>Et de ton coeur éloigner les alarmes!</l>
+            <l>Dalila! Dalila! je t'aime!</l>
+          </sp>
+
+          <stage>Eclair - Violent coup de tonnerre</stage>
+
+          <sp n="16">
+            <speaker>DALILA</speaker>
+            <l>Mais! non! que dis-je? hélas! la triste Datila</l>
+            <l>Doute de tes paroles!</l>
+            <l>Egarant ma raison,</l>
+            <l>Tu me trompas déjà par des serments frivoles!</l>
+          </sp>
+
+          <sp n="17">
+            <speaker>SAMSON</speaker>
+            <l>Quand pour toi j'ose oublier Dieu,</l>
+            <l>Sa gloire, mon peuple et mon voeu!</l>
+            <l>Ce Dieu qui marqua ma naissance</l>
+            <l>Du sceau divin de sa puissance!</l>
+          </sp>
+
+          <sp n="18">
+            <speaker>DALILA</speaker>
+            <l>Eh bien! connais donc mon amour!</l>
+            <l>C'est ton Dieu même que j'envie!</l>
+            <l>Ce Dieu qui te donna le jour,</l>
+            <l>Ce Dieu qui consacra ta vie!</l>
+            <l>Le voeu qui t'enchaîne à ce Dieu</l>
+            <l>Et qui fait ton bras redoutable,</l>
+            <l>A mon amour fais-en l'aveu!</l>
+            <l>Chasse le doute qui m'accable!</l>
+          </sp>
+
+          <stage>Eclairs et tonnerre lointains</stage>
+
+          <sp n="19">
+            <speaker>SAMSON</speaker>
+            <l>Dalila! que veux-tu de moi?</l>
+            <l>Crains que je ne doute de toi!</l>
+          </sp>
+
+          <sp n="20">
+            <speaker>DALILA</speaker>
+            <l>Si j'ai conservé ma puissance,</l>
+            <l>Je veux l'essayer en ce jour.</l>
+            <l>Je veux éprouver ton amour,</l>
+            <l>En réclamant ta confiance!</l>
+          </sp>
+
+          <stage>Eclairs et tonnerre de plus en plus rapprochés</stage>
+
+          <sp n="21">
+            <speaker>SAMSON</speaker>
+            <l>Hélas! qu'importe à ton bonheur</l>
+            <l>Le lien sacré qui m'enchaîne,</l>
+            <l>Ce secret que garde mon cour?</l>
+          </sp>
+
+          <sp n="22">
+            <speaker>DALILA</speaker>
+            <l>Par cet aveu soulage ma douleur!</l>
+          </sp>
+
+          <sp n="23">
+            <speaker>SAMSON</speaker>
+            <l>Pour le ravir, ta force est vaine!</l>
+          </sp>
+
+          <stage>Eclairs sans tonnerre</stage>
+
+          <sp n="24">
+            <speaker>DALILA</speaker>
+            <l>Oui! vain est mon pouvoir,</l>
+            <l>Car vaine est ta tendresse!</l>
+            <l>Quand je veux le savoir,</l>
+            <l>Ce secret qui me blesse,</l>
+            <l>Dont je veux la moitié,</l>
+            <l>Oses-tu dans ton âme</l>
+            <l>Sans honte et sans pitié,</l>
+            <l>M'accuser d'être infâme?</l>
+          </sp>
+
+          <sp n="25">
+            <speaker>SAMSON</speaker>
+            <l>D'une immense douleur</l>
+            <l>Ma pauvre âme accablée</l>
+            <l>Implore le Seigneur</l>
+            <l>D'une voix désolée.</l>
+          </sp>
+
+          <sp n="26">
+            <speaker>DALILA</speaker>
+            <l>J'avais paré pour lui</l>
+            <l>Ma jeunesse et mes charmes!</l>
+            <l>Je n'ai plus aujourd'hui</l>
+            <l>Qu'à répandre des larmes.</l>
+          </sp>
+
+          <sp n="27">
+            <speaker>SAMSON</speaker>
+            <l>Dieu tout-puissant,</l>
+            <l>J'invoque ton appui!</l>
+          </sp>
+
+          <sp n="28">
+            <speaker>DALILA</speaker>
+            <l>Pour ces derniers adieux</l>
+            <l>Ma voix est impuissante.</l>
+            <l>Fuis! Samson, fuis ces lieux</l>
+            <l>Où mourra ton amante!</l>
+          </sp>
+
+          <sp n="29">
+            <speaker>SAMSON</speaker>
+            <l>Laisse-moi!</l>
+          </sp>
+
+          <sp n="30">
+            <speaker>DALILA</speaker>
+            <l>Ton secret?</l>
+          </sp>
+
+          <sp n="31">
+            <speaker>SAMSON</speaker>
+            <l>Je ne puis!</l>
+          </sp>
+
+          <sp n="32">
+            <speaker>DALILA</speaker>
+            <l>Ton secret?</l>
+            <l>Ce secret qui cause mes alarmes!</l>
+          </sp>
+
+          <stage>Eclairs sans tonnerre.</stage>
+
+          <sp n="33">
+            <speaker>SAMSON</speaker>
+            <l>L'orage sur ces monts</l>
+            <l>Déchaîne sa colère.</l>
+            <l>Le Seigneur sur nos fronts</l>
+            <l>Fait gronder son tonnerre.</l>
+          </sp>
+
+          <sp n="34">
+            <speaker>DALILA</speaker>
+            <l>Je le brave avec toi!</l>
+            <l>Viens!</l>
+          </sp>
+
+          <sp n="35">
+            <speaker>SAMSON</speaker>
+            <l>Non!</l>
+          </sp>
+
+          <sp n="36">
+            <speaker>DALILA</speaker>
+            <l>Viens!</l>
+          </sp>
+
+          <sp n="37">
+            <speaker>SAMSON</speaker>
+            <l>Laisse-moi!</l>
+            <l>Je ne puis m'y résoudre...</l>
+          </sp>
+
+          <sp n="38">
+            <speaker>DALILA</speaker>
+            <l>Que m'importe la foudre!</l>
+          </sp>
+
+          <sp n="39">
+            <speaker>SAMSON</speaker>
+            <l>C'est la voix de mon Dieu.</l>
+          </sp>
+
+          <sp n="40">
+            <speaker>DALILA</speaker>
+            <l>Lâche! coeur sans amour,</l>
+            <l>Je te méprise. Adieu!</l>
+          </sp>
+
+          <stage>Eclairs et tonnerre jusqu 'à la fin. Daub court vers sa demeure; l'orage est dans
+            toute sa fureur.</stage>
+          <stage>Samson, levant les bras au ciel, semble invoquer Dieu.</stage>
+          <stage>Il s'élance à la suite de Dalila, hésite et enfin entre dans sa demeure.</stage>
+
+          <stage>Par la droite arrivent des soldats philistins qui s'approchent doucement de la
+            demeure de Dulila.</stage>
+
+          <stage>Violent coup de tonnerre.</stage>
+
+          <sp n="41">
+            <speaker>DALILA</speaker>
+            <stage>paraissant sur la terrasse</stage>
+            <l>A moi! Philistins! à moi!</l>
+          </sp>
+
+          <sp n="42">
+            <speaker>SAMSON</speaker>
+            <l>Trahison!</l>
+          </sp>
+
+          <stage>Les soldats se précipitent dans la demeure de Dalila.</stage>
+        </div>
+      </div>
+
+      <div type="act" n="3">
+        <head>TROISIÈME ACTE</head>
+        <div type="tableau" n="1">
+          <head>Premier Tableau</head>
+          <stage>La prison de Gaza</stage>
+
+          <div type="scene" n="1">
+            <head>SCÈNE I</head>
+            <stage>Samson, les Hébreux</stage>
+
+            <stage>Samson, enchaîné, aveugle, les cheveux coupés, tourne la meule. Dans la coulisse,
+              choeur des Hébreux captifs.</stage>
+
+            <sp n="1">
+              <speaker>SAMSON</speaker>
+              <l>Vois ma misère, hélas! vois ma détresse!</l>
+              <l>Pitié! Seigneur! pitié pour ma faiblesse!</l>
+              <l>J'ai détourné mes pas de ton chemin:</l>
+              <l>Bientôt de moi tu retireras ta main.</l>
+              <l>Je t'offre, ô Dieu, ma pauvre âme brisée.</l>
+              <l>Je ne suis plus qu'un objet de risée.</l>
+              <l>Ils m'ont ravi la lum!ère du ciel;</l>
+              <l>Ils m'ont versé l'amertume et le fiel!</l>
+            </sp>
+
+            <sp n="2">
+              <speaker>CHOEUR DES HÉBREUX</speaker>
+              <stage>derrière la scène</stage>
+              <l>Samson, qu'as-tu fait de tes frères?</l>
+              <l>Qu'as-tu fait du Dieu de tes pères?</l>
+            </sp>
+
+            <sp n="3">
+              <speaker>SAMSON</speaker>
+              <l>Hélas! Israel dans les fers,</l>
+              <l>Du ciel attirant la vengeance,</l>
+              <l>A perdu jusqu'à l'espérance</l>
+              <l>Par tous les maux qu'il a soufferts!</l>
+              <l>Que nos tribus à tes yeux trouvent grâce!</l>
+              <l>Daigne à ton peuple épargner la douleur!</l>
+              <l>Apaise-toi devant leurs maux, Seigneur,</l>
+              <l>Toi, dont jamais la pitié ne se lasse!</l>
+            </sp>
+
+            <sp n="4">
+              <speaker>LES HÉBREUX</speaker>
+              <l>Dieu nous confiait à ton bras</l>
+              <l>Pour nous guider dans les combats;</l>
+              <l>Samson, qu'as-tu fait de tes frères?</l>
+              <l>Qu'as-tu fait du Dieu de tes pères?</l>
+            </sp>
+
+            <sp n="5">
+              <speaker>SAMSON</speaker>
+              <l>Frères! votre chant douloureux,</l>
+              <l>Pénétrant dans ma nuit profonde,</l>
+              <l>D'une angoisse mortelle inonde</l>
+              <l>Mon cour coupable et malheureux.</l>
+              <l>Dieu! prends ma vie en sacrifice</l>
+              <l>Pour satisfaire ton courroux!</l>
+            </sp>
+
+            <sp n="6">
+              <speaker>LES HÉBREUX</speaker>
+              <l>Pour une femme il nous vendait,</l>
+              <l>De Dalila payant les charmes.</l>
+            </sp>
+
+            <sp n="7">
+              <speaker>SAMSON</speaker>
+              <l>D'Israël détourne tes coups,</l>
+              <l>Et je proclame ta justice!</l>
+            </sp>
+
+            <sp n="8">
+              <speaker>LES HÉBREUX</speaker>
+              <l>Fils de Manoah, qu'as-tu fait</l>
+              <l>De notre sang et de nos larmes?</l>
+            </sp>
+
+            <sp n="9">
+              <speaker>SAMSON</speaker>
+              <l>A tes pieds, brisé, mais soumis,</l>
+              <l>Je bénis la main qui me frappe.</l>
+              <l>Fais, Seigneur, que ton peuple échappe</l>
+              <l>A la fureur des ennemis!</l>
+            </sp>
+
+            <sp n="10">
+              <speaker>LES HÉBREUX</speaker>
+              <l>Samson, qu'as-tu fait de tes frères?</l>
+              <l>Qu'as-tu fait du Dieu de tes pères?</l>
+            </sp>
+
+            <stage>Les Philistins entrent dans ta prison; ils entraînent Samson.</stage>
+          </div>
+        </div>
+
+        <div type="tableau" n="2">
+          <head>Deuxième Tableau</head>
+          <stage>Intérieur du temple de Dagon</stage>
+
+          <stage>Statue du dieu, table des sacrifices - Au milieu du sanctuaire - deux cotonnes
+            semblent supporter l'édifice.</stage>
+
+          <div type="scene" n="2">
+
+            <head>SCÈNE II</head>
+            <stage>Le Grand-Prêtre, Datila, les Philistins</stage>
+
+            <stage>Le Grand-Prêtre, des princes philistins. Dalila, suivie des jeunes Philistines,
+              couronnées de fleurs, des coupes à la main. Le peuple remplit le temple.</stage>
+            <stage>Le jour se lève.</stage>
+
+            <sp n="1">
+              <speaker>CHOEUR DES PHILISTINS</speaker>
+              <l>L'aube qui blanchit déjà les coteaux</l>
+              <l>D'une nuit si belle éteint les flambeaux;</l>
+              <l>Prolongeons la fête, et malgré l'aurore,</l>
+              <l>Aimons encore!</l>
+              <l>L'amour verse au cour l'oubli de nos maux.</l>
+              <l>Au vent du matin, l'ombre de la nuit</l>
+              <l>Comme un léger voile à l'horizon fuit.</l>
+              <l>L'orient s'empourpre, et sur les montagnes</l>
+              <l>Le soleil luit,</l>
+              <l>Dardant ses rayons au sein des campagnes.</l>
+            </sp>
+            <stage>Bacchanale</stage>
+
+          </div>
+          <div type="scene" n="3">
+            <head>SCÈNE III</head>
+            <stage>Les mêmes, Samson entre conduit par un enfant.</stage>
+
+            <sp n="1">
+              <speaker>LE GRAND-PRÊTRE</speaker>
+              <stage>à Samson</stage>
+              <l>Salut! salut au juge d'Israël,</l>
+              <l>Qui vient par sa présence égayer notre fête!</l>
+              <l>Dalila! par tes soins qu'une coupe soit prête!</l>
+              <l>Verse à ton amant l'hydromel!</l>
+              <l>Il videra sa coupe en chantant sa maîtresse</l>
+              <l>Et sa puissance enchanteresse!</l>
+            </sp>
+
+            <sp n="2">
+              <speaker>LES PHILISTINS</speaker>
+              <l>Samson! nous buvons avec toi</l>
+              <l>A Dalila, ta souveraine!</l>
+              <l>Vide la coupe sans effroi!</l>
+              <l>L'ivresse dissipe la peine!</l>
+            </sp>
+
+            <sp n="3">
+              <speaker>SAMSON</speaker>
+              <stage>à part</stage>
+              <l>L'âme triste jusqu'à la mort,</l>
+              <l>Devant toi, Seigneur, je m'incline;</l>
+              <l>Que par ta volonté divine</l>
+              <l>Ici s'accomplisse mon sort!</l>
+            </sp>
+
+            <sp n="4">
+              <speaker>DALILA</speaker>
+              <stage>s'approchant de Samson, une coupe à la main</stage>
+              <l>Laisse-moi prendre ta main</l>
+              <l>Et te montrer le chemin,</l>
+              <l>Comme dans la sombre allée</l>
+              <l>Qui conduit à la vallée,</l>
+              <l>Le jour où, suivant mes pas,</l>
+              <l>Tu m'enlaçais de tes bras!</l>
+              <l>Tu gravissais les montagnes</l>
+              <l>Pour arriver jusqu'à moi,</l>
+              <l>Et je fuyais mes compagnes</l>
+              <l>Pour être seule avec toi.</l>
+              <l>Souviens-toi de nos ivresses!</l>
+              <l>Souviens-toi de mes caresses!</l>
+              <l>L'amour servait mon projet,</l>
+              <l>Pour assouvir ma vengeance</l>
+              <l>Je t'arrachai ton secret:</l>
+              <l>Je l'avais vendu d'avance.</l>
+              <l>Tu croyais à cet amour:</l>
+              <l>C'est lui qui riva ta chaîne.</l>
+              <l>Dalila venge en ce jour</l>
+              <l>Son dieu, son peuple et sa haine.</l>
+            </sp>
+
+            <sp n="5">
+              <speaker>LES PHILISTINS</speaker>
+              <l>Dalila venge en ce jour</l>
+              <l>Son dieu, son peuple et sa haine.</l>
+            </sp>
+
+            <sp n="6">
+              <speaker>SAMSON</speaker>
+              <stage>à part</stage>
+              <l>Quand tu parlais, je restais sourd;</l>
+              <l>Et dans le trouble de mon âme,</l>
+              <l>Hélas! j'ai profané l'amour</l>
+              <l>En e donnant à cette femme.</l>
+            </sp>
+
+            <sp n="7">
+              <speaker>LE GRAND-PRÊTRE</speaker>
+              <l>Allons, Samson, divertis-nous,</l>
+              <l>En redisant à ton amante</l>
+              <l>Les doux propos, les chants si doux</l>
+              <l>Dont la passion s'alimente!</l>
+              <l>Que Jéhovah compatissant</l>
+              <l>A tes yeux rende la lumière!</l>
+              <l>Je servirai ce Dieu puissant</l>
+              <l>S'il peut exaucer ta prière!</l>
+              <l>Mais, incapable à te servir,</l>
+              <l>Ce Dieu que tu nommes ton père,</l>
+              <l>Je puis l'outrager, le haïr,</l>
+              <l>En me riant de sa colère!</l>
+            </sp>
+
+            <sp n="8">
+              <speaker>SAMSON</speaker>
+              <l>Tu permets, ô Dieu d'Israël,</l>
+              <l>Que ce prêtre imposteur outrage,</l>
+              <l>Dans sa fureur et dans sa rage,</l>
+              <l>Ton nom, à la face du ciel!</l>
+              <l>Que ne puis-Je venger ta gloire,</l>
+              <l>Et par un prodige éclatant</l>
+              <l>Retrouver pour un seul instant</l>
+              <l>les yeux, la force et la victoire!</l>
+            </sp>
+
+            <sp n="9">
+              <speaker>LES PHILISTINS</speaker>
+              <l>Ah! ah! ah! ah!</l>
+              <l>Rions de sa fureur!</l>
+              <l>Tu ne nous fais pas peur!</l>
+              <l>Dans ta rage impuissante,</l>
+              <l>Samson, tu n'y vois pas!</l>
+              <l>Prends garde à tes pas!</l>
+              <l>Sa colère est plaisante!</l>
+              <l>Ah! ah! ah! ah!</l>
+            </sp>
+
+            <sp n="10">
+              <speaker>LE GRAND-PRÊTRE</speaker>
+              <l>Viens, Dalila, rendre grâce à nos dieux</l>
+              <l>Qui font trembler Jéhovah dans les cieux!</l>
+              <l>Du grand Dagon consultons les auspices!</l>
+              <l>Versons pour lui le vin des sacrifices!</l>
+            </sp>
+
+            <stage>Dalila et le Grand-Prêtre se dirigent vers la table des sacrifices sur laquelle
+              se trouvent les coupes sacrées.</stage>
+            <stage>Un feu brûle sur l'autel qui est orné de fleurs. Dalila et le Grand-Prêtre,
+              prenant les coupes, font une libation sur le feu sacré qui s'active, puis disparaît
+              pour reparaître sur les mots «Dagon se révèle».</stage>
+            <stage>Samson est resté au milieu de la scène, ayant près de lui l'enfant qui le
+              conduit; il est accablé parla douleur et semble prier.</stage>
+
+            <sp n="11">
+              <speaker>DALILA ET LE GRAND-PRÊTRE</speaker>
+              <l>Gloire à Dagon vainqueur!</l>
+              <l>Il aidait ma (sa) faiblesse,</l>
+              <l>Inspirant à mon (ton) coeur</l>
+              <l>Et la force et l'adresse.</l>
+              <l>O toi! le plus grand entre tous!</l>
+              <l>Toi qui fis la terre où nous sommes,</l>
+              <l>que ton esprit soit avec nous,</l>
+              <l>O maître des dieux et des hommes!</l>
+            </sp>
+
+            <sp n="12">
+              <speaker>LES PHILISTINS</speaker>
+              <l>Marque d'un signe</l>
+              <l>Nos longs troupeaux!</l>
+              <l>Mûris la vigne</l>
+              <l>Sur nos coteaux!</l>
+              <l>Rends à la plaine</l>
+              <l>Notre moisson</l>
+              <l>Que, dans sa haine,</l>
+              <l>Brûla Samson!</l>
+            </sp>
+
+            <sp n="13">
+              <speaker>DALILA ET LE GRAND-PRÊTRE</speaker>
+              <l>Reçois sur nos autels</l>
+              <l>Le sang de nos victimes</l>
+              <l>Que t'offrent des mortels</l>
+              <l>Pour expier leurs crimes!</l>
+            </sp>
+
+            <sp n="14">
+              <speaker>LES PHILISTINS</speaker>
+              <l>Gloire à Dagon!</l>
+            </sp>
+
+            <sp n="15">
+              <speaker>DALILA ET LE GRAND-PRÊTRE</speaker>
+              <l>Aux yeux de tes prêtres divins,</l>
+              <l>Pouvant seuls contempler ta face,</l>
+              <l>Montre l'avenir qui se cache</l>
+              <l>Aux regards des autres humains!</l>
+            </sp>
+
+            <sp n="16">
+              <speaker>LES PHILISTINS</speaker>
+              <l>Dieu, sois propice</l>
+              <l>A nos destins!</l>
+              <l>Que ta justice</l>
+              <l>Aux Philistins</l>
+              <l>Donne la gloire</l>
+              <l>Dans les combats!</l>
+              <l>Que la victoire</l>
+              <l>Suive nos pas!</l>
+            </sp>
+
+            <sp n="17">
+              <speaker>DALILA, LE GRAND-PRÊTRE, PUIS LES PHILISTINS</speaker>
+              <l>Dagon se révèle!</l>
+              <l>La flamme nouvelle</l>
+              <l>Sur l'autel renaît de la cendre.</l>
+              <l>L'immortel pour nous va descendre.</l>
+              <l>C'est le Dieu</l>
+              <l>Qui par sa présence</l>
+              <l>Montre sa puissance</l>
+              <l>En ce lieu.</l>
+            </sp>
+
+            <sp n="18">
+              <speaker>LE GRAND-PRÊTRE</speaker>
+              <stage>à Samson</stage>
+              <l>Pour que le sort soit favorable,</l>
+              <l>Allons, Samson, viens avec nous,</l>
+              <l>A Dagon, le dieu redoutable,</l>
+              <l>Offrir ta coupe à genoux!</l>
+              <stage>à l'enfant</stage>
+              <l>Guidez ses pas vers le milieu du temple,</l>
+              <l>Pour que de loin le peuple le contemple.</l>
+            </sp>
+
+            <sp n="19">
+              <speaker>SAMSON</speaker>
+              <l>Seigneur, inspire-moi, ne m'abandonne pas!</l>
+              <stage>à l'enfant</stage>
+              <l>Vers les piliers de marbre, enfant, guide mes pas!</l>
+            </sp>
+
+            <stage>L'enfant conduit Samson entre les deux piliers.</stage>
+
+            <sp n="20">
+              <speaker>LES PHILISTINS</speaker>
+              <l>Dagon se révèle!</l>
+              <l>La flamme nouvelle,</l>
+              <l>Sur l'autel,</l>
+              <l>Renaît de la cendre.</l>
+              <l>C'est le Dieu</l>
+              <l>Qui par sa présence</l>
+              <l>Montre sa puissance</l>
+              <l>En ce lieu.</l>
+
+              <l>Dieu, sois propice</l>
+              <l>A nos destins!</l>
+              <l>Que ta justice</l>
+              <l>Aux Philistins</l>
+              <l>Donne la gloire</l>
+              <l>Dans les combats!</l>
+              <l>Que la victoire</l>
+              <l>Suive nos pas!</l>
+              <l>Devant toi, d'Israël</l>
+              <l>Disparaît l'insolence.</l>
+              <l>Nos bras guides par ton esprit,</l>
+              <l>Dans les combats ou par tes charmes,</l>
+              <l>Ont vaincu ce peuple maudit,</l>
+              <l>Bravant ta colère et tes armes.</l>
+
+              <l>A nos destins,</l>
+              <l>Dieu, sois propice!</l>
+              <l>Que ta justice</l>
+              <l>Aux Philistins</l>
+              <l>Donne la gloire</l>
+              <l>Dans les combats!</l>
+              <l>Que la victoire</l>
+              <l>Suive nos pas!</l>
+              <l>Gloire à Dagon!</l>
+              <l>Gloire! gloire! gloire!</l>
+            </sp>
+
+            <sp n="21">
+              <speaker>SAMSON</speaker>
+              <stage>placé entre les deux piliers, cherchant à les ébranler</stage>
+              <l>Souviens-toi de ton serviteur</l>
+              <l>Qu'ils ont privé de la lumière!</l>
+              <l>Daigne pour un instant, Seigneur,</l>
+              <l>Me rendre ma force première!</l>
+              <l>Qu'avec toi je me venge, b Dieu!</l>
+              <l>En les écrasant en ce lieu!</l>
+            </sp>
+
+            <stage>Le temple s'écroule au milieu des cris.</stage>
+
+            <sp n="22">
+              <speaker>DALILA, LE GRAND-PRÊTRE, LES PHILISTINS</speaker>
+              <l>Ah !</l>
+            </sp>
+            
+          </div>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>
+
