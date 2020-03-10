@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ti:work xmlns:ti="http://chs.harvard.edu/xmlns/cts" groupUrn="urn:cts:libOp:viaf71579067"
+    urn="urn:cts:libOp:viaf71579067.viaf179618398" xml:lang="fre">
+    <ti:title xml:lang="fre">Dialogues des Carmélites</ti:title>
+    <ti:edition workUrn="urn:cts:libOp:viaf71579067.viaf179618398"
+        urn="urn:cts:libOp:viaf71579067.viaf179618398.TNAH2020-fre1">
+        <ti:label xml:lang="fre">Dialogues des Carmélites</ti:label>
+        <ti:description xml:lang="fre">Balisage sémantique du Dialogues des Carmélites par la promo TNAH 2020</ti:description>
+    </ti:edition>
+</ti:work>
