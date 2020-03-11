@@ -4,7 +4,7 @@
       <fileDesc>
          <titleStmt>
             <title>Henry VIII</title>
-            <author>Camille Saint-Saëns</author>
+            <author role="songWriter">Camille Saint-Saëns</author>
          </titleStmt>
          <publicationStmt>
             <p>Ecole nationale des chartes, projet libretti TNAH, promotion 2019-2020</p>
@@ -15,19 +15,17 @@
       </fileDesc>
       <encodingDesc>
          <refsDecl n="CTS">
-            <cRefPattern n="speech"
-                         matchPattern="(\w+).(\w+).(\w+)"
-                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@type='act'][@n='$1']//tei:div[@type='scene'][@n='$2']/tei:sp[@n='$3'])">
-               <p>Ce pointeur extrait les niveaux de citation 1, 2 et 3, soit acte, scène et tour de parole.</p>
+            <cRefPattern n="speech" matchPattern="(\w+).(\w+).(\w+)"
+               replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@type='act'][@n='$1']//tei:div[@type='scene'][@n='$2']/tei:sp[@n='$3'])">
+               <p>Ce pointeur extrait les niveaux de citation 1, 2 et 3, soit acte, scène et tour de
+                  parole.</p>
             </cRefPattern>
-            <cRefPattern n="scene"
-                         matchPattern="(\w+).(\w+)"
-                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@type='act'][@n='$1']/tei:div[@type='scene'][@n='$2'])">
+            <cRefPattern n="scene" matchPattern="(\w+).(\w+)"
+               replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@type='act'][@n='$1']/tei:div[@type='scene'][@n='$2'])">
                <p>Ce poiteur extrait les niveaux de citation 1 et 2, soit les actes et scènes.</p>
             </cRefPattern>
-            <cRefPattern n="act"
-                         matchPattern="(\w+)"
-                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@type='act'][@n='$1'])">
+            <cRefPattern n="act" matchPattern="(\w+)"
+               replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@type='act'][@n='$1'])">
                <p>Ce pointeur extrait le premier niveau de citation du texte, soit les actes.</p>
             </cRefPattern>
          </refsDecl>
@@ -39,8 +37,7 @@
             <p>L'action se déroule à Londres, en 1533</p>
          </set>
       </front>
-      <body n="urn:cts:libOp:viaf7575200.viaf179844952.TNAH2020-fre1"
-         xml:lang="fre">
+      <body n="urn:cts:libOp:viaf[7575200].viaf[179844952].TNAH2020-fre1" xml:lang="fre">
          <castList>
             <castItem>Henry VIII, roi d'Angleterre</castItem>
             <castItem>Catherine d'Aragon, épouse d'Henry</castItem>
@@ -664,32 +661,30 @@
                   <stage>
                      <p/>
                   </stage>
+                 <l>Don Gomez, juste ciel!</l>
                </sp>
                <sp n="2">
-                  <l>Don Gomez, juste ciel!</l>
-               </sp>
-               <sp n="3">
                   <speaker>DON GOMEZ</speaker>
                   <stage>
                      <p/>
                   </stage>
                   <l>C'est bien elle vraiment!</l>
                </sp>
-               <sp n="4">
+               <sp n="3">
                   <speaker>HENRY</speaker>
                   <stage>
                      <p/>
                   </stage>
                   <l>Vous vous reconnaissez, vous étant vus en France?</l>
                </sp>
-               <sp n="5">
+               <sp n="4">
                   <speaker>ANNE</speaker>
                   <stage>
                      <p/>
                   </stage>
                   <l>Sire, précisément.</l>
                </sp>
-               <sp n="6">
+               <sp n="5">
                   <speaker>HENRY</speaker>
                   <stage>
                      <p/>
@@ -699,7 +694,7 @@
                   <l>Honorait autrefois d'une amitié jalouse;</l>
                   <l>Venant d'un peuple ami, ce présent nous est doux.</l>
                </sp>
-               <sp n="7">
+               <sp n="6">
                   <speaker>CHŒUR DE FEMMES</speaker>
                   <stage>
                      <p/>
@@ -709,7 +704,7 @@
                   <l>Gage de paix et gage d'espérance,</l>
                   <l>Salut à toi, vierge au front radieux!</l>
                </sp>
-               <sp n="8">
+               <sp n="7">
                   <speaker>CATHERINE</speaker>
                   <stage>
                      <p/>
@@ -722,14 +717,14 @@
                   <l>Soyez la bienvenue ici, mademoiselle,</l>
                   <l>Ma nouvelle dame d'honneur.</l>
                </sp>
-               <sp n="9">
+               <sp n="8">
                   <speaker>ANNE</speaker>
                   <stage>
                      <p/>
                   </stage>
                   <l>Reine, à vous bien servir je mettrai tout mon zèle.</l>
                </sp>
-               <sp n="10">
+               <sp n="9">
                   <speaker>HENRY</speaker>
                   <stage>
                      <p/>
@@ -740,18 +735,18 @@
                   <l>Un titre désiré de tous:</l>
                   <l>De Pembroke soyez marquise!</l>
                </sp>
-               <sp n="11">
+               <sp n="10">
                   <speaker>LE CHŒUR</speaker>
                   <l>De Pembroke le roi la nomme aussi marquise!</l>
                </sp>
-               <sp n="12">
+               <sp n="11">
                   <speaker>ANNE</speaker>
                   <l>Sire, c'est vraiment me combler.</l>
                   <stage>
                      <p/>
                   </stage>
                </sp>
-               <sp n="13">
+               <sp n="12">
                   <speaker>HENRY</speaker>
                   <stage>
                      <p/>
@@ -759,11 +754,11 @@
                   <l>Quel bienfait pourrait égaler</l>
                   <l>L'éclat de cette grâce exquise!</l>
                </sp>
-               <sp n="14">
+               <sp n="13">
                   <speaker>ANNE</speaker>
                   <l>Non, c'est trop!</l>
                </sp>
-               <sp n="15">
+               <sp n="14">
                   <speaker>HENRY</speaker>
                   <l>Ce n'est pas assez!</l>
                   <stage>
@@ -771,14 +766,14 @@
                   </stage>
                   <l>Si tu savais comme je t'aime!</l>
                </sp>
-               <sp n="16">
+               <sp n="15">
                   <speaker>ANNE</speaker>
                   <stage>
                      <p/>
                   </stage>
                   <l>Mon cœur s'emplit de rêves insensés.</l>
                </sp>
-               <sp n="17">
+               <sp n="16">
                   <speaker>HENRY</speaker>
                   <stage>
                      <p/>
@@ -789,7 +784,7 @@
                      <p/>
                   </stage>
                </sp>
-               <sp n="18">
+               <sp n="17">
                   <speaker>CHŒUR DES MOINES</speaker>
                   <l>De profundis! de profundis!</l>
                   <l>Que Dieu dans sa miséricorde</l>
@@ -797,21 +792,21 @@
                   <l>Une place en son paradis!</l>
                   <l>De profundis!</l>
                </sp>
-               <sp n="19">
+               <sp n="18">
                   <speaker>ANNE</speaker>
                   <stage>
                      <p/>
                   </stage>
                   <l>Quel est ce chant de deuil dont mon âme est troublée?</l>
                </sp>
-               <sp n="20">
+               <sp n="19">
                   <speaker>HENRY</speaker>
                   <stage>
                      <p/>
                   </stage>
                   <l>Rien! un traître qui meurt!</l>
                </sp>
-               <sp n="21">
+               <sp n="20">
                   <speaker>ANNE</speaker>
                   <stage>
                      <p/>
@@ -820,7 +815,7 @@
                   <l>Ô sombre vision de l'enfer envolée!</l>
                   <l>J'ai peur!</l>
                </sp>
-               <sp n="22">
+               <sp n="21">
                   <speaker>HENRY</speaker>
                   <stage>
                      <p/>
@@ -832,7 +827,7 @@
                   </stage>
                   <l>Si tu savais comme je t'aime!</l>
                </sp>
-               <sp n="23">
+               <sp n="22">
                   <speaker>CHŒUR DES MOINES</speaker>
                   <l>De profundis! de profundis!</l>
                   <l>Que Dieu dans sa miséricorde</l>
@@ -840,7 +835,7 @@
                   <l>Une place en son paradis!</l>
                   <l>De profundis!</l>
                </sp>
-               <sp n="24">
+               <sp n="23">
                   <speaker>ANNE</speaker>
                   <l>Taisez-vous! taisez-vous! une hache, du sang!</l>
                   <l>Ô sombre vision qui sur mon front descend!</l>
@@ -852,7 +847,7 @@
                   <l>Mais dans mon cœur reste un secret effroi!</l>
                   <l>Ah! d'un coupable amour, Seigneur, protège-moi.</l>
                </sp>
-               <sp n="25">
+               <sp n="24">
                   <speaker>HENRY</speaker>
                   <stage>
                      <p/>
@@ -862,7 +857,7 @@
                   <l>La mort est due à qui trahit son roi.</l>
                   <l>Non! rien ne la saurait défendre contre moi.</l>
                </sp>
-               <sp n="26">
+               <sp n="25">
                   <speaker>DON GOMEZ</speaker>
                   <stage>
                      <p/>
@@ -872,7 +867,7 @@
                   <l>Comment lutter contre l'amour d'un roi?</l>
                   <l>De ce tourment jaloux, Seigneur, protège-moi.</l>
                </sp>
-               <sp n="27">
+               <sp n="26">
                   <speaker>CATHERINE ET LE CHŒUR</speaker>
                   <l>Hélas! c'est sous le glaive</l>
                   <l>Qu'un sort brillant s'achève!</l>
@@ -2280,12 +2275,12 @@
                      <l>Car je veux aujourd'hui savoir la vérité!</l>
                   </sp>
                </div>
-               <div type="tableau" n="1">
-                  <head>Deuxième Tableau</head>
-                  <stage>
-                     <p/>
-                  </stage>
-               </div>
+            </div>
+            <div type="tableau" n="2">
+               <head>Deuxième Tableau</head>
+               <stage>
+                  <p/>
+               </stage>
                <div type="scene" n="6">
                   <head>Scène I</head>
                   <stage>
@@ -2745,3 +2740,4 @@
       </body>
    </text>
 </TEI>
+
