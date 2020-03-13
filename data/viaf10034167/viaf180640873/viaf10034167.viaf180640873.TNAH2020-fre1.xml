@@ -10,28 +10,28 @@
                 <author role="songWriter"> MUSIQUE DE M. JACQUES OFFENBACH </author>
             </titleStmt>
             <publicationStmt>
-                <p part="N">Ecole nationale des chartes, projet libretti TNAH, promotion 2019-2020</p>
+                <p>Ecole nationale des chartes, projet libretti TNAH, promotion 2019-2020</p>
             </publicationStmt>
-            <sourceDesc default="false">
-                <p part="N"> https://fr.wikisource.org/wiki/Les_Deux_Aveugles_(Offenbach) </p>
+            <sourceDesc>
+                <p> https://fr.wikisource.org/wiki/Les_Deux_Aveugles_(Offenbach) </p>
             </sourceDesc>
         </fileDesc>
         <encodingDesc>
-            <refsDecl n="CTS" default="false">
+            <refsDecl n="CTS">
                 <cRefPattern n="speech"
                     matchPattern="(\w+).(\w+).(\w+)"
                     replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@type='act'][@n='$1']/tei:div[@type='scene'][@n='$2']/tei:sp[@n='$3'])">
-                    <p part="N">Ce pointeur extrait les niveaux de citation 1, 2 et 3, soit acte, scène et tour de parole.</p>
+                    <p>Ce pointeur extrait les niveaux de citation 1, 2 et 3, soit acte, scène et tour de parole.</p>
                 </cRefPattern>
                 <cRefPattern n="scene"
                     matchPattern="(\w+).(\w+)"
                     replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@type='act'][@n='$1']/tei:div[@type='scene'][@n='$2'])">
-                    <p part="N">Ce pointeur extrait les niveaux de citation 1 et 2, soit les actes et scènes.</p>
+                    <p>Ce pointeur extrait les niveaux de citation 1 et 2, soit les actes et scènes.</p>
                 </cRefPattern>
                 <cRefPattern n="act"
                     matchPattern="(\w+)"
                     replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@type='act'][@n='$1'])">
-                    <p part="N">Ce pointeur extrait le premier niveau de citation du texte, soit les actes.</p>
+                    <p>Ce pointeur extrait le premier niveau de citation du texte, soit les actes.</p>
                 </cRefPattern>
             </refsDecl>
         </encodingDesc>
@@ -231,7 +231,7 @@
             </sp>
                <sp n="19"> 
                <speaker>GIRAFFIER</speaker>
-               <p> continuant.
+               <p><stage>continuant.</stage>
                   Pas le moins du monde, mon cher collègue. <stage>A part.</stage> Il faut rendre des comptes à Monsieur ? Attends ! je vas te coller un fagot. 
                </p>
             </sp>
@@ -319,7 +319,7 @@
             </sp>
                <sp n="33"> 
                <speaker>PATACHON</speaker>
-               <p> qui a le sou, le regardant et criant.
+                   <p><stage> qui a le sou, le regardant et criant.</stage>
                   Dites donc, vous, quand on jette un sou à des malheureux aveugles, on devrait bien jeter un sou qui soit marqué ! 
                </p>
             </sp>
@@ -337,31 +337,31 @@
             </sp>
                <sp n="36"> 
                <speaker>GIRAFFIER</speaker>
-               <p> , <stage>à part.</stage>
+               <p><stage>,à part.</stage>
                   Diable ! <stage>Haut</stage> Au canon, si vous voulez, Monsieur. <stage>A part.</stage> Épouvantons-le pour qu’il me cède la place. 
                </p>
             </sp>
                <sp n="37"> 
                <speaker>PATACHON</speaker>
-               <p> , <stage>à part.</stage>
+               <p><stage>,à part.</stage>
                   Sapristi ! il est brave… <stage>Haut.</stage> Soit, Monsieur, à mitraille. 
                </p>
             </sp>
                <sp n="38"> 
                <speaker>GIRAFFIER</speaker>
-               <p> , <stage>à part.</stage>
+               <p><stage>,à part.</stage>
                   Peste ! il est crâne. <stage>Haut.</stage> À boulet rouge. 
                </p>
             </sp>
                <sp n="39"> 
                <speaker>PATACHON</speaker>
-               <p> , à mi-voix.
+                   <p><stage>, à mi-voix.</stage>
                   Voici ma carte : Champs-Élysées, tronc d’arbre n° 19,999. 
                </p>
             </sp>
                <sp n="40"> 
                <speaker>GIRAFFIER</speaker>
-               <p> , surpris.
+                   <p><stage>, surpris.</stage>
                   Tronc d’arbre. C’est vous qui avez inventé ce domicile ?… Je trouve l’invention du tronc bonne ; voici la mienne : Rue des Saints-Pères. 
                </p>
             </sp>
@@ -597,7 +597,7 @@
             </sp>
                <sp n="79"> 
                <speaker>PATACHON</speaker>
-               <p> tirant un jeu de cartes de sa poche.
+                   <p><stage>tirant un jeu de cartes de sa poche.</stage>
                   À merveille ; allons-y gaiement ! 
                </p>
             </sp>
@@ -630,7 +630,7 @@
             </sp>
                <sp n="84"> 
                <speaker>GIRAFFIER</speaker>
-               <p> à part, regardant du coin de l’œil.
+                   <p><stage>à part, regardant du coin de l’œil.</stage>
                   Je ne me trompe pas, il fait le paquet. 
                </p>
             </sp>
@@ -642,7 +642,7 @@
             </sp>
                <sp n="86"> 
                <speaker>GIRAFFIER</speaker>
-               <p> coupant.
+               <p><stage>coupant.</stage>
                   Voilà, Patachon. 
                </p>
             </sp>
@@ -662,18 +662,18 @@
                <speaker>PATACHON</speaker>
                <p>
                   Je prends ; atout de la dame, du valet, de l’as et du dix ; j’ai la vole. 
-                  Reprise du motif de Robert.
+                   <stage>Reprise du motif de Robert.</stage>
                </p>
             </sp>
                <sp n="90"> 
                <speaker>PATACHON</speaker>
-               <p> à part, chantant.
+               <p><stage>à part, chantant.</stage>
                   J’ai la vole, la vole, la vole. 
                </p>
             </sp>
                <sp n="91"> 
                <speaker>GIRAFFIER</speaker>
-               <p> même jeu.
+                   <p><stage>même jeu.</stage>
                   Il me vole, me vole, me vole. 
                </p>
             </sp>
@@ -710,7 +710,7 @@
             </sp>
                <sp n="97"> 
                <speaker>GIRAFFIER</speaker>
-               <p> faisant sauter la coupe très-visiblement. À part.
+               <p><stage>faisant sauter la coupe très-visiblement. À part.</stage>
                   Ça n’est pas plus difficile que ça. <stage>Il tourne.</stage> Le roi ! 
                </p>
             </sp>
