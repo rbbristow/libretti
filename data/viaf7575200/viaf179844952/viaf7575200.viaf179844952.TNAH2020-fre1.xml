@@ -9,23 +9,26 @@
          <publicationStmt>
             <p>Ecole nationale des chartes, projet libretti TNAH, promotion 2019-2020</p>
          </publicationStmt>
-         <sourceDesc>
-            <p>http://kareol.es/obras/enrique8/acto1.htm</p>
+         <sourceDesc default="false">
+            <p>Lien HTTP vers la ressource</p>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
-         <refsDecl n="CTS">
-            <cRefPattern n="speech" matchPattern="(\w+).(\w+).(\w+)"
-               replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@type='act'][@n='$1']//tei:div[@type='scene'][@n='$2']/tei:sp[@n='$3'])">
+         <refsDecl n="CTS" default="false">
+            <cRefPattern n="speech"
+                         matchPattern="(\w+).(\w+).(\w+)"
+                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@type='act'][@n='$1']/tei:div[@type='scene'][@n='$2']/tei:sp[@n='$3'])">
                <p>Ce pointeur extrait les niveaux de citation 1, 2 et 3, soit acte, scène et tour de
                   parole.</p>
             </cRefPattern>
-            <cRefPattern n="scene" matchPattern="(\w+).(\w+)"
-               replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@type='act'][@n='$1']/tei:div[@type='scene'][@n='$2'])">
+            <cRefPattern n="scene"
+                         matchPattern="(\w+).(\w+)"
+                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@type='act'][@n='$1']/tei:div[@type='scene'][@n='$2'])">
                <p>Ce poiteur extrait les niveaux de citation 1 et 2, soit les actes et scènes.</p>
             </cRefPattern>
-            <cRefPattern n="act" matchPattern="(\w+)"
-               replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@type='act'][@n='$1'])">
+            <cRefPattern n="act"
+                         matchPattern="(\w+)"
+                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@type='act'][@n='$1'])">
                <p>Ce pointeur extrait le premier niveau de citation du texte, soit les actes.</p>
             </cRefPattern>
          </refsDecl>
@@ -37,7 +40,7 @@
             <p>L'action se déroule à Londres, en 1533</p>
          </set>
       </front>
-      <body n="urn:cts:libOp:viaf[7575200].viaf[179844952].TNAH2020-fre1" xml:lang="fre">
+      <body n="urn:cts:libOp:viaf7575200.viaf179844952.TNAH2020-fre1" xml:lang="fre">
          <castList>
             <castItem>Henry VIII, roi d'Angleterre</castItem>
             <castItem>Catherine d'Aragon, épouse d'Henry</castItem>
@@ -51,12 +54,13 @@
          <div type="act" n="1">
             <head>ACTE PREMIER</head>
             <stage>
-               <p/>
+               <p>(Une salle du palais de Henri VIII à Londres, avec deux grandes fenêtres à gauche
+               donnant sur la place publique)</p>
             </stage>
             <div type="scene" n="1">
                <head>Scène I </head>
                <stage>
-                  <p/>
+                  <p>(Norfolk, Don Gomez de Féria)</p>
                </stage>
                <sp n="1">
                   <speaker>NORFOLK</speaker>
@@ -221,23 +225,23 @@
                   <l>Et que je meure</l>
                   <l>Si ce soir même il n'a péri.</l>
                   <stage>
-                     <p/>
+                     <p>(Bruit sur la place)</p>
                   </stage>
                   <l>Mais c'est du tribunal que la foule s'empresse.</l>
                   <stage>
-                     <p/>
+                     <p>(Des seigneurs entrent)</p>
                   </stage>
                </sp>
             </div>
             <div type="scene" n="2">
                <head>Scène II</head>
                <stage>
-                  <p/>
+                  <p>(Les mêmes, des Seigneurs)</p>
                </stage>
                <sp n="1">
                   <speaker>NORFOLK</speaker>
                   <stage>
-                     <p/>
+                     <p>(allant aux seigneurs)</p>
                   </stage>
                   <l>La nouvelle, messieurs? Buckingham?</l>
                </sp>
@@ -306,11 +310,11 @@
                   <l>Nous vivons sous un roi terrible, impie et traître</l>
                   <l>Et par son joug de fer notre front est meurtri.</l>
                   <stage>
-                     <p/>
+                     <p>(Le roi apparaît.)</p>
                   </stage>
                   <l>Mais le voici.</l>
                   <stage>
-                     <p/>
+                     <p>(sur un ton mielleux)</p>
                   </stage>
                   <l>Salut à notre noble maître!</l>
                   <l>À notre doux seigneur, au très clément Henry!</l>
@@ -319,19 +323,20 @@
                   <l>Impitoyable pour le crime,</l>
                   <l>Est toujours doux à la vertu!</l>
                   <stage>
-                     <p/>
+                     <p>(Ils saluent avec obséquiosité 1e roi qui ne fait pas attention à eux et se
+                     retirent en se courbant)</p>
                   </stage>
                </sp>
             </div>
             <div type="scene" n="3">
                <head>Scène III</head>
                <stage>
-                  <p/>
+                  <p>(Norfolk, Don Gomez, Henry, Surrey)</p>
                </stage>
                <sp n="1">
                   <speaker>NORFOLK</speaker>
                   <stage>
-                     <p/>
+                     <p>(présentant Don Gomez au roi)</p>
                   </stage>
                   <l>Daignez, sire, accueillir celui qui m'accompagne, Don Gomez de Féria,
                      l'ambassadeur d'Espagne!</l>
@@ -339,7 +344,7 @@
                <sp n="2">
                   <speaker>HENRY</speaker>
                   <stage>
-                     <p/>
+                     <p>(gracieusement, à Don Gomez)</p>
                   </stage>
                   <l>À notre cour, monsieur, soyez le bienvenu</l>
                   <l>Car vous m'étiez déjà connu.</l>
@@ -361,23 +366,23 @@
                <sp n="3">
                   <speaker>DON GOMEZ</speaker>
                   <stage>
-                     <p/>
+                     <p>(surpris et à part)</p>
                   </stage>
                   <l>Une dame d'honneur! Norfolk dirait-il vrai?</l>
                </sp>
                <stage>
-                  <p/>
+                  <p>(Le roi les congédie, sauf Surrey)</p>
                </stage>
             </div>
             <div type="scene" n="4">
                <head>Scène IV</head>
                <stage>
-                  <p/>
+                  <p>(Henry, Surrey)</p>
                </stage>
                <sp n="1">
                   <speaker>HENRY</speaker>
                   <stage>
-                     <p/>
+                     <p>(se rapprochant vivement de Surrey)</p>
                   </stage>
                   <l>Donc le pape est hostile à ma secrète envie?</l>
                </sp>
@@ -430,18 +435,18 @@
                <sp n="8">
                   <speaker>SURREY</speaker>
                   <stage>
-                     <p/>
+                     <p>(apercevant Catherine)</p>
                   </stage>
                   <l>Sire, la reine!</l>
                   <stage>
-                     <p/>
+                     <p>(Surrey sort; entre Catherine.)</p>
                   </stage>
                </sp>
             </div>
             <div type="scene" n="5">
                <head>Scène V</head>
                <stage>
-                  <p/>
+                  <p>(Henry, Catherine)</p>
                </stage>
                <sp n="1">
                   <speaker>CATHERINE</speaker>
@@ -451,7 +456,7 @@
                <sp n="2">
                   <speaker>HENRY</speaker>
                   <stage>
-                     <p/>
+                     <p>(courtoisement)</p>
                   </stage>
                   <l>En effet, noble reine,</l>
                   <l>C'est pour vous présenter une dame d'honneur</l>
@@ -462,14 +467,14 @@
                <sp n="3">
                   <speaker>CATHERINE</speaker>
                   <stage>
-                     <p/>
+                     <p>(joyeusement)</p>
                   </stage>
                   <l>Anne Boleyn?</l>
                </sp>
                <sp n="4">
                   <speaker>HENRY</speaker>
                   <stage>
-                     <p/>
+                     <p>(inquiet)</p>
                   </stage>
                   <l>Quoi? vous la connaissez?</l>
                </sp>
@@ -477,11 +482,11 @@
                   <speaker>CATHERINE</speaker>
                   <l>Non!</l>
                   <stage>
-                     <p/>
+                     <p>(bas)</p>
                   </stage>
                   <l>Gardons à Don Gomez le secret de sa joie.</l>
                   <stage>
-                     <p/>
+                     <p>(haut)</p>
                   </stage>
                   <l>Le bruit de sa beauté parvint seul jusqu'à moi.</l>
                </sp>
@@ -497,7 +502,7 @@
                <sp n="8">
                   <speaker>HENRY</speaker>
                   <stage>
-                     <p/>
+                     <p>(gracieusement)</p>
                   </stage>
                   <l>Parlez! Vous plaire en tout est ma plus chère loi.</l>
                </sp>
@@ -509,7 +514,7 @@
                <sp n="10">
                   <speaker>HENRY</speaker>
                   <stage>
-                     <p/>
+                     <p>(doucement)</p>
                   </stage>
                   <l>Impossible.</l>
                </sp>
@@ -575,7 +580,7 @@
                <sp n="23">
                   <speaker>CATHERINE</speaker>
                   <stage>
-                     <p/>
+                     <p>(épouvantée)</p>
                   </stage>
                   <l>Que dites-vous? que dites-vous?</l>
                </sp>
@@ -595,7 +600,7 @@
                <sp n="26">
                   <speaker>HENRY</speaker>
                   <stage>
-                     <p/>
+                     <p>(avec hypocrisie)</p>
                   </stage>
                   <l>Que le pape soit infaillible</l>
                   <l>On le prétend et c'est possible,</l>
@@ -609,7 +614,7 @@
                <sp n="28">
                   <speaker>HENRY</speaker>
                   <stage>
-                     <p/>
+                     <p>(avec une feinte bonhomie)</p>
                   </stage>
                   <l>Moi? Mais à rien, Catherine chérie,</l>
                   <l>Rassurez-vous, j'ai voulu seulement</l>
@@ -618,7 +623,7 @@
                   <l>Et l'absence de fils, fait encor davantage</l>
                   <l>En bravant jusqu'à Dieu pour garder son serment.</l>
                   <stage>
-                     <p/>
+                     <p>(à part)</p>
                   </stage>
                   <l>A-t-elle compris? Elle tremble.</l>
                   <l>Du triste hymen qui nous rassemble</l>
@@ -630,7 +635,7 @@
                <sp n="29">
                   <speaker>CATHERINE</speaker>
                   <stage>
-                     <p/>
+                     <p>(bas, avec désespoir)</p>
                   </stage>
                   <l>Ah! j'ai tout compris et je tremble!</l>
                   <l>Du saint hymen qui nous rassemble,</l>
@@ -639,7 +644,7 @@
                   <l>Je me sens à jamais perdue</l>
                   <l>Dans son cœur!</l>
                   <stage>
-                     <p/>
+                     <p>(Bruit au dehors)</p>
                   </stage>
                </sp>
                <sp n="30">
@@ -647,87 +652,90 @@
                   <l>Mais voici venir, ce me semble,</l>
                   <l>Celle que dans ce lieu nous attendons ensemble.</l>
                   <stage>
-                     <p/>
+                     <p>(Entre Anne conduite par Surrey et accompagné de demoiselles d'honneur. De
+                     tous côtés entrent des seigneurs avec Norfolk et Don Gomez de Féria) </p>
                   </stage>
                </sp>
             </div>
             <div type="scene" n="6">
                <head>Scène VI</head>
                <stage>
-                  <p/>
+                  <p>(Les mêmes, Anne, Don Gomez, Norfolk, Surrey, Dames, Seigneurs)</p>
                </stage>
                <sp n="1">
                   <speaker>ANNE</speaker>
                   <stage>
-                     <p/>
+                     <p>(apercevant Don Gomez)</p>
                   </stage>
-                 <l>Don Gomez, juste ciel!</l>
                </sp>
                <sp n="2">
+                  <l>Don Gomez, juste ciel!</l>
+               </sp>
+               <sp n="3">
                   <speaker>DON GOMEZ</speaker>
                   <stage>
-                     <p/>
+                     <p>(apercevant Anne)</p>
                   </stage>
                   <l>C'est bien elle vraiment!</l>
                </sp>
-               <sp n="3">
+               <sp n="4">
                   <speaker>HENRY</speaker>
                   <stage>
-                     <p/>
+                     <p>(qui s'est aperçu de leur mouvement; à Anne)</p>
                   </stage>
                   <l>Vous vous reconnaissez, vous étant vus en France?</l>
                </sp>
-               <sp n="4">
+               <sp n="5">
                   <speaker>ANNE</speaker>
                   <stage>
-                     <p/>
+                     <p>(se remettant)</p>
                   </stage>
                   <l>Sire, précisément.</l>
                </sp>
-               <sp n="5">
+               <sp n="6">
                   <speaker>HENRY</speaker>
                   <stage>
-                     <p/>
+                     <p>(présentant Anne à Catherine)</p>
                   </stage>
                   <l>Reine, pour vous donner la nouvelle assurance</l>
                   <l>De notre amour royal, nous plaçons près de vous</l>
                   <l>Honorait autrefois d'une amitié jalouse;</l>
                   <l>Venant d'un peuple ami, ce présent nous est doux.</l>
                </sp>
-               <sp n="6">
+               <sp n="7">
                   <speaker>CHŒUR DE FEMMES</speaker>
                   <stage>
-                     <p/>
+                     <p>(entourant Anne)</p>
                   </stage>
                   <l>Salut à toi qui nous viens de la France!</l>
                   <l>Nos deux pays ont les mêmes aïeux,</l>
                   <l>Gage de paix et gage d'espérance,</l>
                   <l>Salut à toi, vierge au front radieux!</l>
                </sp>
-               <sp n="7">
+               <sp n="8">
                   <speaker>CATHERINE</speaker>
                   <stage>
-                     <p/>
+                     <p>(à part)</p>
                   </stage>
                   <l>De celle-là du moins, quoiqu'elle soit belle</l>
                   <l>Un autre amour protège mon bonheur.</l>
                   <stage>
-                     <p/>
+                     <p>(haut et affectueusement à Anne)</p>
                   </stage>
                   <l>Soyez la bienvenue ici, mademoiselle,</l>
                   <l>Ma nouvelle dame d'honneur.</l>
                </sp>
-               <sp n="8">
+               <sp n="9">
                   <speaker>ANNE</speaker>
                   <stage>
-                     <p/>
+                     <p>(avec résolution en lui baisant la main)</p>
                   </stage>
                   <l>Reine, à vous bien servir je mettrai tout mon zèle.</l>
                </sp>
-               <sp n="9">
+               <sp n="10">
                   <speaker>HENRY</speaker>
                   <stage>
-                     <p/>
+                     <p>(se rapprochant d'Anne)</p>
                   </stage>
                   <l>Pour honorer encore en vous</l>
                   <l>Un poste dont vous êtes digne,</l>
@@ -735,56 +743,61 @@
                   <l>Un titre désiré de tous:</l>
                   <l>De Pembroke soyez marquise!</l>
                </sp>
-               <sp n="10">
+               <sp n="11">
                   <speaker>LE CHŒUR</speaker>
                   <l>De Pembroke le roi la nomme aussi marquise!</l>
                </sp>
-               <sp n="11">
+               <sp n="12">
                   <speaker>ANNE</speaker>
                   <l>Sire, c'est vraiment me combler.</l>
                   <stage>
-                     <p/>
+                     <p> (On entend dans la coulisse les accents d'une marche funèbre: c'est celle
+                     qui conduit Buckingham au supplice. Catherine, Don Gomez, Surrey, Norfolk, les
+                     dames d'honneur et les seigneurs se précipitent à la fenêtre, tandis que Anne
+                     et le roi continuent à se parler sur le devant de la scène)</p>
                   </stage>
                </sp>
-               <sp n="12">
+               <sp n="13">
                   <speaker>HENRY</speaker>
                   <stage>
-                     <p/>
+                     <p>(bas et gracieusement)</p>
                   </stage>
                   <l>Quel bienfait pourrait égaler</l>
                   <l>L'éclat de cette grâce exquise!</l>
                </sp>
-               <sp n="13">
+               <sp n="14">
                   <speaker>ANNE</speaker>
                   <l>Non, c'est trop!</l>
                </sp>
-               <sp n="14">
+               <sp n="15">
                   <speaker>HENRY</speaker>
                   <l>Ce n'est pas assez!</l>
                   <stage>
-                     <p/>
+                     <p>(avec passion et plus bas encore)</p>
                   </stage>
                   <l>Si tu savais comme je t'aime!</l>
                </sp>
-               <sp n="15">
+               <sp n="16">
                   <speaker>ANNE</speaker>
                   <stage>
-                     <p/>
+                     <p>(à elle-même)</p>
                   </stage>
                   <l>Mon cœur s'emplit de rêves insensés.</l>
                </sp>
-               <sp n="16">
+               <sp n="17">
                   <speaker>HENRY</speaker>
                   <stage>
-                     <p/>
+                     <p>(même jeu)</p>
                   </stage>
                   <l>Je suis ici maître suprême!</l>
                   <l>Si tu savais comme je t'aime!</l>
                   <stage>
-                     <p/>
+                     <p>(Depuis un instant la marche funèbre de Buckingham se fait entendre; elle
+                     s'est rapprochée et on entend distinctement le chœur des moines qui
+                     l'accompagnent au supplice)</p>
                   </stage>
                </sp>
-               <sp n="17">
+               <sp n="18">
                   <speaker>CHŒUR DES MOINES</speaker>
                   <l>De profundis! de profundis!</l>
                   <l>Que Dieu dans sa miséricorde</l>
@@ -792,42 +805,43 @@
                   <l>Une place en son paradis!</l>
                   <l>De profundis!</l>
                </sp>
-               <sp n="18">
+               <sp n="19">
                   <speaker>ANNE</speaker>
                   <stage>
-                     <p/>
+                     <p>(épouvantée)</p>
                   </stage>
                   <l>Quel est ce chant de deuil dont mon âme est troublée?</l>
                </sp>
-               <sp n="19">
+               <sp n="20">
                   <speaker>HENRY</speaker>
                   <stage>
-                     <p/>
+                     <p>(avec indifférence)</p>
                   </stage>
                   <l>Rien! un traître qui meurt!</l>
                </sp>
-               <sp n="20">
+               <sp n="21">
                   <speaker>ANNE</speaker>
                   <stage>
-                     <p/>
+                     <p>(portant la main à ses yeux comme si une vision terrible
+                     l'obsédait)</p>
                   </stage>
                   <l>Une hache! du sang!</l>
                   <l>Ô sombre vision de l'enfer envolée!</l>
                   <l>J'ai peur!</l>
                </sp>
-               <sp n="21">
+               <sp n="22">
                   <speaker>HENRY</speaker>
                   <stage>
-                     <p/>
+                     <p>(tâchant de la rassurer)</p>
                   </stage>
                   <l>Ô ma colombe au regard innocent,</l>
                   <l>Reviens à toi, mon bien suprême!</l>
                   <stage>
-                     <p/>
+                     <p>(avec passion)</p>
                   </stage>
                   <l>Si tu savais comme je t'aime!</l>
                </sp>
-               <sp n="22">
+               <sp n="23">
                   <speaker>CHŒUR DES MOINES</speaker>
                   <l>De profundis! de profundis!</l>
                   <l>Que Dieu dans sa miséricorde</l>
@@ -835,39 +849,39 @@
                   <l>Une place en son paradis!</l>
                   <l>De profundis!</l>
                </sp>
-               <sp n="23">
+               <sp n="24">
                   <speaker>ANNE</speaker>
                   <l>Taisez-vous! taisez-vous! une hache, du sang!</l>
                   <l>Ô sombre vision qui sur mon front descend!</l>
                   <stage>
-                     <p/>
+                     <p>(La marche funèbre s'est éloignée.)</p>
                   </stage>
                   <l>C'était un sombre rêve</l>
                   <l>Qui s'envole et s'achève,</l>
                   <l>Mais dans mon cœur reste un secret effroi!</l>
                   <l>Ah! d'un coupable amour, Seigneur, protège-moi.</l>
                </sp>
-               <sp n="24">
+               <sp n="25">
                   <speaker>HENRY</speaker>
                   <stage>
-                     <p/>
+                     <p>(regardant Anne)</p>
                   </stage>
                   <l>C'était un sombre rêve</l>
                   <l>Qui s'envole et s'achève,</l>
                   <l>La mort est due à qui trahit son roi.</l>
                   <l>Non! rien ne la saurait défendre contre moi.</l>
                </sp>
-               <sp n="25">
+               <sp n="26">
                   <speaker>DON GOMEZ</speaker>
                   <stage>
-                     <p/>
+                     <p>(regardant Anne)</p>
                   </stage>
                   <l>Hélas, c'est mon doux rêve</l>
                   <l>Qui s'envole et s'achève!</l>
                   <l>Comment lutter contre l'amour d'un roi?</l>
                   <l>De ce tourment jaloux, Seigneur, protège-moi.</l>
                </sp>
-               <sp n="26">
+               <sp n="27">
                   <speaker>CATHERINE ET LE CHŒUR</speaker>
                   <l>Hélas! c'est sous le glaive</l>
                   <l>Qu'un sort brillant s'achève!</l>
@@ -879,12 +893,13 @@
          <div type="act" n="2">
             <head>ACTE DEUXIÈME</head>
             <stage>
-               <p/>
+               <p> (Dans les jardins de Richmond. Un carrefour de verdure auquel aboutissent
+               plusieurs avenues. Apprêts d'une fête)</p>
             </stage>
             <div type="scene" n="1">
                <head>Scène I</head>
                <stage>
-                  <p/>
+                  <p>(Don Gomez)</p>
                </stage>
                <sp n="1">
                   <speaker>CHŒUR</speaker>
@@ -898,7 +913,7 @@
                <sp n="2">
                   <speaker>DON GOMEZ</speaker>
                   <stage>
-                     <p/>
+                     <p>(sombre)</p>
                   </stage>
                   <l>Norfolk avait dit vrai! J'ai vainement douté!</l>
                   <l>En vain, pour me rapprocher d'elle</l>
@@ -928,7 +943,8 @@
                   <l>Ô sort plus dur que le trépas!</l>
                   <l>Jamais je ne la vis si belle!</l>
                   <stage>
-                     <p/>
+                     <p>(Anne apparaît au fond d'une avenue accompagnée de femmes qui chantent sur
+                     un rythme caressant.)</p>
                   </stage>
                   <l>C'est elle! La douleur a brisé ma colère!</l>
                </sp>
@@ -953,13 +969,14 @@
                   <l>Pleine de charme et d'oublis.</l>
                </sp>
                <stage>
-                  <p/>
+                  <p>(En apercevant Don Gomez, Anne fait un geste de surprise et de frayeur, puis
+                  fait signe à ses femmes de s'éloigner.)</p>
                </stage>
             </div>
             <div type="scene" n="2">
                <head>Scène II</head>
                <stage>
-                  <p/>
+                  <p>(Don Gomez, Anne)</p>
                </stage>
                <sp n="1">
                   <speaker>DON GOMEZ</speaker>
@@ -968,7 +985,7 @@
                <sp n="2">
                   <speaker>ANNE</speaker>
                   <stage>
-                     <p/>
+                     <p>(allant à lui avec une grâce forcée)</p>
                   </stage>
                   <l>Je suis heureuse sur mon âme,</l>
                   <l>Gomez, de vous revoir.</l>
@@ -993,7 +1010,7 @@
                <sp n="6">
                   <speaker>ANNE</speaker>
                   <stage>
-                     <p/>
+                     <p>(tristement)</p>
                   </stage>
                   <l>Et qui vous dit que je l'oublie?</l>
                </sp>
@@ -1014,7 +1031,7 @@
                <sp n="10">
                   <speaker>ANNE</speaker>
                   <stage>
-                     <p/>
+                     <p>(apercevant Henry VIII)</p>
                   </stage>
                   <l>Ciel! le Roi!</l>
                </sp>
@@ -1022,12 +1039,12 @@
             <div type="scene" n="3">
                <head>Scène III</head>
                <stage>
-                  <p/>
+                  <p>(Henry, Don Gomez, Anne)</p>
                </stage>
                <sp n="1">
                   <speaker>HENRY</speaker>
                   <stage>
-                     <p/>
+                     <p>(avec étonnement, à Don Gomez)</p>
                   </stage>
                   <l>Vous ici, monsieur, faisant la cour</l>
                   <l>À la belle marquise?</l>
@@ -1042,7 +1059,7 @@
                   <l>Ce fut assez pour vous soumettre à son empire!</l>
                   <l>Je lui donne ce soir</l>
                   <stage>
-                     <p/>
+                     <p>(d'un air de menace)</p>
                   </stage>
                   <l>Une fête ici même et compte vous y voir.</l>
                </sp>
@@ -1051,13 +1068,13 @@
                   <l>Sire, j'obéirai.</l>
                </sp>
                <stage>
-                  <p/>
+                  <p>(Il s'incline et se retire en jetant sur Anne un douloureux regard.)</p>
                </stage>
             </div>
             <div type="scene" n="4">
                <head>Scène IV</head>
                <stage>
-                  <p/>
+                  <p>(Henry, Anne)</p>
                </stage>
                <sp n="1">
                   <speaker>HENRY</speaker>
@@ -1069,7 +1086,7 @@
                <sp n="2">
                   <speaker>ANNE</speaker>
                   <stage>
-                     <p/>
+                     <p>(avec fermeté)</p>
                   </stage>
                   <l>Je vous le dis encore;</l>
                   <l>Sire, n'espérez rien de moi!</l>
@@ -1121,7 +1138,7 @@
                <sp n="10">
                   <speaker>ANNE</speaker>
                   <stage>
-                     <p/>
+                     <p>(s'attendrissant)</p>
                   </stage>
                   <l>Oh! malgré moi, sa voix me touche!</l>
                </sp>
@@ -1157,21 +1174,21 @@
                <sp n="16">
                   <speaker>ANNE</speaker>
                   <stage>
-                     <p/>
+                     <p>(avec un effort)</p>
                   </stage>
                   <l>Ah! Sire, gardez votre amour!</l>
                </sp>
                <sp n="17">
                   <speaker>HENRY</speaker>
                   <stage>
-                     <p/>
+                     <p>(essayant de la prendre dans ses bras)</p>
                   </stage>
                   <l>Je t'aime, je te veux, ma belle enchanteresse!</l>
                </sp>
                <sp n="18">
                   <speaker>ANNE</speaker>
                   <stage>
-                     <p/>
+                     <p>(se réveillant de son rêve et le repoussant)</p>
                   </stage>
                   <l>Non! non! jamais votre maîtresse!</l>
                </sp>
@@ -1183,7 +1200,7 @@
                <sp n="20">
                   <speaker>ANNE</speaker>
                   <stage>
-                     <p/>
+                     <p>(avec éclat)</p>
                   </stage>
                   <l>Que dites-vous là?</l>
                   <l>Votre femme?</l>
@@ -1204,7 +1221,7 @@
                <sp n="24">
                   <speaker>ANNE</speaker>
                   <stage>
-                     <p/>
+                     <p>(très troublée)</p>
                   </stage>
                   <l>Mais ce lien sacré</l>
                   <l>Qui vous fait son époux?</l>
@@ -1220,7 +1237,7 @@
                <sp n="27">
                   <speaker>HENRY</speaker>
                   <stage>
-                     <p/>
+                     <p>(tendrement)</p>
                   </stage>
                   <l>Non! ce n'est pas un rêve!</l>
                   <l>C'est bientôt la réalité,</l>
@@ -1233,7 +1250,7 @@
                <sp n="28">
                   <speaker>ANNE</speaker>
                   <stage>
-                     <p/>
+                     <p>(comme affolée)</p>
                   </stage>
                   <l>Reine! reine! Je serais reine!</l>
                </sp>
@@ -1245,7 +1262,7 @@
                <sp n="30">
                   <speaker>ANNE</speaker>
                   <stage>
-                     <p/>
+                     <p>(même jeu)</p>
                   </stage>
                   <l>Reine! reine! je serais reine!</l>
                </sp>
@@ -1269,20 +1286,20 @@
                   <l>Fidèle à moi jusqu'à la mort!</l>
                   <l>Aimons-nous d'un amour profond puissant et fort!</l>
                   <stage>
-                     <p/>
+                     <p>(Anne est dans les bras d'Henry VIII.)</p>
                   </stage>
                </sp>
                <sp n="34">
                   <speaker>HENRY</speaker>
                   <stage>
-                     <p/>
+                     <p>(tout bas)</p>
                   </stage>
                   <l>Tu seras, n'est-ce pas, ma femme?</l>
                </sp>
                <sp n="35">
                   <speaker>ANNE</speaker>
                   <stage>
-                     <p/>
+                     <p>(plus bas encore)</p>
                   </stage>
                   <l>Oui, votre femme,</l>
                   <l>Jurez-le!</l>
@@ -1290,19 +1307,20 @@
                <sp n="36">
                   <speaker>HENRY</speaker>
                   <stage>
-                     <p/>
+                     <p>(solennellement)</p>
                   </stage>
                   <l>Sur mon âme</l>
                   <l>Je le jure! Je suis à toi jusqu'à la mort.</l>
                </sp>
                <stage>
-                  <p/>
+                  <p>(Surrey apparaît et le roi s'arrache des bras d'Anne pour le suivre, mais non
+                  sans échanger avec elle un regard d'adieu plein de tendresse) </p>
                </stage>
             </div>
             <div type="scene" n="5">
                <head>Scène V</head>
                <stage>
-                  <p/>
+                  <p>(Anne)</p>
                </stage>
                <sp n="1">
                   <speaker>ANNE</speaker>
@@ -1326,22 +1344,22 @@
                   <l>L'humble fille d'hier sera reine demain! </l>
                </sp>
                <stage>
-                  <p/>
+                  <p>(À ce moment apparaît Catherine qui s'avance lentement vers elle.)</p>
                </stage>
             </div>
             <div type="scene" n="6">
                <head>Scène VI </head>
                <stage>
-                  <p/>
+                  <p>(Anne, Catherine)</p>
                </stage>
                <sp n="1">
                   <speaker>CATHERINE</speaker>
                   <stage>
-                     <p/>
+                     <p>(lui posant la main sur l'épaule)</p>
                   </stage>
                   <l>Pauvre fille! que Dieu t'arrête en ton chemin.</l>
                   <stage>
-                     <p/>
+                     <p>(avec autorité)</p>
                   </stage>
                   <l>Regarde-moi! Je suis la reine d'Angleterre!</l>
                   <l>La reine au cœur clément, qui, te voyant à terre,</l>
@@ -1372,7 +1390,7 @@
                <sp n="5">
                   <speaker>CATHERINE</speaker>
                   <stage>
-                     <p/>
+                     <p>(ironiquement)</p>
                   </stage>
                   <l>C'est pour le fuir qu'on te vit, en effet,</l>
                   <l>En accepter titres, honneurs, fortune?</l>
@@ -1385,7 +1403,7 @@
                <sp n="7">
                   <speaker>CATHERINE</speaker>
                   <stage>
-                     <p/>
+                     <p>(même jeu)</p>
                   </stage>
                   <l>Tu ne demandais rien? Sans en être enhardie,</l>
                   <l>Tu souffrais, des faveurs dont t'accablait le roi,</l>
@@ -1400,7 +1418,7 @@
                <sp n="8">
                   <speaker>ANNE</speaker>
                   <stage>
-                     <p/>
+                     <p>(se relevant furieuse)</p>
                   </stage>
                   <l>Dieu m'est témoin, madame,</l>
                   <l>Que je voulais vous respecter ici!</l>
@@ -1426,19 +1444,20 @@
             <div type="scene" n="7">
                <head>Scène VII</head>
                <stage>
-                  <p/>
+                  <p>(Les mêmes, Henry, Don Gomez, Lady Clarence, Surrey, Norfolk, puis le
+                  Légat)</p>
                </stage>
                <sp n="1">
                   <speaker>HENRY</speaker>
                   <stage>
-                     <p/>
+                     <p>(avec colère)</p>
                   </stage>
                   <l>Eh! quoi, madame, vous ici?</l>
                </sp>
                <sp n="2">
                   <speaker>ANNE</speaker>
                   <stage>
-                     <p/>
+                     <p>(s'avançant résolument)</p>
                   </stage>
                   <l>Sire, défendez-moi.</l>
                </sp>
@@ -1456,7 +1475,7 @@
                <sp n="5">
                   <speaker>CATHERINE</speaker>
                   <stage>
-                     <p/>
+                     <p>(épouvantée)</p>
                   </stage>
                   <l>Pas encor?</l>
                </sp>
@@ -1470,29 +1489,29 @@
                <sp n="7">
                   <speaker>NORFOLK</speaker>
                   <stage>
-                     <p/>
+                     <p>(annonçant le légat qui le suit)</p>
                   </stage>
                   <l>Monseigneur, le légat du pape.</l>
                </sp>
                <sp n="8">
                   <speaker>CATHERINE</speaker>
                   <stage>
-                     <p/>
+                     <p>(avec un cri d'espoir)</p>
                   </stage>
                   <l>Mon refuge!</l>
                </sp>
                <sp n="9">
                   <speaker>HENRY</speaker>
                   <stage>
-                     <p/>
+                     <p>(à Catherine)</p>
                   </stage>
                   <l>Non! c'est le Parlement qui sera votre juge.</l>
                   <stage>
-                     <p/>
+                     <p>(à Norfolk)</p>
                   </stage>
                   <l>Qu'il soit le bienvenu.</l>
                   <stage>
-                     <p/>
+                     <p>(Le légat est introduit)</p>
                   </stage>
                </sp>
                <sp n="10">
@@ -1506,28 +1525,36 @@
                <sp n="11">
                   <speaker>HENRY</speaker>
                   <stage>
-                     <p/>
+                     <p>(au légat)</p>
                   </stage>
                   <l>De l'écouter demain nous aurons le loisir.</l>
                   <stage>
-                     <p/>
+                     <p>(à Anne)</p>
                   </stage>
                   <l>Madame, en attendant, soyons tout au plaisir.</l>
                </sp>
                <stage>
-                  <p/>
+                  <p>(Un bouffon vient annoncer au roi que tout est prêt pour la fête. Le roi fait
+                  signe qu'on peut commencer. Catherine et le légat se retirent. Les autres
+                  personnages se dispersent dans les jardins, Henry sort, donnant la main à
+                  Anne.)</p>
                </stage>
             </div>
          </div>
          <div type="act" n="3">
             <head>ACTE TROISIÈME </head>
             <stage>
-               <p/>
+               <p>(La salle du Parlement où a lieu le jugement de la Reine)</p>
             </stage>
             <div type="scene" n="1">
                <head>Scène I</head>
                <stage>
-                  <p/>
+                  <p>(Henry, Don Gomez, Catherine, Lady Clarence, Garter, Cranmer, puis Campeggio,
+                  Juges, Gentilshommes, Huissiers La salle immense avec son public d'assistants.
+                  Fanfares au dehors, puis marche sur laquelle est introduit le cortège. Le Roi est
+                  conduit à son trône occupant la gauche; puis la Reine est amenée sur un trône
+                  situé vis-à-vis et Gomez s'assied à ses pieds. Les juges entrent les derniers et
+                  prennent place)</p>
                </stage>
                <sp n="1">
                   <speaker>GARTER</speaker>
@@ -1537,7 +1564,7 @@
                <sp n="2">
                   <speaker>L'ARCHEVÊQUE DE CANTERBURY</speaker>
                   <stage>
-                     <p/>
+                     <p>(solennellement)</p>
                   </stage>
                   <l>Toi qui veilles sur l'Angleterre,</l>
                   <l>Dieu puissant, dicte-nous ta loi.</l>
@@ -1553,7 +1580,7 @@
                <sp n="4">
                   <speaker>L'HUISSIER</speaker>
                   <stage>
-                     <p/>
+                     <p>(répétant)</p>
                   </stage>
                   <l>Henry, roi d'Angleterre, avancez devant nous.</l>
                </sp>
@@ -1568,7 +1595,7 @@
                <sp n="7">
                   <speaker>L'HUISSIER</speaker>
                   <stage>
-                     <p/>
+                     <p>(répétant)</p>
                   </stage>
                   <l>Ô reine Catherine, avancez devant nous.</l>
                </sp>
@@ -1579,7 +1606,7 @@
                <sp n="9">
                   <speaker>HENRY</speaker>
                   <stage>
-                     <p/>
+                     <p>(se levant)</p>
                   </stage>
                   <l>Vous tous qui m'écoutez, gens d'Église et de loi,</l>
                   <l>En ce jour solennel, votre seigneur et roi,</l>
@@ -1597,7 +1624,7 @@
                <sp n="11">
                   <speaker>CATHERINE</speaker>
                   <stage>
-                     <p/>
+                     <p>(descendant de son trône et s'adressant au roi)</p>
                   </stage>
                   <l>À ta bonté souveraine,</l>
                   <l>Seule, dans cet instant, je m'adresse, ô mon roi!</l>
@@ -1620,12 +1647,12 @@
                <sp n="12">
                   <speaker>CHŒUR DES ASSISTANTS</speaker>
                   <stage>
-                     <p/>
+                     <p>(très bas)</p>
                   </stage>
                   <l>Ah! pauvre femme et pauvre reine!</l>
                   <l>Comment ne pas compatir à sa peine?</l>
                   <stage>
-                     <p/>
+                     <p>(Signes d'impatience du roi)</p>
                   </stage>
                </sp>
                <sp n="13">
@@ -1646,19 +1673,19 @@
                <sp n="14">
                   <speaker>CHŒUR DES ASSISTANTS</speaker>
                   <stage>
-                     <p/>
+                     <p>(murmures)</p>
                   </stage>
                   <l>Ah! pauvre femme! ah! pauvre reine!</l>
                   <l>Comment ne pas compatir à sa peine?</l>
                   <l>Pour elle nous implorons Dieu.</l>
                   <stage>
-                     <p/>
+                     <p>(Signes de mécontentement du roi)</p>
                   </stage>
                </sp>
                <sp n="15">
                   <speaker>CATHERINE</speaker>
                   <stage>
-                     <p/>
+                     <p>(se tournant vers ses juges)</p>
                   </stage>
                   <l>Et vous, messieurs, que le roi fit mes juges,</l>
                   <l>Si la pitié règne en vos cœurs,</l>
@@ -1669,13 +1696,13 @@
                   <l>Mais rendez-moi l'époux que j'aime,</l>
                   <l>Et dont l'adieu serait ma mort!</l>
                   <stage>
-                     <p/>
+                     <p>(Elle sanglote)</p>
                   </stage>
                </sp>
                <sp n="16">
                   <speaker>CHŒUR DES ASSISTANTS</speaker>
                   <stage>
-                     <p/>
+                     <p>(plus fort)</p>
                   </stage>
                   <l>Ah! pauvre femme et pauvre reine!</l>
                   <l>Comment ne pas compatir à sa peine?</l>
@@ -1685,18 +1712,19 @@
                <sp n="17">
                   <speaker>HENRY</speaker>
                   <stage>
-                     <p/>
+                     <p>(se levant furieux et promenant sur les juges et sur l'assistance des
+                     regard menaçants)</p>
                   </stage>
                   <l>Il suffit.</l>
                </sp>
                <sp n="18">
                   <speaker>CATHERINE</speaker>
                   <stage>
-                     <p/>
+                     <p>(avec un geste de désespoir)</p>
                   </stage>
                   <l>Ah! je suis perdue!</l>
                   <stage>
-                     <p/>
+                     <p>(Elle va s'asseoir avec découragement.)</p>
                   </stage>
                </sp>
                <sp n="19">
@@ -1708,7 +1736,7 @@
                <sp n="20">
                   <speaker>DON GOMEZ</speaker>
                   <stage>
-                     <p/>
+                     <p>(se levant)</p>
                   </stage>
                   <l>Je serais celui-là que vous n'attendiez guère.</l>
                   <l>La reine est espagnole et je suis son sujet.</l>
@@ -1723,17 +1751,17 @@
                <sp n="22">
                   <speaker>UN AUTRE</speaker>
                   <stage>
-                     <p/>
+                     <p>(se retournant vers le roi)</p>
                   </stage>
                   <l>C est au roi de punir qui nous vient offenser!</l>
                   <stage>
-                     <p/>
+                     <p>(Murmures de la foule.)</p>
                   </stage>
                </sp>
                <sp n="23">
                   <speaker>HENRY</speaker>
                   <stage>
-                     <p/>
+                     <p>(froidement et avec hauteur)</p>
                   </stage>
                   <l>Monsieur l'ambassadeur, si j'ai compris la chose,</l>
                   <l>Pour peser sur l'arrêt vous comptiez sur l'effroi.</l>
@@ -1751,7 +1779,8 @@
                   <l>N'ont pas coutume de se taire,</l>
                   <l>Pour laisser parler l'étranger!</l>
                   <stage>
-                     <p/>
+                     <p>(Les juges commencent à délibérer. Curiosité inquiète des
+                     assistants.)</p>
                   </stage>
                </sp>
                <sp n="25">
@@ -1786,17 +1815,17 @@
                <sp n="29">
                   <speaker>UN OFFICIER</speaker>
                   <stage>
-                     <p/>
+                     <p>(annonçant)</p>
                   </stage>
                   <l>Sire, le Légat du Saint-Père.</l>
                   <stage>
-                     <p/>
+                     <p>(Entrée du Légat suivi des cardinaux qui se rangent derrière lui)</p>
                   </stage>
                </sp>
                <sp n="30">
                   <speaker>LE LÉGAT</speaker>
                   <stage>
-                     <p/>
+                     <p>(tirant de sa robe la bulle du pape)</p>
                   </stage>
                   <l>Au nom de Clément sept, pontife souverain,</l>
                   <l>Délibérant en paix et que nul ne contraint,</l>
@@ -1810,7 +1839,8 @@
                   <l>C'est fort bien! mes sujets vous répondront pour moi.</l>
                   <l>Qu'on fasse entrer le peuple!</l>
                   <stage>
-                     <p/>
+                     <p> (Les portes sont ouvertes et l'enceinte s'emplit d'une foule
+                     nombreuse)</p>
                   </stage>
                   <l>Enfants de l'Angleterre,</l>
                   <l>Libres fils d'une terre libre,</l>
@@ -1866,7 +1896,7 @@
                   <l>Et pour sa femme il prend dame Anne Boleyn,</l>
                   <l>Marquise de Pembroke!</l>
                   <stage>
-                     <p/>
+                     <p>(La reine pousse un cri et tombe à demi évanouie; on l'entraîne.)</p>
                   </stage>
                </sp>
                <sp n="42">
@@ -1874,7 +1904,7 @@
                   <l>Au nom du Dieu que l'on renie,</l>
                   <l>Henry huit, je t'excommunie!</l>
                   <stage>
-                     <p/>
+                     <p>(Le Légat sort)</p>
                   </stage>
                </sp>
                <sp n="43">
@@ -1898,7 +1928,8 @@
                   <l>Reprend sa fierté!</l>
                </sp>
                <stage>
-                  <p/>
+                  <p>(Cris de Vive le roi! Des drapeaux s'agitent dans la foule. Enthousiasme
+                  général)</p>
                </stage>
             </div>
          </div>
@@ -1907,22 +1938,28 @@
             <div type="tableau" n="1">
                <head>Premier Tableau </head>
                <stage>
-                  <p/>
+                  <p>(Chez Anne Boleyn. Un salon dans le goût de la Renaissance anglaise. Au lever
+                  du rideau, dames et seigneurs répètent, au fond du théâtre, les pas d'un ballet
+                  galant en l'honneur du roi dont c'est la fête native. Anne préside à cette
+                  répétition)</p>
                </stage>
                <div type="scene" n="1">
                   <head>Scène I</head>
                   <stage>
-                     <p/>
+                     <p>(Anne, Norfolk, Surrey, Seigneurs, Dames Sur une musique de scène, la danse
+                     se poursuit dans le fond. Anne suit avec intérêt et fait des signes
+                     d'assentiment. Pendant ce temps-là, Norfolk et Surrey viennent causer dans un
+                     coin en avant) </p>
                   </stage>
                   <sp n="1">
                      <speaker>NORFOLK</speaker>
                      <stage>
-                        <p/>
+                        <p>(à Anne)</p>
                      </stage>
                      <l>Bravo! du divertissement</l>
                      <l>Le roi, je crois, sera content.</l>
                      <stage>
-                        <p/>
+                        <p>(à Surrey mystérieusement)</p>
                      </stage>
                      <l>Avez-vous remarqué l'humeur sombre et farouche</l>
                      <l>Du roi depuis le jour de son nouvel hymen?</l>
@@ -1943,7 +1980,7 @@
                   <sp n="5">
                      <speaker>NORFOLK</speaker>
                      <stage>
-                        <p/>
+                        <p>(avec effroi)</p>
                      </stage>
                      <l>Taisez-vous!</l>
                   </sp>
@@ -1977,29 +2014,30 @@
                      <speaker>NORFOLK</speaker>
                      <l>Il punit celle-là d'avoir été fidèle!</l>
                      <stage>
-                        <p/>
+                        <p>(Bravos dans le fond. Les deux seigneurs se prennent le bras et rentrent
+                        dans les groupes.)</p>
                      </stage>
                   </sp>
                   <sp n="12">
                      <speaker>UN HUISSIER</speaker>
                      <stage>
-                        <p/>
+                        <p>(annonçant)</p>
                      </stage>
                      <l>Monsieur l'ambassadeur d'Espagne!</l>
                      <stage>
-                        <p/>
+                        <p>(Mouvement de surprise.)</p>
                      </stage>
                   </sp>
                </div>
                <div type="scene" n="2">
                   <head>Scène II </head>
                   <stage>
-                     <p/>
+                     <p>(Les mêmes, Don Gomez)</p>
                   </stage>
                   <sp n="1">
                      <speaker>ANNE</speaker>
                      <stage>
-                        <p/>
+                        <p>(avec terreur)</p>
                      </stage>
                      <l>Encore lui!</l>
                      <l>Que vient-il faire à la cour aujourd'hui?</l>
@@ -2008,11 +2046,11 @@
                   <sp n="2">
                      <speaker>DON GOMEZ</speaker>
                      <stage>
-                        <p/>
+                        <p>(entrant en saluant)</p>
                      </stage>
                      <l>Salut, messieurs!</l>
                      <stage>
-                        <p/>
+                        <p>(apercevant Anne)</p>
                      </stage>
                      <l>Pardon, madame, mais de grâce</l>
                      <l>Si je vous trouble, excusez-moi.</l>
@@ -2024,12 +2062,12 @@
                      <speaker>ANNE</speaker>
                      <l>Ô ciel!</l>
                      <stage>
-                        <p/>
+                        <p>(aux dames et seigneurs)</p>
                      </stage>
                      <l>Éloignez-vous</l>
                      <l>Un instant seulement.</l>
                      <stage>
-                        <p/>
+                        <p>(Les dames et seigneurs obéissent, en chantant en sourdine.)</p>
                      </stage>
                   </sp>
                   <sp n="4">
@@ -2041,12 +2079,12 @@
                <div type="scene" n="3">
                   <head>Scène III </head>
                   <stage>
-                     <p/>
+                     <p>(Anne, Don Gomez)</p>
                   </stage>
                   <sp n="1">
                      <speaker>ANNE</speaker>
                      <stage>
-                        <p/>
+                        <p>(fiévreusement)</p>
                      </stage>
                      <l>Vous venez pour me perdre ici?</l>
                   </sp>
@@ -2099,7 +2137,7 @@
                   <sp n="11">
                      <speaker>ANNE</speaker>
                      <stage>
-                        <p/>
+                        <p>(joyeusement)</p>
                      </stage>
                      <l>Ainsi vous les avez brûlées?</l>
                   </sp>
@@ -2121,7 +2159,7 @@
                   <sp n="15">
                      <speaker>ANNE</speaker>
                      <stage>
-                        <p/>
+                        <p>(avec terreur)</p>
                      </stage>
                      <l>Où donc est-elle?</l>
                   </sp>
@@ -2135,29 +2173,29 @@
                      <l>Terreur mortelle!</l>
                   </sp>
                   <stage>
-                     <p/>
+                     <p>(Henry apparaît.)</p>
                   </stage>
                </div>
                <div type="scene" n="4">
                   <head>Scène IV</head>
                   <stage>
-                     <p/>
+                     <p>(Les mêmes, Henry)</p>
                   </stage>
                   <sp n="1">
                      <speaker>HENRY</speaker>
                      <stage>
-                        <p/>
+                        <p>(à part)</p>
                      </stage>
                      <l>Elle encore avec lui! Nous allons bien savoir...</l>
                      <stage>
-                        <p/>
+                        <p>(à Anne, brusquement)</p>
                      </stage>
                      <l>Madame, laissez-nous.</l>
                   </sp>
                   <sp n="2">
                      <speaker>ANNE</speaker>
                      <stage>
-                        <p/>
+                        <p>(se retirent tremblante)</p>
                      </stage>
                      <l>Je n'ai plus qu'un espoir.</l>
                   </sp>
@@ -2165,12 +2203,12 @@
                <div type="scene" n="5">
                   <head>Scène V</head>
                   <stage>
-                     <p/>
+                     <p>(Henry, Don Gomez)</p>
                   </stage>
                   <sp n="1">
                      <speaker>HENRY</speaker>
                      <stage>
-                        <p/>
+                        <p>(durement)</p>
                      </stage>
                      <l>Après ce qui s'était passé, monsieur, naguère,</l>
                      <l>Ne soyez pas surpris si je n'espérais guère</l>
@@ -2183,7 +2221,7 @@
                   <sp n="2">
                      <speaker>DON GOMEZ</speaker>
                      <stage>
-                        <p/>
+                        <p>(froidement)</p>
                      </stage>
                      <l>Sire, de mon côté</l>
                      <l>Si j'ai gardé le poste autrefois accepté,</l>
@@ -2193,7 +2231,7 @@
                   <sp n="3">
                      <speaker>HENRY</speaker>
                      <stage>
-                        <p/>
+                        <p>(se radoucissant subitement)</p>
                      </stage>
                      <l>De dame Catherine, en effet, parlez-moi.</l>
                   </sp>
@@ -2226,7 +2264,7 @@
                   <sp n="8">
                      <speaker>DON GOMEZ</speaker>
                      <stage>
-                        <p/>
+                        <p>(saluant)</p>
                      </stage>
                      <l>Je me retire donc.</l>
                   </sp>
@@ -2241,11 +2279,11 @@
                   <sp n="11">
                      <speaker>HENRY</speaker>
                      <stage>
-                        <p/>
+                        <p>(d'un accent menaçant)</p>
                      </stage>
                      <l>À Kimbolt vous allez le savoir.</l>
                      <stage>
-                        <p/>
+                        <p>(à part)</p>
                      </stage>
                      <l>Qui sait si le secret que je cherche n'est pas</l>
                      <l>Aux mains de Catherine? Ensemble seuls là-bas,</l>
@@ -2257,7 +2295,7 @@
                   <sp n="12">
                      <speaker>DON GOMEZ</speaker>
                      <stage>
-                        <p/>
+                        <p>(à part)</p>
                      </stage>
                      <l>Quel dessein à Kimbolt l'entraîne?</l>
                      <l>Que peut-il vouloir à la reine?</l>
@@ -2267,7 +2305,7 @@
                   <sp n="13">
                      <speaker>HENRY</speaker>
                      <stage>
-                        <p/>
+                        <p>(à part)</p>
                      </stage>
                      <l>Enfin ma vengeance est prochaine!</l>
                      <l>Je ferai bien parler la reine</l>
@@ -2279,17 +2317,18 @@
             <div type="tableau" n="2">
                <head>Deuxième Tableau</head>
                <stage>
-                  <p/>
+                  <p>(Dans la retraite de Catherine à Kimbolt)</p>
                </stage>
-               <div type="scene" n="6">
+               <div type="scene" n="1">
                   <head>Scène I</head>
                   <stage>
-                     <p/>
+                     <p>(Au lever du rideau, la reine est assise auprès d'une haute cheminée. Chant
+                     du dehors où le peuple célèbre le jour natal de Henry VIII)</p>
                   </stage>
                   <sp n="1">
                      <speaker>CHŒUR DU PEUPLE</speaker>
                      <stage>
-                        <p/>
+                        <p>(au dehors)</p>
                      </stage>
                      <l>Vive notre roi!</l>
                      <l>En ce jour prospère,</l>
@@ -2299,7 +2338,7 @@
                   <sp n="2">
                      <speaker>CATHERINE</speaker>
                      <stage>
-                        <p/>
+                        <p>(tristement)</p>
                      </stage>
                      <l>Ô souvenirs cruels! Là-bas, dans ma patrie</l>
                      <l>Le nom du roi mon père était ainsi fêté!</l>
@@ -2323,28 +2362,29 @@
                      <l>De leur berceau garde des fleurs.</l>
                   </sp>
                   <stage>
-                     <p/>
+                     <p>(Sur un appel de Catherine, ses femmes entrent)</p>
                   </stage>
                </div>
-               <div type="scene" n="7">
+               <div type="scene" n="2">
                   <head>Scène II</head>
                   <stage>
-                     <p/>
+                     <p>(Catherine, ses Femmes)</p>
                   </stage>
                   <sp n="1">
                      <speaker>CATHERINE</speaker>
                      <stage>
-                        <p/>
+                        <p>(les appelant autour d'elle et leur distribuant des bijoux)</p>
                      </stage>
                      <l>Chère filles venez! Prête à quitter la terre,</l>
                      <l>Je veux que vous gardiez un souvenir de moi...</l>
                      <l>À toi cet anneau d'or, cette croix est pour toi,</l>
                      <l>Gardez de mon amour cette preuve dernière.</l>
                      <stage>
-                        <p/>
+                        <p>(prenant un livre d'heures et y mettant une lettre qu'elle a tirée du
+                        coffret où étaient ses bijoux.)</p>
                      </stage>
                      <stage>
-                        <p/>
+                        <p>(à apart)</p>
                      </stage>
                      <l>Quant au livre où je lis chaque soir ma prière,</l>
                      <l>Il est pour Don Gomez. Il y retrouvera</l>
@@ -2355,7 +2395,7 @@
                   <sp n="2">
                      <speaker>UNE FEMME</speaker>
                      <stage>
-                        <p/>
+                        <p>(entrant)</p>
                      </stage>
                      <l>Reine, une femme est là, qui, sous son voile, attend</l>
                      <l>L'heure de vous parler.</l>
@@ -2363,36 +2403,36 @@
                   <sp n="3">
                      <speaker>CATHERINE</speaker>
                      <stage>
-                        <p/>
+                        <p>(éloignant ses femmes)</p>
                      </stage>
                      <l>Qu'on nous laisse un instant!</l>
                      <l>Qui sait, quelque douleur confiante à la mienne...</l>
                      <stage>
-                        <p/>
+                        <p>(Les femmes s'éloignent. Anne voilée; à Anne)</p>
                      </stage>
                      <l>Entrez, vous qui souffrez sans doute... car ici</l>
                      <l>C'est le triste séjour du deuil et du souci.</l>
                   </sp>
                   <stage>
-                     <p/>
+                     <p>(Anne soulève son voile.)</p>
                   </stage>
                </div>
-               <div type="scene" n="8">
+               <div type="scene" n="3">
                   <head>Scène III</head>
                   <stage>
-                     <p/>
+                     <p>(Catherine, Anne)</p>
                   </stage>
                   <sp n="1">
                      <speaker>CATHERINE</speaker>
                      <stage>
-                        <p/>
+                        <p>(après avoir poussé un cri de surprise et d'indignation)</p>
                      </stage>
                      <l>Anne! venez-vous donc pour me braver encore?</l>
                   </sp>
                   <sp n="2">
                      <speaker>ANNE</speaker>
                      <stage>
-                        <p/>
+                        <p>(humblement)</p>
                      </stage>
                      <l>Vous braver! non! je vous implore.</l>
                   </sp>
@@ -2437,7 +2477,7 @@
                   <sp n="11">
                      <speaker>CATHERINE</speaker>
                      <stage>
-                        <p/>
+                        <p>(durement)</p>
                      </stage>
                      <l>C'est vrai, je ne fus pas votre seule victime,</l>
                      <l>Et votre main perça du même coup deux cœurs;</l>
@@ -2448,7 +2488,7 @@
                   <sp n="12">
                      <speaker>ANNE</speaker>
                      <stage>
-                        <p/>
+                        <p>(humblement)</p>
                      </stage>
                      <l>Hélas! qui moins que vous, madame, en douterait?</l>
                      <l>N'avez-vous donc pas mon secret...</l>
@@ -2460,7 +2500,7 @@
                   <sp n="14">
                      <speaker>ANNE</speaker>
                      <stage>
-                        <p/>
+                        <p>(avec embarras)</p>
                      </stage>
                      <l>Mais la preuve entre vos mains laissée</l>
                      <l>De l'amour que Gomez m'inspirait autrefois!</l>
@@ -2468,7 +2508,7 @@
                   <sp n="15">
                      <speaker>CATHERINE</speaker>
                      <stage>
-                        <p/>
+                        <p>(avec des éclats d'indignation)</p>
                      </stage>
                      <l>Ah! je comprends enfin pourquoi je te revois!</l>
                      <l>Tu viens ici, par la terreur poussée,</l>
@@ -2479,7 +2519,7 @@
                   <sp n="16">
                      <speaker>ANNE</speaker>
                      <stage>
-                        <p/>
+                        <p>(suppliante et s'humiliant)</p>
                      </stage>
                      <l>Je suis folle! j'ai peur, peur de vous, peur du roi,</l>
                      <l>Ah! je vous en supplie, ayez pitié de moi!</l>
@@ -2488,12 +2528,12 @@
                   <sp n="17">
                      <speaker>CATHERINE</speaker>
                      <stage>
-                        <p/>
+                        <p>(avec colère)</p>
                      </stage>
                      <l>Eh bien non! misérable!</l>
                      <l>Non, non, fille sans cœur!</l>
                      <stage>
-                        <p/>
+                        <p>(Elle va à son livre d'heures et en retire la lettre)</p>
                      </stage>
                      <l>Regarde, le voilà</l>
                      <l>Cet écrit qui te perd, et me fait redoutable!...</l>
@@ -2501,40 +2541,42 @@
                   <sp n="18">
                      <speaker>ANNE</speaker>
                      <stage>
-                        <p/>
+                        <p>(à genoux et tendant la main pour s'emparer de la lettre)</p>
                      </stage>
                      <l>Ah! grâce!</l>
                   </sp>
                   <sp n="19">
                      <speaker>CATHERINE</speaker>
                      <stage>
-                        <p/>
+                        <p>(reculant et impitoyable)</p>
                      </stage>
                      <l>Et si le roi, ton époux, était là,</l>
                      <l>C'est à lui... </l>
                      <stage>
-                        <p/>
+                        <p>(Le roi apparaît suivi de Don Gomez.)</p>
                      </stage>
                      <l>Le roi!</l>
                   </sp>
                   <stage>
-                     <p/>
+                     <p>(Anne se relève épouvantée. Catherine froisse la lettre dans ses mains.
+                     Henry entre suivi de Don Gomez.)</p>
                   </stage>
                </div>
-               <div type="scene" n="9">
+               <div type="scene" n="4">
                   <head>Scène IV</head>
                   <stage>
-                     <p/>
+                     <p>(Anne, Catherine, Henry, Don Gomez)</p>
                   </stage>
                   <sp n="1">
                      <speaker>HENRY</speaker>
                      <stage>
-                        <p/>
+                        <p>(à Anne)</p>
                      </stage>
                      <l>Vous ici, madame!</l>
                      <l>J'en suis fort heureux sur mon âme!</l>
                      <stage>
-                        <p/>
+                        <p>(allant à Catherine et lui parlant sur le ton d'un faux
+                        repentir)</p>
                      </stage>
                      <l>Mon cœur fut pour vous sans merci,</l>
                      <l>Madame je vous fis, avant le temps, ma veuve,</l>
@@ -2557,31 +2599,31 @@
                   <sp n="4">
                      <speaker>CATHERINE</speaker>
                      <stage>
-                        <p/>
+                        <p>(froissant nerveusement la lettre entre ses mains)</p>
                      </stage>
                      <l>Pourquoi me tentez-vous, seigneur?</l>
                   </sp>
                   <sp n="5">
                      <speaker>HENRY</speaker>
                      <stage>
-                        <p/>
+                        <p>(après un silence)</p>
                      </stage>
                      <l>Vous vous taisez?</l>
                      <stage>
-                        <p/>
+                        <p>(bas)</p>
                      </stage>
                      <l>En torturant son cœur,</l>
                      <l>La jalousie et la douleur</l>
                      <l>La feront parler, j'imagine.</l>
                      <stage>
-                        <p/>
+                        <p>(haut)</p>
                      </stage>
                      <l>Reine, votre silence est doux à mon amour:</l>
                      <l>Croyez à ma reconnaissance!</l>
                      <l>Il témoigne de l'innocence,</l>
                      <l>De celle que j'osais soupçonner en ce jour.</l>
                      <stage>
-                        <p/>
+                        <p>(s'approchant d'Anne avec tendresse)</p>
                      </stage>
                      <l>Anne, pardonne-moi l'injure</l>
                      <l>Dont t'effleura mon cœur jaloux!</l>
@@ -2593,32 +2635,32 @@
                   <sp n="6">
                      <speaker>CHŒUR</speaker>
                      <stage>
-                        <p/>
+                        <p>(en coulisses)</p>
                      </stage>
                      <l>Chantons le jour où naquit notre Roi!</l>
                   </sp>
                   <sp n="7">
                      <speaker>ANNE</speaker>
                      <stage>
-                        <p/>
+                        <p>(avec effort et tremblante)</p>
                      </stage>
                      <l>Je n'ai jamais aimé que vous.</l>
                   </sp>
                   <sp n="8">
                      <speaker>CATHERINE</speaker>
                      <stage>
-                        <p/>
+                        <p>(avec angoisse pendant que le roi l'observe)</p>
                      </stage>
                      <l>Seigneur! Seigneur! pourquoi me tentez-vous?</l>
                   </sp>
                   <sp n="9">
                      <speaker>HENRY</speaker>
                      <stage>
-                        <p/>
+                        <p>(bas)</p>
                      </stage>
                      <l>Elle se tait!</l>
                      <stage>
-                        <p/>
+                        <p>(prenant Anne dans ses bras. Chœur joyeux du peuple au dehors) </p>
                      </stage>
                      <l>Anne, ma bien-aimée.</l>
                      <l>Écoute donc, autour de nous</l>
@@ -2628,14 +2670,14 @@
                   <sp n="10">
                      <speaker>CATHERINE</speaker>
                      <stage>
-                        <p/>
+                        <p>(prête à lui donner le billet)</p>
                      </stage>
                      <l>Seigneur! seigneur, pourquoi me tentez-vous?</l>
                   </sp>
                   <sp n="11">
                      <speaker>ANNE</speaker>
                      <stage>
-                        <p/>
+                        <p>(à part)</p>
                      </stage>
                      <l>Dans mon cœur quel effroi!</l>
                      <l>Ô Dieu, conseille-moi.</l>
@@ -2643,7 +2685,7 @@
                   <sp n="12">
                      <speaker>DON GOMEZ</speaker>
                      <stage>
-                        <p/>
+                        <p>(à part)</p>
                      </stage>
                      <l>Dans mon cœur quel effroi!</l>
                      <l>Que va faire le Roi?</l>
@@ -2657,7 +2699,7 @@
                   <sp n="14">
                      <speaker>CATHERINE</speaker>
                      <stage>
-                        <p/>
+                        <p>(qui va céder à la tentation)</p>
                      </stage>
                      <l>Seigneur, Seigneur, ayez pitié de moi!</l>
                   </sp>
@@ -2670,7 +2712,7 @@
                   <sp n="16">
                      <speaker>CATHERINE</speaker>
                      <stage>
-                        <p/>
+                        <p>(à part)</p>
                      </stage>
                      <l>Ô torture, ô suprême outrage,</l>
                      <l>Ô mal impossible à souffrir,</l>
@@ -2680,7 +2722,7 @@
                   <sp n="17">
                      <speaker>ANNE</speaker>
                      <stage>
-                        <p/>
+                        <p>(à part)</p>
                      </stage>
                      <l>Ô torture, ô suprême outrage,</l>
                      <l>En voyant fléchir son courage</l>
@@ -2689,7 +2731,7 @@
                   <sp n="18">
                      <speaker>DON GOMEZ</speaker>
                      <stage>
-                        <p/>
+                        <p>(à part)</p>
                      </stage>
                      <l>Ô torture, ô suprême outrage,</l>
                      <l>Ô mal impossible à souffrir,</l>
@@ -2699,40 +2741,44 @@
                   <sp n="19">
                      <speaker>HENRY</speaker>
                      <stage>
-                        <p/>
+                        <p>(à part)</p>
                      </stage>
                      <l>L'injure a brisé son courage,</l>
                      <l>Enfin tout va se découvrir.</l>
                      <l>Par cet outrage</l>
                      <l>J'ai brisé son courage.</l>
                      <stage>
-                        <p/>
+                        <p>(Il serre Anne dans ses bras. Catherine pousse un cri terrible comme si
+                        quelque chose se déchirait dans son cœur. Elle jette la lettre dans la
+                        cheminée où elle disparaît immédiatement, brûlée, et se laisse retomber
+                        presque inanimée sur un fauteuil.)</p>
                      </stage>
                   </sp>
                   <sp n="20">
                      <speaker>CATHERINE</speaker>
                      <stage>
-                        <p/>
+                        <p>(d'une voix mourante)</p>
                      </stage>
                      <l>Auprès de tes élus, Dieu juste, accueille-moi!</l>
                      <stage>
-                        <p/>
+                        <p>(à Don Gomez, lui montrant la lettre qui brûle)</p>
                      </stage>
                      <l>Comme moi, pardonnez!</l>
                      <stage>
-                        <p/>
+                        <p>(Elle meurt. Ses femmes accourent.)</p>
                      </stage>
                   </sp>
                   <sp n="21">
                      <speaker>HENRY</speaker>
                      <stage>
-                        <p/>
+                        <p>(qui s'est dégagé avec fureur de l'étreinte d'Anne et contemple
+                        froidement le cadavre de Catherine)</p>
                      </stage>
                      <l>Morte avec son secret! Mais si j'apprends jamais</l>
                      <l>Qu'on s'est raillé de moi, la hache désormais!</l>
                   </sp>
                   <stage>
-                     <p/>
+                     <p>(Il lance un regard terrible à Anne, folle de terreur)</p>
                   </stage>
                </div>
             </div>
