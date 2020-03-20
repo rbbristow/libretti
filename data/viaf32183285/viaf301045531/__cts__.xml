@@ -1,0 +1,18 @@
+<ti:work xmlns:ti="http://chs.harvard.edu/xmlns/cts"
+    groupUrn="urn:cts:libOp:viaf32183285"
+    urn="urn:cts:libOp:viaf32183285.viaf301045531"
+    xml:lang="fre"
+    >
+    <ti:title xml:lang="fre">Faust</ti:title>
+    <ti:edition 
+        workUrn="urn:cts:libOp:viaf32183285.viaf301045531" 
+        urn="urn:cts:libOp:viaf32183285.viaf301045531.TNAH2020-fre1"
+        >
+        <ti:label xml:lang="fre">Faust, Charles Gounod (TNAH2020)</ti:label>
+        <ti:description xml:lang="fre">
+            Balisage sémantique de Faust par TNAH2020.
+        </ti:description>
+    </ti:edition>
+</ti:work>
+
+
