@@ -1,0 +1,2994 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../ODD/out/librettiODD.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Les Bavards</title>
+            <author role="songWriter">Jacques Offenbach</author>
+         </titleStmt>
+         <publicationStmt>
+            <p>Ecole nationale des chartes, projet libretti TNAH, promotion 2019-2020</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>https://fr.wikisource.org/wiki/Les_Bavards/Texte_entier</p>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <refsDecl n="CTS">
+            <cRefPattern n="speech"
+               matchPattern="(\w+).(\w+).(\w+)"
+               replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@type='act'][@n='$1']/tei:div[@type='scene'][@n='$2']/tei:sp[@n='$3'])">
+               <p>Ce pointeur extrait les niveaux de citation 1, 2 et 3, soit acte, scène et tour de parole.</p>
+            </cRefPattern>
+            <cRefPattern n="scene"
+               matchPattern="(\w+).(\w+)"
+               replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@type='act'][@n='$1']/tei:div[@type='scene'][@n='$2'])">
+               <p>Ce poiteur extrait les niveaux de citation 1 et 2, soit les actes et scènes.</p>
+            </cRefPattern>
+            <cRefPattern n="act" matchPattern="(\w+)"
+               replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@type='act'][@n='$1'])">
+               <p>Ce pointeur extrait le premier niveau de citation du texte, soit les actes.</p>
+            </cRefPattern>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text>
+      <front>
+         <p>OPÉRA BOUFFE EN DEUX ACTES</p>
+         <p>PAROLES DE CHARLES NUITTER</p>
+         <p>MUSIQUE DE JACQUES OFFENBACH</p>
+         <p>Représenté pour la première fois, à Paris, sur le théâtre des Bouffes-Parisiens, le 20
+            février 1863</p>
+         <set>
+            <head>Distribution</head>
+            <p>ROLAND : Contralto.</p>
+            <p>SARMIENTO : Basse.</p>
+            <p>BÉATRIX : Soprano.</p>
+            <p>INÈS : Chanteuse légère.</p>
+            <p>CRISTOBAL : Deuxième basse.</p>
+         </set>
+      </front>
+      <body n="urn:cts:libOp:viaf10034167.viaf184299342.TNAH2020-fre1"
+         xml:lang="fre">
+         <castList>
+            <castItem>ROLAND.</castItem>
+            <castItem>SARMIENTO.</castItem>
+            <castItem>CRISTOBAL, alcade.</castItem>
+            <castItem>TORRIBIO, greffier.</castItem>
+            <castItem>BÉATRIX, femme de Sarmiento.</castItem>
+            <castItem>INÈS, sa nièce.</castItem>
+            <castItem>PEDRO, domestique.</castItem>
+            <castItem>UN MARCHAND DE CIGARES.</castItem>
+            <castItem>UN BARBIER.</castItem>
+            <castItem>UN MULETIER.</castItem>
+            <castItem>UN BOTTIER.</castItem>
+            <castItem>Créanciers.</castItem>
+         </castList>
+         <div type="act" n="1">
+            <head>Acte premier</head>
+            <stage>Le théâtre représente une rue ; à droite, la maison de Sarmiento.</stage>
+            <div type="scene" n="1">
+               <head>Scène première</head>
+               <stage>Roland traverse le théâtre en courant. Les créanciers arrivent derrière lui au
+                  moment où il vient de se sauver par la droite.</stage>
+               <sp n="1">
+                  <speaker>Choeur.</speaker>
+                  <l>Cherchons bien !</l>
+                  <l>Cherchons bien !</l>
+                  <l>Courons, courons vite !</l>
+                  <l>Tous à sa poursuite,</l>
+                  <l>Ne négligeons rien.</l>
+                  <l>Comme un chasseur qui suit la trace,</l>
+                  <l>En tous lieux, suivons ses pas ;</l>
+                  <l>Pour un tel drôle, point de grâce,</l>
+                  <l>Et qu’il ne s’échappe pas.</l>
+                  <stage>(Ils sortent, en courant, par le fond.)</stage>
+               </sp>
+               <sp n="2">
+                  <speaker>Roland,</speaker>
+                  <stage>revenant par le premier plan.</stage>
+                  <l>Vit-on jamais, par tous les diables,</l>
+                  <l>Des créanciers plus intraitables,</l>
+                  <l>Des gaillards plus infatigables</l>
+                  <l>Poursuivre un pauvre débiteur.</l>
+                  <stage>(On entend du bruit.)</stage>
+                  <l>Ils reviennent ! jour de malheur.</l>
+                  <stage>(Il se cache derrière un pilier.)</stage>
+               </sp>
+               <sp n="3">
+                  <speaker>Les créanciers,</speaker>
+                  <stage>revenant.</stage>
+                  <l>Cherchons bien !</l>
+                  <l>Courons, courons vite !</l>
+                  <l>Tous à sa poursuite,</l>
+                  <l>Ne négligeons rien…</l>
+                  <l>De quel côté s’est-il enfui ?</l>
+                  <l>C’est par là ! Non ! c’est par ici !</l>
+               </sp>
+               <sp n="4">
+                  <lg>
+                     <head>REPRISE.</head>
+                     <l>Cherchons bien !</l>
+                     <stage>etc.</stage>
+                  </lg>
+                  <stage>(Ils sortent vivement.)</stage>
+               </sp>
+            </div>
+            <div type="scene" n="2">
+               <head>Scène II.</head>
+               <sp n="1">
+                  <speaker>ROLAND</speaker>
+                  <l>Ils s’en vont ! ce n’est pas malheureux.</l>
+                  <stage>(Allant à droite.)</stage>
+                  <l> Voici le balcon de la beauté que j’adore ! Inès !… Inès !… Elle ne paraît pas…
+                     Sans doute son oncle est là ! Au moins, si pour prendre patience, je pouvais me
+                     régaler de quelque repas dans cette hôtellerie, comme au temps où l’on m’y
+                     faisait crédit. Par la cape de mes ancêtres, il serait plaisant, pendant que
+                     l’aubergiste est à ma poursuite, d’attendrir sa servante, la vieille
+                     Séraphine.</l>
+                  <stage>(Allant à gauche.)</stage>
+                  <l> Séraphine ! charmante et jeune Séraphine ! Elle ne répond pas, elle m’aura
+                     reconnu ! </l>
+                  <stage>(Allant à droite.)</stage>
+                  <l> Inès ! Inésille.</l>
+                  <stage>(Allant à gauche.)</stage>
+                  <l> Séraphine ! Séraphinette !… Rien d’un côté ni de l’autre, ça ne peut pas durer
+                     comme ça !</l>
+                  <lg>
+                     <head>I</head>
+                     <lg>
+                        <l>Sans aimer, ah ! peut-on vivre ?…</l>
+                        <l>Peut-on vivre sans manger ?…</l>
+                        <l>Un cruel destin me livre</l>
+                        <l>À ce terrible danger !</l>
+                        <l>Ah ! vraiment, c’est grand dommage,</l>
+                        <l>Je ne sais dans mon malheur,</l>
+                        <l>Si je souffre davantage</l>
+                        <l>De l’estomac ou du cœur !</l>
+                        <l>Hélas ! hélas !</l>
+                        <l>Nul ne vient, hélas !</l>
+                        <l>On ne répond pas.</l>
+                        <l>Faut-il donc que je renonce,</l>
+                        <l>À la cuisine, aux amours ;</l>
+                        <l>Adieu pour toujours</l>
+                        <l>Mes amours !</l>
+                     </lg>
+                     <lg>
+                        <head>II</head>
+                        <l>Il n’est plus de promenade</l>
+                        <l>Qui, pour moi, soit sans frayeurs,</l>
+                        <l>Et je crains quelque embuscade,</l>
+                        <l>De mes nombreux fournisseurs</l>
+                        <l>Si leur troupe ne m’arrête,</l>
+                        <l>Si j’échappe à ces truands,</l>
+                        <l>De ma verve de poëte</l>
+                        <l>Ils arrêtent les élans.</l>
+                        <l>Hélas ! hélas !</l>
+                     </lg>
+                     <stage>etc.</stage>
+                  </lg>
+                  <l>Rien ! Ah ! si l’amour ne me retenait pas… Il y a longtemps que j’aurais quitté
+                     le pays… Eh bien, non ! il ne sera pas dit que Roland ait abandonné la partie.
+                     En dépit de tous les obstacles je pénétrerai dans cette maison, et je saurai
+                     conquérir ma charmante Inès.</l>
+               </sp>
+            </div>
+            <div type="scene" n="3">
+               <head>Scène III.</head>
+               <sp n="1">
+                  <speaker>Inès,</speaker>
+                  <stage> paraissant à la porte.</stage>
+                  <l>Psst !…</l>
+               </sp>
+               <sp n="2">
+                  <speaker>Roland.</speaker>
+                  <l>C’est elle ! ô radieux soleil de mes rêves ! qui viens illuminer la nuit de mon
+                     impatience.</l>
+               </sp>
+               <sp n="3">
+                  <speaker>Inès.</speaker>
+                  <l>Chut !… J’ai pu m’échapper un moment, ma tante est sortie, mon oncle s’est
+                     enfermé dans sa chambre pour y compter de l’argent.</l>
+               </sp>
+               <sp n="4">
+                  <speaker>Roland.</speaker>
+                  <l>Agréable occupation !</l>
+               </sp>
+               <sp n="5">
+                  <speaker>Inès.</speaker>
+                  <l>Pas tant, car il s’agit pour lui de payer une amende à laquelle il a été
+                     condamné à la suite d’une querelle… il a si mauvais caractère !…</l>
+               </sp>
+               <sp n="6">
+                  <speaker>Roland.</speaker>
+                  <l>Et, c’est ce dont j’enrage… Depuis quinze jours, qu’un regard de ces beaux yeux
+                     a incendié mon cœur, à peine ai-je pu vous entrevoir quelquefois… et vous
+                     m’avez dit que si je me déclarais à vos parents, ils me mettraient à la
+                     porte.</l>
+               </sp>
+               <sp n="7">
+                  <speaker>Inès.</speaker>
+                  <l>Ah ! sûrement.</l>
+               </sp>
+               <sp n="8">
+                  <speaker>Roland.</speaker>
+                  <l>N’y a-t-il donc aucun moyen de les fléchir ?</l>
+               </sp>
+               <sp n="9">
+                  <speaker>Inès.</speaker>
+                  <l>Ah ! si vous étiez riche !…</l>
+               </sp>
+               <sp n="10">
+                  <speaker>Roland.</speaker>
+                  <l>Je ne peux pas manquer de l’être prochainement ; j’ai un oncle opulent dont je
+                     suis le seul héritier, et…</l>
+               </sp>
+               <sp n="11">
+                  <speaker>Inès.</speaker>
+                  <l>Il est donc bien vieux ?</l>
+               </sp>
+               <sp n="12">
+                  <speaker>Roland.</speaker>
+                  <l>Il a trente ans.</l>
+               </sp>
+               <sp n="13">
+                  <speaker>Inès.</speaker>
+                  <l>Eh bien… alors…</l>
+               </sp>
+               <sp n="14">
+                  <speaker>Roland.</speaker>
+                  <l>Justement, c’est un garçon qui ne se ménage pas, qui se bat en duel, qui court
+                     les aventures ; autant de chances de plus… tandis qu’un octogénaire se
+                     soignerait, se dorloterait… ce serait bien plus long…</l>
+               </sp>
+               <sp n="15">
+                  <speaker>Inès.</speaker>
+                  <l>Vous croyez ?</l>
+               </sp>
+               <sp n="16">
+                  <speaker>Roland.</speaker>
+                  <l>C’est bien connu, tous les vieillards meurent très-vieux. Il n’y a que les
+                     jeunes gens qui aient la chance de mourir jeunes.</l>
+               </sp>
+               <sp n="17">
+                  <speaker>Inès.</speaker>
+                  <l>C’est égal, je ne crois pas que ces raisons là touchent beaucoup mon oncle et
+                     sa femme.</l>
+               </sp>
+               <sp n="18">
+                  <speaker>Roland.</speaker>
+                  <l>Ce sont donc des gens bien terribles !</l>
+               </sp>
+               <sp n="19">
+                  <speaker>Inès.</speaker>
+                  <l>Je crois bien.</l>
+                  <lg>
+                     <head>COUPLETS.</head>
+                     <lg>
+                        <l>Ce sont d’étranges personnages ;</l>
+                        <l>Ce serait un grand malheur,</l>
+                        <l>Si tous les ménages</l>
+                        <l>Ressemblaient au leur.</l>
+                     </lg>
+                     <lg>
+                        <head>I</head>
+                        <l>Le mari gronde, gronde,</l>
+                        <l>Se fâchant pour un rien ;</l>
+                        <l>Il n’est pas d’oncle au monde</l>
+                        <l>Plus grognon que le mien.</l>
+                        <l>Bien que monsieur prétende</l>
+                        <l>Avoir toujours raison,</l>
+                        <l>Sa femme lui commande</l>
+                        <l>Et règne à la maison.</l>
+                     </lg>
+                  </lg>
+               </sp>
+               <sp n="20">
+                  <speaker>Roland.</speaker>
+                  <l>Elle règne !…</l>
+               </sp>
+               <sp n="21">
+                  <speaker>Inès.</speaker>
+                  <lg>
+                     <lg>
+                        <l>À la maison.</l>
+                        <l>Vous voulez connaître</l>
+                        <l>Ce mari charmant ;</l>
+                        <l>Et, sans rien omettre,</l>
+                        <l>Ce portrait frappant,</l>
+                        <l>Vous donne à la lettre</l>
+                        <l>Son signalement.</l>
+                     </lg>
+                     <lg>
+                        <head>II</head>
+                        <l>La femme cause, cause,</l>
+                        <l>Et sans jamais céder,</l>
+                        <l>Ne fait nulle autre chose</l>
+                        <l>Que toujours bavarder.</l>
+                        <l>C’est sa voix qui résonne</l>
+                        <l>Chez nous à tout moment ;</l>
+                        <l>Je crois, Dieu me pardonne !</l>
+                        <l>Qu’elle parle en dormant.</l>
+                     </lg>
+                  </lg>
+               </sp>
+               <sp n="22">
+                  <speaker>Roland.</speaker>
+                  <l>Elle parle…</l>
+               </sp>
+               <sp n="23">
+                  <speaker>Inès.</speaker>
+                  <l>En dormant.</l>
+                  <l>Vous voulez connaître</l>
+                  <l>Ce couple charmant,</l>
+                  <l>Et, sans rien omettre,</l>
+                  <stage>etc.</stage>
+               </sp>
+               <stage>DUETTO.</stage>
+               <sp n="24">
+                  <speaker>Inès.</speaker>
+                  <l>Et maintenant, il faut que je vous quitte !</l>
+               </sp>
+               <sp n="25">
+                  <speaker>Roland.</speaker>
+                  <l>Ô doux instants passés, hélas, trop vite !</l>
+               </sp>
+               <sp n="26">
+                  <speaker>Inès.</speaker>
+                  <l>Séparons-nous, on peut venir soudain.</l>
+               </sp>
+               <sp n="27">
+                  <speaker>Roland,</speaker>
+                  <stage>la retenant.</stage>
+                  <l>Écoutez ce bruit argentin !</l>
+               </sp>
+               <sp n="28">
+                  <speaker>Inès.</speaker>
+                  <l>Je connais ce bruit argentin</l>
+                  <l>Là-haut, c’est mon oncle qui compte</l>
+                  <l>La somme à laquelle se monte</l>
+                  <l>L’amende que, dans un instant,</l>
+                  <l>Il lui faudra payer comptant.</l>
+               </sp>
+               <stage>ENSEMBLE.</stage>
+               <sp n="29">
+                  <speaker>Inès.</speaker>
+                  <l>C’est lui qui compte son argent !</l>
+               </sp>
+               <sp n="30">
+                  <speaker>Roland.</speaker>
+                  <l>Pas de crainte qu’il survienne !</l>
+               </sp>
+               <sp n="31">
+                  <speaker>Inès.</speaker>
+                  <l>Causons sans gêne… en attendant.</l>
+               </sp>
+               <sp n="32">
+                  <speaker>Roland.</speaker>
+                  <l>Tous deux causons tendrement ;</l>
+                  <l>Ah ! quel bonheur !</l>
+               </sp>
+               <sp n="33">
+                  <speaker>Inès.</speaker>
+                  <l>Soyez prudent !</l>
+               </sp>
+               <sp n="34">
+                  <speaker>Roland.</speaker>
+                  <l>Ici nul ne peut nous entendre.</l>
+               </sp>
+               <sp n="35">
+                  <speaker>Inès.</speaker>
+                  <l>Mais si l’on allait nous surprendre.</l>
+               </sp>
+               <stage>REPRISE.</stage>
+               <sp n="36">
+                  <speaker>Inès.</speaker>
+                  <l>C’est lui qui,</l>
+                  <stage>etc.</stage>
+               </sp>
+               <sp n="37">
+                  <speaker>Roland.</speaker>
+                  <l>Ô chère Inès, que je t’embrasse encore</l>
+               </sp>
+               <sp n="38">
+                  <speaker>Inès.</speaker>
+                  <l>Non, vos baisers font trop de bruit.</l>
+               </sp>
+               <sp n="39">
+                  <speaker>Roland.</speaker>
+                  <l>Partages-tu l’ardeur qui me dévore ?</l>
+               </sp>
+               <sp n="40">
+                  <speaker>Inès.</speaker>
+                  <l>Même tendresse nous unit.</l>
+               </sp>
+               <sp n="41">
+                  <speaker>Roland,</speaker>
+                  <stage> écoutant.</stage>
+                  <l>Il compte encor, rien ne nous presse !</l>
+               </sp>
+               <sp n="42">
+                  <speaker>Inès.</speaker>
+                  <l>Ah ! s’il pouvait compter sans cesse !</l>
+               </sp>
+               <sp n="43">
+                  <speaker>Roland.</speaker>
+                  <l>Heureux transports !</l>
+               </sp>
+               <sp n="44">
+                  <speaker>Inès.</speaker>
+                  <l>Ah ! quelle ivresse !</l>
+                  <l>Ô doux moments !</l>
+               </sp>
+               <sp n="45">
+                  <speaker>Roland.</speaker>
+                  <l>Pour deux amants…</l>
+               </sp>
+               <sp n="46">
+                  <speaker>Inès.</speaker>
+                  <l>L’heure pourtant se passe.</l>
+               </sp>
+               <sp n="47">
+                  <speaker>Roland.</speaker>
+                  <l>Ah ! reste encore, de grâce !</l>
+                  <l>Nous avons bien le temps.</l>
+                  <stage>(bis).</stage>
+               </sp>
+               <sp n="48">
+                  <lg>
+                     <head>REPRISE.</head>
+                     <l>C’est lui qui compte son argent !</l>
+                     <stage>etc.</stage>
+                  </lg>
+               </sp>
+               <sp n="49">
+                  <speaker>Voix de Sarmiento,</speaker>
+                  <stage> au dehors.</stage>
+                  <l>Inès ! Inès !</l>
+               </sp>
+               <sp n="50">
+                  <speaker>Inès.</speaker>
+                  <l>Mon oncle !… ah ! qu’il ne nous voie pas ensemble !</l>
+               </sp>
+               <sp n="51">
+                  <speaker>Roland.</speaker>
+                  <l>Je disparais.</l>
+                  <stage>(Il se cache derrière le mur.)</stage>
+               </sp>
+            </div>
+            <div type="scene" n="4">
+               <head>Scène IV.</head>
+               <sp n="1">
+                  <speaker>Sarmiento.</speaker>
+                  <l>Eh bien, mademoiselle, qu’est-ce que vous faites dans la rue ?</l>
+               </sp>
+               <sp n="2">
+                  <speaker>Inès.</speaker>
+                  <l>Je prenais le frais, mon oncle.</l>
+               </sp>
+               <sp n="3">
+                  <speaker>Sarmiento.</speaker>
+                  <l>Une jeune fille ne doit jamais rien prendre sans l’autorisation de ses parents.
+                     Allons, rentrez.</l>
+                  <stage>(À lui-même.)</stage>
+                  <l>Qu’est-ce que ma femme dirait ?… C’est pour le coup qu’elle parlerait pendant
+                     une heure !… Allons !… j’ai à sortir, rentrez, que je vous enferme.</l>
+               </sp>
+               <sp n="4">
+                  <speaker>Inès.</speaker>
+                  <l>Oui, mon oncle.</l>
+               </sp>
+               <stage>(Roland passe la tête sans être vu de Sarmiento ; Inès, en rentrant, lui
+                  envoie des baisers.)</stage>
+               <sp n="5">
+                  <speaker>Sarmiento,</speaker>
+                  <stage> les prenant pour lui.</stage>
+                  <l>Elle est gentille !</l>
+                  <stage>(Il ferme la porte.)</stage>
+               </sp>
+            </div>
+            <div type="scene" n="5">
+               <head>Scene V.</head>
+               <stage>SARMIENTO, puis BÉATRIX, et PEDRO, portant deux paniers.</stage>
+               <sp n="1">
+                  <speaker>Sarmiento,</speaker>
+                  <stage> fermant un sac qu’il tient.</stage>
+                  <l>J’ai bien mon compte… oui, deux cents ducats. Voilà pourtant ce que peut coûter
+                     un moment de vivacité. Le premier !… pour une malheureuse estafilade donnée à
+                     mon voisin Pérès, la justice m’a condamné à lui payer deux cents ducats !… Au
+                     fond, je ne les regrette pas, je voudrais même que l’estafilade fût plus large,
+                     dût-il m’en coûter le double… car je lui en voulais bien à ce bonhomme Pérès !…
+                     Enfin, il faut se contenter. </l>
+                  <stage>(On entend parler vivement.)</stage>
+                  <l> Eh ! je crois reconnaître la voix de ma femme.</l>
+               </sp>
+               <sp n="2">
+                  <speaker>Béatrix,</speaker>
+                  <stage> entre en continuant de parler vivement à la cantonade.</stage>
+                  <l>Cela n’empêche pas que vous ne comprenez rien et que j’ai raison, car… </l>
+                  <stage>(Apercevant Sarmiento.)</stage>
+                  <l> Ah ! tiens, vous voilà ?…</l>
+               </sp>
+               <sp n="3">
+                  <speaker>Sarmiento.</speaker>
+                  <l>Comment, à l’heure qu’il est, mon souper est encore dans ce panier ?</l>
+               </sp>
+               <sp n="4">
+                  <speaker>Béatrix.</speaker>
+                  <l>Je rentre à l’instant à la maison ; je m’étais arrêté un moment…</l>
+               </sp>
+               <sp n="5">
+                  <speaker>Sarmiento.</speaker>
+                  <l>À bavarder une heure, comme à l’ordinaire.</l>
+               </sp>
+               <sp n="6">
+                  <speaker>Béatrix.</speaker>
+                  <l>Ah ! mon Dieu ! bavarder !… Je n’ai pas l’habitude de parler inutilement… Mais
+                     il est de ces choses qu’on ne peut entendre dire de sang-froid… C’est dona
+                     Scholastique, la gouvernante du chanoine Antonio, qui osait prétendre… oh !…
+                     j’en suis encore abasourdie !</l>
+               </sp>
+               <sp n="7">
+                  <speaker>Sarmiento.</speaker>
+                  <l>Finissons. Que prétendait-elle ?</l>
+               </sp>
+               <sp n="8">
+                  <speaker>Béatrix.</speaker>
+                  <l>Que, pour faire une salade, il faut mettre le vinaigre avant l’huile.</l>
+               </sp>
+               <sp n="9">
+                  <speaker>Sarmiento.</speaker>
+                  <l>C’est cela ?… Bon ! qu’importe !…</l>
+               </sp>
+               <sp n="10">
+                  <speaker>Béatrix.</speaker>
+                  <l>Comment, qu’importe !… mais jamais cela ne s’est vu !… mais depuis qu’il se
+                     fait des salades…</l>
+               </sp>
+               <sp n="11">
+                  <speaker>Sarmiento,</speaker>
+                  <stage> l’interrompant.</stage>
+                  <l>Femme, l’heure se passe et le souper ne se fait pas !</l>
+               </sp>
+               <sp n="12">
+                  <speaker>Béatrix.</speaker>
+                  <l>Mon Dieu ! il se fera, ce souper… Pedro, portez tout cela à la cuisine. </l>
+                  <stage>(Il sort.)</stage>
+                  <l> Mais c’est vrai, quand j’entends dire des choses pareilles, je ne peux pas me
+                     retenir. Le vinaigre avant l’huile !…</l>
+                  <lg>
+                     <head>RONDEAU.</head>
+                     <lg>
+                        <l>C’est bien reconnu,</l>
+                        <l>J’eus toujours un bon caractère,</l>
+                        <l>L’esprit peu têtu,</l>
+                        <l>Quand je veux, je sais me taire ;</l>
+                        <l>Cherchez,</l>
+                        <l>Demandez,</l>
+                        <l>Courez partout le voisinage !</l>
+                        <l>Et, si vous pouvez</l>
+                        <l>Trouvez une femme plus sage.</l>
+                        <l>Mais, dès qu’on s’entête,</l>
+                        <l>Et que j’ai raison,</l>
+                        <l>Il serait trop bête</l>
+                        <l>De baisser le ton.</l>
+                        <l>J’ai bon caractère, etc.</l>
+                        <l>Certes, au fond, peu m’importe,</l>
+                        <l>En de semblables débats,</l>
+                        <l>Qui triomphe et qui l’emporte,</l>
+                        <l>Et je ne m’en mêle pas.</l>
+                        <l>Mais il faudrait être sotte,</l>
+                        <l>Et d’un sang plus engourdi</l>
+                        <l>Que celui d’une marmotte,</l>
+                        <l>Pour ne pas répondre aussi.</l>
+                        <l>Comme vous, du reste,</l>
+                        <l>Je crains les bavards,</l>
+                        <l>Et ce que je déteste</l>
+                        <l>Ce sont ces traînards,</l>
+                        <l>Qui font sur toute chose</l>
+                        <l>D’éternels discours,</l>
+                        <l>Et qui, lorsqu’on cause,</l>
+                        <l>Seuls parlent toujours.</l>
+                        <l>Gens qui, d’un ton toujours égal,</l>
+                        <l>Parlent de tout, du bien, du mal,</l>
+                        <l>Toujours de suite et sans jamais</l>
+                        <l>Aller plus vite en leurs caquets</l>
+                        <l>Et, quand on croit qu’ils sont au bout</l>
+                        <l>Vous vous trompez, ce n’est pas tout.</l>
+                        <l>Une heure entière,</l>
+                        <l>Et sans repos,</l>
+                        <l>Il faut se plaire</l>
+                        <l>À leurs propos ;</l>
+                        <l>Plus que tout le reste</l>
+                        <l>Je l’ai dit déjà,</l>
+                        <l>Ah ! que je déteste</l>
+                        <l>Ces gens-là.</l>
+                     </lg>
+                     <lg>
+                        <head>REPRISE.</head>
+                        <l>C’est bien convenu, etc.</l>
+                     </lg>
+                  </lg>
+               </sp>
+               <sp n="13">
+                  <speaker>Sarmiento.</speaker>
+                  <l>Vous avez fini ?… Il serait vraiment bien désirable que je pusse dîner
+                     aujourd’hui.</l>
+               </sp>
+               <sp n="14">
+                  <speaker>Béatrix.</speaker>
+                  <l>Oh ! mon Dieu ! vous dînerez !… Tenez, vous n’êtes pas digne de la peine qu’on
+                     se donne pour vous.</l>
+               </sp>
+               <sp n="15">
+                  <speaker>Sarmiento.</speaker>
+                  <l>C’est entendu.</l>
+               </sp>
+               <sp n="16">
+                  <speaker>Béatrix.</speaker>
+                  <l>Vous mériteriez d’être servi comme le chanoine Antonio.</l>
+               </sp>
+               <sp n="17">
+                  <speaker>Sarmiento,</speaker>
+                  <stage> la poussant.</stage>
+                  <l>Bien !</l>
+               </sp>
+               <sp n="18">
+                  <speaker>Béatrix.</speaker>
+                  <l>Et qu’on vous mît le vinaigre avant l’huile.</l>
+               </sp>
+               <sp n="19">
+                  <speaker>Sarmiento,</speaker>
+                  <stage> la poussant toujours.</stage>
+                  <l>Bon ! je vais faire une course et je rentre à la maison ; faisons en sorte que
+                     tout soit prêt.</l>
+               </sp>
+               <sp n="20">
+                  <speaker>Béatrix.</speaker>
+                  <l>Tout sera prêt !… C’est vrai, ne dirait-on pas… </l>
+                  <stage>(Elle rentre.)</stage>
+               </sp>
+               <sp n="21">
+                  <speaker>Sarmiento.</speaker>
+                  <l>Je pourrai donc souper.</l>
+               </sp>
+               <sp n="22">
+                  <speaker>Béatrix,</speaker>
+                  <stage> revenant.</stage>
+                  <l>Ah ! mon Dieu !</l>
+               </sp>
+               <sp n="23">
+                  <speaker>Sarmiento.</speaker>
+                  <l>Qu’est-ce encore ?</l>
+               </sp>
+               <sp n="24">
+                  <speaker>Béatrix.</speaker>
+                  <l>J’ai oublié les aubergines, votre plat favori !</l>
+               </sp>
+               <sp n="25">
+                  <speaker>Sarmiento.</speaker>
+                  <l>Ô femme !</l>
+               </sp>
+               <sp n="26">
+                  <speaker>Béatrix.</speaker>
+                  <l>Je cours les chercher, c’est l’affaire d’un moment. </l>
+                  <stage>(Elle s’en va tout en parlant ; on entend sa voix qui se perd dans le
+                     lointain.)</stage>
+               </sp>
+            </div>
+            <div type="scene" n="6">
+               <head>Scène VI.</head>
+               <stage>SARMIENTO, puis CRISTOBAL et TORRIBIO.</stage>
+               <sp n="1">
+                  <speaker>Sarmiento.</speaker>
+                  <l>Eh bien, c’est toute la journée comme cela ! Si j’avais cru la rencontrer,
+                     j’aurais pris le plus long, c’eût été le plus court…</l>
+                  <stage>(Apercevant l’alcade.)</stage>
+                  <l>Et mais, c’est le seigneur Cristobal, notre digne alcade, et son intelligent
+                     greffier Torribio.</l>
+               </sp>
+               <sp n="2">
+                  <speaker>Cristobal.</speaker>
+                  <l>Lui-même.</l>
+               </sp>
+               <sp n="3">
+                  <speaker>Torribio.</speaker>
+                  <l>Eux-mêmes.</l>
+               </sp>
+               <sp n="4">
+                  <speaker>Sarmiento.</speaker>
+                  <l>Salut !</l>
+               </sp>
+               <sp n="5">
+                  <speaker>Cristobal.</speaker>
+                  <l>Salut !</l>
+               </sp>
+               <sp n="6">
+                  <speaker>Torribio.</speaker>
+                  <l>Salut !</l>
+               </sp>
+               <sp n="7">
+                  <speaker>Cristobal,</speaker>
+                  <stage> à Torribio.</stage>
+                  <l>Assez !</l>
+               </sp>
+               <sp n="8">
+                  <speaker>Sarmiento.</speaker>
+                  <l>La santé de Votre Seigneurie est bonne ?</l>
+               </sp>
+               <sp n="9">
+                  <speaker>Cristobal.</speaker>
+                  <l>Bonne… bonne… Malgré la température, il fait une chaleur !!..</l>
+               </sp>
+               <sp n="10">
+                  <speaker>Sarmiento.</speaker>
+                  <l>Je suis désolé que vous vous soyez dérangé, j’allais justement chez vous.</l>
+               </sp>
+               <sp n="11">
+                  <speaker>Cristobal,</speaker>
+                  <stage> l’interrompant.</stage>
+                  <l>Attendez… je parie que je sais pourquoi. Vous veniez me porter la somme fixée
+                     pour réparation du dommage causé par vous à votre voisin Pérès.</l>
+               </sp>
+               <sp n="12">
+                  <speaker>Sarmiento.</speaker>
+                  <l>En effet, c’est ce qui était convenu !…</l>
+               </sp>
+               <sp n="13">
+                  <speaker>Cristobal.</speaker>
+                  <l>J’ai deviné tout de suite, hein, quel tact !</l>
+               </sp>
+               <sp n="14">
+                  <speaker>Torribio.</speaker>
+                  <l>Quel flair !…</l>
+               </sp>
+               <sp n="15">
+                  <speaker>Cristobal.</speaker>
+                  <l>Assez !…</l>
+               </sp>
+               <sp n="16">
+                  <speaker>Sarmiento.</speaker>
+                  <l>Je serais même déjà depuis longtemps chez votre Seigneurie. — Mais, par
+                     malheur, j’ai rencontré ma femme en route. J’ai une femme bien bavarde,
+                     seigneur alcade ! c’est ce qui fait…</l>
+               </sp>
+               <sp n="17">
+                  <speaker>Cristobal.</speaker>
+                  <l>Attendez !… je parie que je devine !… Elle vous a retenu à causer… à parler
+                     d’une chose, d’une autre, etc. etc.</l>
+               </sp>
+               <sp n="18">
+                  <speaker>Sarmiento.</speaker>
+                  <l>Juste !</l>
+               </sp>
+               <sp n="19">
+                  <speaker>Cristobal.</speaker>
+                  <l>J’en étais sûr, hein, quel flair !</l>
+               </sp>
+               <sp n="20">
+                  <speaker>Torribio.</speaker>
+                  <l>Quel tact !…</l>
+               </sp>
+               <sp n="21">
+                  <speaker>Cristobal.</speaker>
+                  <l>Assez !… Moi aussi, seigneur, j’ai une femme qui passe tout son temps à
+                     bavarder.</l>
+               </sp>
+               <sp n="22">
+                  <speaker>Torribio.</speaker>
+                  <l>Ah ! oui, nous avons une femme bien bavarde.</l>
+               </sp>
+               <sp n="23">
+                  <speaker>Sarmiento.</speaker>
+                  <l>Je vous plains, car…</l>
+               </sp>
+               <sp n="24">
+                  <speaker>Cristobal.</speaker>
+                  <l>Il n’y a pas moyen de placer un mot.</l>
+               </sp>
+               <sp n="25">
+                  <speaker>Sarmiento.</speaker>
+                  <l>Comme moi, et figurez-vous…</l>
+               </sp>
+               <sp n="26">
+                  <speaker>Cristobal.</speaker>
+                  <l>Si vous ouvrez la bouche, elle vous interrompt.</l>
+               </sp>
+               <sp n="27">
+                  <speaker>Sarmiento.</speaker>
+                  <l>Je connais ça d’autant plus que…</l>
+               </sp>
+               <sp n="28">
+                  <speaker>Cristobal.</speaker>
+                  <l>Et quand on croit qu’elle a fini, elle recommence.</l>
+               </sp>
+               <sp n="29">
+                  <speaker>Sarmiento.</speaker>
+                  <l>Ah ça ! Mais lui aussi ne parle pas mal !</l>
+               </sp>
+               <sp n="30">
+                  <speaker>Cristobal.</speaker>
+                  <l>Vous dites ?…</l>
+               </sp>
+               <sp n="31">
+                  <speaker>Sarmiento.</speaker>
+                  <l>Rien. Voici votre argent, deux cents ducats. Voilà ce que coûte un moment de
+                     vivacité, mais vous comprendrez cela ; ma femme venait de m’échauffer les
+                     oreilles… Enfin, c’est un peu cher…</l>
+               </sp>
+               <sp n="32">
+                  <speaker>Cristobal.</speaker>
+                  <l>Bah ! vous devez vous estimer heureux d’avoir eu affaire à moi !… un autre
+                     n’eût pas tranché la question avec la même sagesse, la même adresse, la même
+                     délicatesse, la même…</l>
+               </sp>
+               <sp n="33">
+                  <speaker>Torribio.</speaker>
+                  <l>Finesse !</l>
+                  <l>Tous.</l>
+                  <l>Quel alcade !</l>
+               </sp>
+               <sp n="34">
+                  <speaker>Cristobal.</speaker>
+                  <l>Quel tact !</l>
+               </sp>
+               <sp n="35">
+                  <speaker>Torribio.</speaker>
+                  <l>Quel flair !</l>
+               </sp>
+               <sp n="36">
+                  <speaker>Cristobal.</speaker>
+                  <l>Assez !</l>
+                  <lg>
+                     <lg>
+                        <stage>I</stage>
+                        <l>Partout on chercherait en vain</l>
+                        <l>Un autre alcade plus malin,</l>
+                        <l>Plus fin.</l>
+                        <l>Nul ne m’attrape,</l>
+                        <l>Et je réponds</l>
+                        <l>Que rien n’échappe</l>
+                        <l>À mes soupçons !</l>
+                        <l>Et chacun va disant</l>
+                        <l>Ah ! quel magistrat surprenant !</l>
+                        <l>Quel alcade étonnant !</l>
+                        <l>Persévérant !</l>
+                        <l>Intelligent !</l>
+                     </lg>
+                     <lg>
+                        <head>II</head>
+                        <l>J’ai l’art de prendre un délinquant,</l>
+                        <l>Sur le fait et même souvent</l>
+                        <l>Avant.</l>
+                        <l>Il n’est point d’homme plus exact ;</l>
+                        <l>On me renomme</l>
+                        <l>Pour mon tact ;</l>
+                        <l>Quel flair, quel tact !</l>
+                        <l>Et chacun va disant : etc.</l>
+                     </lg>
+                  </lg>
+               </sp>
+               <sp n="37">
+                  <speaker>Cristobal.</speaker>
+                  <l>Allons, adieu !… il faut que j’achève ma tournée… je suis sur la piste d’un
+                     certain drôle… qui ne m’échappera pas… Votre charmante nièce se porte bien ? la
+                     senora est toujours alerte et pimpante ? Que le ciel vous préserve des fâcheux
+                     et des bavards… À votre prochaine affaire, nous nous arrangerons encore pour le
+                     mieux ! Mon Dieu ! une estafilade de temps en temps rompt la monotonie de
+                     l’existence, et la sagesse des magistrats fait le reste.</l>
+                  <stage>(Il s’en va tout en parlant.)</stage>
+               </sp>
+               <sp n="38">
+                  <stage>Reprise ensemble.</stage>
+                  <l>Ah ! quel magistrat ! etc.</l>
+               </sp>
+            </div>
+            <div type="scene" n="7">
+               <head>Scène VII.</head>
+               <stage>SARMIENTO, ROLAND.</stage>
+               <sp n="1">
+                  <speaker>Sarmiento.</speaker>
+                  <l>Eh bien ! c’est aussi un fort bavard dans son genre ! Enfin voilà une affaire
+                     faite !.. Rentrons à la maison. Pourvu que ma femme ne se soit pas encore
+                     arrêtée à causer en route ! voilà une chose qui est bien à craindre.</l>
+               </sp>
+               <sp n="2">
+                  <speaker>Roland,</speaker>
+                  <stage> après s’être assuré que l’alcade s’est éloigné, aborde Sarmiento au moment
+                     où il va rentrer.</stage>
+                  <l>Pardon, seigneur chevalier.</l>
+               </sp>
+               <sp n="3">
+                  <speaker>Sarmiento.</speaker>
+                  <l>Que désirez-vous ?</l>
+               </sp>
+               <sp n="4">
+                  <speaker>Roland.</speaker>
+                  <l>Couvrez-vous ou je ne dirai pas une parole.</l>
+               </sp>
+               <sp n="5">
+                  <speaker>Sarmiento.</speaker>
+                  <l>Je suis couvert.</l>
+               </sp>
+               <sp n="6">
+                  <speaker>Roland.</speaker>
+                  <l>Seigneur ! je suis un pauvre hidalgo ; quoique j’aie vu des temps meilleurs, je
+                     suis nécessiteux ; je viens d’entendre que votre grâce a donné deux cents
+                     ducats à un homme qu’elle a blessé ; si c’est pour vous un divertissement, je
+                     viens me mettre à votre disposition et je vous demanderai pour cela cinquante
+                     ducats de moins que l’autre.</l>
+               </sp>
+               <sp n="7">
+                  <speaker>Sarmiento.</speaker>
+                  <l>Parlez-vous sérieusement ? Croyez-vous qu’on fasse une telle blessure à
+                     quelqu’un, sans qu’il le mérite ?</l>
+               </sp>
+               <sp n="8">
+                  <speaker>Roland.</speaker>
+                  <l>Et qui le mérite plus que la pauvreté ? quel sujet est plus digne d’exciter la
+                     haine et la colère ? N’est-ce pas la pauvreté qui est cause des délits et des
+                     crimes, larcins, filouteries, abus de confiance, escroqueries, vols, meurtres,
+                     assassinats ? — N’est-ce pas la pauvreté qui est cause du travail, cette plaie
+                     de la vie humaine… n’est-ce pas elle qui force les hommes à être douaniers,
+                     menuisiers, voituriers, charpentiers, chaudronniers, meuniers…</l>
+               </sp>
+               <sp n="9">
+                  <speaker>Sarmiento.</speaker>
+                  <l>Holà ! holà !… comment, ce n’est pas assez de ma femme !… Par le diable ! qui
+                     m’a envoyé cet homme, après avoir payé deux cents ducats à ce bavard d’alcade,
+                     pour cette balafre ?…</l>
+               </sp>
+               <sp n="10">
+                  <speaker>Roland.</speaker>
+                  <l>Balafre, avez-vous dit ; c’est ce que donna Caïn à son frère Abel, quoiqu’à
+                     cette époque on ne connût pas les épées. Remarquez, en passant, que les
+                     blessures se font de deux manières, par trahison et par jalousie. La trahison
+                     est un crime contre le roi ; la jalousie, contre les égaux. On fait des
+                     blessures avec des dagues, des hallebardes, flèches, pistolets, arquebuses…</l>
+               </sp>
+               <sp n="11">
+                  <speaker>Sarmiento.</speaker>
+                  <l>Que voulez-vous, enfin ?</l>
+               </sp>
+               <sp n="12">
+                  <speaker>Roland.</speaker>
+                  <l>Seigneur, je vous l’ai dit, je suis pauvre, et si vous voulez prendre la peine
+                     de compter tous les pauvres célèbres, depuis Job… qui…</l>
+               </sp>
+               <sp n="13">
+                  <speaker>Sarmiento.</speaker>
+                  <l>Non, ne les comptons pas !…</l>
+               </sp>
+               <stage>DUO.</stage>
+               <stage>ENSEMBLE.</stage>
+               <sp n="14">
+                  <speaker>Sarmiento.</speaker>
+                  <l>Quel bavard insupportable !</l>
+                  <l>Quel discours interminable !</l>
+                  <l>En vérité,</l>
+                  <l>Cet entêté,</l>
+                  <l>Est un parleur bien effronté !</l>
+               </sp>
+               <sp n="15">
+                  <speaker>Roland.</speaker>
+                  <l>Non, rien n’est moins supportable !</l>
+                  <l>Non, rien n’est plus condamnable !</l>
+                  <l>En vérité,</l>
+                  <l>La pauvreté,</l>
+                  <l>Est bien contraire à la gaîté !</l>
+               </sp>
+               <sp n="16">
+                  <speaker>Sarmiento.</speaker>
+                  <l>Je…</l>
+               </sp>
+               <sp n="17">
+                  <speaker>Roland,</speaker>
+                  <stage> l’interrompant.</stage>
+                  <l>Sans argent, que peut-on sur la terre ?</l>
+               </sp>
+               <sp n="18">
+                  <speaker>Sarmiento.</speaker>
+                  <l>Quand…</l>
+               </sp>
+               <sp n="19">
+                  <speaker>Roland,</speaker>
+                  <stage> de même.</stage>
+                  <l>Comptez bien, il en faut pour tout faire.</l>
+               </sp>
+               <sp n="20">
+                  <speaker>Sarmiento.</speaker>
+                  <l>Ne…</l>
+               </sp>
+               <sp n="21">
+                  <speaker>Roland,</speaker>
+                  <stage> de même.</stage>
+                  <l>Ce métal est toujours nécessaire.</l>
+               </sp>
+               <sp n="22">
+                  <speaker>Sarmiento.</speaker>
+                  <l>Où…</l>
+               </sp>
+               <sp n="23">
+                  <speaker>Roland,</speaker>
+                  <stage> de même.</stage>
+                  <l>Il en faut pour payer le traiteur.</l>
+               </sp>
+               <sp n="24">
+                  <speaker>Sarmiento.</speaker>
+                  <l>C’est…</l>
+               </sp>
+               <sp n="25">
+                  <speaker>Roland,</speaker>
+                  <stage> de même.</stage>
+                  <l>Il en faut quand on est locataire.</l>
+               </sp>
+               <sp n="26">
+                  <speaker>Sarmiento.</speaker>
+                  <l>Ah !…</l>
+               </sp>
+               <sp n="27">
+                  <speaker>Roland,</speaker>
+                  <stage> de même.</stage>
+                  <l>Pour offrir à son propriétaire.</l>
+               </sp>
+               <sp n="28">
+                  <speaker>Sarmiento.</speaker>
+                  <l>Mais…</l>
+               </sp>
+               <sp n="29">
+                  <speaker>Roland,</speaker>
+                  <stage> de même.</stage>
+                  <l>Il en faut pour payer un notaire.</l>
+               </sp>
+               <sp n="30">
+                  <speaker>Sarmiento.</speaker>
+                  <l>Vous…</l>
+               </sp>
+               <sp n="31">
+                  <speaker>Roland,</speaker>
+                  <stage> de même.</stage>
+                  <l>Il en faut pour payer le traiteur.</l>
+               </sp>
+               <sp n="32">
+                  <speaker>Sarmiento.</speaker>
+                  <l>Les…</l>
+               </sp>
+               <sp n="33">
+                  <speaker>Roland.</speaker>
+                  <l>Il en faut pour donner un salaire.</l>
+               </sp>
+               <sp n="34">
+                  <speaker>Sarmiento.</speaker>
+                  <l>Ciel !…</l>
+               </sp>
+               <sp n="35">
+                  <speaker>Roland.</speaker>
+                  <l>Au barbier comme à l’apothicaire.</l>
+               </sp>
+               <sp n="36">
+                  <speaker>Sarmiento.</speaker>
+                  <l>Vos…</l>
+               </sp>
+               <sp n="37">
+                  <speaker>Roland.</speaker>
+                  <l>Il en faut pour le vétérinaire.</l>
+               </sp>
+               <sp n="38">
+                  <speaker>Sarmiento.</speaker>
+                  <l>Comme…</l>
+               </sp>
+               <sp n="39">
+                  <speaker>Roland.</speaker>
+                  <l>Il en faut pour payer le tailleur.</l>
+                  <l>C’est vraiment bien évident,</l>
+                  <l>Et ce proverbe éloquent</l>
+                  <l>Pas de suisse sans argent,</l>
+                  <l>À tout peuple également,</l>
+                  <l>Soit Français, soit Allemand,</l>
+                  <l>Espagnol ou Turcoman,</l>
+                  <l>Catholique ou musulman,</l>
+                  <l>S’applique indifféremment.</l>
+               </sp>
+               <sp n="40">
+                  <speaker>Sarmiento.</speaker>
+                  <l>Cessez, de grâce,</l>
+                  <l>Ou bien, ma foi !</l>
+                  <l>Je vous cède la place ;</l>
+                  <l>Un seul instant écoutez-moi.</l>
+               </sp>
+               <sp n="41">
+                  <speaker>Roland.</speaker>
+                  <l>Je vous écoute.</l>
+               </sp>
+               <sp n="42">
+                  <speaker>Sarmiento.</speaker>
+                  <l>Vous pouvez m’obliger, je crois.</l>
+               </sp>
+               <sp n="43">
+                  <speaker>Roland.</speaker>
+                  <l>Pour vous, que faut-il que je fasse ?</l>
+               </sp>
+               <sp n="44">
+                  <speaker>Sarmiento.</speaker>
+                  <l>Écoutez-moi :</l>
+                  <lg>
+                     <lg>
+                        <head>I</head>
+                        <l>Le sort m’a fait</l>
+                        <l>Choisir une femme,</l>
+                        <l>Au babil indiscret,</l>
+                        <l>Qui jamais ne se tait.</l>
+                        <l>Par son caquet,</l>
+                        <l>Sachez que la dame,</l>
+                        <l>À toujours m’étourdir</l>
+                        <l>Paraît se divertir.</l>
+                     </lg>
+                  </lg>
+               </sp>
+               <sp n="45">
+                  <speaker>Roland.</speaker>
+                  <l>Certes, je blâme</l>
+                  <l>Pareille femme.</l>
+               </sp>
+               <sp n="46">
+                  <speaker>Sarmiento.</speaker>
+                  <lg>
+                     <lg>
+                        <l>À m’étourdir</l>
+                        <l>Elle met son plaisir.</l>
+                     </lg>
+                     <lg>
+                        <head>II</head>
+                        <l>Vous avez l’art</l>
+                        <l>Qu’il faut pour bien faire</l>
+                        <l>On n’a vu nulle part</l>
+                        <l>Un mortel plus bavard.</l>
+                        <l>Si, par hasard,</l>
+                        <l>Vous la faisiez taire,</l>
+                        <l>Aucun don ne pourrait</l>
+                        <l>Acquitter ce bienfait.</l>
+                     </lg>
+                  </lg>
+               </sp>
+               <sp n="47">
+                  <speaker>Roland.</speaker>
+                  <l>La faire taire !</l>
+                  <l>C’est une affaire.</l>
+               </sp>
+               <sp n="48">
+                  <speaker>Sarmiento.</speaker>
+                  <l>Rien ne pourrait</l>
+                  <l>Payer un tel bienfait !</l>
+                  <l>C’est ce bienfait que de vous je réclame.</l>
+               </sp>
+               <sp n="49">
+                  <speaker>Roland.</speaker>
+                  <l>Vous obliger est mon unique loi.</l>
+               </sp>
+               <sp n="50">
+                  <speaker>Sarmiento.</speaker>
+                  <l>Venez faire taire ma femme.</l>
+               </sp>
+               <sp n="51">
+                  <speaker>Roland.</speaker>
+                  <l>Chez vous ! Ah ! quel honneur pour moi !</l>
+               </sp>
+               <sp n="52">
+                  <speaker>Sarmiento.</speaker>
+                  <l>Allons, venez dans ma demeure.</l>
+               </sp>
+               <sp n="53">
+                  <speaker>Roland.</speaker>
+                  <l>Je vous suis, je n’hésite pas !</l>
+               </sp>
+               <sp n="54">
+                  <speaker>Sarmiento.</speaker>
+                  <l>Je veux vous y voir à toute heure !</l>
+               </sp>
+               <sp n="55">
+                  <speaker>Roland.</speaker>
+                  <l>Quoi ! même à l’heure des repas ?</l>
+               </sp>
+               <sp n="56">
+                  <speaker>Sarmiento.</speaker>
+                  <l>À l’heure des repas, sans doute !</l>
+               </sp>
+               <sp n="57">
+                  <speaker>Roland.</speaker>
+                  <l>De grâce, montrez-moi la route ?</l>
+               </sp>
+               <sp n="58">
+                  <speaker>Sarmiento.</speaker>
+                  <l>Allons, venez, suivez mes pas !</l>
+               </sp>
+               <stage>ENSEMBLE.</stage>
+               <sp n="59">
+                  <speaker>Roland.</speaker>
+                  <l>Je la ferai taire,</l>
+                  <l>C’est bien certain ;</l>
+                  <l>Ce sera l’affaire</l>
+                  <l>D’un tour de main.</l>
+               </sp>
+               <sp n="60">
+                  <speaker>Sarmiento.</speaker>
+                  <l>Il la fera taire,</l>
+                  <l>C’est bien certain</l>
+                  <l>Ce sera l’affaire</l>
+                  <l>D’un tour de main.</l>
+               </sp>
+               <sp n="61">
+                  <speaker>Roland.</speaker>
+                  <l>Dieu d’amour, tu combles mes vœux !</l>
+                  <l>Auprès de celle que j’aime</l>
+                  <l>Il va me conduire lui-même…</l>
+                  <l>Est-il un sort plus heureux !</l>
+               </sp>
+               <stage>REPRISE.</stage>
+               <sp n="62">
+                  <speaker>Roland.</speaker>
+                  <l>Allons !…</l>
+               </sp>
+               <sp n="63">
+                  <speaker>Sarmiento.</speaker>
+                  <l>Ah !… mais, permettez… j’ai un scrupule… au moment de vous présenter à ma femme
+                     et à ma nièce… car j’ai aussi une nièce charmante !… franchement, je crois peu
+                     convenable de vous amener sous ce costume.</l>
+               </sp>
+               <sp n="64">
+                  <speaker>Roland.</speaker>
+                  <l>Vous trouvez qu’il n’est pas assez…</l>
+               </sp>
+               <sp n="65">
+                  <speaker>Sarmiento.</speaker>
+                  <l>Au contraire, je trouve qu’il est trop…</l>
+               </sp>
+               <sp n="66">
+                  <speaker>Roland.</speaker>
+                  <l>Vous avez peut-être raison… Vous me prêterez un habit…</l>
+               </sp>
+               <sp n="67">
+                  <speaker>Sarmiento.</speaker>
+                  <l>Un habit, à moi, peut-être ne serait-il pas assez…</l>
+               </sp>
+               <sp n="68">
+                  <speaker>Roland.</speaker>
+                  <l>Ou plutôt serait-il trop !…</l>
+               </sp>
+               <sp n="69">
+                  <speaker>Sarmiento.</speaker>
+                  <l>C’est bien possible. Venez chez le fripier voisin… je vais vous équiper de pied
+                     en cap… </l>
+                  <stage>(On entend du bruit.)</stage>
+                  <l/>
+               </sp>
+               <sp n="70">
+                  <speaker>Roland,</speaker>
+                  <stage> regardant au fond.</stage>
+                  <l>Diable ! mes créanciers… </l>
+                  <stage>(À Sarmiento.). Je vous suis… (Il passe par le premier plan.)</stage>
+                  <l/>
+               </sp>
+               <sp n="71">
+                  <speaker>Sarmiento.</speaker>
+                  <l>Ne me suivez pas si vite… je ne vous rattraperai jamais…</l>
+               </sp>
+               <sp n="72">
+                  <speaker>Roland.</speaker>
+                  <l>Donnez-moi le bras… </l>
+                  <stage>(Il l’entraîne.)</stage>
+               </sp>
+            </div>
+            <div type="scene" n="8">
+               <head>Scène VIII.</head>
+               <stage>Les Créanciers, CRISTOBAL, TORRIBIO.</stage>
+               <stage>FINAL.</stage>
+               <sp n="1">
+                  <speaker>Les créanciers.</speaker>
+                  <l>Seigneur alcade,</l>
+                  <l>Sous cette arcade,</l>
+                  <l>En embuscade</l>
+                  <l>Mettez-vous donc</l>
+                  <l>Oui, la justice</l>
+                  <l>Veut qu’on saisisse,</l>
+                  <l>Veut qu’on punisse</l>
+                  <l>Un tel larron !</l>
+               </sp>
+               <sp n="2">
+                  <speaker>Cristobal.</speaker>
+                  <l>La paix ! Quelle horde bruyante !</l>
+                  <l>Jamais je n’eus si chaud, je crois.</l>
+                  <l>Ouf ! la chaleur est accablante !</l>
+               </sp>
+               <sp n="3">
+                  <speaker>Les créanciers.</speaker>
+                  <l>Il vous faut défendre nos droits !</l>
+               </sp>
+               <sp n="4">
+                  <speaker>Cristobal,</speaker>
+                  <stage> parlé.</stage>
+                  <l>Ne parlez pas tous à la fois… Plaignants, exposez vos griefs… de qui vous
+                     plaignez-vous ?…</l>
+               </sp>
+               <sp n="5">
+                  <speaker>Premier créancier.</speaker>
+                  <l>D’un intrigant, d’un nommé Roland…</l>
+               </sp>
+               <sp n="6">
+                  <speaker>Tous.</speaker>
+                  <l>Roland !…</l>
+               </sp>
+               <sp n="7">
+                  <speaker>Cristobal.</speaker>
+                  <l>Il m’est signalé… Que lui demandez-vous ?</l>
+               </sp>
+               <sp n="8">
+                  <speaker>Deuxième créancier.</speaker>
+                  <l>De l’argent qu’il nous doit.</l>
+               </sp>
+               <sp n="9">
+                  <speaker>Cristobal.</speaker>
+                  <l>Parfait !… Jus persequendi quod sibi debetur, comme il est dit aux Institutes,
+                     livre…</l>
+               </sp>
+               <sp n="10">
+                  <speaker>Torribio.</speaker>
+                  <l>Quatre.</l>
+               </sp>
+               <sp n="11">
+                  <speaker>Cristobal.</speaker>
+                  <l>Titre…</l>
+               </sp>
+               <sp n="12">
+                  <speaker>Torribio.</speaker>
+                  <l>Six.</l>
+               </sp>
+               <sp n="13">
+                  <speaker>Cristobal.</speaker>
+                  <l>Assez !… donnez un siége à votre magistrat et développez votre plainte. Appelez
+                     !…</l>
+               </sp>
+               <sp n="14">
+                  <speaker>Torribio,</speaker>
+                  <stage> appelant.</stage>
+                  <l>Torbisco contre Roland !…</l>
+               </sp>
+               <sp n="15">
+                  <speaker>Le barbier.</speaker>
+                  <l>C’est moi qui le rase, rase,</l>
+                  <l>Et je le dis sans emphase,</l>
+                  <l>Nul n’est mieux rasé vraiment :</l>
+                  <l>Je lui frise la moustache,</l>
+                  <l>Je le soigne sans relâche ;</l>
+                  <l>Mais après point de paiement.</l>
+                  <l>Notre fait</l>
+                  <l>Est clair et net ;</l>
+                  <l>Quand on doit, il faut qu’on paie.</l>
+                  <l>Il n’est pas de loi plus vraie,</l>
+                  <l>En deux mots, voilà le fait !</l>
+               </sp>
+               <sp n="16">
+                  <speaker>Torribio,</speaker>
+                  <stage> parlé.</stage>
+                  <l>Catalinon contre Roland !…</l>
+               </sp>
+               <sp n="17">
+                  <speaker>Le marchand de cigares.</speaker>
+                  <l>C’est mon bien qu’il fume, fume,</l>
+                  <l>Et le tabac qu’il allume</l>
+                  <l>Est de bon tabac vraiment ;</l>
+                  <l>Mais, comme des cigarettes,</l>
+                  <l>En fumée, hélas ! ses dettes</l>
+                  <l>S’envolent sans nul paiement.</l>
+                  <l>Notre fait, </l>
+                  <stage>etc.</stage>
+               </sp>
+               <sp n="18">
+                  <speaker>Torribio,</speaker>
+                  <stage> parlé.</stage>
+                  <l>Berrocal contre Roland !…</l>
+               </sp>
+               <sp n="19">
+                  <speaker>Le bottier.</speaker>
+                  <l>C’est moi qui le botte, botte,</l>
+                  <l>On le voit rien qu’a ma note.</l>
+                  <l>Nul n’est mieux botté vraiment !</l>
+                  <l>Mais j’ai beau dire et beau faire,</l>
+                  <l>Je ne puis, pour mon salaire,</l>
+                  <l>Obtenir un sou vaillant !</l>
+               </sp>
+               <sp n="20">
+                  <speaker>Torribio,</speaker>
+                  <stage> parlé.</stage>
+                  <l>Bernadillo contre Roland !…</l>
+               </sp>
+               <sp n="21">
+                  <speaker>Le muletier.</speaker>
+                  <l>Sur ma mule il trotte, trotte,</l>
+                  <l>Et, plus fier que don Quichotte,</l>
+                  <l>Partout il s’en va trottant.</l>
+                  <l>Il prodigue les paroles ;</l>
+                  <l>Mais le son de ses pistoles,</l>
+                  <l>Jamais, hélas ! ne s’entend.</l>
+                  <l>Quand on trotte, en vérité,</l>
+                  <l>Il faut bien après qu’on paie,</l>
+                  <l>Et qu’on montre sa monnaie</l>
+                  <l>Après avoir bien trotté !</l>
+               </sp>
+               <sp n="22">
+                  <speaker>Tous.</speaker>
+                  <l>Notre fait</l>
+                  <l>Est clair et net :</l>
+                  <l>Quand on doit, il faut qu’on paie ;</l>
+                  <l>Il n’est pas de loi plus vraie,</l>
+                  <l>En deux mots, voilà le fait.</l>
+                  <stage>(Ils s’aperçoivent que l’alcade s’est endormi sur son tabouret.)</stage>
+               </sp>
+               <sp n="23">
+                  <speaker>Premier créancier.</speaker>
+                  <l>Tiens ! il s’est endormi !…</l>
+               </sp>
+               <sp n="24">
+                  <speaker>Tous,</speaker>
+                  <stage> lui criant aux oreilles.</stage>
+                  <l>Vous nous avez bien entendu !</l>
+               </sp>
+               <sp n="25">
+                  <speaker>Cristobal,</speaker>
+                  <stage> s’éveillant.</stage>
+                  <l>De vos discours, rien n’est perdu.</l>
+               </sp>
+               <sp n="26">
+                  <speaker>Les créanciers.</speaker>
+                  <l>Eh bien, seigneur, que faut-il faire ?</l>
+               </sp>
+               <sp n="27">
+                  <speaker>Cristobal.</speaker>
+                  <l>Il faut l’arrêter promptement.</l>
+               </sp>
+               <sp n="28">
+                  <speaker>Tous.</speaker>
+                  <l>Mais comment ?</l>
+               </sp>
+               <sp n="29">
+                  <speaker>Torribio.</speaker>
+                  <l>Attendez un moment…</l>
+               </sp>
+               <sp n="30">
+                  <speaker>Cristobal.</speaker>
+                  <l>L’homme à qui vous avez affaire,</l>
+               </sp>
+               <sp n="31">
+                  <speaker>Torribio.</speaker>
+                  <l>Affaire.</l>
+               </sp>
+               <sp n="32">
+                  <speaker>Cristobal.</speaker>
+                  <l>Est d’un esprit fin et subtil.</l>
+               </sp>
+               <sp n="33">
+                  <speaker>Torribio.</speaker>
+                  <l>Subtil.</l>
+               </sp>
+               <sp n="34">
+                  <speaker>Cristobal.</speaker>
+                  <l>Dispersez-vous, et puis ensuite…</l>
+               </sp>
+               <sp n="35">
+                  <speaker>Torribio.</speaker>
+                  <l>Ensuite.</l>
+               </sp>
+               <sp n="36">
+                  <speaker>Cristobal.</speaker>
+                  <l>Au mot d’ordre accourez bien vite.</l>
+               </sp>
+               <sp n="37">
+                  <speaker>Torribio.</speaker>
+                  <l>Bien vite.</l>
+               </sp>
+               <sp n="38">
+                  <speaker>Les créanciers.</speaker>
+                  <l>Ce mot d’ordre quel sera-t-il ?</l>
+               </sp>
+               <sp n="39">
+                  <speaker>Cristobal,</speaker>
+                  <stage> parlé.</stage>
+                  <l>Voyons… voyons… il faudrait quelque chose de mystérieux… de…</l>
+               </sp>
+               <sp n="40">
+                  <speaker>Torribio.</speaker>
+                  <l>Ouf ! la chaleur est accablante !</l>
+               </sp>
+               <sp n="41">
+                  <speaker>Cristobal.</speaker>
+                  <l>Tiens, cet imbécile a raison ;</l>
+                  <l>Ce mot d’ordre sera le nôtre.</l>
+                  <l>Je crois qu’il en vaut bien un autre,</l>
+                  <l>Et je le choisis sans façon.</l>
+                  <l>Qu’a ce mot d’ordre, et sur-le-champ,</l>
+                  <l>Chacun arrive au même instant ;</l>
+                  <l>Pour échapper à votre alcade,</l>
+                  <l>Il n’est vraiment aucun moyen.</l>
+               </sp>
+               <sp n="42">
+                  <speaker>Les créanciers.</speaker>
+                  <l>Plus de détours, plus de bravade</l>
+                  <l>Nous le prendrons, cherchons-le bien.</l>
+                  <l>Embusquons-nous, et, sans démordre,</l>
+                  <l>Guettons-le bien, ne disons rien.</l>
+                  <l>N’oublions pas notre mot d’ordre.</l>
+                  <l>Guettons-le bien !</l>
+                  <stage>(Ils sortent.)</stage>
+               </sp>
+               <sp n="43">
+                  <speaker>Cristobal.</speaker>
+                  <l>Et, maintenant, toutes les issues sont gardées, excepté celle-ci… nous allons
+                     nous y mettre, c’est le poste d’honneur… je me le suis réservé… guettons !…</l>
+               </sp>
+               <sp n="44">
+                  <speaker>Torribio.</speaker>
+                  <l>Guettons !…</l>
+               </sp>
+               <sp n="45">
+                  <speaker>Cristobal,</speaker>
+                  <stage> s’endormant.</stage>
+                  <l>Heureuse la cité qui possède un magistrat tel que moi… Veillons !…</l>
+               </sp>
+               <sp n="46">
+                  <speaker>Torribio,</speaker>
+                  <stage> s’endormant.</stage>
+                  <l>Veillons !…</l>
+               </sp>
+            </div>
+            <div type="scene" n="9">
+               <head>Scène IX.</head>
+               <stage>Les Mêmes, SARMIENTO, ROLAND.</stage>
+               <sp n="1">
+                  <speaker>Sarmiento,</speaker>
+                  <stage> à Roland.</stage>
+                  <l>À présent vous avez tout à fait bonne mine. </l>
+                  <stage>(On entend au loin le chœur.)</stage>
+                  <l> Tiens, une sérénade…</l>
+               </sp>
+               <sp n="2">
+                  <speaker>Roland,</speaker>
+                  <stage> à part.</stage>
+                  <l>Je la connais !… la chanson des créanciers.</l>
+               </sp>
+               <sp n="3">
+                  <speaker>Sarmiento,</speaker>
+                  <stage> apercevant Cristobal.</stage>
+                  <l>Eh bien ! qu’est-ce qu’ils font donc là, devant ma porte ?…</l>
+               </sp>
+               <sp n="4">
+                  <speaker>Roland.</speaker>
+                  <l>Dieu !… l’alcade !…</l>
+               </sp>
+               <sp n="5">
+                  <speaker>Sarmiento.</speaker>
+                  <l>Il s’est endormi avec son greffier… Je vais…</l>
+               </sp>
+               <sp n="6">
+                  <speaker>Roland.</speaker>
+                  <l>Oh ! non… ne les réveillons pas…</l>
+               </sp>
+               <sp n="7">
+                  <speaker>Sarmiento.</speaker>
+                  <l>Vous avez peut-être raison, il se mettrait encore à bavarder… </l>
+                  <stage>(Il va ouvrir.)</stage>
+                  <l/>
+               </sp>
+               <sp n="8">
+                  <speaker>Roland.</speaker>
+                  <l>Mes créanciers qui me guettent là-bas… l’alcade qui sommeille… et l’amour qui
+                     m’attend là-haut… vivat !… </l>
+                  <stage>(Il entre avec Sarmiento.)</stage>
+                  <l/>
+                  <l>Cristobal et Torribio, toujours endormis.</l>
+                  <l>Veillons !… </l>
+                  <stage>(On entend le chœur au loin.)</stage>
+               </sp>
+               <stage>REPRISE DU CHŒUR.</stage>
+            </div>
+         </div>
+         <div type="act" n="2">
+            <head>ACTE DEUXIÈME</head>
+            <stage>Le théâtre représente une terrasse : porte à gauche. Au fond on arrive de
+               l’extérieur par un escalier.</stage>
+            <div type="scene" n="1">
+               <head>Scène PREMIÈRE.</head>
+               <stage>BÉATRIX.</stage>
+               <sp n="1">
+                  <lg>
+                     <lg>
+                        <head>I</head>
+                        <l>Ah ! quel métier que d’être femme !</l>
+                        <l>J’ai couru par tout le marché ;</l>
+                        <l>C’est trop de zèle, sur mon âme !</l>
+                        <l>J’ai marchandé, j’ai bien cherché ;</l>
+                        <l>Et, maintenant, il faut qu’on fasse</l>
+                        <l>La cuisine à son cher époux,</l>
+                        <l>Pour voir monsieur prendre sa place</l>
+                        <l>Et vous faire encore la grimace,</l>
+                        <l>Si tout n’est pas selon ses goûts.</l>
+                        <l>Ah ! si l’on osait,</l>
+                        <l>Comme on parlerait,</l>
+                        <l>Comme on en dirait ;</l>
+                        <l>Mais il faut se taire,</l>
+                        <l>Et, sans souffler mot,</l>
+                        <l>Souffrir sa misère,</l>
+                        <l>Voilà notre lot !</l>
+                        <l>Taisons-nous, ne disons mot !</l>
+                     </lg>
+                     <lg>
+                        <head>II</head>
+                        <l>Les hommes sont d’étranges drôles :</l>
+                        <l>Prêcheurs, avocats, procureurs ;</l>
+                        <l>Ils ont pris pour eux tous les rôles</l>
+                        <l>Qui font briller les grands parleurs ;</l>
+                        <l>Puis, qu’une femme, par mégarde,</l>
+                        <l>Dise en passant un mot ou deux,</l>
+                        <l>Les voilà criant qu’on bavarde,</l>
+                        <l>Et vous traitant de babillarde,</l>
+                        <l>Quand on parle cent fois moins qu’eux !</l>
+                        <l>Ah ! si l’on osait,</l>
+                        <stage>etc.</stage>
+                     </lg>
+                  </lg>
+                  <l>C’est qu’il faut se dépêcher : si tout n’était pas prêt quand mon mari
+                     rentrera, il dirait que j’ai perdu mon temps à bavarder, et Dieu sait… Eh bien,
+                     la table n’est pas encore préparée !… Inès !… où est-elle, cette étourdie !
+                     Inès ! On ne la voit jamais quand on en a besoin… Inès !… elle ne viendra pas…
+                     Inès !… Inès !… Inès !…</l>
+               </sp>
+            </div>
+            <div type="scene" n="2">
+               <head>Scène II.</head>
+               <stage>BÉATRIX, INÈS.</stage>
+               <sp n="1">
+                  <speaker>Inès,</speaker>
+                  <stage> arrivant.</stage>
+                  <l>Ma tante ! ma tante ! ma tante !…</l>
+               </sp>
+               <sp n="2">
+                  <speaker>Béatrix.</speaker>
+                  <l>Qu’est-ce que cette manière de répondre ?</l>
+               </sp>
+               <sp n="3">
+                  <speaker>Inès.</speaker>
+                  <l>Je réponds comme vous appelez.</l>
+               </sp>
+               <sp n="4">
+                  <speaker>Béatrix.</speaker>
+                  <l>Je vous trouve bien effrontée !… Apprenez, petite fille, que la retenue est la
+                     principale qualité de notre sexe.</l>
+               </sp>
+               <sp n="5">
+                  <speaker>Inès.</speaker>
+                  <l>C’est bien…</l>
+               </sp>
+               <sp n="6">
+                  <speaker>Béatrix.</speaker>
+                  <l>Qu’une femme doit savoir écouter avec modestie ce qu’on lui dit.</l>
+               </sp>
+               <sp n="7">
+                  <speaker>Inès.</speaker>
+                  <l>Je m’en souviendrai.</l>
+               </sp>
+               <sp n="8">
+                  <speaker>Béatrix.</speaker>
+                  <l>Et ne pas s’aviser de parler à tout propos.</l>
+               </sp>
+               <sp n="9">
+                  <speaker>Inès.</speaker>
+                  <l>C’est pour me dire tout cela que vous m’avez appelée ?</l>
+               </sp>
+               <sp n="10">
+                  <speaker>Béatrix.</speaker>
+                  <l>Non, mademoiselle, c’est pour vous dire de faire mettre le couvert. Quand un
+                     mari ne trouve pas le couvert mis à l’heure du souper, cela est cause qu’il
+                     s’impatiente.</l>
+               </sp>
+               <sp n="11">
+                  <speaker>Inès.</speaker>
+                  <l>C’est juste.</l>
+               </sp>
+               <sp n="12">
+                  <speaker>Béatrix.</speaker>
+                  <l>Et quand il s’impatiente, cela est cause qu’il gronde sa femme d’abord, et sa
+                     nièce ensuite.</l>
+               </sp>
+               <sp n="13">
+                  <speaker>Inès.</speaker>
+                  <l>Voilà une raison tout à fait déterminante.</l>
+               </sp>
+               <sp n="14">
+                  <speaker>Béatrix.</speaker>
+                  <l>Allons, allons, ne raisonnons pas, et faites préparer tout.</l>
+               </sp>
+               <sp n="15">
+                  <speaker>Inès.</speaker>
+                  <l>Pédro ! la table !</l>
+               </sp>
+               <sp n="16">
+                  <speaker>Béatrix.</speaker>
+                  <l>D’autant plus que votre oncle peut rentrer d’un moment à l’autre.</l>
+               </sp>
+               <sp n="17">
+                  <speaker>Inès.</speaker>
+                  <l>Il est rentré déjà.</l>
+               </sp>
+               <sp n="18">
+                  <speaker>Béatrix.</speaker>
+                  <l>Comment ?</l>
+               </sp>
+               <sp n="19">
+                  <speaker>Inès.</speaker>
+                  <l>Oui, je l’ai entendu ; il n’était pas seul ; il s’est enfermé dans sa chambre
+                     avec quelqu’un.</l>
+               </sp>
+               <sp n="20">
+                  <speaker>Béatrix.</speaker>
+                  <l>Ce quelqu’un, que veut-il ? quel est-il ?</l>
+               </sp>
+               <sp n="21">
+                  <speaker>Inès.</speaker>
+                  <l>Je n’en sais rien, je ne l’ai pas vu… Mais tenez, je les entends…</l>
+               </sp>
+            </div>
+            <div type="scene" n="3">
+               <head>Scène III.</head>
+               <stage>Les Mêmes, SARMIENTO, ROLAND.</stage>
+               <sp n="1">
+                  <speaker>Sarmiento,</speaker>
+                  <stage> à Roland.</stage>
+                  <l>Venez donc, mon cher ami, venez donc !</l>
+               </sp>
+               <sp n="2">
+                  <speaker>Roland,</speaker>
+                  <stage> à part.</stage>
+                  <l>Enfin, me voilà auprès d’elle.</l>
+               </sp>
+               <sp n="3">
+                  <speaker>Inès,</speaker>
+                  <stage> l’apercevant. — À part.</stage>
+                  <l>Dieu ! c’est lui !…</l>
+               </sp>
+               <sp n="4">
+                  <speaker>Sarmiento,</speaker>
+                  <stage> à part.</stage>
+                  <l>Je lui ai bien fait sa leçon.</l>
+               </sp>
+               <sp n="5">
+                  <speaker>Béatrix.</speaker>
+                  <l>Enchantée, senor, de faire votre connaissance.</l>
+               </sp>
+               <sp n="6">
+                  <speaker>Roland,</speaker>
+                  <stage> à Béatrix.</stage>
+                  <l>Mille grâces ! </l>
+                  <stage>(Il salue Béatrix.)</stage>
+               </sp>
+               <sp n="7">
+                  <speaker>Sarmiento,</speaker>
+                  <stage> à Béatrix.</stage>
+                  <l>C’est un de mes cousins que je vous présente.</l>
+               </sp>
+               <sp n="8">
+                  <speaker>Inès.</speaker>
+                  <l>Un cousin ! comment cela peut-il se faire ?</l>
+               </sp>
+               <sp n="9">
+                  <speaker>Sarmiento.</speaker>
+                  <l>Nous ne nous étions pas vus depuis longtemps. Je pense que vous lui réserverez
+                     un bon accueil.</l>
+               </sp>
+               <sp n="10">
+                  <speaker>Béatrix.</speaker>
+                  <l>Mais certainement… Inès, un couvert de plus.</l>
+               </sp>
+               <sp n="11">
+                  <speaker>Inès.</speaker>
+                  <l>Oui, ma tante. </l>
+                  <stage>(À part.)</stage>
+                  <l> Qu’est-ce que cela veut dire ? </l>
+                  <stage>(Elle sort.)</stage>
+               </sp>
+            </div>
+            <div type="scene" n="4">
+               <head>Scène IV.</head>
+               <stage>SARMIENTO, ROLAND, BÉATRIX.</stage>
+               <sp n="1">
+                  <speaker>Sarmiento.</speaker>
+                  <l>Le seigneur Roland vient chercher une place à la cour. Nous le logerons en
+                     attendant.</l>
+               </sp>
+               <sp n="2">
+                  <speaker>Béatrix.</speaker>
+                  <l>J’espère que le seigneur Roland se plaira auprès de nous, et que notre
+                     hospitalité lui conviendra. Elle est offerte de bon cœur… et…</l>
+               </sp>
+               <sp n="3">
+                  <speaker>Roland,</speaker>
+                  <stage> l’interrompant.</stage>
+                  <l>Et acceptée de même, car l’hospitalité ne doit pas se refuser. C’est le lien
+                     des hommes ; elle ne se mesure pas à ses effets, mais à la grâce avec laquelle
+                     elle est donnée et à la reconnaissance avec laquelle elle est accueillie.</l>
+               </sp>
+               <sp n="4">
+                  <speaker>Béatrix.</speaker>
+                  <l>Certes, et…</l>
+               </sp>
+               <sp n="5">
+                  <speaker>Roland,</speaker>
+                  <stage> l’interrompant.</stage>
+                  <l>Pour moi, je ne puis vous dissimuler que, dès à présent, je suis touché de
+                     votre bon accueil, et que je me réjouis de trouver dans cette maison tout ce
+                     qui peut réconforter l’âme et le corps. En effet, la grâce de votre physionomie
+                     et le parfum de votre cuisine sont des indices auxquels on ne saurait se
+                     tromper, et, de même qu’on peut juger les penchants au regard, au jeu des
+                     paupières, au moindre pli de la physionomie, de même, et dès avant qu’on y ait
+                     goûté, on peut juger d’un bon plat à l’arôme qu’il exhale et aux senteurs dont
+                     il est accompagné.</l>
+               </sp>
+               <sp n="6">
+                  <speaker>Béatrix,</speaker>
+                  <stage> effrayée.</stage>
+                  <l>Mon mari, quel homme m’avez-vous amené ?</l>
+               </sp>
+               <sp n="7">
+                  <speaker>Sarmiento.</speaker>
+                  <l>Il ne faut pas y faire attention, il est comme cela.</l>
+               </sp>
+               <sp n="8">
+                  <speaker>Roland.</speaker>
+                  <l>Et maintenant je suis impatient de savoir si je serai agréé par la senora ?</l>
+               </sp>
+               <sp n="9">
+                  <speaker>Béatrix.</speaker>
+                  <l>Mais…</l>
+               </sp>
+               <sp n="10">
+                  <speaker>Roland.</speaker>
+                  <l>Je hais la flatterie ; si vous me trouvez laid, vous pouvez me le dire ; si
+                     vous me trouvez beau, il est inutile de m’en faire un mystère ; si vous aimez
+                     danser, nous danserons ; si vous préférez chanter, nous chanterons. Bref, vous
+                     me trouverez à toute heure prêt à vous plaire et à vous servir.</l>
+               </sp>
+               <sp n="11">
+                  <speaker>Béatrix.</speaker>
+                  <l>Ah ! mon Dieu ! il ne se taira jamais !</l>
+               </sp>
+            </div>
+            <div type="scene" n="5">
+               <head>Scène V.</head>
+               <stage>Les Mêmes, INÈS, suivie de PEDRO, qui apporte une table servie.</stage>
+               <sp n="1">
+                  <speaker>Pedro.</speaker>
+                  <l>Le dîner est servi !</l>
+               </sp>
+               <sp n="2">
+                  <speaker>Béatrix.</speaker>
+                  <l>Vite à table !… C’est le seul moyen de lui fermer la bouche.</l>
+                  <lg>
+                     <head>QUATUOR.</head>
+                     <head>ENSEMBLE.</head>
+                     <l>À table ! à table ! à table !</l>
+                     <l>Un sage nous l’a dit :</l>
+                     <l>Rien n’est plus détestable</l>
+                     <l>Qu’un plat qui refroidit.</l>
+                  </lg>
+               </sp>
+               <sp n="3">
+                  <speaker>Béatrix.</speaker>
+                  <l>Au repas qu’on nous donne,</l>
+                  <l>Vous devez faire honneur.</l>
+               </sp>
+               <sp n="4">
+                  <speaker>Roland.</speaker>
+                  <l>Votre cuisine est bonne,</l>
+                  <l>J’en juge par l’odeur !</l>
+               </sp>
+               <sp n="5">
+                  <speaker>Sarmiento,</speaker>
+                  <stage> à part.</stage>
+                  <l>De lui pour que j’obtienne</l>
+                  <l>Ce service éclatant,</l>
+                  <l>Il importe qu’il prenne</l>
+                  <l>Des forces en mangeant</l>
+               </sp>
+               <sp n="6">
+                  <speaker>Roland,</speaker>
+                  <stage> mangeant comme quatre.</stage>
+                  <l>C’est excellent ! c’est excellent !</l>
+               </sp>
+               <sp n="7">
+                  <speaker>Béatrix.</speaker>
+                  <l>Buvez, mangez tranquillement.</l>
+               </sp>
+               <stage>ENSEMBLE.</stage>
+               <sp n="8">
+                  <speaker>Béatrix.</speaker>
+                  <l>Il a la bouche pleine.</l>
+                  <l>De le calmer, sans peine,</l>
+                  <l>J’ai trouvé le moyen.</l>
+                  <l>J’ai réussi, j’espère !</l>
+                  <l>Enfin, je l’ai fait taire,</l>
+                  <l>Et je ne crains plus rien !</l>
+               </sp>
+               <sp n="9">
+                  <speaker>Inès.</speaker>
+                  <l>Il a la bouche pleine,</l>
+                  <l>Enfin le sort l’amène,</l>
+                  <l>Quel bonheur est le mien !</l>
+                  <l>Pour tous deux, je l’espère,</l>
+                  <l>Commence un sort prospère,</l>
+                  <l>Et je ne crains plus rien !</l>
+               </sp>
+               <sp n="10">
+                  <speaker>Sarmiento.</speaker>
+                  <l>Il a la bouche pleine,</l>
+                  <l>Laissons-le prendre haleine,</l>
+                  <l>Quel bonheur est le mien</l>
+                  <l>Ma femme, je l’espère,</l>
+                  <l>Grâce à lui va se taire,</l>
+                  <l>Et je ne crains plus rien !</l>
+               </sp>
+               <sp n="11">
+                  <speaker>Sarmiento,</speaker>
+                  <stage> bas à Roland.</stage>
+                  <l>Et maintenant je crois que, sans façons,</l>
+                  <l>Il faut s’y mettre avant qu’elle commence.</l>
+                  <l>Bavardons, mon cher, bavardons.</l>
+               </sp>
+               <sp n="12">
+                  <speaker>Roland.</speaker>
+                  <l>Ne craignez rien !</l>
+               </sp>
+               <sp n="13">
+                  <speaker>Béatrix.</speaker>
+                  <l>D’abord, de votre complaisance.</l>
+                  <l>Noble seigneur, nous réclamons</l>
+                  <l>La grâce de quelques chansons ?</l>
+               </sp>
+               <sp n="14">
+                  <speaker>Sarmiento.</speaker>
+                  <l>Soit ! Va pour la chanson, allons !</l>
+               </sp>
+               <stage>CHANSON.</stage>
+               <sp n="15">
+                  <speaker>Roland.</speaker>
+                  <lg>
+                     <lg>
+                        <head>I</head>
+                        <l>C’est l’Espagne qui nous donne</l>
+                        <l>Le bon vin, les belles fleurs ;</l>
+                        <l>C’est pour elle que rayonne</l>
+                        <l>Un soleil plus chaud qu’ailleurs.</l>
+                        <l>La fleur qui naît nous dit : Aimons !</l>
+                        <l>Le vin vieilli nous dit : Buvons !</l>
+                        <l>Vins vieux et fleurs naissantes,</l>
+                        <l>Croyez ces voix charmantes.</l>
+                        <l>Quand sur lui le temps se passe,</l>
+                        <l>Le bon vin devient meilleur ;</l>
+                        <l>Mais des fleurs l’éclat s’efface,</l>
+                        <l>Cueillons-les dans leur fraîcheur !</l>
+                     </lg>
+                     <lg>
+                        <head>II</head>
+                        <l>C’est l’Espagne dont les femmes</l>
+                        <l>Brillent par le plus d’attraits ;</l>
+                        <l>Dans leurs yeux sont plus de flammes</l>
+                        <l>Que de fleurs dans les bosquets.</l>
+                        <l>La fleur qui naît, etc.</l>
+                     </lg>
+                  </lg>
+               </sp>
+               <sp n="16">
+                  <speaker>Béatrix.</speaker>
+                  <l>Ah ! c’est charmant !</l>
+                  <l>C’est excellent !</l>
+                  <l>À chanter nul ne vous surpasse !</l>
+               </sp>
+               <sp n="17">
+                  <speaker>Sarmiento.</speaker>
+                  <l>Et, maintenant,</l>
+                  <l>C’est le moment,</l>
+                  <l>Parlez, de grâce !</l>
+               </sp>
+               <sp n="18">
+                  <speaker>Béatrix.</speaker>
+                  <l>Mangez, de grâce !</l>
+               </sp>
+               <stage>CAUSERIE.</stage>
+               <sp n="19">
+                  <speaker>Roland.</speaker>
+                  <l>Ah ! quel repas sans égal !</l>
+                  <l>Quel hôte libéral !</l>
+                  <l>D’un accueil amical,</l>
+                  <l>Voilà l’idéal.</l>
+                  <l>Je préfère au plus beau bal,</l>
+                  <l>Au plus doux madrigal,</l>
+                  <l>Le plaisir cordial</l>
+                  <l>D’un pareil régal.</l>
+                  <l>Cette vaste terrine,</l>
+                  <l>Où trônait l’aubergine,</l>
+                  <l>Et ce piment moulu,</l>
+                  <l>Ce lapin si dodu,</l>
+                  <l>L’anguille frétillante,</l>
+                  <l>Et le vin d’Alicante,</l>
+                  <l>Et ce plat</l>
+                  <l>De nougat,</l>
+                  <l>Tout a fort bonne mine,</l>
+                  <l>Et, plus on l’examine,</l>
+                  <l>Enfin, votre cuisine</l>
+                  <l>Est, de tout point, divine.</l>
+                  <l>Ah ! quel repas sans égal ! etc.</l>
+                  <l>Mais, quand on quitte la table,</l>
+                  <l>Est-il donc un plaisir plus grand</l>
+                  <l>Que de converser un moment ?</l>
+                  <l>Non, rien n’est plus agréable,</l>
+                  <l>Et, comme disait mon aïeul,</l>
+                  <l>Ce n’est permis qu’à l’homme seul ;</l>
+                  <l>Car sachez que la parole,</l>
+                  <l>Est, en somme, un don capital !</l>
+                  <l>Nous distinguant de l’animal,</l>
+                  <l>Ceci n’a rien de frivole,</l>
+                  <l>Et, pour un esprit positif,</l>
+                  <l>Mon calcul est démonstratif.</l>
+                  <l>Par effort de mémoire,</l>
+                  <l>On voit des perroquets,</l>
+                  <l>Dans leurs naïfs caquets,</l>
+                  <l>Vous demander à boire,</l>
+                  <l>Ou du rôt de mouton,</l>
+                  <l>Toujours du même ton ;</l>
+                  <l>J’entendis même un phoque,</l>
+                  <l>Articuler : Papa !</l>
+                  <l>Mais ces accidents-là</l>
+                  <l>N’ont rien que d’équivoque,</l>
+                  <l>Et, sans dissimuler,</l>
+                  <l>L’homme seul sait parler ;</l>
+                  <l>Comme, à tout bien juger,</l>
+                  <l>L’homme seul sait manger !</l>
+                  <l>Ah ! quel repas sans égal !</l>
+                  <l>Quel hôte libéral !</l>
+                  <l>D’un accueil amical,</l>
+                  <l>Voilà l’idéal.</l>
+                  <l>Je préfère au plus beau bal,</l>
+                  <l>Au plus doux madrigal,</l>
+                  <l>Le plaisir cordial</l>
+                  <l>D’un pareil régal.</l>
+                  <l>Voyez d’un cœur loyal</l>
+                  <l>L’élan sentimental ;</l>
+                  <l>Vraiment un tel régal</l>
+                  <l>Pour moi n’a rien d’égal !</l>
+                  <l>Ce vin de Portugal,</l>
+                  <l>Brillant dans le cristal,</l>
+                  <l>Ce festin peu frugal,</l>
+                  <l>Où le règne animal</l>
+                  <l>Se mêle au végétal,</l>
+                  <l>D’un accueil amical,</l>
+                  <l>C’est le pur idéal !</l>
+               </sp>
+               <stage>ENSEMBLE.</stage>
+               <sp n="20">
+                  <speaker>Béatrix.</speaker>
+                  <l>J’étouffe de colère,</l>
+                  <l>Son babil m’exaspère,</l>
+                  <l>Il me fera bondir.</l>
+                  <l>Auprès de lui j’enrage ;</l>
+                  <l>Semblable bavardage</l>
+                  <l>Ne pourra-t-il finir.</l>
+               </sp>
+               <sp n="21">
+                  <speaker>Inès.</speaker>
+                  <l>Je vois ce qu’il veut faire,</l>
+                  <l>Dans son projet, j’espère,</l>
+                  <l>Il pourra réussir.</l>
+                  <l>Grâce à ce bavardage,</l>
+                  <l>Avant peu, je le gage,</l>
+                  <l>Nous pourrons nous unir</l>
+               </sp>
+               <sp n="22">
+                  <speaker>Sarmiento.</speaker>
+                  <l>Pour moi, la bonne affaire,</l>
+                  <l>Car à la faire taire,</l>
+                  <l>Il a su parvenir.</l>
+                  <l>C’est en vain qu’elle enrage,</l>
+                  <l>Et de son bavardage,</l>
+                  <l>Rien ne peut l’affranchir</l>
+               </sp>
+               <sp n="23">
+                  <speaker>Roland.</speaker>
+                  <l>Je ris de sa colère,</l>
+                  <l>Car à me faire taire,</l>
+                  <l>Qui pourrait parvenir.</l>
+                  <l>C’est en vain qu’elle enrage,</l>
+                  <l>Et de mon bavardage,</l>
+                  <l>Rien ne peut l’affranchir.</l>
+               </sp>
+               <sp n="24">
+                  <speaker>Béatrix.</speaker>
+                  <l>Mon mari, emmenez cet homme, je n’y puis tenir !…</l>
+               </sp>
+               <sp n="25">
+                  <speaker>Sarmiento.</speaker>
+                  <l>Du tout, il fera ici ses sept ans !…</l>
+               </sp>
+               <sp n="26">
+                  <speaker>Béatrix.</speaker>
+                  <l>Sept ans !…</l>
+               </sp>
+               <sp n="27">
+                  <speaker>Sarmiento.</speaker>
+                  <l>Pas un jour de moins !</l>
+               </sp>
+               <sp n="28">
+                  <speaker>Béatrix.</speaker>
+                  <l>C’est indigne, c’est affreux ! Oh ! mais je préfère vous céder la place ! Je me
+                     retire, monsieur… Inès, suivez-moi !</l>
+               </sp>
+               <sp n="29">
+                  <speaker>Inès.</speaker>
+                  <l>Mais ma tante…</l>
+               </sp>
+               <sp n="30">
+                  <speaker>Béatrix.</speaker>
+                  <l>Allons, petite fille, viendrez-vous ! </l>
+                  <stage>(À Roland.)</stage>
+                  <l> Je… vous… Ah ! c’est trop fort ! </l>
+                  <stage>(Elle sort.)</stage>
+               </sp>
+            </div>
+            <div type="scene" n="6">
+               <head>Scène VI.</head>
+               <stage>ROLAND, SARMIENTO.</stage>
+               <sp n="1">
+                  <speaker>Sarmiento.</speaker>
+                  <l>Elles vont causer ensemble, mais cela m’est égal. </l>
+                  <stage>(À Roland.)</stage>
+                  <l> Cher ami, vous devez avoir besoin de quelques rafraîchissements, un peu
+                     d’orangeade, de limonade, d’eau de grenade…</l>
+               </sp>
+               <sp n="2">
+                  <speaker>Roland.</speaker>
+                  <l>Non ! c’est inutile !</l>
+               </sp>
+               <sp n="3">
+                  <speaker>Sarmiento.</speaker>
+                  <l>Il n’est pas même essoufflé ! c’est un homme infatigable ! que je suis content
+                     de l’avoir amené chez moi.</l>
+               </sp>
+               <sp n="4">
+                  <speaker>Roland,</speaker>
+                  <stage> à part.</stage>
+                  <l>Et maintenant, je crois le moment favorable pour me déclarer. </l>
+                  <stage>(À Sarmiento)</stage>
+                  <l>Je dois vous dire, mon cher hôte, que…</l>
+               </sp>
+               <sp n="5">
+                  <speaker>Sarmiento,</speaker>
+                  <stage> l’interrompant.</stage>
+                  <l>Non ! non ! ménagez-vous, cher ami, maintenant que ma femme n’est plus là,
+                     c’est inutile.</l>
+               </sp>
+               <sp n="6">
+                  <speaker>Roland.</speaker>
+                  <l>Voici ce que j’ai à vous dire…</l>
+               </sp>
+               <sp n="7">
+                  <speaker>Cristobal,</speaker>
+                  <stage> au dehors.</stage>
+                  <l>Senor Sarmiento, êtes-vous là ?</l>
+               </sp>
+               <sp n="8">
+                  <speaker>Sarmiento.</speaker>
+                  <l>Tiens, c’est l’alcade !</l>
+               </sp>
+               <sp n="9">
+                  <speaker>Roland.</speaker>
+                  <l>L’alcade ! je suis pris…</l>
+               </sp>
+            </div>
+            <div type="scene" n="7">
+               <head>Scène VII.</head>
+               <stage>Les Mêmes, CRISTOBAL, TORRIBIO.</stage>
+               <sp n="1">
+                  <speaker>Cristobal.</speaker>
+                  <l>Me voici !</l>
+               </sp>
+               <sp n="2">
+                  <speaker>Torribio.</speaker>
+                  <l>Nous voici !</l>
+               </sp>
+               <sp n="3">
+                  <speaker>Roland,</speaker>
+                  <stage> Cristobal et Torribio le saluent.</stage>
+                  <l>Comme ils sont polis… Ah ! mon costume qui fait son effet. Du diable ! s’ils me
+                     reconnaissent. </l>
+               </sp>
+               <stage>(Ils recommencent leurs salutations.)</stage>
+               <sp n="4">
+                  <speaker>Sarmiento.</speaker>
+                  <l>Eh bien ! seigneur, quel motif me vaut l’honneur de votre visite ?</l>
+               </sp>
+               <sp n="5">
+                  <speaker>Cristobal.</speaker>
+                  <l>Il m’est venu une idée…</l>
+               </sp>
+               <sp n="6">
+                  <speaker>Torribio.</speaker>
+                  <l>Il nous est venu une idée.</l>
+               </sp>
+               <sp n="7">
+                  <speaker>Roland,</speaker>
+                  <stage> à part.</stage>
+                  <l>Tâchons de nous esquiver. </l>
+                  <stage>(Il remonte.)</stage>
+               </sp>
+               <sp n="8">
+                  <speaker>Cristobal,</speaker>
+                  <stage> à Torribio.</stage>
+                  <l>Observe… observe. </l>
+                  <stage>(À Sarmiento.)</stage>
+                  <l> Je désire qu’en ma présence vous donniez la main à votre voisin Pérès pour
+                     prouver que vous êtes amis désormais.</l>
+               </sp>
+               <sp n="9">
+                  <speaker>Sarmiento.</speaker>
+                  <l>Soit, je n’ai pas de rancune, et dès demain !…</l>
+               </sp>
+               <sp n="10">
+                  <speaker>Cristobal.</speaker>
+                  <l>Non ! non ! tout de suite…</l>
+               </sp>
+               <sp n="11">
+                  <speaker>Sarmiento.</speaker>
+                  <l>Comme il vous plaira… je vous suis, ne vous fâchez pas… le temps de prendre ma
+                     canne, mon chapeau, et de m’habiller un peu.</l>
+               </sp>
+            </div>
+            <div type="scene" n="8">
+               <head>Scène VIII.</head>
+               <stage>TORRIBIO, ROLAND, CRISTOBAL.</stage>
+               <sp n="1">
+                  <speaker>Cristobal.</speaker>
+                  <l>Hein ! quel adroit prétexte pour m’introduire ici… Tu as le signalement de
+                     notre homme ?</l>
+               </sp>
+               <sp n="2">
+                  <speaker>Roland,</speaker>
+                  <stage> à part.</stage>
+                  <l>Ils m’observent ! jouons serré ! </l>
+                  <stage>(Il chantonne.)</stage>
+               </sp>
+               <sp n="3">
+                  <speaker>Torribio.</speaker>
+                  <l>Bottes percées.</l>
+               </sp>
+               <sp n="4">
+                  <speaker>Cristobal.</speaker>
+                  <l>Il est dans ses petits souliers.</l>
+               </sp>
+               <sp n="5">
+                  <speaker>Torribio.</speaker>
+                  <l>Coudes troués.</l>
+               </sp>
+               <sp n="6">
+                  <speaker>Cristobal.</speaker>
+                  <l>Des crevés de satin.</l>
+               </sp>
+               <sp n="7">
+                  <speaker>Torribio.</speaker>
+                  <l>Feutre éventré.</l>
+               </sp>
+               <sp n="8">
+                  <speaker>Cristobal.</speaker>
+                  <l>Il est toqué.</l>
+               </sp>
+               <sp n="9">
+                  <speaker>Torribio.</speaker>
+                  <l>Signes particuliers… Tenue négligée.</l>
+               </sp>
+               <sp n="10">
+                  <speaker>Cristobal.</speaker>
+                  <l>Une élégance parfaite ! il me rappelle Don Juan que je n’ai jamais vu, mais
+                     dont j’ai beaucoup entendu parler. Interrogeons-le toujours. </l>
+                  <stage>(Haut.)</stage>
+                  <l> Il y a longtemps que votre Seigneurie est dans notre ville ?</l>
+               </sp>
+               <sp n="11">
+                  <speaker>Roland.</speaker>
+                  <l>Depuis ce matin je suis arrivé chez mon cousin Sarmiento.</l>
+               </sp>
+               <sp n="12">
+                  <speaker>Cristobal.</speaker>
+                  <l>Ah ! c’est votre cousin ? </l>
+                  <stage>(Roland lui offre des gâteaux, il les mange tout en causant. Torribio
+                     essaye d’en attraper quelques miettes.)</stage>
+                  <l> Comptez-vous faire un long séjour dans ce pays ?</l>
+               </sp>
+               <sp n="13">
+                  <speaker>Roland.</speaker>
+                  <l>Certes. Je m’y plais beaucoup. La ville est admirablement tenue, et, en y
+                     entrant, on sent tout de suite qu’elle est administrée par un homme
+                     supérieur.</l>
+               </sp>
+               <sp n="14">
+                  <speaker>Cristobal.</speaker>
+                  <l>Il s’exprime fort bien… Je ne vous le cacherai pas plus longtemps… Cet homme
+                     supérieur… C’est moi…</l>
+               </sp>
+               <sp n="15">
+                  <speaker>Torribio.</speaker>
+                  <l>C’est nous !</l>
+               </sp>
+               <sp n="16">
+                  <speaker>Cristobal.</speaker>
+                  <l>Assez !</l>
+               </sp>
+               <sp n="17">
+                  <speaker>Roland.</speaker>
+                  <l>Vraiment ! Eh bien ! Seigneur, puisque c’est à l’alcade que j’ai l’honneur de
+                     parler… je dois vous signaler un individu dont j’ai fort à me plaindre, un
+                     nommé Roland…</l>
+               </sp>
+               <sp n="18">
+                  <speaker>Cristobal.</speaker>
+                  <l>Ah ! bah !</l>
+               </sp>
+               <sp n="19">
+                  <speaker>Roland.</speaker>
+                  <l>Il me doit de l’argent… impossible d’en rien obtenir…</l>
+               </sp>
+               <sp n="20">
+                  <speaker>Cristobal.</speaker>
+                  <l>J’en sais quelque chose !…</l>
+               </sp>
+               <sp n="21">
+                  <speaker>Roland.</speaker>
+                  <l>Je l’ai rencontré ce matin… Je lui ai rappelé notre dette et il m’a cherché
+                     querelle…</l>
+               </sp>
+               <sp n="22">
+                  <speaker>Cristobal.</speaker>
+                  <l>Voyez-vous ça ?</l>
+               </sp>
+               <sp n="23">
+                  <speaker>Roland.</speaker>
+                  <l>Ah ! il ne regarde pas à un coup d’épée de plus ou de moins… C’est un
+                     gaillard.</l>
+               </sp>
+               <sp n="24">
+                  <speaker>Cristobal.</speaker>
+                  <l>C’est toi qui lui parleras en mon nom.</l>
+               </sp>
+               <sp n="25">
+                  <speaker>Roland.</speaker>
+                  <l>Il m’a donné rendez-vous le long des remparts, du diable ! si j’y vais.</l>
+               </sp>
+               <sp n="26">
+                  <speaker>Cristobal.</speaker>
+                  <l>Tu iras toi.</l>
+               </sp>
+               <sp n="27">
+                  <speaker>Torribio.</speaker>
+                  <l>Avec du renfort.</l>
+               </sp>
+               <sp n="28">
+                  <speaker>Cristobal,</speaker>
+                  <stage> à Roland.</stage>
+                  <l>Seigneur je suis ravi des renseignements que vous venez de me donner sur ce
+                     Roland ; figurez-vous que je le cherche et qu’on prétendait qu’il s’était caché
+                     dans cette maison.</l>
+               </sp>
+               <sp n="29">
+                  <speaker>Roland.</speaker>
+                  <l>Comme c’est vraisemblable.</l>
+               </sp>
+               <sp n="30">
+                  <speaker>Cristobal.</speaker>
+                  <l>On ajoutait qu’il avait pris un déguisement.</l>
+               </sp>
+               <sp n="31">
+                  <speaker>Roland.</speaker>
+                  <l>Avec vous, ça ne lui aurait pas servi à grand chose.</l>
+               </sp>
+               <sp n="32">
+                  <speaker>Cristobal.</speaker>
+                  <l>Oh ! je sais à qui j’ai affaire… C’est un séducteur. Il a une belle passion qui
+                     l’amène dans ce quartier.</l>
+               </sp>
+               <sp n="33">
+                  <speaker>Roland.</speaker>
+                  <l>Vraiment !</l>
+               </sp>
+               <sp n="34">
+                  <speaker>Cristobal.</speaker>
+                  <l>Je suis sûr qu’il fait la cour à quelque belle, quelque femme mariée.</l>
+               </sp>
+            </div>
+            <div type="scene" n="9">
+               <head>Scène IX.</head>
+               <stage>Les Mêmes, SARMIENTO.</stage>
+               <sp n="1">
+                  <speaker>Sarmiento,</speaker>
+                  <stage> entrant vivement.</stage>
+                  <l>Hein ! Qui est-ce qui fait la cour à une femme mariée ?</l>
+               </sp>
+               <sp n="2">
+                  <speaker>Cristobal.</speaker>
+                  <l>Nous causons d’un nommé Roland.</l>
+               </sp>
+               <sp n="3">
+                  <speaker>Sarmiento,</speaker>
+                  <stage> à part.</stage>
+                  <l>Roland ! à qui en veut-il, serait-ce à ma femme ?</l>
+               </sp>
+               <sp n="4">
+                  <speaker>Cristobal.</speaker>
+                  <l>Je crois voir d’ici ce bon mari qui ne s’aperçoit de rien.</l>
+               </sp>
+               <sp n="5">
+                  <speaker>Sarmiento.</speaker>
+                  <l>Diantre ! ceci mérite réflexion.</l>
+               </sp>
+               <sp n="6">
+                  <speaker>Cristobal.</speaker>
+                  <l>Heureusement je suis là ! Allons, venez senor Sarmiento.</l>
+               </sp>
+               <sp n="7">
+                  <speaker>Sarmiento,</speaker>
+                  <stage> à part.</stage>
+                  <l>Le laisser seul chez moi avec un tel soupçon. </l>
+                  <stage>(Haut.)</stage>
+                  <l> J’aurais mieux aimé rester en compagnie de…</l>
+               </sp>
+               <sp n="8">
+                  <speaker>Roland.</speaker>
+                  <l>Ne vous gênez donc pas, cher cousin, je vous attendrai.</l>
+               </sp>
+               <sp n="9">
+                  <speaker>Cristobal.</speaker>
+                  <l>Mais venez donc ! c’est convenu, votre cousin vous attendra.</l>
+               </sp>
+               <sp n="10">
+                  <speaker>Sarmiento.</speaker>
+                  <l>Oui, mon cousin… </l>
+                  <stage>(À part.)</stage>
+                  <l> Que je ne connais pas !… Heureusement, Inès est avec ma femme…</l>
+               </sp>
+               <sp n="11">
+                  <speaker>Cristobal.</speaker>
+                  <l>Eh bien ?…</l>
+               </sp>
+               <sp n="12">
+                  <speaker>Sarmiento.</speaker>
+                  <l>Je vous suis. </l>
+                  <stage>(À part.)</stage>
+                  <l> Oh ! je ne serai pas longtemps dehors !… </l>
+               </sp>
+               <stage>(Cristobal, Torribio et Sarmiento sortent.)</stage>
+               <sp n="13">
+                  <speaker>Roland.</speaker>
+                  <l>M’en voilà débarrassé ! </l>
+                  <stage>(Il reste au fond en entendant la voix de Béatrix.)</stage>
+               </sp>
+            </div>
+            <div type="scene" n="10">
+               <head>Scène X.</head>
+               <stage>BÉATRIX, INÈS, ROLAND, au fond.</stage>
+               <sp n="1">
+                  <speaker>Béatrix,</speaker>
+                  <stage> elle arrive en parlant.</stage>
+                  <l>Oui, mademoiselle, je veux que vous me montriez cette lettre.</l>
+               </sp>
+               <sp n="2">
+                  <speaker>Inès.</speaker>
+                  <l>Mais, ma tante !</l>
+               </sp>
+               <sp n="3">
+                  <speaker>Béatrix.</speaker>
+                  <l>Je parie qu’il est question de quelque amourette ?</l>
+               </sp>
+               <sp n="4">
+                  <speaker>Inès.</speaker>
+                  <l>Oui, ma tante.</l>
+               </sp>
+               <sp n="5">
+                  <speaker>Béatrix.</speaker>
+                  <l>Comment, mademoiselle ! Vous osez !…</l>
+               </sp>
+               <sp n="6">
+                  <speaker>Inès.</speaker>
+                  <l>Dame ! il paraît que c’est bien naturel, puisque vous avez deviné tout de
+                     suite.</l>
+               </sp>
+               <sp n="7">
+                  <speaker>Béatrix.</speaker>
+                  <l>Qu’est-ce que c’est ! vous raisonnez, je crois… Aussi vous aimez quelqu’un,
+                     vous voulez vous marier… me laisser seule, sans que j’aie personne avec qui
+                     causer un moment ! Mais enfin, ce bel amoureux, quel est-il ?</l>
+               </sp>
+               <sp n="8">
+                  <speaker>Roland,</speaker>
+                  <stage> se montrant.</stage>
+                  <l>C’est moi !</l>
+               </sp>
+               <sp n="9">
+                  <speaker>Béatrix.</speaker>
+                  <l>Dieu !… mon bavard.</l>
+               </sp>
+               <sp n="10">
+                  <speaker>Roland.</speaker>
+                  <l>Moi, qui viens vous demander la main de la senora Inès, votre nièce charmante,
+                     ici présente et consentante. J’ai dit, j’attends votre arrêt.</l>
+               </sp>
+               <sp n="11">
+                  <speaker>Béatrix.</speaker>
+                  <l>Maudit parleur ! Quel démon te fait présenter encore devant moi !</l>
+               </sp>
+               <sp n="12">
+                  <speaker>Roland,</speaker>
+                  <stage> la main sur son cœur.</stage>
+                  <l>L’amour !</l>
+               </sp>
+               <sp n="13">
+                  <speaker>Inès.</speaker>
+                  <l>L’amour ?</l>
+               </sp>
+               <sp n="14">
+                  <speaker>Roland.</speaker>
+                  <l>Oui, l’amour le plus pur, le plus vif, le plus sincère.</l>
+               </sp>
+               <sp n="15">
+                  <speaker>Béatrix.</speaker>
+                  <l>Te tairas-tu ?</l>
+               </sp>
+               <sp n="16">
+                  <speaker>Roland.</speaker>
+                  <l>À une condition !</l>
+               </sp>
+               <sp n="17">
+                  <speaker>Béatrix.</speaker>
+                  <l>Parle. Et si tu peux t’expliquer en deux mots, je t’accorde ce que tu
+                     demandes.</l>
+               </sp>
+               <sp n="18">
+                  <speaker>Roland,</speaker>
+                  <stage> ouvre la bouche, la referme, puis dit, comme prenant une résolution
+                     énergique en montrant Inès.</stage>
+                  <l>Sa main !…</l>
+               </sp>
+               <sp n="19">
+                  <speaker>Béatrix.</speaker>
+                  <l>Tu veux l’épouser !</l>
+               </sp>
+               <sp n="20">
+                  <speaker>Roland.</speaker>
+                  <l>Consentez, et je vous débarrasse de ma présence, sinon… comme votre mari vous
+                     l’a dit, je resterai ici, sept ans.</l>
+               </sp>
+               <sp n="21">
+                  <speaker>Béatrix.</speaker>
+                  <l>Sept ans ! Ah ! pour l’éviter, je marierais toutes les nièces du monde. Mais,
+                     mon très-cher époux, consentira-t-il, lui ?</l>
+               </sp>
+               <sp n="22">
+                  <speaker>Roland.</speaker>
+                  <l>Je m’en charge, après le service que je lui ai rendu.</l>
+               </sp>
+               <sp n="23">
+                  <speaker>Béatrix.</speaker>
+                  <l>Quel service ?</l>
+               </sp>
+               <sp n="24">
+                  <speaker>Roland.</speaker>
+                  <l>Eh bien ! de vous faire taire.</l>
+               </sp>
+               <sp n="25">
+                  <speaker>Béatrix.</speaker>
+                  <l>De me faire taire ! C’est donc un complot ? Oh ! il me le payera.</l>
+               </sp>
+               <sp n="26">
+                  <speaker>Roland.</speaker>
+                  <l>J’ai votre parole !</l>
+               </sp>
+               <sp n="27">
+                  <speaker>Béatrix.</speaker>
+                  <l>C’est bon ! je veux me venger d’abord.</l>
+               </sp>
+               <sp n="28">
+                  <speaker>Roland.</speaker>
+                  <l>C’est facile.</l>
+               </sp>
+               <sp n="29">
+                  <speaker>Béatrix.</speaker>
+                  <l>Comment ?</l>
+               </sp>
+               <sp n="30">
+                  <speaker>Roland.</speaker>
+                  <l>J’ai un moyen.</l>
+               </sp>
+               <sp n="31">
+                  <speaker>Béatrix.</speaker>
+                  <l>Lequel ?</l>
+               </sp>
+               <sp n="32">
+                  <speaker>Roland.</speaker>
+                  <l>Ne rien dire !</l>
+               </sp>
+               <stage>TERZETTO.</stage>
+               <sp n="33">
+                  <speaker>Roland.</speaker>
+                  <l>Taisons-nous ! pas un mot !</l>
+                  <l>Procédons avec adresse !</l>
+                  <l>Vous verrez, et bientôt,</l>
+                  <l>L’effet de ma promesse !</l>
+               </sp>
+               <sp n="34">
+                  <speaker>Béatrix.</speaker>
+                  <l>Agissons comme il faut !</l>
+               </sp>
+               <sp n="35">
+                  <speaker>Roland.</speaker>
+                  <l>Comptez sur la vengeance !</l>
+               </sp>
+               <sp n="36">
+                  <speaker>Béatrix.</speaker>
+                  <l>Il sera le plus sot !</l>
+               </sp>
+               <sp n="37">
+                  <speaker>Roland.</speaker>
+                  <l>Mais, surtout, du silence !</l>
+                  <l>Chut ! pas un mot.</l>
+               </sp>
+               <sp n="38">
+                  <speaker>Roland,</speaker>
+                  <stage> à Béatrix.</stage>
+                  <l>Je m’en vais tout vous dire !</l>
+                  <stage>(Il lui parle à l’oreille.)</stage>
+               </sp>
+               <sp n="39">
+                  <speaker>Béatrix.</speaker>
+                  <l>Ah ! vraiment,</l>
+                  <l>C’est charmant !</l>
+               </sp>
+               <sp n="40">
+                  <speaker>Roland,</speaker>
+                  <stage> à Inès.</stage>
+                  <l>Laissez-moi vous instruire…</l>
+                  <stage>(Il lui parle à l’oreille.)</stage>
+               </sp>
+               <sp n="41">
+                  <speaker>Inès.</speaker>
+                  <l>Ce projet</l>
+                  <l>Est parfait !</l>
+               </sp>
+               <sp n="42">
+                  <speaker>Roland.</speaker>
+                  <l>Mais, il faut du mystère !</l>
+               </sp>
+               <sp n="43">
+                  <speaker>Béatrix.</speaker>
+                  <l>Oui, nous saurons nous taire !</l>
+               </sp>
+               <sp n="44">
+                  <speaker>Ensemble.</speaker>
+                  <l>Pas un mot !</l>
+                  <l>Agissons avec adresse, etc.</l>
+               </sp>
+               <sp n="45">
+                  <speaker>Roland,</speaker>
+                  <stage> se mettant à écrire.</stage>
+                  <l>Et maintenant pour achever, ce mot à l’alcade que votre laquais va lui
+                     porter.</l>
+               </sp>
+               <sp n="46">
+                  <speaker>Béatrix.</speaker>
+                  <l>Tout de suite,</l>
+                  <stage>(appelant.)</stage>
+                  <l> Pedro ! </l>
+                  <stage>(Le laquais paraît. — À Inès.)</stage>
+                  <l> Inès, donnez-moi votre lettre !</l>
+               </sp>
+               <sp n="47">
+                  <speaker>Roland,</speaker>
+                  <stage> écrivant sur des tablettes.</stage>
+                  <l>Ce mot au seigneur alcade. Tu le trouveras le long des remparts. Cet autre à
+                     son adresse… va, cours. </l>
+                  <stage>(Pedro sort.)</stage>
+                  <l> Tout est bien convenu.</l>
+               </sp>
+               <sp n="48">
+                  <speaker>Inès.</speaker>
+                  <l>Voici mon oncle !…</l>
+               </sp>
+               <sp n="49">
+                  <speaker>Roland,</speaker>
+                  <stage> il veut entrer à gauche avec Inès.</stage>
+                  <l>Cachons-nous !</l>
+               </sp>
+               <sp n="50">
+                  <speaker>Béatrix.</speaker>
+                  <l>Chacun d’un côté, s’il vous plaît. Inès votre lettre. </l>
+                  <stage>(Elle se sépare.)</stage>
+                  <l> Ah ! mon très-cher époux, vous voulez me faire taire ! À nous deux !</l>
+               </sp>
+            </div>
+            <div type="scene" n="11">
+               <head>Scène XI.</head>
+               <stage>BÉATRIX, SARMIENTO.</stage>
+               <sp n="1">
+                  <speaker>Sarmiento,</speaker>
+                  <stage> entrant vivement.</stage>
+                  <l>Elle est seule ! j’ai peut-être eu tort de m’alarmer… Ah ! c’est vous, chère
+                     amie, tout est arrangé ; je viens de chez le gouverneur ; il n’y a plus à s’en
+                     inquiéter. </l>
+                  <stage>(À lui-même, regardant Béatrix)</stage>
+                  <l> C’est merveilleux ! elle m’écoute sans m’interrompre, grand homme ! va… et moi
+                     qui le soupçonnais. </l>
+                  <stage>(À Béatrix.)</stage>
+                  <l> Cela m’a bien coûté un peu cher… Deux cents ducats… c’est un denier, n’est-ce
+                     pas ? </l>
+                  <stage>(À lui-même.)</stage>
+                  <l> Elle ne me contredit plus !… </l>
+                  <stage>(À Béatrix.)</stage>
+                  <l> Mais de la sorte, me voilà tranquille… cela vaut mieux, n’est-ce pas votre
+                     avis ? </l>
+                  <stage>(Béatrix fait signe que oui.)</stage>
+                  <l> Plus un mot ! c’est une cure incroyable !</l>
+               </sp>
+               <sp n="2">
+                  <speaker>Béatrix,</speaker>
+                  <stage> à part.</stage>
+                  <l>Ah ! je parle trop !…</l>
+               </sp>
+               <sp n="3">
+                  <speaker>Sarmiento.</speaker>
+                  <l>Voyons, il n’est venu personne pendant mon absence ?</l>
+               </sp>
+               <sp n="4">
+                  <speaker>Béatrix.</speaker>
+                  <l>Han !… hon !… han !…</l>
+               </sp>
+               <sp n="5">
+                  <speaker>Sarmiento.</speaker>
+                  <l>Hein ! que signifie ?</l>
+               </sp>
+               <sp n="6">
+                  <speaker>Béatrix.</speaker>
+                  <l>Han… hon… han…</l>
+               </sp>
+               <sp n="7">
+                  <speaker>Sarmiento.</speaker>
+                  <l>Ah ! grand Dieu ! elle ne peut plus parler… la colère l’a rendue muette, cela
+                     dépasse un peu le but que je m’étais proposé… Voyons… Béatrix ?…</l>
+               </sp>
+               <sp n="8">
+                  <speaker>Béatrix.</speaker>
+                  <l>Han… hon…</l>
+               </sp>
+               <sp n="9">
+                  <speaker>Sarmiento.</speaker>
+                  <l>Au diable ! </l>
+                  <stage>(apercevant la lettre de Roland que Béatrix tient à la main.)</stage>
+                  <l> Qu’est-ce que c’est que ça ? une lettre ? </l>
+                  <stage>(Béatrix fait signe que oui.)</stage>
+                  <l> Sans adresse… c’est pour moi ? </l>
+                  <stage>(Signe que non.)</stage>
+                  <l> Pour Inès ? </l>
+                  <stage>(Même jeu.)</stage>
+                  <l> Pour vous ?… </l>
+                  <stage>(Signe que oui.)</stage>
+                  <l> Eh bien, on s’y fait. </l>
+                  <stage>(Regardant la lettre.)</stage>
+                  <l> Eh ! mais, c’est une lettre d’amour, une déclaration !… Ah ! j’avais raison de
+                     m’alarmer ! Comment cette lettre se trouve-t-elle ici ? </l>
+                  <stage>(Béatrix se livre à une pantomime animée.)</stage>
+                  <l> Vous dites ?</l>
+               </sp>
+               <sp n="10">
+                  <speaker>Béatrix.</speaker>
+                  <l>Han ! hon !</l>
+               </sp>
+               <sp n="11">
+                  <speaker>Sarmiento.</speaker>
+                  <l>Je n’y comprends rien, j’ai dépassé le but… Cependant je tiens à savoir… Vous
+                     connaissez celui qui a écrit cette lettre ? Vous savez où il demeure ? </l>
+                  <stage>(Béatrix fait signe que oui.)</stage>
+                  <l> Très-bien, où demeure-t-il ? </l>
+                  <stage>(Elle lui fait signe de prendre sa canne et son chapeau.)</stage>
+                  <l> Mon chapeau et ma canne ! </l>
+                  <stage>(Il les prend.)</stage>
+                  <l> Très bien ! </l>
+                  <stage>(Elle lui fait signe de marcher devant lui.)</stage>
+                  <l> Je m’en vais droit devant moi. </l>
+                  <stage>(Béatrix lui indique de prendre la rue à gauche, puis en face, puis à
+                     droite, etc.)</stage>
+                  <l> Ah ! oui, va te promener ! Du diable ! si je m’y reconnaîtrai jamais… Enfin,
+                     vous l’avez vu ? </l>
+                  <stage>(Signe que oui.)</stage>
+                  <l> Que fait-il ! </l>
+                  <stage>(Elle fait les gestes d’escrime d’un toréador.)</stage>
+                  <l> Un toréador dans mon ménage. — Eh bien, qu’est-ce que vous lui avez dit ?
+                     Qu’est-ce que vous lui avez fait ? </l>
+                  <stage>(Béatrix fait de grands gestes et finit par lui donner un
+                     soufflet.)</stage>
+                  <l> Hein ? qu’est-ce que c’est ? Ah ! vous lui avez donné un soufflet. </l>
+                  <stage>(Béatrix fait signe que oui et va recommencer.)</stage>
+                  <l> Bon ! vous lui en avez donné deux ! bon ! C’est assez, j’ai compris ;
+                     décidément j’ai dépassé le but… Inès ! Inès !</l>
+               </sp>
+            </div>
+            <div type="scene" n="12">
+               <head>Scène XII.</head>
+               <stage>Les Mêmes, INÈS, puis ROLAND.</stage>
+               <sp n="1">
+                  <speaker>Sarmiento.</speaker>
+                  <l>Inès ! Inès ! ah ! mon enfant, si tu savais ! ta tante est muette ! </l>
+                  <stage>(Inès fait des gestes d’étonnement.)</stage>
+                  <l> Hein ! plaît-il ? Mais voyons ! parle ! pas un mot ! Muette aussi, comme ma
+                     femme ! Comment ! est-ce que ça se gagne ? À l’aide ! À moi ! </l>
+                  <stage>(Roland paraît.)</stage>
+                  <l> Ah ! voilà mon homme ! C’est donc vous, séducteur effronté, qui venez porter
+                     le trouble dans ma maison ; j’ai des preuves. </l>
+                  <stage>(Roland fait le geste qu’il ne sait.)</stage>
+                  <l> Vous dites ? Rien ! Lui aussi !</l>
+               </sp>
+            </div>
+            <div type="scene" n="13">
+               <head>Scène XIII.</head>
+               <stage>Les Mêmes, CRISTOBAL, TORRIBIO, puis Les Créanciers.</stage>
+               <sp n="1">
+                  <speaker>Sarmiento.</speaker>
+                  <l>Ah ! seigneur alcade, vous arrivez bien… vous qui avez tant de tact, vous me
+                     ferez rendre justice. </l>
+                  <stage>(Cristobal fait signe que oui.)</stage>
+                  <l> Pardon, vous m’entendez bien ?… </l>
+                  <stage>(Signe que oui.)</stage>
+                  <l> hein ! Et de quatre. </l>
+                  <stage>(Torribio fait signe que oui.)</stage>
+                  <l> Bonté divine, perds-je la tête ? </l>
+                  <stage>(L’alcade lui tend une lettre, Sarmiento la prend avec inquiétude et la
+                     lit. À lui-même.)</stage>
+                  <l> Mon Dieu j’ai cru que j’étais muet aussi. </l>
+                  <stage>(Il lit.)</stage>
+                  <l> « Revenez, chez Sarmiento. Ne dites pas un mot, et je livre entre vos mains,
+                     l’homme que vous cherchez. » Ah ! bah ! Où est-il cet homme ?</l>
+               </sp>
+               <sp n="2">
+                  <speaker>Roland.</speaker>
+                  <l>C’est moi !</l>
+               </sp>
+               <sp n="3">
+                  <speaker>Cristobal.</speaker>
+                  <l>Lui ! je m’en doutais ! qu’on l’arrête.</l>
+               </sp>
+               <sp n="4">
+                  <speaker>Roland.</speaker>
+                  <l>Ce n’est plus nécessaire. Voilà ce que j’attendais. Écoutez. </l>
+               </sp>
+               <stage>(Les créanciers arrivent par le fond, apportant, les uns les factures
+                  acquittées, sur des plats d’argent, les autres des plats dressés, des corbeille,
+                  de fleurs, etc.)</stage>
+               <stage>FINAL.</stage>
+               <sp n="5">
+                  <speaker>Chœur.</speaker>
+                  <l>Vos factures acquittées,</l>
+                  <l>Cher seigneur,</l>
+                  <l>Sont par chaque fournisseur</l>
+                  <l>Apportées !</l>
+                  <l>Sur ce plat,</l>
+                  <l>Oui, les voilà !</l>
+               </sp>
+               <sp n="6">
+                  <speaker>Cristobal.</speaker>
+                  <l>Mais ? qu’est-ce que cela veut dire ?</l>
+               </sp>
+               <sp n="7">
+                  <speaker>Sarmiento.</speaker>
+                  <l>Oui, expliquons-nous !</l>
+               </sp>
+               <sp n="8">
+                  <speaker>Un créancier.</speaker>
+                  <l>Le seigneur Roland nous a écrit que vous payiez toutes ses dettes !</l>
+               </sp>
+               <sp n="9">
+                  <speaker>Sarmiento.</speaker>
+                  <l>Moi ! allons donc !</l>
+               </sp>
+               <sp n="10">
+                  <speaker>Deuxième créancier.</speaker>
+                  <l>C’est bien naturel, puisqu’il épouse votre nièce.</l>
+               </sp>
+               <sp n="11">
+                  <speaker>Sarmiento.</speaker>
+                  <l>Ma nièce !</l>
+                  <l>Troisième créancier.</l>
+                  <l>Oui, il nous a tout commandé pour le repas de noces.</l>
+               </sp>
+               <sp n="12">
+                  <speaker>Sarmiento.</speaker>
+                  <l>Ah ! bah !</l>
+               </sp>
+               <sp n="13">
+                  <speaker>Roland.</speaker>
+                  <l>Consentez ! Inès et moi, nous nous aimons !</l>
+               </sp>
+               <sp n="14">
+                  <speaker>Sarmiento.</speaker>
+                  <l>Ah ! le billet doux était pour elle ! J’aime mieux cela !…</l>
+               </sp>
+               <sp n="15">
+                  <speaker>Béatrix.</speaker>
+                  <l>Et pour quelle autre pouvait-il être, s’il vous plaît ?</l>
+               </sp>
+               <sp n="16">
+                  <speaker>Sarmiento.</speaker>
+                  <l>Tiens ! ma femme n’est plus muette…</l>
+               </sp>
+               <sp n="17">
+                  <speaker>Béatrix.</speaker>
+                  <l>Je sais me taire, quand je veux…</l>
+               </sp>
+               <sp n="18">
+                  <speaker>Sarmiento.</speaker>
+                  <l>C’est bon à savoir.</l>
+               </sp>
+               <sp n="19">
+                  <speaker>Roland,</speaker>
+                  <stage> à Sarmiento.</stage>
+                  <l>Allons, un bon mouvement ! une fois alliés… vous m’aurez toujours sous la
+                     main.</l>
+               </sp>
+               <sp n="20">
+                  <speaker>Sarmiento.</speaker>
+                  <l>C’est précieux, surtout maintenant qu’elle reparle. — C’est bien ! je payerai. </l>
+                  <stage>(À l’alcade.)</stage>
+                  <l> Je lui dois bien cela, c’est lui qui guérit ma femme de la manie de
+                     bavarder…</l>
+               </sp>
+               <sp n="21">
+                  <speaker>Cristobal.</speaker>
+                  <l>Ma femme aussi aurait bien besoin de lui.</l>
+               </sp>
+               <sp n="22">
+                  <speaker>Roland.</speaker>
+                  <l>Eh bien ! nous nous arrangerons, j’irai dîner chez vous et je souperai ici.</l>
+               </sp>
+               <sp n="23">
+                  <speaker>Cristobal.</speaker>
+                  <l>Soit !</l>
+               </sp>
+               <sp n="24">
+                  <speaker>Sarmiento.</speaker>
+                  <l>C’est convenu…</l>
+               </sp>
+               <sp n="25">
+                  <speaker>Béatrix.</speaker>
+                  <l>Va pour le souper… je me rattraperai le reste du temps</l>
+               </sp>
+               <stage>REPRISE DU CHANT.</stage>
+               <sp n="26">
+                  <speaker>Roland.</speaker>
+                  <l>Il est un bruit plus doux encore,</l>
+                  <l>Que le bruit des tambourins,</l>
+                  <l>Que le bruit de la mandore !</l>
+                  <l>Gai signal de nos refrains,</l>
+                  <l>C’est le doux bruit de vos bravos !</l>
+                  <l>Est-il de plus joyeux échos ?</l>
+                  <l>Au gré de notre attente,</l>
+                  <l>Est-il voix plus charmante ?</l>
+               </sp>
+               <sp n="27">
+                  <speaker>Tous.</speaker>
+                  <l>Applaudissez, et sans repos !</l>
+                  <l>Est-il de plus joyeux échos ?</l>
+               </sp>
+               <stage>FIN.</stage>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>
