@@ -1,8 +1,7 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <ti:work groupUrn="urn:cts:libOp:viaf10034167"
    urn="urn:cts:libOp:viaf10034167.viaf184299342" xml:lang="fre"
    xmlns:ti="http://chs.harvard.edu/xmlns/cts">
-   <ti:title xml:lang="fre">titre de l'opéra</ti:title>
+   <ti:title xml:lang="fre">Les Bavards</ti:title>
    <ti:edition workUrn="urn:cts:libOp:viaf10034167.viaf184299342"
       urn="urn:cts:libOp:viaf10034167.viaf184299342.TNAH2020-fre1">
       <ti:label xml:lang="fre">Les Bavards, Jacques Offenbach (TNAH2020)</ti:label>
