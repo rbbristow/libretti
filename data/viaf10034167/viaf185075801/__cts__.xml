@@ -1,22 +1,7 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<<<<<<< HEAD
-<ti:work xmlns:ti="http://chs.harvard.edu/xmlns/cts"
-    groupUrn="urn:cts:libOp:viaf10034167"
-    urn="urn:cts:libOp:viaf10034167.viaf185075801"
-    xml:lang="fre"
-    >
-    <ti:title xml:lang="fre">Barbe-Bleue</ti:title>
-    <ti:edition 
-        workUrn="urn:cts:libOp:viaf10034167.viaf185075801" 
-        urn="urn:cts:libOp:viaf10034167.viaf185075801.TNAH2020-fre1"
-        >
-        <ti:label xml:lang="fre">BARBE-BLEUE</ti:label>
-=======
 <ti:work groupUrn="urn:cts:libOp:viaf10034167" urn="urn:cts:libOp:viaf10034167.viaf185075801" xml:lang="fre" xmlns:ti="http://chs.harvard.edu/xmlns/cts">
     <ti:title xml:lang="fre">Barbe-Bleue</ti:title>
     <ti:edition workUrn="urn:cts:libOp:viaf10034167.viaf185075801" urn="urn:cts:libOp:viaf10034167.viaf185075801.TNAH2020-fre1">
         <ti:label xml:lang="fre">Barbe-Bleue, Jacques Offenbach (TNAH 2020)</ti:label>
->>>>>>> c841dbb4fd1f1de83d2f7b1c350b88def685e56d
         <ti:description xml:lang="fre">Encodage en XML/TEI de Barbe-Bleue par la promo TNAH 2020.</ti:description>
     </ti:edition>
 </ti:work>
