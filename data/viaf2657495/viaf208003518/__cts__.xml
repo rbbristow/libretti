@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ti:work groupUrn="urn:cts:libOp:viaf2657495"
+    urn="urn:cts:libOp:viaf2657495.viaf208003518" xml:lang="fre"
+    xmlns:ti="http://chs.harvard.edu/xmlns/cts">
+    <ti:title xml:lang="fre">L'Enfant et les sortilèges</ti:title>
+    <ti:edition workUrn="urn:cts:libOp:viaf2657495.viaf208003518"
+        urn="urn:cts:libOp:viaf2657495.viaf208003518.TNAH2020-fre1">
+        <ti:label xml:lang="fre">L'Enfant et les sortilèges, Maurice Ravel (TNAH2020)</ti:label>
+        <ti:description xml:lang="fre">Balisage sémantique de L'Enfant et les sortilèges par la promotion TNAH 2020.</ti:description>
+    </ti:edition>
+</ti:work>
