@@ -1,0 +1,10 @@
+<ti:work groupUrn="urn:cts:libOp:viaf10032551" 
+    urn="urn:cts:libOp:viaf10032551.viaf178604126" xml:lang="fre" 
+    xmlns:ti="http://chs.harvard.edu/xmlns/cts">
+    <ti:title xml:lang="fre">Carmen</ti:title>
+    <ti:edition workUrn="urn:cts:libOp:viaf10032551.viaf178604126"
+        urn="urn:cts:libOp:viaf10032551.viaf178604126.TNAH2020-fre1">
+        <ti:label xml:lang="fre">Carmen, Georges Bizet (TNAH2020)</ti:label>
+        <ti:description xml:lang="fre">Balisage sémantique de Carmen par la promo TNAH 2020.</ti:description>
+    </ti:edition>
+</ti:work>
