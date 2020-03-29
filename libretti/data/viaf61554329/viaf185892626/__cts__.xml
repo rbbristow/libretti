@@ -1,0 +1,16 @@
+<ti:work xmlns:ti="http://chs.harvard.edu/xmlns/cts"
+    groupUrn="urn:cts:libOp:viaf61554329"
+    urn="urn:cts:libOp:viaf61554329.viaf185892626"
+    xml:lang="fre"
+    >
+    <ti:title xml:lang="fre">Porgy and Bess</ti:title>
+    <ti:edition 
+        workUrn="urn:cts:libOp:viaf61554329.viaf185892626" 
+        urn="urn:cts:libOp:viaf61554329.viaf185892626.TNAH2020-fre1"
+        >
+        <ti:label xml:lang="fre">Porgy and Bess, George Gershwin (TNAH 2020)</ti:label>
+        <ti:description xml:lang="fre">
+            Balisage sémantique de Porgy and Bess par la promotion TNAH 2020.
+        </ti:description>
+    </ti:edition>
+</ti:work>

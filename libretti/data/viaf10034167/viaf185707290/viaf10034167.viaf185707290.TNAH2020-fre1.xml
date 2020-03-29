@@ -1,0 +1,1235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../ODD/out/librettiODD.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>La Rose de Saint-Flour</title>
+            <author role="songWriter">Jacques Offenbach</author>
+         </titleStmt>
+         <publicationStmt>
+            <p>Ecole nationale des chartes, projet libretti TNAH, promotion 2019-2020</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>https://fr.wikisource.org/wiki/La_Rose_de_Saint-Flour</p>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <refsDecl n="CTS">
+            <cRefPattern n="speech"
+                         matchPattern="(\w+).(\w+).(\w+)"
+                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@type='act'][@n='$1']/tei:div[@type='scene'][@n='$2']/tei:sp[@n='$3'])">
+               <p>Ce pointeur extrait les niveaux de citation 1, 2 et 3, soit acte, scène et tour de parole.</p>
+            </cRefPattern>
+            <cRefPattern n="scene"
+                         matchPattern="(\w+).(\w+)"
+                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@type='act'][@n='$1']/tei:div[@type='scene'][@n='$2'])">
+               <p>Ce poiteur extrait les niveaux de citation 1 et 2, soit les actes et scènes.</p>
+            </cRefPattern>
+            <cRefPattern n="act"
+                         matchPattern="(\w+)"
+                         replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@type='act'][@n='$1'])">
+               <p>Ce pointeur extrait le premier niveau de citation du texte, soit les actes.</p>
+            </cRefPattern>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text>
+      <front>
+         <p>OPÉRETTE-BOUFFE EN UN ACTE</p>
+         <p>Représentée pour la première fois, à Paris, sur le théâtre des Bouffes-Parisiens, le 11
+            Juin, 1856.</p>
+         <set>
+            <p>Le théâtre représente un cabaret.</p>
+         </set>
+      </front>
+      <body n="urn:cts:libOp:viaf10034167.viaf185707290.TNAH2020-fre1"
+            xml:lang="fre">
+         <castList>
+            <castItem>Pierrette</castItem>
+            <castItem>Marcachu</castItem>
+            <castItem>Chapailloux</castItem>
+         </castList>
+         <div type="act" n="1">
+            <head>Acte premier</head>
+            <div type="scene" n="1">
+               <head>Scène PREMIÈRE</head>
+               <sp n="1">
+                  <speaker>Pierrette</speaker>
+                  <stage>seule. Elle ramasse les débris d’une marmite cassée, auprès de la
+                     cheminée.</stage>
+                  <p>C’est-il un guignon !… j’ai cassé ma marmite, fichtra !… Comment, à présent,
+                     que j’vas faire ma choupe ?… Aujourd’hui dimanche, les marchands de faïence
+                     sont fermés… faudra que j’imprunte une marmite dans le village, en allant
+                     chercher mes choux ; sans ça, môchieu Marcachu l’ chaudronnier et môchieu
+                     Chapailloux l’ cordonnier, mes deux pensionnaires qui viennent dîner tous les
+                     jours à midi, n’auraient pas leur pâtée… Pricheti !… faut pas les fâcher, ces
+                     hommes ; ils m’aiment tous les deux, et ils sont d’un jaloux !… mais ils sont
+                     bien galants ; en voilà des hommes galants, et qui se sont donné plus d’une
+                     fois des coups de poing pour moi.</p>
+                  <lg>
+                     <head>Couplets</head>
+                     <lg>
+                        <head>Couplet I</head>
+                        <l>Entre les deux mon cœur balanche,</l>
+                        <l>Je ne sais lequel épouja !…</l>
+                        <l>Pour chelui-ci quand mon cœur penche,</l>
+                        <l>Il penche aussi pour celui-là !…</l>
+                        <l>Ah ! ah !</l>
+                        <l>Qu’est-che qui me dira,</l>
+                        <l>Fichtra !</l>
+                        <l>Chelui que j’époujera !</l>
+                     </lg>
+                     <lg>
+                        <head>Couplet II</head>
+                        <l>M’sieu Marcachu fait l’agréable ;</l>
+                        <l>Il a l’dos large et les poings lourds !</l>
+                        <l>Mais Chapailloux est plus aimable,</l>
+                        <l>Il s’ débarbouille tous les huit jours !…</l>
+                        <l>Ah ! ah !</l>
+                        <l>Qu’est-che qui me dira,</l>
+                        <l>Fichtra !</l>
+                        <l>Chelui que j’époujera !</l>
+                     </lg>
+                  </lg>
+                  <p>Je suis bien sûre qu’ils vont m’apporter tous les deux quelqu’ chose
+                     aujourd’hui : c’est la Saint-Pierre, ma fête et celle du pays… on danchera ce
+                     soir… Ah ! si seulement j’avais des chouliers pour danser la bourrée, et une
+                     marmite pour faire ma choupe !… des beaux chouliers avec des paillettes, et une
+                     belle marmite en fer, qui ne se casserait plus : voilà l’ rêve de ma vie. Mais
+                     faut penser à la choupe ; allons chercher mes choux et emprunter une marmite,</p>
+                  <stage>Elle prend un panier</stage>
+                  <p>et puis faire une visite au potager.</p>
+                  <stage>Elle sort par la droite</stage>
+               </sp>
+            </div>
+            <div type="scene" n="2">
+               <head>Scène II</head>
+               <sp n="1">
+                  <speaker>MARCACHU</speaker>
+                  <stage>entrant par le fond. — Il porte une marmite en fonte sur le bras.</stage>
+                  <p>Elle n’est pas là !… Ah ! chacrelotte de chacrelotte !… oùch’ qu’elle peut être
+                     allée ?… Le serpent de la jalousie me ronge l’eschtomach ; le Chapailloux
+                     m’aurait-il devancé ?… Je le casserais en miettes, nom d’un chaudron !… J’ai du
+                     bichèps, moi ; mais ch’est pas possible ! mam’jelle Pierrette ne peut pas
+                     préférer un cordonnier à un chaudronnier !… Elle n’époujera jamais un muscadin
+                     qui se lave les mains… et avec du chavon encore. Elle a trop bon goût pour cha
+                     !… À la bonne heure, moi !… v’là des mains qui sont faites pour l’amour… ça ne
+                     se lave jamais !… aussi c’est d’un dur !… ça frapperait sur une enclume comme
+                     un marteau de cinq cents !… cré nom !… Mais voyons, pendant que mam’jelle
+                     Pierrette est sortie, déposons ochetenchiblement la marmite dont je lui fais
+                     hommage, et que j’ai faite pour sa fête, avec des choupirs !… ça la flattera !</p>
+                  <lg>
+                     <head>Romance</head>
+                     <l>Chette marmite neuve,</l>
+                     <l>Mam’jelle, est une preuve</l>
+                     <l>De mon amour pour vous !</l>
+                     <l>Elle est cholide et bonne,</l>
+                     <l>Ch’est moi qui vous la donne</l>
+                     <l>Pour faire la choupe aux choux !</l>
+                     <stage>Il accroche la marmite à la crémaillère.</stage>
+                     <l>À votre crémaillère</l>
+                     <l>Je la pends de ma main ;</l>
+                     <l>Pour fêter la Chaint Pierre</l>
+                     <l>Je n’attends point demain ;</l>
+                     <l>Chi vous en êt’s bien aije,</l>
+                     <l>À moi penchez un peu,</l>
+                     <l>Mon cœur est sur la braije</l>
+                     <l>Comme elle chur le feu !…</l>
+                     <l>Cette marmite neuve,</l>
+                     <l>Mam’jelle, est une preuve, etc., etc.</l>
+                  </lg>
+                  <l>Maintenant, mettons-y ochtenchiblement ce bouquet qu’elle y trouvera. C’est
+                     délicat.</l>
+                  <stage>Il met dans la marmite un bouquet qu’il tire de sa poche.</stage>
+                  <l>À présent, je file pour revenir tout à l’heure savourer sa surprise !… ô ma
+                     marmite, ma petite marmite ! sois-moi propice !… Passons par là pour ne pas la
+                     rencontrer !…</l>
+                  <stage>Il sort par la droite.</stage>
+               </sp>
+            </div>
+            <div type="scene" n="3">
+               <head>Scène III</head>
+               <sp n="1">
+                  <speaker>CHAPAILLOUX</speaker>
+                  <stage>entrant par le fond.</stage>
+                  <lg>
+                     <head>Air.</head>
+                     <stage>récitatif.</stage>
+                     <l>Ah ! que chette maijon est triste et cholitaire,</l>
+                     <l>Chelle qui l’embellit est abchent’ pour l’instant !…</l>
+                     <l>En entrant dans che chanctuaire</l>
+                     <l>Je me chens à la fois malade et bien portant !</l>
+                     <stage>Ritournelle sentimentale pendant laquelle il arpente la scène à grands
+                        pas.</stage>
+                     <l>Ch’est ici que reschpire</l>
+                     <l>La roje de Chaint-Flour !</l>
+                     <l>Chelle pour qui mon cœur choupire,</l>
+                     <l>Chelle pour qui je meurs d’amour !…</l>
+                     <stage>Tirant une paire de souliers de sa poche.</stage>
+                     <lg>
+                        <head>I.</head>
+                        <l>Pour les p’tits pieds</l>
+                        <l>De chelle que j’aime,</l>
+                        <l>V’là des chouliers</l>
+                        <l>Qu’ j’ai faits moi-même !</l>
+                        <l>L’ cuir est bon,</l>
+                        <l>J’en répond ;</l>
+                        <l>Ils dur’ront</l>
+                        <l>Aussi long-</l>
+                        <l>Temps que mon</l>
+                        <l>Aussi longtemps que mon amour pour vous !</l>
+                        <l>Foi d’ Chapailloux !</l>
+                     </lg>
+                     <lg>
+                        <head>II.</head>
+                        <l>En soufflant d’ssus,</l>
+                        <l>Ça les fait r’luire ;</l>
+                        <l>N’en faut pas plus</l>
+                        <l>Pour la chéduire !</l>
+                        <l>L’ cuir est bon,</l>
+                        <l>J’en répond ;</l>
+                        <l>Ils dur’ront</l>
+                        <l>Aussi long-</l>
+                        <l>Temps que mon</l>
+                        <l>Aussi longtemps que mon amour pour vous !</l>
+                        <l>Foi de Chapailloux !</l>
+                     </lg>
+                  </lg>
+                  <l>J’espère que le Marcachu ne m’aura pas devancé ce matin. Offrons à l’objet de
+                     ma flamme cette paire de souliers neufs pour sa fête… et déposons-les
+                     ochtenchiblement à ses regards.</l>
+                  <stage>Il met le paquet enveloppé sur unetable.</stage>
+                  <l>Elle saura bien de qui ça vient… Ô chaint Crépin, sois-moi
+                     propiche !… Je me dérobe mychetérieusement, et je reviens chubreptichement pour
+                     jouir de sa churprije !… Pachons cette porte dérobée !…</l>
+                  <stage>Il sort par la droite.</stage>
+               </sp>
+            </div>
+            <div type="scene" n="4">
+               <head>Scène IV</head>
+               <stage>Pierrette, puis Marcachu.</stage>
+               <sp n="1">
+                  <speaker>PIERRETTE</speaker>
+                  <stage>revenant par le fond avec son panier.</stage>
+                  <l>Pas de marmite !… tout le village est à la fête… v’là des choux, des navets,
+                     des carottes, mais pas la plus petite marmite… comment que je vas faire ?…</l>
+                        <stage>Elle voit la marmite pendue à la crémaillère.</stage>
+                  <l>Ah ! qu’est ce que je vois !… une marmite toute neuve ?… une belle marmite en fer !… ah !… Il
+                     y a du Marcachu là-dessous !…</l>
+               </sp>
+               <sp n="2">
+                  <speaker>MARCACHU</speaker>
+                  <l>Présent le Marcachu !</l>
+               </sp>
+               <sp n="3">
+                  <speaker>PIERRETTE</speaker>
+                  <l>Ah ! mossieu Marcachu, comme c’est galant de m’avoir apporté une marmite…</l>
+               </sp>
+               <sp n="4">
+                  <speaker>MARCACHU</speaker>
+                  <l>C’est l’image de mon cœur et de mes chentiments… bien étamée… fichtra !… que je
+                     vous prie d’acchepter accompagnée de plusieurs autres !…</l>
+               </sp>
+               <sp n="5">
+                  <speaker>PIERRETTE</speaker>
+                  <l>Vous faites des folies, mossieu Marcachu !…</l>
+               </sp>
+               <sp n="6">
+                  <speaker>MARCACHU</speaker>
+                  <l>J’aime les folies, mam’jelle Pierrette, et je voudrais bien que nous en
+                     fichions ensemble !…</l>
+               </sp>
+               <sp n="7">
+                  <speaker>PIERRETTE</speaker>
+                  <l>Dame !… faudra voir… plus tard…</l>
+               </sp>
+               <sp n="8">
+                  <speaker>MARCACHU</speaker>
+                  <l>Pourquoi pas tout de suite ?… Est-ce que vous ne me trouvez pas assez bel homme
+                     pour m’épouja ?</l>
+               </sp>
+               <sp n="9">
+                  <speaker>PIERRETTE</speaker>
+                  <l>Je ne dis pas ça !…</l>
+               </sp>
+               <sp n="10">
+                  <speaker>MARCACHU</speaker>
+                  <l>Qu’est-che qui me manque ?… j’ai du bichèps, touchez-moi cha !…</l>
+               </sp>
+               <sp n="11">
+                  <speaker>PIERRETTE</speaker>
+                  <stage>lui touchant le bras.</stage>
+                  <l>Ch’est cholide !</l>
+               </sp>
+               <sp n="12">
+                  <speaker>MARCACHU</speaker>
+                  <l>Que je vous ai encore, avant-hier, cassé la mâchoire au gros Patout, et qu’il
+                     ne lui reste plus que trois quenottes…</l>
+               </sp>
+               <sp n="13">
+                  <speaker>PIERRETTE</speaker>
+                  <l>Oh ! vous êtes fort ! on le sait.</l>
+               </sp>
+               <sp n="14">
+                  <speaker>MARCACHU</speaker>
+                  <l>Et que je vous ai aussi cassé trois côtes au grand Michelu, et que je les
+                     démolis tous dans le pays !… qu’est-che qui vous faut de pluche ?…</l>
+               </sp>
+               <sp n="15">
+                  <speaker>PIERRETTE</speaker>
+                  <l>Ch’est bien séduisant, mais faut s’aimer.</l>
+               </sp>
+               <sp n="16">
+                  <speaker>MARCACHU</speaker>
+                  <l>On s’aimera, et que si vous vouliez tant seulement me donner un baiser,
+                     mam’jelle Pierrette !…</l>
+                  <stage>Il lui prend la taille.</stage>
+               </sp>
+               <sp n="17">
+                  <speaker>PIERRETTE</speaker>
+                  <stage>lui donnant une bourrade.</stage>
+                  <l>Eh ! farceur !</l>
+               </sp>
+               <sp n="18">
+                  <speaker>MARCACHU</speaker>
+                  <stage>lui rendant une bourrade.</stage>
+                  <l>Eh ! la p’tite mère !</l>
+               </sp>
+               <sp n="19">
+                  <speaker>PIERRETTE</speaker>
+                  <stage>lui donnant un coup de poing.</stage>
+                  <l>Che va-t-il finir, cha ?</l>
+               </sp>
+               <sp n="20">
+                  <speaker>MARCACHU</speaker>
+                  <l>Ah ! qu’ ch’est bon, ma commère !</l>
+                  <stage>Il lui rend un coup de poing.</stage>
+               </sp>
+               <sp n="21">
+                  <speaker>PIERRETTE</speaker>
+                  <l>Si cha vous va, cha m’ va aussi !</l>
+                  <stage>Elle le bourre de coups de poing </stage>
+               </sp>
+               <sp n="22">
+                  <speaker>MARCACHU</speaker>
+                  <l>Holà !… j’en ai achez !… merchi !</l>
+                  <stage>Ensemble.</stage>
+               </sp>
+               <sp n="23">
+                  <speaker>PIERRETTE</speaker>
+                  <l>Quand je cogn’ ch’est pour de bon !</l>
+                  <l>Pan, pan, comm’ le forgeron</l>
+                  <l>Quand il tap’ sur son enclume !</l>
+                  <l>Pan, pan, pan, ch’est ma coutume ;</l>
+                  <l>Quand je cogn’ ch’est pour de bon !</l>
+               </sp>
+               <sp n="24">
+                  <speaker>MARCACHU</speaker>
+                  <l>Quand ell’ cogn’ ch’est pour de bon !</l>
+                  <l>Pan, pan, comm’ le forgeron</l>
+                  <l>Quand il tap’ sur son enclume ;</l>
+                  <l>Pan, pan, ch’est sa coutume,</l>
+                  <l>Quand ell’ cogne ch’est pour de bon.</l>
+               </sp>
+               <sp n="25">
+                  <speaker>MARCACHU</speaker>
+                  <l>Pour peu que l’amus’ment vous plaise,</l>
+                  <l>Vous pouvez m’ cogner à votre aise ;</l>
+                  <l>Si c’est l’ moyen de vous charmer,</l>
+                  <l>J’ vous donn’ l’ droit d’ m’assommer.</l>
+               </sp>
+               <sp n="26">
+                  <speaker>PIERRETTE</speaker>
+                  <l>Oh ! oh ! oh ! qué bonn’ pât’ d’homme</l>
+                  <l>C’est lui qui demand’ qu’on l’assomme ;</l>
+                  <l>Qué plaisir d’ bourrer d’ coups d’poing,</l>
+                  <l>Quelqu’un qui n’vous les rend point.</l>
+                  <stage>Reprise de l’ensemble.</stage>
+                  <l>Quand je cogn’ c’est pour tout bon, etc.</l>
+               </sp>
+               <sp n="27">
+                  <speaker>MARCACHU</speaker>
+                  <l>Ah ! sacristi ! en v’là une femme !…</l>
+               </sp>
+               <sp n="28">
+                  <speaker>PIERRETTE</speaker>
+                  <l>Ah ! faut pas s’y frotter !…</l>
+               </sp>
+               <sp n="29">
+                  <speaker>MARCACHU</speaker>
+                  <l>Chapailloux n’a qu’à se présenter ici !… j’en ferai des petits morcheaux du
+                     Chapailloux… et je le mettrai dans ma poche.</l>
+               </sp>
+               <sp n="30">
+                  <speaker>PIERRETTE</speaker>
+                  <l>Si vous y toucha, je ne vous verrai plus, vilain jaloux !</l>
+               </sp>
+               <sp n="31">
+                  <speaker>MARCACHU</speaker>
+                  <l>Ch’est bon ; on le respectera… mais si jamais y tournouilla autour de vous…
+                     chacré nom d’un chacré nom !…</l>
+                  <stage>Il fait le geste de donner un coup de poing.</stage>
+               </sp>
+               <sp n="32">
+                  <speaker>PIERRETTE</speaker>
+                  <l>Allons ! allons ! aidez-moi à faire la soupe, allez me chercher le lard.</l>
+               </sp>
+               <sp n="33">
+                  <speaker>MARCACHU</speaker>
+                  <l>Oùche qu’il est le lard ?…</l>
+               </sp>
+               <sp n="34">
+                  <speaker>PIERRETTE</speaker>
+                  <l>Dans le grand bahut, dans la pièce à côté.</l>
+               </sp>
+               <sp n="35">
+                  <speaker>MARCACHU</speaker>
+                  <l>J’y vas.</l>
+                  <stage>En sortant.</stage>
+                  <l>Elle m’a tout d’ même défoncé une côte dans l’eschtomac !… à gauche.</l>
+               </sp>
+               <sp n="36">
+                  <speaker>PIERRETTE</speaker>
+                  <stage>seule.</stage>
+                  <l>Mettons de l’eau dans la marmite.</l>
+                  <stage>Elle y verse de l’eau.</stage>
+                  <l>Ce mochieu Marcachu me fait peur pour ce pauvre Chapailloux… s’il lui cassait
+                     quéque chose, ça m’embêterait pour l’épouja.</l>
+               </sp>
+               <sp n="37">
+                  <speaker>MARCACHU</speaker>
+                  <stage>revenant.</stage>
+                  <l>V’là le lard.</l>
+                  <stage>Il apporte un paquet enveloppé dans du papier.</stage>
+               </sp>
+               <sp n="38">
+                  <speaker>PIERRETTE</speaker>
+                  <stage>le prenant.</stage>
+                  <l>Faites-le-moi passer !… Qu’est ce que ch’est que vous m’apportez ?… ch’est pas
+                     du lard ça ?… ch’est des chandelles.</l>
+               </sp>
+               <sp n="39">
+                  <speaker>MARCACHU</speaker>
+                  <l>Ah bien !… je me sera trompé ; mais ch’est bon tout de même la chandelle… ça
+                     sera plus délicat !</l>
+               </sp>
+               <sp n="40">
+                  <speaker>PIERRETTE</speaker>
+                  <l>Ch’est délicat ! mais ch’est trop cher ; j’ vais chercher le lard moi-même…
+                     attendez-moi là, imbécile !… propre à rien.</l>
+                  <stage>Elle sort.</stage>
+               </sp>
+            </div>
+            <div type="scene" n="5">
+               <head>Scène V</head>
+               <stage>MARCACHU, seul ; puis PIERRETTE.</stage>
+               <sp n="1">
+                  <speaker>MARCACHU</speaker>
+                  <l>Je crois que je chuis le préféré !… elle m’a lancé un regard !</l> 
+                  <stage>Voyant le
+                        paquet déposé par Chapailloux sur la table</stage>
+                  <l>Mais qu’est-che que
+                  ch’est que cha ?… un paquet ?…</l>
+                  <stage>Il l’ouvre</stage>
+                  <l>Nom d’une casserole
+                  !… ch’est des chouliers !…</l>
+                  <stage>Il en prend un qu’il examine.</stage>
+                  <l>des
+                  escarpins de femme !… dernier genre !…</l>
+                  <stage>Montrant les clous</stage>
+                  <l>avec
+                     des paillettes !… Le Chapailloux est venu, et il a apporté ça pour mam’jelle
+                     Pierrette !… Oh ! la colère ! ch’est pour qu’elle dansa avec lui qu’il lui a
+                     apporté ça !… Si je chippais les chouliers et que je les emporta… non, je
+                     passerais pour un voleur… et pourtant fouchtra !… je ne veux pas qu’elle ait
+                     ces chouliers-là…</l>
+                  <stage>Il cache derrière lui le soulier qu’il tient à la main.</stage>
+               </sp>
+               <sp n="2">
+                  <speaker>PIERRETTE</speaker>
+                  <l>Voilà le lard ?</l>
+               </sp>
+               <sp n="3">
+                  <speaker>MARCACHU</speaker>
+                  <l>Si elle voit le choulier, je chuis perdu !…</l>
+                  <stage>Il le fourre au fond du panier de légumes qui est sur la table.</stage>
+               </sp>
+               <sp n="4">
+                  <speaker>PIERRETTE</speaker>
+                  <stage>mettant sur la table le lard.</stage>
+                  <l>Voyons, faut travailler, monssieu Marcachu, mettez le lard dans la marmite ;
+                     moi je vas éplucher les légumes.</l>
+                  <stage>Elle prend le panier.</stage>
+               </sp>
+               <sp n="5">
+                  <speaker>MARCACHU</speaker>
+                  <stage>troublé.</stage>
+                  <l>Oui, mam’jelle Pierrette.</l> 
+                  <stage>À part.</stage>
+                  <l>Pourvu qu’elle ne voite pas le choulier !</l>
+                     <stage>Dans son trouble, il se trompe, et au lieu du lard, il met
+                        les chandelles dans la marmite.</stage>
+               </sp>
+               <sp n="6">
+                  <speaker>PIERRETTE</speaker>
+                  <l>Je vas éplucher tout ça.</l>
+               </sp>
+               <sp n="7">
+                  <speaker>MARCACHU</speaker>
+                  <stage>à part.</stage>
+                  <l>Elle va voir le choulier !…</l>
+                  <stage>Haut.</stage>
+                  <l>Pourquoi que vous épluchez tout ça, mam’zelle Pierrette ?… vous ôtez le plus bon.</l>
+               </sp>
+               <sp n="8">
+                  <speaker>PIERRETTE</speaker>
+                  <l>C’est bien possible ça !…</l>
+               </sp>
+               <sp n="9">
+                  <speaker>MARCACHU</speaker>
+                  <l>Et puis ça fait qu’il y en aura moins.</l>
+               </sp>
+               <sp n="10">
+                  <speaker>PIERRETTE</speaker>
+                  <l>Au fait, vous avez raison…</l>
+                  <stage>Elle cesse d’éplucher et remet tout dans le panier.</stage>
+               </sp>
+               <sp n="11">
+                  <speaker>MARCACHU</speaker>
+                  <stage>à part.</stage>
+                  <l>Elle n’a pas va le choulier !</l>
+               </sp>
+               <sp n="12">
+                  <speaker>PIERRETTE</speaker>
+                  <stage>voyant le lard sur la table.</stage>
+                  <l>Ah ça ! vous n’avez donc pas mis le lard dans la marmite ?</l>
+               </sp>
+               <sp n="13">
+                  <speaker>MARCACHU</speaker>
+                  <l>Mais si !…</l>
+               </sp>
+               <sp n="14">
+                  <speaker>PIERRETTE</speaker>
+                  <l>Puisque le v’là ?…</l>
+               </sp>
+               <sp n="15">
+                  <speaker>MARCACHU</speaker>
+                  <stage>à part.</stage>
+                  <l>Fichtra !… j’ai mis les chandelles !… Bah ! ça n’en chera que, plus bon…</l>
+                  <stage>Haut</stage>
+                  <l>Je vas mettre le lard.</l>
+                  <stage>Il le jette dans la marmite.</stage>
+                  
+               </sp>
+               <sp n="16">
+                  <speaker>PIERRETTE</speaker>
+                  <l>Et puis les légumes aussi…</l> 
+                  <stage>Elle jette dans la marmite tout le contenu du
+                        panier</stage>
+                  <l>Ça fera une fameuse choupe, ça !… Il n’y manquera rien !</l>
+                  
+               </sp>
+               <sp n="17">
+                  <speaker>MARCACHU</speaker>
+                  <l>Ça sera bien délicat.</l>
+               </sp>
+            </div>
+            <div type="scene" n="6">
+               <head>Scène VI</head>
+               <stage>Les mêmes, CHAPAILLOUX.</stage>
+               <sp n="1">
+                  <speaker>CHAPAILLOUX</speaker>
+                  <stage>entrent par le fond, à part.</stage>
+                  <l>Jouissons de sa churprise…</l> 
+                  <stage>Haut.</stage>
+                  <l>Bonjour, mam’jelle Pierrette…</l>
+               </sp>
+               <sp n="2">
+                  <speaker>PIERRETTE</speaker>
+                  <l>Ah ! c’est vous, monsieur Chapailloux ?…</l>
+               </sp>
+               <sp n="3">
+                  <speaker>MARCACHU</speaker>
+                  <stage>à part.</stage>
+                  <l>Fichtrrr !… mon rival !</l>
+               </sp>
+               <sp n="4">
+                  <speaker>CHAPAILLOUX</speaker>
+                  <stage>à part.</stage>
+                  <l>Bigrr !… le Marcachu…</l>
+               </sp>
+               <sp n="5">
+                  <speaker>PIERRETTE</speaker>
+                  <l>Est-ce que vous venez déjà pour manger la frigouche, monsieur Chapailloux ?…
+                 </l>
+               </sp>
+               <sp n="6">
+                  <speaker>CHAPAILLOUX</speaker>
+                  <l>Non, je viens pour autre chose.</l> 
+                  <stage>À part</stage>
+                  <l>Elle n’a pas l’air surprise du tout.</l>
+               </sp>
+               <sp n="7">
+                  <speaker>PIERRETTE</speaker>
+                  <l>Pourquoi donc c’est que, vous venez ?…</l>
+               </sp>
+               <sp n="8">
+                  <speaker>CHAPAILIOUX</speaker>
+                  <l>C’est pour avoir des nouvelles de mes chouliers, comment que vous les avez
+                     trouva ?</l>
+               </sp>
+               <sp n="9">
+                  <speaker>PIERRETTE</speaker>
+                  <l>Quels chouliers ?</l>
+               </sp>
+               <sp n="10">
+                  <speaker>CHAPAILLOUX</speaker>
+                  <l>Eh ben ! ceux que j’ai apportés pour votre fête pour aller dancher ce choir à
+                     la fête…</l>
+               </sp>
+               <sp n="11">
+                  <speaker>PIERRETTE</speaker>
+                  <l>Je n’ai pas vu de souliers du tout !…</l>
+               </sp>
+               <sp n="12">
+                  <speaker>CHAPAILLOUX</speaker>
+                  <l>Je les ai mis sur la table. Eh ! tenez, les voilà dans le paquet…</l> 
+                  <stage>Il
+                        ouvre le paquet, prend un soulier et le donne à Pierrette.</stage>
+                  <l>Comment que vous trouvez l’ouvrage !…</l> 
+               </sp>
+               <sp n="13">
+                  <speaker>PIERRETTE</speaker>
+                  <l>Oh ! elle est bien faite !… Les beaux chouliers… il y a des petites paillettes
+                     partout !…</l>
+               </sp>
+               <sp n="14">
+                  <speaker>CHAPAILLOUX</speaker>
+                  <l>Je ne les ai pas ménagea !</l>
+               </sp>
+               <sp n="15">
+                  <speaker>MARCACHU</speaker>
+                  <stage>qui écume la marmite, à part.</stage>
+                  <l>Ch’est drôle, comme elle danchera !…</l>
+                  <stage>Il tape sur la marmite avec la cuillère.</stage>
+               </sp>
+               <sp n="16">
+                  <speaker>CHAPAILLOUX</speaker>
+                  <l>Tiens ! je ne trouve plus le second choulier.</l>
+               </sp>
+               <sp n="17">
+                  <speaker>MARCACHU</speaker>
+                  <l>C’est que vous n’en aurez apporté qu’un.</l>
+               </sp>
+               <sp n="18">
+                  <speaker>CHAPAILLOUX</speaker>
+                  <l>J’en ai apporté deux, puischeque j’en ai fait deux !…</l>
+               </sp>
+               <sp n="19">
+                  <speaker>PIERRETTE</speaker>
+                  <l>C’est drôle, ça ! — Où c’ que l’autre a-t-il pu passer ?</l>
+               </sp>
+               <sp n="20">
+                  <speaker>MARCACHU</speaker>
+                  <l>C’est qu’il aura fait deux fois le même choulier — ça fait qu’il n’y en a
+                     qu’un.</l>
+               </sp>
+               <sp n="21">
+                  <speaker>CHAPAILLOUX</speaker>
+                  <l>Deux fois le même choulier ! —</l>
+               </sp>
+               <sp n="22">
+                  <speaker>PIERRETTE</speaker>
+                  <l>C’est bien possible, ça ! —</l>
+               </sp>
+               <sp n="23">
+                  <speaker>MARCACHU</speaker>
+                  <l>Il dormait pendant qu’il travailla — et il se sera trompa.</l>
+               </sp>
+               <sp n="24">
+                  <speaker>PIERRETTE</speaker>
+                  <l>Dam ! faut bien le croire…</l>
+               </sp>
+               <sp n="25">
+                  <speaker>CHAPAILLOUX</speaker>
+                  <l>Je’ suis pourtant bien sûr d’avoir fait deux chouliers, fichtrrr !… et je les
+                     ai apportés ici, fichtrrr !…</l>
+               </sp>
+               <sp n="26">
+                  <speaker>PIERRETTE</speaker>
+                  <l>Eh bien, eh bien !… l’autre se retrouvera… faut pas se fâcher, et nous
+                     danserons ensemble ce soir une bourrée.</l>
+               </sp>
+               <sp n="27">
+                  <speaker>MARCACHU</speaker>
+                  <stage>se levant.</stage>
+                  <l>Ch’est avec moi qu’elle danchera !…</l>
+               </sp>
+               <sp n="28">
+                  <speaker>CHAPAILLOUX</speaker>
+                  <l>Ch’est avec moi !…</l>
+               </sp>
+               <sp n="29">
+                  <speaker>MARCACHU</speaker>
+                  <stage>la tirant aussi.</stage>
+                  <l>Ch’est avec moi !…</l>
+               </sp>
+               <sp n="30">
+                  <speaker>CHAPAILLOUX</speaker>
+                  <stage>même jeu.</stage>
+                  <l>Je te défends de dancher avec elle.</l>
+               </sp>
+               <sp n="31">
+                  <speaker>MARCACHU</speaker>
+                  <stage>même jeu.</stage>
+                  <l>Je te le défends auchi.</l>
+                  <stage>Ils la tirent chacun d’un côté.</stage>
+               </sp>
+               <sp n="32">
+                  <speaker>CHAPAILLOUX</speaker>
+                  <l>Fichtrrr !</l>
+               </sp>
+               <sp n="33">
+                  <speaker>MARCACHU</speaker>
+                  <l>Bigrr !…</l>
+               </sp>
+               <sp n="34">
+                  <speaker>PIERRETTE</speaker>
+                  <l>Mais finissez donc, vous me dicheloquez…</l>
+               </sp>
+               <sp n="35">
+                  <speaker>MARCACHU ET CHAPAILLOUX</speaker>
+                  <l>Dites chelui que vous préferez.</l>
+               </sp>
+               <sp n="36">
+                  <speaker>PIERRETTE</speaker>
+                  <l>C’est celui qui danchera le mieux.</l>
+               </sp>
+               <sp n="37">
+                  <speaker>MARCACHU</speaker>
+                  <l>Ch’est moi !…</l>
+               </sp>
+               <sp n="38">
+                  <speaker>CHAPAILLOUX</speaker>
+                  <l>Ch’est moi !…</l>
+               </sp>
+               <sp n="39">
+                  <speaker>MARCACHU</speaker>
+                  <l>Nous allons voir ça tout de chuite !…</l>
+               </sp>
+               <sp n="40">
+                  <speaker>PIERRETTE</speaker>
+                  <stage>fredonnant.</stage>
+                  <l>“Celui que je préfère</l>
+                  <l>“Il le saura ce soir…</l>
+                  <l>Je vais chercher les achiettes !…</l> 
+                  <stage>Elle sort.</stage>
+                  
+               </sp>
+            </div>
+            <div type="scene" n="7">
+               <head>Scène VII</head>
+               <stage>MARCACHU, CHAPAILLOUX.</stage>
+               <sp n="1">
+                  <speaker>MARCACHU</speaker>
+                  <l>Ça ne peut pas me satisfaire cha !</l>
+               </sp>
+               <sp n="2">
+                  <speaker>CHAPAILLOUX</speaker>
+                  <l>Ni moi non plus.</l>
+               </sp>
+               <sp n="3">
+                  <speaker>MARCACHU</speaker>
+                  <l>Eh bien chortons, pour aller nous donner un coup de torchon dans la rue comme
+                     il convient à deux gentilshommes !…</l>
+               </sp>
+               <sp n="4">
+                  <speaker>CHAPAILLOUX</speaker>
+                  <stage>à part.</stage>
+                  <l>Bigre !… il est bien fort ! c’est égal !…</l>
+                  <stage>Haut</stage>
+                  <l>Sortons !</l> 
+                  <stage>DUO.</stage>
+               </sp>
+               <sp n="5">
+                  <speaker>CHAPAILLOUX</speaker>
+                  <l>Monsieur de Marcachu !…</l>
+               </sp>
+               <sp n="6">
+                  <speaker>MARCACHU</speaker>
+                  <l>Monsieur de Chapailloux !…</l>
+               </sp>
+               <sp n="7">
+                  <speaker>CHAPAILLOUX</speaker>
+                  <l>Savez-vous que je chuis un homme ?</l>
+               </sp>
+               <sp n="8">
+                  <speaker>MARCACHU</speaker>
+                  <l>Chavez-vous,</l>
+                  <l>Que j’en suis un aussi… le chavez-vous ?…</l>
+               </sp>
+               <sp n="9">
+                  <speaker>CHAPAILLOUX</speaker>
+                  <l>Peut-être.</l>
+               </sp>
+               <sp n="10">
+                  <speaker>MARCACHU</speaker>
+                  <l>À quatre pas d’ici, je te le fais chavoir,</l>
+                  <l>Mes pareils, à deux fois, ne che font pas connaître !</l>
+               </sp>
+               <sp n="11">
+                  <speaker>CHAPAILLOUX</speaker>
+                  <l>Toi ?</l>
+               </sp>
+               <sp n="12">
+                  <speaker>MARCACHU</speaker>
+                  <l>Moi !</l>
+               </sp>
+               <sp n="13">
+                  <speaker>CHAPAILLOUX</speaker>
+                  <l>Nous allons voir !</l>
+               </sp>
+               <sp n="14">
+                  <speaker>CHAPAILLOUX</speaker>
+                  <stage>à part</stage>
+                  <l>Je tremble !</l>
+                  <l>Je tremble !</l>
+               </sp>
+               <sp n="15">
+                  <speaker>MARCACHU</speaker>
+                  <l>Il tremble !</l>
+                  <l>Il me semble !</l>
+               </sp>
+               <stage>ENSEMBLE.</stage>
+               <sp n="16">
+                  <speaker>MARCACHU ET CHAPAILLOUX</speaker>
+                  <l>Ah ! chaperlotte, ah ! chacrebleu !</l>
+                  <l>Je chens que j’ai la tête en feu !</l>
+               </sp>
+               <sp n="17">
+                  <speaker>MARCACHU</speaker>
+                  <l>En vingt morcheaux il faut que je te hache !</l>
+               </sp>
+               <sp n="18">
+                  <speaker>CHAPAILLOUX</speaker>
+                  <l>En vingt morcheaux j’ai bien peur qu’il me hache !…</l>
+               </sp>
+               <sp n="19">
+                  <speaker>MARCACHU ET CHAPAILLOUX</speaker>
+                  <l>L’un de nous deux va rechter sur la plache !</l>
+                  <l>Ah ! chaperlotte ! ah ! chacrebleu !</l>
+                  <l>Je chens que j’ai la tête en feu !</l>
+                  <stage>Ils se prennent à bras-le-corps et cherchent à se renverser. Marcachu
+                     enlève deux ou trois fois Chapailloux de terre.</stage>
+               </sp>
+            </div>
+            <div type="scene" n="8">
+               <head>Scène VIII</head>
+               <stage>Les mêmes, PIERRETTE.</stage>
+               <sp n="1">
+                  <speaker>PIERRETTE</speaker>
+                  <stage>apportant des assiettes.</stage>
+                  <l>Ah ! mon Dieu ! les malheureux !… ils vont s’écharper !… voulez-vous bien finir
+                     !</l>
+                  <stage>Elle les sépare</stage>
+               </sp>
+               <sp n="2">
+                  <speaker>MARCACHU</speaker>
+                  <l>Eh bien ! qu’il me chède la plache !</l>
+               </sp>
+               <sp n="3">
+                  <speaker>CHAPAILLOUX</speaker>
+                  <l>Qu’il me la chède aussi !… Je ne veux pas vous partagea.</l>
+               </sp>
+               <sp n="4">
+                  <speaker>PIERRETTE</speaker>
+                  <l>Encore une fois, je vous défends de vous démolir ici !… Je connais rien de plus
+                     malpropre que deux Auvergnats qui se fichent une trempée chez une cabaretière.</l>
+                        <stage>Elle va à la cheminée</stage>                 
+               </sp>
+               <sp n="5">
+                  <speaker>CHAPAILLOUX</speaker>
+                  <l>Au fait, elle a raison ; c’est pas bon genre… nous remettrons cha !…</l>
+               </sp>
+               <sp n="6">
+                  <speaker>PIERRETTE</speaker>
+                  <l>La choupe est prête… faut la manger.</l> 
+                  <stage>Elle met les assiettes.</stage>
+               </sp>
+               <sp n="7">
+                  <speaker>MARCACHU</speaker>
+                  <l>Ch’est cha !… commenchons par manger la choupe… nous se redirons deux mots au
+                     dessert !…</l>
+               </sp>
+               <sp n="8">
+                  <speaker>PIERRETTE</speaker>
+                  <stage>apporte la table.</stage>
+                  <l>Allons, à table !…</l>
+               </sp>
+               <sp n="9">
+                  <speaker>MARCACHU ET CHAPAILLOUX</speaker>
+                  <l>À table !…</l>
+                  <stage>Ils s’attablent. Pierrette apporte la marmite et s’assied entre Marcachu et Chapailloux.</stage>
+               </sp>
+               <sp n="10">
+                  <speaker>PIERRETTE</speaker>
+                  <stage>servant la soupe.</stage>
+                  <l>Mangez cha ; ch’est nourrissant !…</l>
+               </sp>
+               <sp n="11">
+                  <speaker>MARCACHU</speaker>
+                  <l>Oh ! la jolie choupe ! la cuiller che tient debout dans l’achiette !…</l>
+               </sp>
+               <sp n="12">
+                  <speaker>CHAPAILLOUX</speaker>
+                  <l>C’est comme du machetic !…</l>
+               </sp>
+               <sp n="13">
+                  <speaker>PIERRETTE</speaker>
+                  <l>Cha vous fera un velours sur l’estomach !</l>
+               </sp>
+               <sp n="14">
+                  <speaker>CHAPAILLOUX</speaker>
+                  <stage>mangeant.</stage>
+                  <l>Qu’est-ce qu’elle chent donc la choupe ?… Elle chent le rance !… on dirait
+                     comme un petit goût de cuir brûlé…</l>
+               </sp>
+               <sp n="15">
+                  <speaker>PIERRETTE</speaker>
+                  <l>Je chais ce que ch’est ; ch’est le beurre.</l>
+               </sp>
+               <sp n="16">
+                  <speaker>CHAPAILLOUX</speaker>
+                  <l>Ch’est bien bon.</l>
+               </sp>
+               <sp n="17">
+                  <speaker>PIERRETTE</speaker>
+                  <l>C’est très-délicat.</l>
+               </sp>
+               <sp n="18">
+                  <speaker>MARCACHU</speaker>
+                  <l>Il n’y a que vous, mam’jelle Pierrette, pour chavoir faire la choupe !…</l>
+               </sp>
+               <sp n="19">
+                  <speaker>CHAPAILLOUX</speaker>
+                  <l>Le fait est que ch’est chavoureux…</l>
+                  <stage>Il trouve des mèches dans son assiette.</stage>
+                  <l>Tiens !… qu’est-ce que ch’est aussi que cha ?</l>
+               </sp>
+               <sp n="20">
+                  <speaker>MARCACHU</speaker>
+                  <l>Ah ! je chais ce que ch’est.</l>
+               </sp>
+               <sp n="21">
+                  <speaker>CHAPAILLOUX</speaker>
+                  <l>Ch’est des mèches de chandelles !</l>
+               </sp>
+               <sp n="22">
+                  <speaker>PIERRETTE</speaker>
+                  <l>Comment, monsieur Marcachu, vous avez mis des chandelles dans la marmite ?
+                     ch’est du luxe !…</l>
+               </sp>
+               <sp n="23">
+                  <speaker>MARCACHU</speaker>
+                  <l>Ah bah !… le jour de votre fête, mam’jelle Pierrette, on peut bien fair un
+                     petit extra.</l>
+               </sp>
+               <sp n="24">
+                  <speaker>CHAPAILLOUX</speaker>
+                  <stage>puisant à la marmite.</stage>
+                  <l>Cha donne un bien bon goût !…</l>
+                  <stage>Il trouve encore un bouquet dans la marmite.</stage>
+                  <l>Ah cha !… v’là un bouquet à present !… Il y a donc de tout
+                     dans cette choupe !… cha fait une fameuse julienne !</l> 
+               </sp>
+               <sp n="25">
+                  <speaker>PIERRETTE</speaker>
+                  <l>Ch’est un potage printannier ; mais comment ce bouquet se trouve-t-il là ?…
+                 </l>
+               </sp>
+               <sp n="26">
+                  <speaker>MARCACHU</speaker>
+                  <l>Je chais encore ce que ch’est ; ch’est mon bouquet que j’ai apporté pour votre
+                     fête, et que j’ai caché ochtenchiblement dans la marmite.</l>
+               </sp>
+               <sp n="27">
+                  <speaker>PIERRETTE</speaker>
+                  <l>Ah ! monsieur Marcachu, ch’est d’une galanterie… ce bouquet ne me quittera
+                     plus…</l> 
+                  <stage>Elle jette le bouquet sous la table</stage>
+                  <l>Maintenant je propose
+                     la petite chansonnette…</l>
+               </sp>
+               <sp n="28">
+                  <speaker>MARCACHU</speaker>
+                  <l>Cha va !… En avant la chansonnette !…</l>
+               </sp>
+               <sp n="29">
+                  <speaker>PIERRETTE</speaker>
+                  <l>Ah ! comme nous nous amujâmes</l>
+                  <l>L’aut’ jour chez l’ pèr’ Cochignats !</l>
+                  <l>Nous n’étions ni hommes ni femmes,</l>
+                  <l>Nous étions tous Auvergnats !</l>
+               </sp>
+               <sp n="30">
+                  <speaker>CHAPAILLOUX ET MARCACHU</speaker>
+                  <stage>dansant.</stage>
+                  <l>Nous n’étions ni hommes ni femmes !</l>
+                  <l>Nous étions tous Auvergnats.</l>
+               </sp>
+               <sp n="31">
+                  <speaker>PIERRETTE</speaker>
+                  <l>Ch’était la noche de Thomas</l>
+                  <l>Avec la mère Tomache,</l>
+                  <l>Thomas était gros et gras,</l>
+                  <l>Thomache était groche et grache.</l>
+                  <l>Ah ! comme nous nous amujâmes, etc.</l>
+               </sp>
+               <sp n="32">
+                  <speaker>CHAPAILLOUX ET MARCACHU</speaker>
+                  <l>Nous n’étions ni hommes ni femmes, etc.</l>
+               </sp>
+               <sp n="33">
+                  <speaker>MARCACHU</speaker>
+                  <l>On a mangé trois dindons</l>
+                  <l>Et deux chacs de pomm’ de terre,</l>
+                  <l>Le chidr’ coulait à plein verre</l>
+                  <l>Pour fair’ passer les marrons !</l>
+                  <l>Ah ! comm’ nous nous amujâmes</l>
+                  <l>L’aut’ jour chez l’ pèr’ Cochignats, etc.</l>
+               </sp>
+               <sp n="34">
+                  <speaker>CHAPAILLOUX ET MARCACHU</speaker>
+                  <l>Nous n’étions ni hommes ni femmes, etc.</l>
+               </sp>
+               <sp n="35">
+                  <speaker>CHAPAILLOUX</speaker>
+                  <l>Y en a qu’en avaient tant pris,</l>
+                  <l>Qu’ils en chont morts chous la table…</l>
+                  <l>L’histoir’ m’ paraît agréable,</l>
+                  <l>Et v’là plus d’huit jours qu’ j’en ris !</l>
+                  <l>Ah ! comm’ nous nous amujâmes, etc.</l>
+               </sp>
+               <sp n="36">
+                  <speaker>CHAPAILLOUX ET MARCACHU</speaker>
+                  <l>Nous n’étions ni homm’ ni femmes, etc.</l>
+               </sp>
+               <sp n="37">
+                  <speaker>MARCACHU</speaker>
+                  <l>Oh ! que ch’est bien chanté, mam’jelle Pierrette ; vous me faites l’effet de
+                     l’orgue de Barbarie de la foire !</l>
+               </sp>
+               <sp n="38">
+                  <speaker>PIERRETTE</speaker>
+                  <l>Taisez-vous, flatteur !…</l>
+               </sp>
+               <sp n="39">
+                  <speaker>CHAPAILLOUX</speaker>
+                  <stage>à part.</stage>
+                  <l>Est-il galant !… est-il galant !</l> 
+                  <stage>Il met avec colère sa cuiller dans la
+                        marmite</stage>
+                  <l>Encore une tournée de choupe ?…</l> 
+               </sp>
+               <sp n="40">
+                  <speaker>PIERRETTE ET MARCACHU</speaker>
+                  <l>Cha va !</l>
+               </sp>
+               <sp n="41">
+                  <speaker>MARCACHU</speaker>
+                  <l>Après avoir chanté cha nous rafraîchira.</l>
+               </sp>
+               <sp n="42">
+                  <speaker>CHAPAILLOUX</speaker>
+                  <stage>qui retire un soulier de la marmite.</stage>
+                  <l>Qu’est-ce que ch’est encore que cha ?…</l>
+               </sp>
+               <sp n="43">
+                  <speaker>MARCACHU</speaker>
+                  <stage>à part.</stage>
+                  <l>Ah ! fouchtrr !…</l> 
+                  <stage>Haut.</stage>
+                  <l>Je sais ce que ch’est…</l> 
+               </sp>
+               <sp n="44">
+                  <speaker>PIERRETTE</speaker>
+                  <l>Ch’est un choulier !…</l>
+               </sp>
+               <sp n="45">
+                  <speaker>CHAPAILLOUX</speaker>
+                  <l>Mon choulier !… je le reconnais !… qu’est-che qui l’a mis dans la marmite ?…
+                 </l>
+               </sp>
+               <sp n="46">
+                  <speaker>MARCACHU</speaker>
+                  <stage>embarrassé.</stage>
+                  <l>Qui ? qui ?… je ne sais pas moi.</l>
+               </sp>
+               <sp n="47">
+                  <speaker>PIERRETTE</speaker>
+                  <l>Ah ! monsieur Marcachu, mais ch’est très-chale cha !</l>
+               </sp>
+               <sp n="48">
+                  <speaker>MARCACHU</speaker>
+                  <l>Cha n’est pas que ch’est chale… mais cha tient de la plache !</l>
+               </sp>
+               <sp n="49">
+                  <speaker>CHAPAILLOUX</speaker>
+                  <l>Ch’est lui qui l’a caché dans la choupe !…</l>
+               </sp>
+               <sp n="50">
+                  <speaker>MARCACHU</speaker>
+                  <l>Eh bien ! oui, là !… ch’est moi !… pour que vous n’alliez pas danser avec ce
+                     gouja !… à qui je cacherai la margoulette.</l>
+               </sp>
+               <sp n="51">
+                  <speaker>CHAPAILLOUX</speaker>
+                  <stage>à part.</stage>
+                  <l>Bigre !</l>
+               </sp>
+               <sp n="52">
+                  <speaker>PIERRETTE</speaker>
+                  <l>Silence !… Est-ce qu’on va encore se battre ?… Après che qui arrive, mon choix
+                     est fait ; je n’épouserai jamais un homme qui a l’indélicateche de mettre des
+                     chouliers dans la choupe, et qui me fera aller danser avec des sabots.</l>
+               </sp>
+               <sp n="53">
+                  <speaker>CHAPAILLOUX</speaker>
+                  <l>Le fait est que ch’est ignoble !…</l>
+               </sp>
+               <sp n="54">
+                  <speaker>MARCACHU</speaker>
+                  <l>Ah ! ch’est comme cha !… Eh bien ! nous j’allons rire !…</l>
+               </sp>
+               <sp n="55">
+                  <speaker>PIERRETTE</speaker>
+                  <stage>effrayée.</stage>
+                  <l>Ah mon Dieu !… il casse mon ménage !…</l>
+               </sp>
+               <sp n="56">
+                  <speaker>MARCACHU</speaker>
+                  <l>Et la vaichelle aussi !… v’lan…</l> 
+                  <stage>Il prend les assiettes et les jette une
+                        à une par la fenêtre ; on les entend se briser</stage>
+                  <l>V’li ! v’lan ! tout
+                     y pachera !</l> 
+               </sp>
+               <sp n="57">
+                  <speaker>PIERRETTE</speaker>
+                  <l>Mais ch’est une horreur !…</l>
+               </sp>
+               <sp n="58">
+                  <speaker>MARCACHU</speaker>
+                  <l>Et puis le saladier que j’oublais !… v’lan !…</l> 
+                  <stage>Il prend un saladier et le jette par la fenêtre.</stage>
+               </sp>
+               <sp n="59">
+                  <speaker>PIERRETTE</speaker>
+                  <l>Quelle fureur !</l>
+               </sp>
+               <sp n="60">
+                  <speaker>MARCACHU</speaker>
+                  <l>Ah ! on me fiche à la porte ?… on entendra parler de moi, fichtrrr ! Adieu !</l>
+                        <stage>Il va jusqu’à la porte et revient sur ses pas.</stage>
+                  <l>Ah chi te ravija cor tournailla dans la cambuja, chi te cajola, chi te épousa !
+                     écrapouilla, escarbouilla !</l>
+                  <stage>Il s’empare de la marmite qui est sur la table ; il sort précipitamment.</stage>
+               </sp>
+            </div>
+            <div type="scene" n="9">
+               <head>Scène IX</head>
+               <stage>Les Mêmes, moins Marcachu.</stage>
+               <sp n="1">
+                  <speaker>PIERRETTE</speaker>
+                  <l>Il remporte aussi cha marmite avec la choupe ? Et vous avez laissé faire,
+                     monsieur Chapailloux ?</l>
+               </sp>
+               <sp n="2">
+                  <speaker>CHAPAILLOUX</speaker>
+                  <stage>qui s’était réfugié dans un coin.</stage>
+                  <l>J’allais l’assomma, fouchtrra ! mais il ne m’en a pas donné le temps.</l>
+               </sp>
+               <sp n="3">
+                  <speaker>PIERRETTE</speaker>
+                  <l>Après tout, j’aime mieux cha ; il vous aurait cassé aussi ; maintenant qu’il
+                     n’est plus là, donnez-moi la main ; je vous épouse… et voici mon gage !</l>
+                        <stage>Elle lui tend la joue.</stage>
+                  
+                  <stage>Duetto.</stage>
+                  <l>Je vous épouse et je vous tends la main ;</l>
+                  <l>Sur tous mes amoureux, j’ vous donn’ la préférence !…</l>
+               </sp>
+               <sp n="4">
+                  <speaker>CHAPAILLOUX</speaker>
+                  <stage>à part.</stage>
+                  <l>Merchi ! cent fois merchi. J’ai peur que le gredin</l>
+                  <l>Ne revienne… et j’en tremble d’avanche !</l>
+               </sp>
+               <sp n="5">
+                  <speaker>PIERRETTE</speaker>
+                  <l>Qu’avez-vous donc ?… vous hésitez !…</l>
+               </sp>
+               <sp n="6">
+                  <speaker>CHAPAILLOUX</speaker>
+                  <stage>hésitant toujours.</stage>
+                  <l>Moi ? par exemple !…</l>
+               </sp>
+               <sp n="7">
+                  <speaker>PIERRETTE</speaker>
+                  <l>Et l’on dirait que vous tremblez !…</l>
+               </sp>
+               <sp n="8">
+                  <speaker>CHAPAILLOUX</speaker>
+                  <stage>à part, regardant autour de lui.</stage>
+                  <stage>Haut.</stage>
+                  <l>Il n’est plus là ?… C’est le plaisir qui me suffoque !</l>
+                  <l>Et du Marcachu je me moque !…</l>
+                  <stage>Ensemble.</stage>
+                  <l>Le bonheur nous attend,</l>
+                  <l>Rechevez mon cherment,</l>
+                  <l>Voici ma main !</l>
+                  <stage>Chapailloux va pour donner sa main à Pierrette, lorsque Marcachu paraît au
+                     fond ; Chapailloux retire vivement sa main, et s’éloigne avec inquiétude.
+                     Musique à l’orchestre. Marcachu apporte une chaise neuve et une pile de
+                     vaisselle ; il s’avance silencieusement, dépose sa chaise par terre, pose sa
+                     vaisselle sur la table, puis il s’en va au fond prendre la marmite qu’il a
+                     déposée sur le seuil et revient la mettre aux pieds de Pierrette. À ce moment
+                     on entend, dans la coulisse la ritournelle d’une bourrée.</stage>
+               </sp>
+               <sp n="9">
+                  <speaker>MARCACHU</speaker>
+                  <l>Voilà la fête qui commenche,</l>
+                  <l>Allons tous à la danche !</l>
+               </sp>
+               <sp n="10">
+                  <speaker>CHAPAILLOUX</speaker>
+                  <stage>tout à fait rassuré.</stage>
+                  <l>Ah ! cette fois, voichi ma main.</l>
+                  <stage>Il donne avec confiance sa main à Pierrette. À part.</stage>
+                  <l>Il n’est pas si méchant… qu’il était che matin !</l>
+               </sp>
+               <sp n="11">
+                  <speaker>MARCACHU</speaker>
+                  <l>Pardonnez-moi, et donnons-nous la main,</l>
+                  <l>Je s’rai votre témoin et j’ garde l’espéranche,</l>
+                  <l>Si l’ciel vous donne un moutard l’an prochain,</l>
+                  <l>Qu’à Marcachu comm’ dans la Dame blanche</l>
+                  <l>Vous permettrez d’en être le parrain !</l>
+                  <stage>bis.</stage>
+               </sp>
+               <sp n="12">
+                  <speaker>PIERRETTE ET CHAPAILLOUX</speaker>
+                  <l>À Marcachu, comm’ dans la Dame blanche,</l>
+                  <l>Nous permettrons d’en être le parrain.</l>
+                  <stage>Reprise de la Ronde.</stage>
+                  <l>Ah ! comm’ nous nous amujâmes</l>
+                  <l>L’autr’ jour che le pèr Cochignats !</l>
+                  <l>Nous n’étions ni homm’s ni femmes</l>
+                  <l>Nous étions tous Auvergnats !</l>
+               </sp>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

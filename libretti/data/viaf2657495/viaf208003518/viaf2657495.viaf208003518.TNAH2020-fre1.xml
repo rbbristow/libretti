@@ -1,0 +1,1023 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../ODD/out/librettiODD.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>L'Enfant et les sortilèges</title>
+            <author role="songWriter">Maurice Ravel</author>
+            <author role="librettist">Colette</author>
+         </titleStmt>
+         <publicationStmt>
+            <p>Ecole nationale des chartes, projet libretti TNAH, promotion 2019-2020</p>
+         </publicationStmt>
+         <sourceDesc>
+            <!-- correction des nombreuses erreurs textuelles de la source principale à partir d'une seconde source plus 
+               fiable : https://www.opera-lille.fr/fichier/o_media/9224/media_fichier_fr_dp.l.enfant.opa.ra.de.lille.pdf. -->
+            <p>http://kareol.es/obras/elninoylossortilegios/acto1.htm</p>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <refsDecl n="CTS">
+            <cRefPattern n="speech" matchPattern="(\w+).(\w+).(\w+)"
+               replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@type='act'][@n='$1']/tei:div[@type='part'][@n='$2']/tei:sp[@n='$3'])">
+               <p>Ce pointeur extrait les niveaux de citation 1, 2 et 3, soit les actes, parties et
+                  tours de parole.</p>
+            </cRefPattern>
+            <cRefPattern n="part" matchPattern="(\w+).(\w+)"
+               replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@type='act'][@n='$1']/tei:div[@type='part'][@n='$2'])">
+               <p>Ce pointeur extrait les niveaux de citation 1 et 2, soit les actes et parties.</p>
+            </cRefPattern>
+            <cRefPattern n="act" matchPattern="(\w+)"
+               replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@type='act'][@n='$1'])">
+               <p>Ce pointeur extrait le premier niveau de citation du texte, soit les actes.</p>
+            </cRefPattern>
+         </refsDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text>
+      <front>
+         <set>
+            <p>L'action se déroule dans une maison de campagne, à notre époque.</p>
+         </set>
+      </front>
+      <body n="urn:cts:libOp:viaf2657495.viaf208003518.TNAH2020-fre1" xml:lang="fre">
+         <castList>
+            <castItem>L’Enfant, mezzo-soprano</castItem>
+            <castItem>Maman, contralto</castItem>
+            <castItem>La Bergère, soprano</castItem>
+            <castItem>La Tasse chinoise, mezzo-contralto</castItem>
+            <castItem>Le Feu, soprano léger</castItem>
+            <castItem>La Princesse, soprano léger</castItem>
+            <castItem>La Chatte, mezzo-soprano</castItem>
+            <castItem>La Libellule, mezzo-soprano</castItem>
+            <castItem>Le Rossignol, soprano léger</castItem>
+            <castItem>La Chauve-Souris, soprano</castItem>
+            <castItem>La Chouette, soprano</castItem>
+            <castItem>L’Écureuil, mezzo-soprano</castItem>
+            <castItem>Une Pastourelle, soprano</castItem>
+            <castItem>Un Pâtre, contralto</castItem>
+            <castItem>Le Fauteuil, basse chantante</castItem>
+            <castItem>L’Horloge comtoise, baryton</castItem>
+            <castItem>La Théière, ténor</castItem>
+            <castItem>Le Petit Vieillard, ténor léger</castItem>
+            <castItem>Le Chat, baryton</castItem>
+            <castItem>L’Arbre, basse</castItem>
+            <castItem>La Rainette, ténor</castItem>
+            <castItem>Le Banc, le Canapé, le Pouf, la Chaise de paille, chœur d’enfants</castItem>
+            <castItem>Les Chiffres, chœur d’enfants</castItem>
+            <castItem>Les Pastoures, les Pâtres, chœur</castItem>
+            <castItem>Les Rainettes, les Bêtes, les Arbres, chœur</castItem>
+         </castList>
+         <div type="act" n="1">
+            <head>Acte I</head>
+            <div type="part" n="1">
+               <head>PREMIÈRE PARTIE</head>
+               <stage>La Maison</stage>
+               <stage>(Une pièce à la campagne plafond très bas, donnant sur un jardin. Une maison
+                  normande, ancienne, ou mieux : démodée ; de grands fauteuils, houssés; une haute
+                  horloge à cadran fleuri. Une teinture à petits personnages, bergerie. Une cage
+                  ronde à écureuil, pendue près de la fenêtre. Une grande cheminée à hotte, un reste
+                  de feu paisible ; une bouilloire qui ronronne. Le chat aussi. C'est l'après-midi.
+                  L’Enfant, six ou sept ans, est assis devant un devoir commencé. Il est en pleine
+                  crise de paresse, il mord son porte-plume, se gratte la tête et chantonne à
+                  demi-voix.)</stage>
+               <sp n="1">
+                  <speaker>L'ENFANT</speaker>
+                  <l>J'ai pas envie de faire ma page.</l>
+                  <l>J'ai envie d'aller me promener.</l>
+                  <l>J'ai envie de manger tous les gâteaux.</l>
+                  <l>J'ai envie de tirer la queue du chat</l>
+                  <l>Et de couper celle de l'écureuil.</l>
+                  <l>J'ai envie de gronder tout le monde!</l>
+                  <l>J'ai envie de mettre Maman en pénitence...</l>
+                  <stage>(La porte s'ouvre. Entre maman, ou plutôt ce qu’en laissent voir plafond
+                     très bas et l’échelle de tout le décor où tous les objets assument des
+                     dimensions exagérées, pour rendre frappante la petitesse de l’Enfant,
+                     c’est-à-dire une jupe, le bas d’un tablier de soie, la chaîne d’acier où pend
+                     une paire de ciseaux, et une main. Cette main se lève, interroge de
+                     l’index..)</stage>
+               </sp>
+               <sp n="2">
+                  <speaker>MAMAN</speaker>
+                  <l>Bébé a été sage ?</l>
+                  <l>Il a fini sa page ?</l>
+                  <stage>(l'Enfant ne répond rien et se laisse glisser, boudeur, en bas de sa
+                     chaise. La robe s’avance sur la scène, une main tendue au-dessus du cahier.
+                     L’autre main plus haute, soutient un plateau portant la théière et la tasse du
+                     goûter.)</stage>
+                  <l>Oh ! Tu n'as rien fait !</l>
+                  <l>Tu as éclaboussé d'encre le tapis !</l>
+                  <l>Regrettes-tu ta paresse ?</l>
+                  <stage>(silence de l’Enfant.)</stage>
+                  <l>Promettez-moi, Bébé, de travailler ?</l>
+                  <stage>(Silence)</stage>
+                  <l>Voulez-vous me demander pardon ?</l>
+                  <stage>(Pour toute réponse, Bébé lève la tête vers Maman et tire la
+                     langue.)</stage>
+                  <l>Oh !...</l>
+                  <stage>(La Jupe recule un peu. La seconde main dépose sur la table le plateau du
+                     goûter.)</stage>
+                  <stage>(Sévère)</stage>
+                  <l>Voici le goûter d'un méchant enfant :</l>
+                  <l>du thé sans sucre, du pain sec.</l>
+                  <l>Restez tout seul jusqu'au dîner !</l>
+                  <l>Et songez à votre faute !</l>
+                  <l>Et songez à vos devoirs !</l>
+                  <l>Songez, songez surtout</l>
+                  <l>au chagrin de Maman !...</l>
+                  <stage>(La porte se rouvre, la robe s’en va. L’Enfant, resté seul, est pris d'une
+                     frénésie de perversité. Il trépigne et crie à pleins poumons vers la
+                     porte.)</stage>
+               </sp>
+               <sp n="3">
+                  <speaker>L'ENFANT</speaker>
+                  <l>Ça m'est égal !</l>
+                  <l>Justement j'ai pas faim !</l>
+                  <l>Justement j'aime beaucoup mieux rester tout seul !</l>
+                  <l>Je n'aime personne !</l>
+                  <l>Je suis très méchant !</l>
+                  <l>Méchant, méchant ! Méchant !</l>
+                  <stage>(Il balaie d'un revers de main la théière et la tasse, qui se brisent en
+                     mille morceaux. Puis il grimpe sur la fenêtre, ouvre la cage de l'Ecureuil et
+                     veut piquer la petite bête avec sa plume de fer. L'Ecureuil, blessé, crie et
+                     s'enfuit par l'imposte ouverte de la croisée. L'Enfant saute à bas de la
+                     fenêtre et tire la queue du chat, qui jure et se cache sous un
+                     fauteuil.)</stage>
+               </sp>
+               <sp n="4">
+                  <speaker>L'ENFANT</speaker>
+                  <stage>(hors de lui)</stage>
+                  <l>Hourrah !</l>
+                  <stage>(Il brandit le tisonnier, fourgonne le Feu, y renverse d’un coup de pied la
+                     bouilloire : flots de cendre et de fumée.)</stage>
+                  <l>Hourrah ! Hourrah !</l>
+                  <stage>(Il se sert du tisonnier comme d'une épée pour attaquer les petits
+                     personnages de la tenture, qu'il lacère: de grands lambeaux de tenture se
+                     détachent du mur et pendent. Il ouvre la boîte de la grande horloge, se pend au
+                     balancier, qui lui reste entre les mains. Puis, avisant sur la table les
+                     cahiers et les livres, il les met en pièces, en riant aux éclats.)</stage>
+                  <l>Hourrah ! Plus de leçons !</l>
+                  <l>Plus de devoirs !</l>
+                  <l>Je suis libre, libre, méchant et libre !</l>
+                  <stage>(Saoul de dévastation, il va tomber essoufflé entre les bras du grand
+                     fauteuil couvert d'une housse à fleurs. Mais, ô surprise ! Les bras du fauteuil
+                     s'écartent, le siège se dérobe, et le Fauteuil, clopinant lourdement comme un
+                     énorme crapaud, s'éloigne.)</stage>
+               </sp>
+               <sp n="5">
+                  <speaker>L'ENFANT</speaker>
+                  <l>Ah !</l>
+                  <stage>(Ayant fait trois pas en arrière, le Fauteuil revient, lourd et goguenard,
+                     et s'en va saluer une petite bergère Louis XV, qu'il emmène avec lui pour une
+                     danse compassée et grotesque.)</stage>
+               </sp>
+               <sp n="6">
+                  <speaker>LE FAUTEUIL</speaker>
+                  <l>Votre serviteur humble, Bergère.</l>
+               </sp>
+               <sp n="7">
+                  <speaker>LA BERGÈRE</speaker>
+                  <stage>(avec révérence)</stage>
+                  <l>Votre servante, Fauteuil.</l>
+               </sp>
+               <sp n="8">
+                  <speaker>LE FAUTEUIL</speaker>
+                  <l>Nous voilà donc débarrassés</l>
+                  <l>A jamais de cet Enfant</l>
+                  <l>Aux talons méchants.</l>
+               </sp>
+               <sp n="9">
+                  <speaker>LA BERGÈRE</speaker>
+                  <l>Vous m'en voyez, vous m'en voyez aise !</l>
+               </sp>
+               <sp n="10">
+                  <speaker>LE FAUTEUIL</speaker>
+                  <l>Plus de coussins pour son sommeil,</l>
+                  <l>Plus de sièges pour sa rêverie,</l>
+                  <l>Plus de repos pour lui que sur la terre nue.</l>
+                  <l>Et encore... qui sait ?</l>
+               </sp>
+               <sp n="11">
+                  <speaker>LA BERGÈRE</speaker>
+                  <l>Et encore... qui sait ?</l>
+               </sp>
+               <sp n="12">
+                  <speaker>TOUS LES DEUX</speaker>
+                  <l>Nous voilà donc débarrassés</l>
+                  <l>A jamais de cet Enfant</l>
+                  <l>Aux talons méchants.</l>
+               </sp>
+               <sp n="13">
+                  <speaker>LE FAUTEUIL</speaker>
+                  <l>Le Banc, le Canapé, le Pouf...</l>
+               </sp>
+               <sp n="14">
+                  <speaker>LA BERGÈRE</speaker>
+                  <l>...et la Chaise de paille...</l>
+               </sp>
+               <sp n="15">
+                  <speaker>LE FAUTEUIL</speaker>
+                  <l>Ne voudront plus de l’Enfant.</l>
+               </sp>
+               <sp n="16">
+                  <speaker>LES MEUBLES</speaker>
+                  <stage>(que viennent de nommer le Fauteuil et la Bergère lèvent, qui les bras, qui
+                     les pieds, et répètent en chœur)</stage>
+                  <l>Plus de l’Enfant.</l>
+                  <stage>(Immobile de stupeur, l’Enfant, adossé au mur, écoute et regarde.)</stage>
+               </sp>
+               <sp n="17">
+                  <speaker>L'HORLOGE COMTOISE</speaker>
+                  <stage>(sonnant et chantant)</stage>
+                  <l>Ding, ding, ding, ding, ding, ding !...</l>
+                  <l>Et encore, ding, ding, ding !</l>
+                  <l>Je ne peux plus m'arrêter de sonner !</l>
+                  <l>Je ne sais plus l'heure qu'il est !</l>
+                  <l>Il m'a ôté mon balancier !</l>
+                  <l>J'ai d'affreuses douleurs de ventre !</l>
+                  <l>J'ai un courant d'air dans mon centre !</l>
+                  <l>Et je commence à divaguer !</l>
+                  <stage>(Sur deux pieds, qui dépassent sous sa chemise de bois, l'Horloge avance.
+                     Elle a une ronde petite figure rose à la place de son cadran, et deux bras
+                     courts gesticulant.)</stage>
+               </sp>
+               <sp n="18">
+                  <speaker>L’ENFANT</speaker>
+                  <stage>(effrayé)</stage>
+                  <l>Ah ! L'Horloge marche.</l>
+               </sp>
+               <sp n="19">
+                  <speaker>L'HORLOGE COMTOISE</speaker>
+                  <stage>(marchant et sonnant)</stage>
+                  <l>Ding, ding, ding...</l>
+                  <l>Laissez-moi au moins passer,</l>
+                  <l>Que j'aille cacher ma honte !</l>
+                  <l>Sonner ainsi à mon âge !</l>
+                  <l>Moi, moi qui sonnais de douces heures,</l>
+                  <l>Heure de dormir, heure de veiller,</l>
+                  <l>Heure qui ramène celui qu'on attend,</l>
+                  <l>Heure bénie où naquit le méchant Enfant !</l>
+                  <l>Peut-être que, s'il ne m'eût mutilée,</l>
+                  <l>Rien n'aurait jamais changé</l>
+                  <l>Dans cette demeure</l>
+                  <l>Peut-être qu'aucun n'y fût jamais mort...</l>
+                  <l>Si j'avais pu continuer de sonner,</l>
+                  <l>Toutes pareilles les unes aux autres,</l>
+                  <l>Les heures !</l>
+                  <l>Ah ! Laissez-moi cacher ma honte et ma douleur</l>
+                  <l>Le nez contre le mur !</l>
+                  <l>Ding, ding, ding...</l>
+                  <stage>(Sonnant lamentablement, elle traverse la scène et s’en va à l’autre bout
+                     de la pièce, face au mur et redevient immobile. On entend deux voix nasillardes
+                     au ras du sol.)</stage>
+               </sp>
+               <sp n="20">
+                  <speaker>LA THÉIÈRE</speaker>
+                  <stage>(Wedgwood noire)</stage>
+                  <l>How Is your mug ?</l>
+               </sp>
+               <sp n="21">
+                  <speaker>LA TASSE</speaker>
+                  <stage>(chinoise)</stage>
+                  <l>Rotten !</l>
+               </sp>
+               <sp n="22">
+                  <speaker>LA THÉIÈRE</speaker>
+                  <l>...better had...</l>
+               </sp>
+               <sp n="23">
+                  <speaker>LA TASSE</speaker>
+                  <l>Come on !</l>
+               </sp>
+               <sp n="24">
+                  <speaker>LA THÉIÈRE</speaker>
+                  <stage>(à l’Enfant ; avec une menace doucereuse et des manières de champion de
+                     boxe)</stage>
+                  <l>Black and costaud, Black and chic, jolly fellow,</l>
+                  <l>I punch, Sir, I punch your nose.</l>
+                  <l>I knock out you, stupid chose !</l>
+                  <l>Black and thick, and vrai beau gosse,</l>
+                  <l>I box you, I marmelade you...</l>
+               </sp>
+               <sp n="25">
+                  <speaker>LA TASSE</speaker>
+                  <stage>(à l’Enfant, en le menaçant de ses doigts pointus et dorés)</stage>
+                  <l>Keng-ça-fou, Mah-jong,</l>
+                  <l>Keng-ça-fou, puis' -kong-kong-pran-pa,</l>
+                  <l>Ça-oh-râ, Ça-oh-râ...</l>
+                  <l>Ça-oh-râ, Cas-ka-ra, harakiri, Sessue Hayakawa</l>
+                  <l>Hâ ! Hâ ! Ça-oh-râ toujours l'air chinoâ.</l>
+               </sp>
+               <sp n="26">
+                  <speaker>LA TASSE, LA THÉIÈRE</speaker>
+                  <l>Hâ ! Ça-oh-râ toujours l'air chinoâ.</l>
+                  <l>Ping, pong, ping...</l>
+               </sp>
+               <sp n="27">
+                  <speaker>LA THÉIÈRE</speaker>
+                  <l>I boxe you.</l>
+               </sp>
+               <sp n="28">
+                  <speaker>LA TASSE, LA THÉIÈRE</speaker>
+                  <l>Ping, pong, ping, pong, ping.</l>
+                  <l>Ah ! Kek-ta fouhtuh d’mon Kaoua ?</l>
+                  <stage>(La Théière et la Tasse disparaissent en dansant.)</stage>
+               </sp>
+               <sp n="29">
+                  <speaker>L'ENFANT</speaker>
+                  <stage>(atterré)</stage>
+                  <l>Oh ! Ma belle tasse chinoise !</l>
+                  <stage>(Le soleil a baissé. Ses rayons horizontaux deviennent rouges. L'Enfant
+                     frissonne de peur et de solitude ; il se rapproche du Feu, qui lui crache au
+                     visage une fusée étincelante.)</stage>
+               </sp>
+               <sp n="30">
+                  <speaker>LE FEU</speaker>
+                  <stage>(bondissant hors de la cheminée, mince, pailleté, éblouissant)</stage>
+                  <l>Arrière ! Je réchauffe les bons, mais je brûle les méchants !</l>
+                  <l>Petit barbare imprudent, tu as insulté à tous</l>
+                  <l>les Dieux bienveillants, qui tendaient entre</l>
+                  <l>le malheur et toi la fragile barrière !</l>
+                  <l>Ah ! Tu as brandi le tisonnier, renversé la bouilloire,</l>
+                  <l>éparpillé les allumettes, gare !</l>
+                  <l>Gare au feu dansant !</l>
+                  <l>Tu fondrais comme un flocon sur sa langue écarlate !</l>
+                  <l>Ah ! Gare ! Je réchauffe les bons ! Gare ! Je brûle les méchants ! Gare ! Gare
+                     à toi !</l>
+                  <stage>(Le Feu s'élance, et poursuit d'abord l’Enfant qui s'abrite derrière les
+                     meubles. Derrière le Feu, née sous ses pas, monte la Cendre. Elle est grise
+                     onduleuse, muette, et le Feu ne la voit pas d'abord. Puis, l'ayant vue, il joue
+                     avec elle. Elle joue avec lui. Elle tente, sous ses longs voiles gris, de
+                     maîtriser le Feu. Il rit, s'échappe, et danse. Le jeu continue jusqu'au moment
+                     où, las de lutter, le Feu se laisse éteindre. Il tente un dernier sursaut pour
+                     se libérer, brille encore un instant, puis s'endort, roulé dans les longs bras
+                     et les longs voiles. Au moment où il cesse de briller, l'ombre envahit la
+                     chambre, le crépuscule est venu, il étoile déjà les vitres, et la couleur du
+                     ciel présage le lever de la pleine lune.)</stage>
+               </sp>
+               <sp n="31">
+                  <speaker>L'ENFANT</speaker>
+                  <stage>(à demi-voix)</stage>
+                  <l>J'ai peur, j'ai peur...</l>
+                  <stage>(Des rires menus lui répondent. Il cherche, et voit se soulever les
+                     lambeaux déchirés de la tenture. Tout un cortège des petits personnages peints
+                     sur le papier s'avance, un peu ridicules, et très touchants. Il y a la
+                     Pastoure, le Pâtre, les moutons, le chien, la chèvre, etc... Une musique naïve
+                     de pipeaux et de tambourins les accompagne.)</stage>
+               </sp>
+               <sp n="32">
+                  <speaker>LES PÂTRES</speaker>
+                  <l>Adieu, pastourelles !</l>
+               </sp>
+               <sp n="33">
+                  <speaker>LES PASTOURELLES</speaker>
+                  <l>Pastoureaux, adieu !</l>
+               </sp>
+               <sp n="34">
+                  <speaker>LES PÂTRES, LES PASTOURELLES</speaker>
+                  <l>Nous n'irons plus sur l'herbe mauve,</l>
+                  <l>Paître nos verts moutons !</l>
+               </sp>
+               <sp n="35">
+                  <speaker>LES PÂTRES</speaker>
+                  <l>Las, notre chèvre amarante !</l>
+               </sp>
+               <sp n="36">
+                  <speaker>LES PASTOURELLES</speaker>
+                  <l>Las, nos agneaux roses tendres !</l>
+               </sp>
+               <sp n="37">
+                  <speaker>LES PÂTRES</speaker>
+                  <l>Las, nos cerises zinzolin !</l>
+               </sp>
+               <sp n="38">
+                  <speaker>LES PÂTRES, LES PASTOURELLES</speaker>
+                  <l>Notre chien bleu !</l>
+               </sp>
+               <sp n="39">
+                  <speaker>LES PÂTRES</speaker>
+                  <l>Le bras tendu, pastourelles,</l>
+                  <l>Nos amours semblaient éternelles,</l>
+                  <l>Nos pipeaux.</l>
+               </sp>
+               <sp n="40">
+                  <speaker>LES PASTOURELLES</speaker>
+                  <l>La bouche en cœur, pastoureaux,</l>
+                  <l>Eternels semblaient nos pipeaux.</l>
+                  <stage>(Ballet des petits personnages, qui expriment, en dansant, le chagrin de ne
+                     pouvoir plus se joindre.)</stage>
+               </sp>
+               <sp n="41">
+                  <speaker>UN PÂTRE</speaker>
+                  <l>L'Enfant méchant a déchiré</l>
+                  <l>Notre tendre histoire.</l>
+                  <l>Pâtre de ci, pastourelle de là,</l>
+                  <l>L’Enfant méchant qui nous doit</l>
+                  <l>Son premier sourire.</l>
+               </sp>
+               <sp n="42">
+                  <speaker>UN PÂTRE, UNE PASTOURELLE</speaker>
+                  <l>Pâtre de ci, pastourelle de là,</l>
+                  <l>L’Enfant méchant qui nous doit</l>
+                  <l>Son premier sourire.</l>
+               </sp>
+               <sp n="43">
+                  <speaker>UNE PASTOURELLE</speaker>
+                  <l>L’Enfant ingrat qui dormait sous la garde</l>
+                  <l>De notre chien bleu.</l>
+                  <l>Las, notre chèvre amarante !</l>
+               </sp>
+               <sp n="44">
+                  <speaker>UN PÂTRE</speaker>
+                  <l>Las, nos roses et verts moutons !</l>
+               </sp>
+               <sp n="45">
+                  <speaker>LES PÂTRES</speaker>
+                  <l>Adieu, Pastourelles !</l>
+               </sp>
+               <sp n="46">
+                  <speaker>LES PASTOURELLES</speaker>
+                  <l>Pastoureaux, adieu !</l>
+                  <stage>Ils s'en vont, et avec eux la musique de cornemuses et de tambourins.
+                     L’Enfant s'est laissé glisser tout de son long à terre, la figure sur ses bras
+                     croisés. Il pleure. Il est couché sur les feuillets lacérés de livres, et c'est
+                     l'un des grands feuillets sur lequel il est étendu qui se soulève comme une
+                     dalle pour laisser passer d'abord une main langoureuse, puis une chevelure
+                     d'or, puis toute une Princesse adorable de conte de Fées, qui semble à peine
+                     éveillée, et étire ses bras chargés de joyaux.)</stage>
+               </sp>
+               <sp n="47">
+                  <speaker>L'ENFANT</speaker>
+                  <stage>(émerveillé)</stage>
+                  <l>Ah ! C'est Elle ! C'est Elle !</l>
+               </sp>
+               <sp n="48">
+                  <speaker>LA PRINCESSE</speaker>
+                  <l>Ah ! Oui, c'est Elle, ta Princesse enchantée.</l>
+                  <l>Celle que tu appelais dans ton songe,</l>
+                  <l>La nuit passée.</l>
+                  <l>Celle dont l'histoire, commencée hier,</l>
+                  <l>Te tint éveillé si longtemps.</l>
+                  <l>Tu te chantais à toi-même : "Elle est blonde</l>
+                  <l>Avec des yeux couleur du temps".</l>
+                  <l>Tu me cherchais dans le cœur de la rose</l>
+                  <l>Et dans le parfum du lys blanc.</l>
+                  <l>Tu me cherchais, tout petit amoureux,</l>
+                  <l>Et j'étais, depuis hier, ta première bien-aimée !</l>
+               </sp>
+               <sp n="49">
+                  <speaker>L'ENFANT</speaker>
+                  <l>Ah ! C'est Elle ! C'est Elle !</l>
+               </sp>
+               <sp n="50">
+                  <speaker>LA PRINCESSE</speaker>
+                  <l>Mais tu as déchiré le livre,</l>
+                  <l>Que va-t-il arriver de moi ?</l>
+                  <l>Qui sait si le malin enchanteur</l>
+                  <l>Ne va pas me rendre au sommeil de la mort,</l>
+                  <l>Ou bien me dissoudre en nuée ?</l>
+                  <l>Dis, n'as-tu pas regret d'ignorer à jamais</l>
+                  <l>Le sort de ta première bien-aimée ?</l>
+               </sp>
+               <sp n="51">
+                  <speaker>L'ENFANT</speaker>
+                  <stage>(tremblant)</stage>
+                  <l>Oh ! Ne t'en va pas ! Reste ! Dis-moi...</l>
+                  <l>Et l'arbre où chantait l'oiseau bleu ?</l>
+               </sp>
+               <sp n="52">
+                  <speaker>LA PRINCESSE</speaker>
+                  <stage>(désignant les feuillets épars)</stage>
+                  <l>Vois ses branches, vois ses fruit, hélas...</l>
+               </sp>
+               <sp n="53">
+                  <speaker>L'ENFANT</speaker>
+                  <stage>(anxieux)</stage>
+                  <l>Et ton collier, ton collier magique ?</l>
+               </sp>
+               <sp n="54">
+                  <speaker>LA PRINCESSE</speaker>
+                  <stage>(de même)</stage>
+                  <l>Vois ses anneaux rompus, hélas...</l>
+               </sp>
+               <sp n="55">
+                  <speaker>L'ENFANT</speaker>
+                  <l>Ton Chevalier ?</l>
+                  <l>Le Prince au Cimier couleur d'aurore ?</l>
+                  <l>Qu'il vienne, avec son épée !</l>
+                  <l>Si j'avais une épée ! Une épée !</l>
+                  <l>Ah ! Dans mes bras, dans mes bras !</l>
+                  <l>Viens, je saurai te défendre !</l>
+               </sp>
+               <sp n="56">
+                  <speaker>LA PRINCESSE</speaker>
+                  <stage>(se tordant les bras)</stage>
+                  <l>Hélas, petit ami trop faible,</l>
+                  <l>Que peux-tu pour moi ?</l>
+                  <l>Sait-on la durée d'un rêve ?</l>
+                  <l>Mon songe était si long, si long,</l>
+                  <l>Que peut-être, à la fin du songe,</l>
+                  <l>C'eût été toi, le Prince au Cimier d'aurore !...</l>
+                  <stage>(Le sol bouge et s'ouvre au-dessous d'elle ; elle appelle :)</stage>
+                  <l>A l'aide ! A l'aide ! Le Sommeil et la Nuit</l>
+                  <l>veulent me reprendre ! A l'aide !</l>
+               </sp>
+               <sp n="57">
+                  <speaker>L'ENFANT</speaker>
+                  <stage>(la retenant en vain par sa chevelure d'or, par ses voiles, par ses longues
+                     mains blanches)</stage>
+                  <l>Mon épée ! Mon épée ! Mon épée !</l>
+                  <stage>(Mais une force invisible aspire la Princesse qui disparaît sous la
+                     terre.)</stage>
+               </sp>
+               <sp n="58">
+                  <speaker>L'ENFANT</speaker>
+                  <stage>(seul et désolé, à mi-voix)</stage>
+                  <l>Toi, le cœur de la rose,</l>
+                  <l>Toi, le parfum du lys blanc,</l>
+                  <l>Toi, tes mains et ta couronne,</l>
+                  <l>Tes yeux bleus et tes joyaux...</l>
+                  <l>Tu ne m'as laissé, comme un rayon de lune,</l>
+                  <l>Qu'un cheveu d'or sur mon épaule,</l>
+                  <l>Un cheveu d'or... et les débris d'un rêve...</l>
+                  <stage>(il se penche, et cherche parmi les feuillets épars la fin du conte de
+                     Fées, mais en vain... Il cherche...)</stage>
+                  <l>Rien... Tous ceux-ci sont des livres arides,</l>
+                  <l>D'amères et sèches leçons.</l>
+                  <stage>(Il les pousse du pied. Mais de petites voix aigres sortent d'entre les
+                     pages, qui se soulèvent et laissent voir les malicieuses et grimaçantes petites
+                     figures des chiffres. D'un grand album plié en forme de toit, sort un petit
+                     vieillard bossu, crochu, barbu, vêtu de chiffres, coiffé d'un " Π", ceinturé
+                     d'un mètre de couturière et armé d'une équerre. Il tient un livre de bois qui
+                     claque en mesure, et il marche à tout petits pas dansés, en récitant des bribes
+                     de problèmes.)</stage>
+               </sp>
+               <sp n="59">
+                  <speaker>LE PETIT VIEILLARD</speaker>
+                  <l>Deux robinets coulent dans un réservoir !</l>
+                  <l>Deux trains omnibus quittent une gare</l>
+                  <l>A vingt minutes d'intervalle,</l>
+                  <l>Valle, valle, valle !</l>
+                  <l>Une paysanne,</l>
+                  <l>Zanne, zanne, zanne,</l>
+                  <l>Porte tous ses œufs au marché !</l>
+                  <l>Un marchand d'étoffe,</l>
+                  <l>Toffe, toffe, toffe,</l>
+                  <l>A vendu six mètres de drap !</l>
+                  <stage>(Il aperçoit l’Enfant et se dirige vers lui de plus malveillante
+                     manière.)</stage>
+               </sp>
+               <sp n="60">
+                  <speaker>L'ENFANT</speaker>
+                  <stage>(affolé)</stage>
+                  <l>Mon Dieu ! C'est l'Arithmétique !</l>
+               </sp>
+               <sp n="61">
+                  <speaker>LE PETIT VIEILLARD, LES CHIFFRES</speaker>
+                  <stage>(soulevant les feuillets et piaillant)</stage>
+                  <l>Tique, tique, tique !</l>
+                  <stage>(Il danse autour de l’Enfant en multipliant les passes maléfiques.)</stage>
+               </sp>
+               <sp n="62">
+                  <speaker>LE PETIT VIEILLARD</speaker>
+                  <stage>(en se pinçant le nez)</stage>
+                  <l>Quatre et quat'dix-huit,</l>
+                  <l>Onze et six vingt-cinq,</l>
+                  <l>Quatre et quat'dix-huit,</l>
+                  <l>Sept fois neuf trente-trois</l>
+               </sp>
+               <sp n="63">
+                  <speaker>L'ENFANT</speaker>
+                  <stage>(surpris)</stage>
+                  <l>Sept fois neuf trente-trois ?</l>
+               </sp>
+               <sp n="64">
+                  <speaker>LES CHIFFRES</speaker>
+                  <l>Sept fois neuf trente-trois, etc.</l>
+                  <stage>(ils sortent de dessous les feuillets)</stage>
+               </sp>
+               <sp n="65">
+                  <speaker>L'ENFANT</speaker>
+                  <stage>(égaré)</stage>
+                  <l>Quatre et quat’</l>
+               </sp>
+               <sp n="66">
+                  <speaker>LE PETIT VIEILLARD</speaker>
+                  <stage>(soufflant)</stage>
+                  <l>Dix-huit !</l>
+               </sp>
+               <sp n="67">
+                  <speaker>L'ENFANT</speaker>
+                  <l>Onze et six ?</l>
+               </sp>
+               <sp n="68">
+                  <speaker>LE PETIT VIEILLARD</speaker>
+                  <stage>(même jeu)</stage>
+                  <l>Vingt-cinq !</l>
+               </sp>
+               <sp n="69">
+                  <speaker>L'ENFANT</speaker>
+                  <stage>(exagérant résolument)</stage>
+                  <l>Trois fois neuf quat'cent !</l>
+               </sp>
+               <sp n="70">
+                  <speaker>LE PETIT VIEILLARD</speaker>
+                  <stage>(Il se balance pour prendre le mouvement de la ronde)</stage>
+                  <l>Millimètre,</l>
+                  <l>Centimètre,</l>
+                  <l>Décimètre,</l>
+                  <l>Décamètre,</l>
+                  <l>Hectomètre,</l>
+                  <l>Kilomètre,</l>
+                  <l>Myriamètre,</l>
+                  <l>Faut t'y mettre !</l>
+                  <l>Quelle fêtre !</l>
+                  <l>Des millions,</l>
+                  <l>Des billions,</l>
+                  <l>Des trillions,</l>
+                  <l>et des frac-cillions !</l>
+               </sp>
+               <sp n="71">
+                  <speaker>LES CHIFFRES, LE PETIT VIEILLARD</speaker>
+                  <stage>(entraînant l’Enfant dans leur danse)</stage>
+                  <l>Deux robinets coulent dans un réservoir ! etc.</l>
+               </sp>
+               <sp n="72">
+                  <speaker>LES CHIFFRES, LE PETIT VIEILLARD</speaker>
+                  <stage>(ronde folle)</stage>
+                  <l>Trois fois neuf trent'trois !</l>
+                  <l>Deux fois six vingt-sept !</l>
+                  <l>Quatre et quat' ? Quatre et quat' ?</l>
+                  <l>Deux fois six trente et un !</l>
+                  <l>Quatre et sept cinquante-neuf ?</l>
+                  <l>Cinq fois cinq quarante-trois !</l>
+                  <l>Sept et quat' cinquante-cinq !</l>
+                  <l>Quatre et quat ! Cinq et sept !</l>
+                  <l>Vingt-cinq ! Trent’sept ! Ah !</l>
+                  <stage>(L’Enfant tombe, étourdi, tout de son long. Le Petit Vieillard et les
+                     Chiffres s'éloignent.)</stage>
+               </sp>
+               <sp n="73">
+                  <speaker>LE PETIT VIEILLARD</speaker>
+                  <stage>(paraissant d’un côté de la scène)</stage>
+                  <l>Quatre et quat'dix-huit !</l>
+               </sp>
+               <sp n="74">
+                  <speaker>LES CHIFFRES</speaker>
+                  <l>Onze et six vingt-cinq !</l>
+                  <l>Trent’-trois !</l>
+                  <stage>(L'Enfant se relève péniblement sur son séant. La lune est levée, elle
+                     éclaire la pièce. Le Chat noir sort lentement de dessous le fauteuil. Il
+                     s'étire, bâille et fait sa toilette. L'Enfant ne le voit pas d'abord et
+                     s'étend, harassé, la tête sur un coussin de pieds.)</stage>
+               </sp>
+               <sp n="75">
+                  <speaker>L'ENFANT</speaker>
+                  <l>Oh ! Ma tête ! Ma tête !</l>
+                  <stage>(Le Chat joue et roule une balle de laine. Il arrive auprès de l’Enfant et
+                     veut jouer avec la tête blonde comme avec une pelote.)</stage>
+                  <stage>(Il se relève à demi et voit le Chat)</stage>
+                  <l>C'est toi, Chat ? Que tu es grand et terrible !</l>
+                  <l>Tu parles aussi, sans doute ?</l>
+                  <stage>(Le Chat fait signe que non, jure et se détourne de l’Enfant. Il joue avec
+                     sa pelote. La Chatte blanche paraît dans le jardin. Le Chat interrompt son
+                     jeu.)</stage>
+               </sp>
+            </div>
+            <div type="part" n="2">
+               <head>DEUXIÈME PARTIE</head>
+               <stage>Le Jardin</stage>
+               <stage>(Le Chat va rejoindre la Chatte. L’Enfant le suit peureusement, attiré par le
+                  jardin. A ce moment, les parois s'écartent, le plafond s'envole et l’Enfant se
+                  trouve, avec le Chat et la Chatte, transporté dans le jardin éclairé par la pleine
+                  lune et la lueur rose du couchant. Des arbres, des fleurs, une toute petite mare
+                  verte, un gros tronc vêtu de lierre.)</stage>
+               <stage>Musique d'insectes, de rainettes, de crapauds, de rires de chouettes, de
+                  murmures de brise et de rossignols.</stage>
+               <sp n="1">
+                  <speaker>L'ENFANT</speaker>
+                  <stage>(ouvrant les bras)</stage>
+                  <l>Ah ! Quelle joie de te retrouver, Jardin !</l>
+                  <stage>(Il s'appuie au gros tronc d'arbre qui gémit.)</stage>
+                  <stage>(effrayé de nouveau)</stage>
+                  <l>Quoi ?</l>
+               </sp>
+               <sp n="2">
+                  <speaker>L'ARBRE</speaker>
+                  <stage>(gémissant)</stage>
+                  <l>Ma blessure... Ma blessure...</l>
+               </sp>
+               <sp n="3">
+                  <speaker>L'ENFANT</speaker>
+                  <l>Quelle blessure ?</l>
+               </sp>
+               <sp n="4">
+                  <speaker>L'ARBRE</speaker>
+                  <l>Celle que tu fis aujourd'hui à mon flanc, avec le couteau dérobé... Hélas !
+                     Elle saigne encore de sève...</l>
+               </sp>
+               <sp n="5">
+                  <speaker>LES AUTRES ARBRES</speaker>
+                  <stage>(gémissant et se balançant)</stage>
+                  <l>Nos blessures... nos blessures... Elles sont fraîches, et saignent encore de
+                     sève...ô méchant !</l>
+                  <stage>(L'Enfant apitoyé, appuie sa joue contre l'écorce du gros Arbre. Une
+                     Libellule passe, grésillante, et disparaît. Elle repasse, repasse encore.
+                     D'autres la suivent. Un sphinx du laurier-rose l'imite. D'autres sphinx,
+                     d'autres Libellules.)</stage>
+               </sp>
+               <sp n="6">
+                  <speaker>LA LIBELLULE</speaker>
+                  <stage>(celle qui a passé la première, chante en volant)</stage>
+                  <l>Où es-tu ?</l>
+                  <l>Je te cherche...</l>
+                  <l>Le filet...</l>
+                  <l>Il t'a prise...</l>
+                  <l>O toi, chère,</l>
+                  <l>Longue et frêle,</l>
+                  <l>Tes turquoises,</l>
+                  <l>Tes topazes,</l>
+                  <l>L'air qui t'aime</l>
+                  <l>Les regrette</l>
+                  <l>Moins que moi...</l>
+               </sp>
+               <sp n="7">
+                  <speaker>LE ROSSIGNOL</speaker>
+                  <l>Ah !...</l>
+               </sp>
+               <sp n="8">
+                  <speaker>LE ROSSIGNOL</speaker>
+                  <l>Ah !...</l>
+               </sp>
+               <sp n="9">
+                  <speaker>LA LIBELLULE</speaker>
+                  <l>Seule, seule,</l>
+                  <l>Je languis...</l>
+                  <l>Je te cherche...</l>
+                  <stage>(A l’Enfant, en tournoyant au-dessus de sa tête)</stage>
+                  <l>Rends-la moi !</l>
+                  <l>Où est-elle ?</l>
+                  <l>Ma compagne,</l>
+                  <l>Rends-la moi !</l>
+               </sp>
+               <sp n="10">
+                  <speaker>L'ENFANT</speaker>
+                  <l>Je ne peux pas ! Je ne peux pas !</l>
+               </sp>
+               <sp n="11">
+                  <speaker>LA LIBELLULE</speaker>
+                  <stage>(pressante)</stage>
+                  <l>Où est-elle ?</l>
+               </sp>
+               <sp n="12">
+                  <speaker>L'ENFANT</speaker>
+                  <stage>(se détournant)</stage>
+                  <l>Je ne puis...</l>
+                  <stage>(à part)</stage>
+                  <l>La libellule que j'ai prise... </l>
+                  <l>Percée d'une épingle...</l>
+                  <l>Contre le mur</l>
+                  <stage>(horrifié)</stage>
+                  <l>Ah !...</l>
+               </sp>
+               <sp n="13">
+                  <speaker>LA CHAUVE-SOURIS</speaker>
+                  <stage>(en l'air)</stage>
+                  <l>Rends-la moi... tsk, tsk, Rends-la moi...</l>
+                  <l>Tsk... Ma compagne...</l>
+                  <l>La Chauve-souris... tu sais ?</l>
+               </sp>
+               <sp n="14">
+                  <speaker>L'ENFANT</speaker>
+                  <stage>(baissant la tête)</stage>
+                  <l>Je sais !</l>
+               </sp>
+               <sp n="15">
+                  <speaker>LA CHAUVE-SOURIS</speaker>
+                  <stage>(volant)</stage>
+                  <l>Le bâton... Tsk, tsk... la poursuite...</l>
+                  <l>hier soir... Tsk... Ta victoire...</l>
+                  <l>Et la petite bête, là, morte à tes pieds...</l>
+               </sp>
+               <sp n="16">
+                  <speaker>L'ENFANT</speaker>
+                  <l>Grâce !</l>
+               </sp>
+               <sp n="17">
+                  <speaker>LA CHAUVE-SOURIS</speaker>
+                  <l>Le nid plein... Les petits... sans leur mère.</l>
+                  <l>Il faut... tsk, tsk, qu'on les nourrisse...</l>
+               </sp>
+               <sp n="18">
+                  <speaker>L'ENFANT</speaker>
+                  <l>Sans mère !</l>
+               </sp>
+               <sp n="19">
+                  <speaker>LA CHAUVE-SOURIS</speaker>
+                  <l>Alors, nous... Tsk, tsk...</l>
+                  <l>Nous volons. Nous chassons...</l>
+                  <l>Nous tournons... nous chassons</l>
+                  <l>Nous happons... Tsk... Tsk...</l>
+                  <l>C'est ta faute...</l>
+                  <stage>(Ronde de Chauves-souris. Au-dessous, une petite rainette émerge de la
+                     mare, s'appuie des deux mains au bord. Une autre fait de même, puis une autre,
+                     et la mare se trouve couronnée de rainettes, bien serrées l'une contre l'autre,
+                     et coassantes. En coassant, elles sortent, et se mettent à jouer à la manière
+                     des rainettes. L'une d'elles, ayant dansé, s'appuie de la main au genou de
+                     l’Enfant.)</stage>
+               </sp>
+               <sp n="20">
+                  <speaker>L'ÉCUREUIL</speaker>
+                  <stage>(sèchement, du haut de l’arbre, parmi un bruit de noisettes
+                     éclatées)</stage>
+                  <l>Sauve-toi, sotte ! Et la cage ? La cage ?</l>
+               </sp>
+               <sp n="21">
+                  <speaker>LA RAINETTE</speaker>
+                  <l>Kékékékékécekça ?</l>
+               </sp>
+               <sp n="22">
+                  <speaker>L'ÉCUREUIL</speaker>
+                  <stage>(à la fourche des deux basses branches, et toussant à la manière des
+                     écureuils)</stage>
+                  <l>La prison... Heu, heu. La prison.</l>
+                  <l>Le fer qui pique, entre deux barreaux.</l>
+                  <l>Heu, heu. J'ai pu fuir, mais tes quatre petites mains mouillées ne valent pas
+                     les miennes.</l>
+               </sp>
+               <sp n="23">
+                  <speaker>LA RAINETTE</speaker>
+                  <l>Que-que-que-que-dis-tu ?</l>
+                  <l>Je ne connais pas la cacacacage.</l>
+                  <l>Je connais la mouche qu'on me jette.</l>
+                  <stage>(Elle saute.)</stage>
+                  <l>Ploc ! Et le chiffon rouge.</l>
+                  <stage>(Elle saute.)</stage>
+                  <l>Ploc ! L'appât vient, je bondis, on me prend,</l>
+                  <l>je m'échappe, je reviens. Ploc !</l>
+               </sp>
+               <sp n="24">
+                  <speaker>L'ÉCUREUIL</speaker>
+                  <l>Sans-cervelle ! Tu auras mon sort !</l>
+               </sp>
+               <sp n="25">
+                  <speaker>L'ENFANT</speaker>
+                  <stage>(à l’Ecureuil)</stage>
+                  <l>La cage, c'était pour mieux voir ta prestesse,</l>
+                  <l>Tes quatre petites mains, tes beaux yeux...</l>
+               </sp>
+               <sp n="26">
+                  <speaker>L'ÉCUREUIL</speaker>
+                  <stage>(sarcastique)</stage>
+                  <l>Oui, c'était pour mes beaux yeux !</l>
+                  <stage>(Pendant qu'il parle, le jardin se peuple d'écureuils bondissants. Leurs
+                     jeux, leurs caresses, suspendus en l'air, n'inquiètent pas ceux de rainettes,
+                     au-dessous. Un couple de Libellules, enlacé, se disjoint, s'accole. Un couple
+                     de sphinx du laurier-rose les imite. D'autres groupes se nouent, se défont. Le
+                     jardin, palpitant d'ailes, rutilant d'écureuils, est un paradis de tendresse et
+                     de joie animales.)</stage>
+                  <l>Sais-tu ce qu'ils reflétaient, mes beaux yeux ?</l>
+                  <l>Le ciel libre, le vent libre, mes libres frères,</l>
+                  <l>au bond sûr comme un vol !...</l>
+                  <l>Regarde donc ce qu'ils reflétaient,</l>
+                  <l>mes beaux yeux tout miroitants de larmes !</l>
+               </sp>
+               <sp n="27">
+                  <speaker>L'ENFANT</speaker>
+                  <l>Ils s'aiment... ils sont heureux...</l>
+                  <l>Ils m'oublient...</l>
+                  <stage>(Le Chat noir et la Chatte blanche paraissent au faîte d’un mur. Le Chat
+                     lèche amicalement les oreilles de la Chatte, joue avec celle. Ils s'éloignent,
+                     l'un suivant l'autre, sur le faîte étroit du mur.)</stage>
+                  <l>Il s'aiment... ils m'oublient...Je suis seul...</l>
+                  <stage>(Malgré lui il appelle :)</stage>
+                  <l>Maman !</l>
+                  <stage>(A ce cri, toutes les bêtes se dressent, se séparent, les unes fuient, les
+                     autres accourent menaçantes, mêlent leurs voix à celles des arbres, s'écrient
+                     :)</stage>
+               </sp>
+               <sp n="28">
+                  <speaker>LES BÊTES, LES ARBRES</speaker>
+                  <l>Ah ! C'est l’Enfant au couteau !</l>
+                  <l>C'est l’Enfant au bâton !</l>
+                  <l>Le méchant à la cage !</l>
+                  <l>Le méchant au filet !</l>
+                  <l>Celui qui n'aime personne,</l>
+                  <l>Et que personne n'aime !</l>
+                  <l>Faut-il fuir ?</l>
+                  <l>Non ! Il faut châtier.</l>
+                  <l>J'ai mes griffes !</l>
+                  <l>J'ai mes dents !</l>
+                  <l>J'ai mes ailes onglées !</l>
+                  <l>Unissons-nous, unissons-nous !</l>
+                  <stage>(Toutes les bêtes fondent à la fois sur l’Enfant, le cernent, le poussent,
+                     le tirent. C'est une frénésie, qui devient lutte, car chaque bête veut être
+                     seule à châtier l’Enfant, et les bêtes commencement à s'entre-déchirer.
+                     L'Enfant, pris, délivré, repris, passe de pattes en pattes. Au plus fort de la
+                     lutte, il est projeté dans un coin de la scène, et les bêtes l'oublient, dans
+                     leur ivresse de combattre. Presque en même temps, un petit écureuil, blessé,
+                     vient choir auprès de l’Enfant avec un cri aigu. Les bêtes honteuses,
+                     s'immobilisent, se séparent, entourent de loin l'Ecureuil qu'elles ont
+                     meurtri... Arrachant un ruban de son cou, l’Enfant lie la patte blessée de
+                     l'Ecureuil, puis retombe sans force. Profond silence, stupeur parmi les
+                     Bêtes.)</stage>
+               </sp>
+               <sp n="29">
+                  <speaker>UNE BÊTE</speaker>
+                  <stage>(dans le grand silence)</stage>
+                  <l>Il a pansé la plaie...</l>
+               </sp>
+               <sp n="30">
+                  <speaker>UNE AUTRE BÊTE</speaker>
+                  <l>Il a pansé la plaie... Il a lié la patte...</l>
+                  <l>Etanché le sang.</l>
+               </sp>
+               <sp n="31">
+                  <speaker>D’AUTRES BÊTES</speaker>
+                  <stage>(entre elles)</stage>
+                  <l>Il souffre... Il est blessé... Il saigne...</l>
+                  <l>Il a pansé la plaie... Il faut lier la main...</l>
+                  <l>Etancher le sang... Que faire ?</l>
+                  <l>Il sait, lui, guérir le mal... Que faire ?</l>
+                  <l>Nous l'avons blessé... Que faire ?</l>
+               </sp>
+               <sp n="32">
+                  <speaker>UNE BÊTE</speaker>
+                  <l>Il appelait, tout à l'heure...</l>
+               </sp>
+               <sp n="33">
+                  <speaker>LES BÊTES</speaker>
+                  <l>Il appelait...</l>
+               </sp>
+               <sp n="34">
+                  <speaker>UNE BÊTE</speaker>
+                  <l>Il crié un mot, un seul mot : Maman !</l>
+               </sp>
+               <sp n="35">
+                  <speaker>LES BÊTES</speaker>
+                  <l>Maman...</l>
+                  <stage>(Elles se sont rapprochées, elles entourent l’Enfant, gisant. Les Ecureuils
+                     se suspendent aux branches au-dessus de lui, les libellules l'éventent de leurs
+                     ailes.)</stage>
+               </sp>
+               <sp n="36">
+                  <speaker>UNE BÊTE</speaker>
+                  <l>Il se tait... Va-t-il mourir ?</l>
+               </sp>
+               <sp n="37">
+                  <speaker>LES BÊTES</speaker>
+                  <l>Nous ne savons pas lier la main...</l>
+                  <l>Etancher le sang...</l>
+               </sp>
+               <sp n="38">
+                  <speaker>UNE BÊTE</speaker>
+                  <stage>(désignant la maison)</stage>
+                  <l>C'est là qu'est le secours !</l>
+                  <l>Ramenons-le au nid !</l>
+                  <l>Il faut que l'on entende, là-bas,</l>
+                  <l>le mot qu'il crié tout à l'heure...</l>
+                  <l>Essayons de crier le mot...</l>
+                  <stage>(Les Bêtes, toutes ensemble, soulèvent l’Enfant inerte et pâle, et
+                     l'emportent, pas à pas, vers la maison.)</stage>
+               </sp>
+               <sp n="39">
+                  <speaker>LES BÊTES</speaker>
+                  <stage>(hésitantes, en sourdine)</stage>
+                  <l>Ma... man...</l>
+                  <stage>(plus haut)</stage>
+                  <l>Ma... man !</l>
+                  <stage>(L'Enfant ouvre les yeux, essaie de se tenir debout. De la patte, de
+                     l'aile, de la tête, des reins, les bêtes le soutiennent encore.)</stage>
+               </sp>
+               <sp n="40">
+                  <speaker>LES BÊTES</speaker>
+                  <l>Maman !</l>
+                  <stage>(Une lumière paraît aux vitres, dans la maison. En même temps, la lune,
+                     dévoilée, l'aube, rose et d'or, inondent le jardin d'une clarté pure. Chant de
+                     rossignol, murmures d’arbres et de bêtes. Les bêtes une à une, retirent à
+                     l’Enfant leur aide qui devient inutile, défont harmonieusement, à regret, leur
+                     groupe serré contre l’Enfant, mais elles l'escortent d'un peu plus loin, le
+                     fêtent de battements d'ailes, de culbutes de joie, puis, limitant à l'ombre des
+                     arbres leur bienveillant cortège, laissent l’Enfant seul. Droit, lumineux et
+                     blond, dans un halo de lune et d'aube, et tendant ses bras vers celle que les
+                     bêtes ont appelée : "Maman".)</stage>
+               </sp>
+               <sp n="41">
+                  <speaker>LES BÊTES</speaker>
+                  <l>Il est bon, l’Enfant, il est sage, bien sage...</l>
+                  <l>Il a pansé la plaie, étanché le sang...</l>
+                  <l>Il est sage, si sage, si doux.</l>
+                  <l>Il est bon, l’Enfant, il est sage, bien sage.</l>
+                  <l>Il est si doux.</l>
+               </sp>
+               <sp n="42">
+                  <speaker>L'ENFANT</speaker>
+                  <stage>(tendant les bras)</stage>
+                  <l>Maman !</l>
+               </sp>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

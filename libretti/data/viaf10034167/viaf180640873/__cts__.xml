@@ -1,0 +1,10 @@
+<ti:work groupUrn="urn:cts:libOp:viaf10034167"
+    urn="urn:cts:libOp:viaf10034167.viaf180640873" xml:lang="fre"
+    xmlns:ti="http://chs.harvard.edu/xmlns/cts">
+    <ti:title xml:lang="fre">Les Deux Aveugles</ti:title>
+    <ti:edition workUrn="urn:cts:libOp:viaf10034167.viaf180640873"
+        urn="urn:cts:libOp:viaf10034167.viaf180640873.TNAH2020-fre1">
+        <ti:label xml:lang="fre">Les Deux Aveugles, Jacques Offenbach (TNAH2020)</ti:label>
+        <ti:description xml:lang="fre">Balisage sémantique de l'opéra Les Deux Aveugles par la promo TNAH 2020</ti:description>
+    </ti:edition>
+</ti:work>
